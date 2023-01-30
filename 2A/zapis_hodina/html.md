@@ -287,3 +287,21 @@ Prvkem může být cokoliv, třeba další seznam:
   - př. `<a>` `<span>`
 
 ### Třídy a Id
+
+Třídy a elementy jsou atributy, které používáme, abychom mohli specifikovat daný html element. Př. v html dokumentu máme velké množství `<p>` tagů, jak je od sebe odlišíme, abychom mohli říct že se bavíme o jednom konkrétním? Použíjeme třídu nebo id.
+
+#### Třída
+
+V jednom dokumentu může bát více tříd se stejným názvem. Syntax vypadá takto:
+
+```html
+<div class="MojeTrida"></div>
+```
+
+#### Id
+
+V celém html dokumentu nesmí být dvě stejná `id`. Syntax vypadá takto:
+
+```html
+<div id="MojeID"></div>
+```
