@@ -8,7 +8,8 @@
 4. [Komentář](#komentář)
 5. [Nadpis](#nadpis)
 6. [Odstavec](#odstavec)
-7. [Obrázek](#obrázek)
+7. [Atributy](#atributy)
+8. [Obrázek](#obrázek)
 
 ### HTML
 
