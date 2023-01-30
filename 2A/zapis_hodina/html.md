@@ -12,7 +12,7 @@
 
 ### HTML
 
-HTML je zkratka pro _HyperText Markup Language_. Slovo **Markup** ve zkratce znamená **Značkovací**, což vystihuje účel, kterému se HTML používá.
+HTML je jazyk, který se používá pro tvorbu webových stránek. HTML je zkratka pro _HyperText Markup Language_. Slovo **Markup** ve zkratce znamená **Značkovací**, což vystihuje účel, kterému se HTML používá. Používá se totiž pro popis struktury webů. To znamená, že pomocí [tagu](#tag) označíme čast textu, čímž o dané části textu řekneme např. _toto je nadpis_, nebo _toto je odstavec_, nebo _toto je odkaz_. HTML soubor ukládáme s koncovkou `.html`
 
 ### VS code
 
