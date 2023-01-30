@@ -14,7 +14,73 @@
 
 HTML je jazyk, který se používá pro tvorbu webových stránek. HTML je zkratka pro _HyperText Markup Language_. Slovo **Markup** ve zkratce znamená **Značkovací**, což vystihuje účel, kterému se HTML používá. Používá se totiž pro popis struktury webů. To znamená, že pomocí [tagu](#tag) označíme čast textu, čímž o dané části textu řekneme např. _toto je nadpis_, nebo _toto je odstavec_, nebo _toto je odkaz_. HTML soubor ukládáme s koncovkou `.html`
 
+Kdybychom neznali `HTML` mohli bychom popsat jednotlivé části textu třeba takto.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- seznam, navigace, menu -->
+    <!-- první položka v seznamu -->
+    1. HOME
+    <!-- druhá položka v seznamu -->
+    2. ABOUT ME
+    <!-- třetí položka v seznamu -->
+    3. MY WORK
+    <!-- čtvrtá položka v seznamu -->
+    4. CONTACT
+
+    <!-- nadpis -->
+    Welcome to my website!
+
+    <!-- odstavec -->
+    My name is John and I am a software developer with a passion for creating
+    beautiful and functional websites. On this site, you can find information
+    about my professional background and skills, as well as some of the projects
+    I have worked on.
+
+    <!-- odstavec -->
+    I have always been fascinated by the power of the internet to connect people
+    and share information. As a developer, I am constantly learning and seeking
+    out new challenges to help me grow and improve.
+
+    <!-- obrázek -->
+    profile_photo.jpg
+
+    <!-- odstavec -->
+    In my spare time, I enjoy traveling, reading, and spending time with my
+    family and friends. links to gitlab
+    <!-- odkaz -->
+    https://github.com/
+
+    <!-- poděkování -->
+    Thank you for visiting my website. I hope you find the information here
+    useful and that we can work together in the future.
+    <!-- rozloučení -->
+    Best regards,
+
+    <!-- patička -->
+    John Copyright 2021 John's Website. All rights reserved. Contact:
+    info@johns-website.com
+  </body>
+</html>
+```
+
+Později si ukážem, jak to stejné zapsat pomocí jazyka `HTML`. Zjistíme, že některé [tagy](#tag) budou existovat (např. nadpis, odkaz atd.), některé tagy, však existovat nebudou (např. poděkování, rozloučení).
+
 ### VS code
+
+VS code je tzv. IDE (_integrated development environment_), neboli vývojové prostředí, ve kterém lze mimo jiné hezky pracovat i s `.html` soubory.
+
+Při vyvíjení webu chceme mít vše **VŽDY** uložené v jedné složce. Proto si v počítači první vytvoříme složku (pojmenujeme ji třeba _mujPrvniWeb_). Nyní vy VS code klikneme na tlačítko `file` a vybereme možnost `open folder`. Najdeme Naši složku, klikneme na ni a vybereme možnost `vvybrat složku`. Čímž se nám složka otevře ve VS code.
+
+Vytvoříme nyní dokument s koncovkou `.html`. Nyní zmáčkneme `!` a stiskneme `Enter`
 
 ```html
 <!DOCTYPE html>
