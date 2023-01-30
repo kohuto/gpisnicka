@@ -80,7 +80,7 @@ VS code je tzv. IDE (_integrated development environment_), neboli vývojové pr
 
 Při vyvíjení webu chceme mít vše **VŽDY** uložené v jedné složce. Proto si v počítači první vytvoříme složku (pojmenujeme ji třeba _mujPrvniWeb_). Nyní vy VS code klikneme na tlačítko `file` a vybereme možnost `open folder`. Najdeme Naši složku, klikneme na ni a vybereme možnost `vvybrat složku`. Čímž se nám složka otevře ve VS code.
 
-Vytvoříme nyní dokument s koncovkou `.html`. Nyní zmáčkneme `!` a stiskneme `Enter`
+Vytvoříme nyní dokument s koncovkou `.html`. Nyní zmáčkneme `!` a stiskneme `Enter`, čímž se nám vygeneruje šablona.
 
 ```html
 <!DOCTYPE html>
@@ -95,21 +95,38 @@ Vytvoříme nyní dokument s koncovkou `.html`. Nyní zmáčkneme `!` a stisknem
 </html>
 ```
 
+To co je mezi [tagy](#tag) `head` zatím budeme ignorovat. Nás nyní bude zajímat tag `body`, do kterého budeme psát to, co chceme, aby bylo vidět na naší webové stránce.
+
 ### Tag
+
+Slovo `tag` už zaznělo mnohokrát, co to tedy je? Tag určuje začátek a konec html elementu. Analogicky `element` je vše, od začínajícího (tzv. otevíracího) tagu až po ukončující (tzv. uzavírací) tag.
 
 ```html
 <tagname>nějaký obsah...</tagname>
+```
+
+příkladem mohou být např. tagy určující nadpis nebo odstavec
+
+```html
+<h1>Můj první nadpis</h1>
+<p>Můj první odstavec</p>
 ```
 
 ### Komentář
 
 Komentáře se nezobrazují ve webovém prohlížeči.
 
+Používáme je pro popis kódu. Pomocí komentáře můžeme například popsat, co daná část kódu dělá (např. _tato část kódu tvoří navigační menu webu_). Komentáře jsou tedy určeny pro nás webové vývojáře, ne pro běžného uživatele na webu.
+
+Takto se zapisují komentáře v HTML:
+
 ```html
 <!-- toto je komentář -->
 ```
 
 ### Nadpis
+
+Máme šest úrovní nadpisů. `h` je zkratka z `heading` (česky nadpis). Číslo udává **důležitost** nadpisu (velikost nadpisu stejně budeme měnit pomocí CSS). To mimojiné vyplývá už z důvodu, proč používáme `html` (udává strukturu webu, ne vzhled).
 
 ```html
 <h1>nadpis 1. úrovně</h1>
@@ -122,18 +139,43 @@ Komentáře se nezobrazují ve webovém prohlížeči.
 
 ### Odstavec
 
+`p` je zkratka z `paragraph` (česky odstavec). Pomocí tagu `p` označujeme opravdu celé odstavce. Toto je tedy správné použití:
+
 ```html
 <p>
   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam libero tempore,
   cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
   maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor
-  repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum
-  necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae
-  non recusandae.
+  repellendus.
 </p>
 ```
 
+Toto je špatné použití (neoznačili jsme odstavec, ale pouze jeden řádek odstavce):
+
+```html
+<p>
+  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam libero tempore,
+</p>
+<p>
+  cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+</p>
+<p>maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor</p>
+<p>repellendus.</p>
+```
+
+### Atributy
+
+atributy poskztují doplňující informace o HTML elementech. Píšeme do otevíracího tagu. Atributy mají většinou následující syntax:
+
+```
+jméno="hodnota"
+```
+
+Konkrétní příklad uvidíme hned v další kapitole.
+
 ### Obrázek
+
+Pro zobrazení obrázku používáme tag `img`.
 
 ```html
 <img src="slozka1/slozka2/slozka3/obrazek.png" alt="muj_obrazek" />
