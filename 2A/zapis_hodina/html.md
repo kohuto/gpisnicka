@@ -165,7 +165,7 @@ Toto je špatné použití (neoznačili jsme odstavec, ale pouze jeden řádek o
 
 ### Atributy
 
-atributy poskztují doplňující informace o HTML elementech. Píšeme do otevíracího tagu. Atributy mají většinou následující syntax:
+atributy poskytují doplňující informace o HTML elementech. Píšeme je do otevíracího tagu. Atributy mají většinou následující syntax:
 
 ```
 jméno="hodnota"
