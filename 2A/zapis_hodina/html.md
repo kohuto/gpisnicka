@@ -186,3 +186,21 @@ Do tohoto elemetu vždy vkládáme dva atributy
 
 - `src` - určuje místo, kde je obrázek uložen
 - `alt` - určuje alternativní text, který se zobrazí v případě, že je obrázek nedostupný
+
+#### Absolutní vs relativní cesta vs url
+
+- url
+  - "klasická" url adresa, kterou známe
+  - př. https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2020%2F06%2F26%2Forange-kitten-955480082-2000.jpg
+  - výhody: obrázek nemusím mít stažený a uložený - úspora paměti
+  - nevýhody: někdo nám obrázek smaže
+- absolutní cesta
+  - cesta k souboru z kořenového adresáře k souboru
+  - př. C:\Documents\Newsletters\2018\Summer2018.jpg
+  - nevýhody: v nepoužitelné - nebude fungovat jinde, než na aktuálním počítači
+- relativní cesta
+  - cesta k souboru v podadresáři aktuálního adresáře
+  - př. 2018\Summer2018.jpg
+  - výhody: snadná přenositelnost
+
+závěr - vždy budeme v atributu `src` používat realtivní cestu
