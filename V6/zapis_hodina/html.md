@@ -8,8 +8,13 @@
 4. [Komentář](#komentář)
 5. [Nadpis](#nadpis)
 6. [Odstavec](#odstavec)
-7. [Atributy](#atributy)
-8. [Obrázek](#obrázek)
+7. [Zalomení řádku](#zalomení-řádku)
+8. [Odkazy](#odkazy)
+9. [Atributy](#atributy)
+10. [Obrázky](#obrázek)
+11. [Seznamy](#seznamy)
+12. [Block & inline elementy](#block--inline-elementy)
+13. [Třídy a Id](#třídy-a-id)
 
 ### HTML
 
@@ -140,7 +145,7 @@ Máme šest úrovní nadpisů. `h` je zkratka z `heading` (česky nadpis). Čís
 
 ### Odstavec
 
-`p` je zkratka z `paragraph` (česky odstavec). Pomocí tagu `p` označujeme opravdu celé odstavce. Toto je tedy správné použití:
+`p` je zkratka z `paragraph` (česky odstavec). Pomocí tagu `<p>` označujeme opravdu celé odstavce. Toto je tedy správné použití:
 
 ```html
 <p>
@@ -164,6 +169,48 @@ Toto je špatné použití (neoznačili jsme odstavec, ale pouze jeden řádek o
 <p>repellendus.</p>
 ```
 
+### Zalomení řádku
+
+Když potřebujeme zalomit řádek, nestačí zmáčknout klávesu `Enter`. Musíme použít speciální tag (či jinak ošetřit skrz CSS).
+
+- `<br>` - na místě, kam vložíme tento tag, dojde k zalomení řádku
+- `<pre>` - text ohraničený tímto tagem zachovává formátování
+
+```html
+<!-- zalomeni pomoci br -->
+<p>
+  An IT teacher, so kind and true, <br />
+  With knowledge vast and skills to imbue,<br />
+  A master of code, and all things tech,<br />
+  A guide for us, to help us reach.
+</p>
+
+<!-- pouziti pre -->
+<pre>
+  An IT teacher, so kind and true, 
+  With knowledge vast and skills to imbue 
+  A master of code, and all things tech,
+  A guide for us, to help us reach.
+</pre>
+```
+
+### Odkazy
+
+odkazy mají následující syntaxi:
+
+```html
+<a href="url">text odkazu</a>
+```
+
+v prohlížeči se zobrazí **text odkazu**. Po kliknutí na **text odkazu** budeme přesměrování na adresu definovanou v atributu `href`.
+Do atributu `href` můžeme např. vložit:
+
+- "klasickou" url adresu
+- relativní/absolutní cestu k souboru (možno přepnout do jiného html dokumentu)
+- `id` - možno skočit na konkrétní místo v dokumentu
+
+Dalším užitečným atributem je `target`, který specifikuje, kde se má nová stránka otevřít (př. jestli ve stejném nebo novém okně)
+
 ### Atributy
 
 atributy poskytují doplňující informace o HTML elementech. Píšeme je do otevíracího tagu. Atributy mají většinou následující syntax:
@@ -176,7 +223,7 @@ Konkrétní příklad uvidíme hned v další kapitole.
 
 ### Obrázek
 
-Pro zobrazení obrázku používáme tag `img`.
+Pro zobrazení obrázku používáme tag `<img>`.
 
 ```html
 <img src="slozka1/slozka2/slozka3/obrazek.png" alt="muj_obrazek" />
@@ -204,3 +251,62 @@ Do tohoto elemetu vždy vkládáme dva atributy
   - výhody: snadná přenositelnost
 
 závěr - vždy budeme v atributu `src` používat realtivní cestu
+
+### Seznamy
+
+Seznam je kolekce prvků (klasický seznam jako ve wordu). Rozlišujeme různé typy seznamů (setřízený, nesetřízený...), do budoucna to však není podstatné, proto budu pracovat pouze s nesetřízeným (unordered) seznamem. Má následující syntax:
+
+```html
+<ul>
+  <li>prvek 1</li>
+  <li>prvek 2</li>
+  <li>prvek 3</li>
+</ul>
+```
+
+Seznam samotný je definován tagem `<ul>`, jednotlivé prvky seznamu jsou pak definované tagem `<li>`.
+
+Prvkem může být cokoliv, třeba další seznam:
+
+```html
+<ul>
+  <li>prvek 1</li>
+  <li>prvek 2</li>
+  <li>
+    <ul>
+      <li>prvek 1</li>
+      <li>prvek 2</li>
+      <li>prvek 3</li>
+    </ul>
+  </li>
+</ul>
+```
+
+### Block & inline elementy
+
+- block elementy
+  - vždy zabírají samostatný řádek
+  - př. `<p>` `<h1>` `<div>`
+- inline elementy
+  - nezačínají na novém řádku
+  - př. `<a>` `<span>`
+
+### Třídy a Id
+
+Třídy a elementy jsou atributy, které používáme, abychom mohli specifikovat daný html element. Př. v html dokumentu máme velké množství `<p>` tagů, jak je od sebe odlišíme, abychom mohli říct že se bavíme o jednom konkrétním? Použíjeme třídu nebo id.
+
+#### Třída
+
+V jednom dokumentu může bát více tříd se stejným názvem. Syntax vypadá takto:
+
+```html
+<div class="MojeTrida"></div>
+```
+
+#### Id
+
+V celém html dokumentu nesmí být dvě stejná `id`. Syntax vypadá takto:
+
+```html
+<div id="MojeID"></div>
+```
