@@ -180,3 +180,8 @@ Pro zobrazení obrázku používáme tag `img`.
 ```html
 <img src="slozka1/slozka2/slozka3/obrazek.png" alt="muj_obrazek" />
 ```
+
+Do tohoto elemetu vždy vkládáme alespoň dva atributy
+
+- `src` - určuje místo, kde je obrázek uložen
+- `alt` - určuje alternativní text, který se zobrazí v případě, že je obrázek nedostupný
