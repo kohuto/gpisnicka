@@ -250,7 +250,7 @@ Pro následující úlohy použijte tento HTML kód:
 
    ```css
    .class2 p {
-     background-color: red;
+     background: red;
    }
    ```
 
