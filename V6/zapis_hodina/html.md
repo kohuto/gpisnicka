@@ -297,10 +297,16 @@ Třídy a elementy jsou atributy, které používáme, abychom mohli specifikova
 
 #### Třída
 
-V jednom dokumentu může bát více tříd se stejným názvem. Syntax vypadá takto:
+V jednom dokumentu může být více tříd se stejným názvem. Syntax vypadá takto:
 
 ```html
 <div class="MojeTrida"></div>
+```
+
+V jednom elementu může být více názvů tříd, jednotlivé názvy jsou odděleny mezerou:
+
+```html
+<p class="MojeTrida1 MojeTrida2">This paragraph refers to two classes.</p>
 ```
 
 #### Id
