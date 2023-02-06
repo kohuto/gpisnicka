@@ -200,7 +200,9 @@ Pro následující úlohy použijte tento HTML kód:
      <summary>řešení</summary>
 
    ```css
-   long console output here
+   #id1 {
+     background-color: red;
+   }
    ```
 
    </details>
@@ -210,7 +212,9 @@ Pro následující úlohy použijte tento HTML kód:
      <summary>řešení</summary>
 
    ```css
-   long console output here
+   .class1 {
+     background-color: red;
+   }
    ```
 
    </details>
