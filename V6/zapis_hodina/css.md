@@ -20,4 +20,5 @@
 
 ### Box model
 
-![Box model](V6\zapis_hodina\images\boxmodel.png)
+![Box model](boxmodel.png)
+![Box model](./images/boxmodel.png)
