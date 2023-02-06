@@ -83,7 +83,7 @@ h1 {
 vybereme element podle id atributu. Syntaxe je `#` následovaný názvem `id`
 
 ```css
-/* změň barvu textu na modrou v elementu s id 'mojeid' */
+/* změň barvu textu na modrou v elementu s id="mojeid" */
 #mojeid {
   color: blue;
 }
@@ -94,7 +94,7 @@ vybereme element podle id atributu. Syntaxe je `#` následovaný názvem `id`
 vybereme element podle class atributu. Syntaxe je `.` následovaná názvem `class`
 
 ```css
-/* změň barvu textu na modrou ve všech elementech s třídou 'mojetrida' */
+/* změň barvu textu na modrou ve všech elementech s class="mojetrida" */
 .mojetrida {
   color: blue;
 }
@@ -103,7 +103,7 @@ vybereme element podle class atributu. Syntaxe je `.` následovaná názvem `cla
 Můžeme vybrat pouze konkrétní element s danou třídou.
 
 ```css
-/* změň barvu textu na modrou pouze v <p> elementech s třídou 'mojetrida' */
+/* změň barvu textu na modrou pouze v <p> elementech s class="mojetrida" */
 p.mojetrida {
   color: blue;
 }
@@ -149,6 +149,25 @@ h2,
 p {
   text-align: center;
   color: red;
+}
+```
+
+další příklady:
+
+```css
+/* změň barvu textu na modrou ve všech elementech, které mají v atributu class nastavenou hodnotu mojetrida1 i mojetrida2 */
+.mojetrida1.mojetrida2 {
+  color: blue;
+}
+
+/* změň barvu textu na modrou ve všech elementech <p>, které jsou uvnitř elementu <div> */
+div p {
+  color: blue;
+}
+
+/* změň barvu textu na modrou ve všech elementech <p>, jejichž předek je element <div> */
+div > p {
+  color: blue;
 }
 ```
 
