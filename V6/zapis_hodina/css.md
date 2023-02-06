@@ -221,8 +221,8 @@ Pro následující úlohy použijte tento HTML kód:
    </details>
 
 3. změň barvu textu pro text 7
-   <details>
-     <summary>řešení</summary>
+      <details>
+        <summary>řešení</summary>
 
    ```css
    a {
@@ -230,12 +230,74 @@ Pro následující úlohy použijte tento HTML kód:
    }
    ```
 
-4. změň barvu textu pro text 3, text 4, text 5, text 6
+   </details>
+
+4. změň barvu textu pro text 3, text 4, text 5, text 6 a text 7
    <details>
      <summary>řešení</summary>
 
    ```css
-   .class3 {
+   .class2.class3 {
+     background-color: red;
+   }
+   ```
+
+   </details>
+
+5. změň barvu textu pro text 3, text 4, text 5, text 6
+   <details>
+     <summary>řešení</summary>
+
+   ```css
+   .class2.class3 {
+     background-color: red;
+   }
+   ```
+
+   </details>
+
+6. změň barvu pozadí pro text 5 a text 6
+   <details>
+     <summary>řešení</summary>
+
+   ```css
+   .class2.class3 {
+     background-color: red;
+   }
+   ```
+
+   </details>
+
+7. změň barvu pozadí pro text 3 a text 4
+   <details>
+     <summary>řešení</summary>
+
+   ```css
+   .class2.class3 {
+     background-color: red;
+   }
+   ```
+
+   </details>
+
+8. změň barvu pozadí pro text 9 a text 10
+   <details>
+     <summary>řešení</summary>
+
+   ```css
+   .class2.class3 {
+     background-color: red;
+   }
+   ```
+
+   </details>
+
+9. změň barvu textu pro text 3, text 4, text 5, text 6, text 7, text 9, text 10,
+   <details>
+     <summary>řešení</summary>
+
+   ```css
+   .class2.class3 {
      background-color: red;
    }
    ```
