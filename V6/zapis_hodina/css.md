@@ -100,6 +100,15 @@ vybereme element podle class atributu.
 }
 ```
 
+Můžeme vybrat pouze konkrétní element s danou třídou.
+
+```css
+/* změň barvu textu na modrou pouze v <p> elementech s třídou 'mojetrida' */
+p.mojetrida {
+  color: blue;
+}
+```
+
 #### Univerzální selektor
 
 #### Seskupování selektorů
