@@ -288,7 +288,7 @@ div {
 
 #### Padding
 
-`margin` se používá pro vytvoření prostoru okolo elementu uvnitř ohraničení.
+`padding` se používá pro vytvoření prostoru okolo elementu uvnitř ohraničení.
 
 ```css
 div {
