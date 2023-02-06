@@ -183,7 +183,6 @@ Pro následující úlohy použijte tento HTML kód:
   <div class="class2 class3">
     <p>text 3</p>
     <p>text 4</p>
-    <p class="class4"></p>
     <div class="class5">
       <p>text 5</p>
       <p>text 6</p>
