@@ -4,17 +4,17 @@
 
 1. [CSS](#css)
 2. [Propojení s HTML](#propojení-s-html)
-3. [Selektory](#selectors)
-4. [Komentář](#komentář)
-5. [Barvy](#barvy)
-6. [Pozadí](#pozadí)
-7. [Ohraničení](#ohraničení)
-8. [Box model](#box-model)
-9. [Atributy](#atributy)
-10. [Obrázky](#obrázek)
+3. [Selektory](#selektory)
+4. [Příklady selektory](#příklady-na-procvičení-selektorů)
+5. [Komentář](#komentář)
+6. [Barvy](#barvy)
+7. [Pozadí](#pozadí)
+8. [Ohraničení](#ohraničení)
+9. [Box model](#box-model)
+10. [Odkazy](#odkazy)
 11. [Seznamy](#seznamy)
-12. [Block & inline elementy](#block--inline-elementy)
-13. [Třídy a Id](#třídy-a-id)
+12. [Display](#display)
+13. [Navigační menu](#navbar)
 
 ### CSS
 
