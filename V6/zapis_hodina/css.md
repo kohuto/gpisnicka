@@ -3,7 +3,7 @@
 ## Přehled
 
 1. [CSS](#css)
-2.
+2. [Selectors](#selectors)
 3. [Tag](#tag)
 4. [Komentář](#komentář)
 5. [Nadpis](#nadpis)
@@ -17,6 +17,53 @@
 13. [Třídy a Id](#třídy-a-id)
 
 ### CSS
+
+CSS je jazyk, který používáme pro stylování html dokumentů. Pomocí CSS tedy definujeme vzhled web (HTML nikdy nebylo určené k formátování webové stránky!). CSS je zkratka z Cascading Style Sheets
+
+obecná syntaxe v CSS je následující:
+
+```css
+selector {
+  property: value;
+}
+```
+
+konkrétní příklad:
+
+```css
+h1 {
+  color: blue;
+}
+```
+
+### Selectors
+
+### Propojení s HTML
+
+Existují tři způsoby jak vložit style sheet:
+
+1. External CSS - styly máme uložené ve speciálním `.css` souboru
+2. Internal CSS - styly jsou definované v elementu `<style>` v sekci `<head>`
+3. Inline CSS - styly jsou definované přímo uvnitř elementu
+
+Doporučený přístup je používat external CSS (až na výjimky).
+
+Externí styly jsou definovány pomocí `<link>` elementu v `<head>` sekci:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="mystyle.css" />
+  </head>
+  <body>
+    body content
+  </body>
+</html>
+```
+
+- `rel` - specifikuje vztah mezi nalinkovaným dokumentem a aktuálním dokumentem
+- `href` - definuje umístění externího `.css` souboru
 
 ### Box model
 
