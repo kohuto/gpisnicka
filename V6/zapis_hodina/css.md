@@ -3,8 +3,8 @@
 ## Přehled
 
 1. [CSS](#css)
-2. [Selectors](#selectors)
-3. [Tag](#tag)
+2. [Propojení s HTML](#propojení-s-html)
+3. [Selectors](#selectors)
 4. [Komentář](#komentář)
 5. [Nadpis](#nadpis)
 6. [Odstavec](#odstavec)
@@ -36,8 +36,6 @@ h1 {
 }
 ```
 
-### Selectors
-
 ### Propojení s HTML
 
 Existují tři způsoby jak vložit style sheet:
@@ -64,6 +62,47 @@ Externí styly jsou definovány pomocí `<link>` elementu v `<head>` sekci:
 
 - `rel` - specifikuje vztah mezi nalinkovaným dokumentem a aktuálním dokumentem
 - `href` - definuje umístění externího `.css` souboru
+
+### Selektory
+
+CSS selektory se používájí pro nalezení elementu, který chceme nastylovat.
+
+#### Element selektory
+
+vybereme element podle jeho jména.
+
+```css
+/* změň barvu textu na modrou ve všech <h1> elementech */
+h1 {
+  color: blue;
+}
+```
+
+#### id selektory
+
+vybereme element podle id atributu.
+
+```css
+/* změň barvu textu na modrou v elementu s id 'mojeid' */
+#mojeid {
+  color: blue;
+}
+```
+
+#### Class selektory
+
+vybereme element podle class atributu.
+
+```css
+/* změň barvu textu na modrou ve všech elementech s třídou 'mojetrida' */
+.mojetrida {
+  color: blue;
+}
+```
+
+#### Univerzální selektor
+
+#### Seskupování selektorů
 
 ### Box model
 
