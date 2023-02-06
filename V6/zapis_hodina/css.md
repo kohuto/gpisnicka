@@ -20,4 +20,4 @@
 
 ### Box model
 
-![Box model](/assets/images/tux.png)
+![Box model](V6\zapis_hodina\images\boxmodel.png)
