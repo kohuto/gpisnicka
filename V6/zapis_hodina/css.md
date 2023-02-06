@@ -80,7 +80,7 @@ h1 {
 
 #### id selektory
 
-vybereme element podle id atributu.
+vybereme element podle id atributu. Syntaxe je `#` následovaný názvem `id`
 
 ```css
 /* změň barvu textu na modrou v elementu s id 'mojeid' */
@@ -91,7 +91,7 @@ vybereme element podle id atributu.
 
 #### Class selektory
 
-vybereme element podle class atributu.
+vybereme element podle class atributu. Syntaxe je `.` následovaná názvem `class`
 
 ```css
 /* změň barvu textu na modrou ve všech elementech s třídou 'mojetrida' */
@@ -111,7 +111,56 @@ p.mojetrida {
 
 #### Univerzální selektor
 
+Pomocí univerzálního selektoru vybereme všechny html elementy. Snytaxe je `*`
+
+```css
+/* změň barvu textu na modrou ve všech elementech */
+* {
+  color: blue;
+}
+```
+
 #### Seskupování selektorů
+
+Místo tohoto:
+
+```css
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+```
+
+budeme psát toto:
+
+```css
+h1,
+h2,
+p {
+  text-align: center;
+  color: red;
+}
+```
+
+### Komentář
+
+komentáře se v CSS píšou takto:
+
+```css
+/* toto je komentář */
+```
+
+Pro komentáře v CSS platí to stejné, co pro komentáře v HTML.
 
 ### Box model
 
