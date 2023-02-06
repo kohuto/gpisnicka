@@ -214,7 +214,7 @@ Pro následující úlohy použijte tento HTML kód:
 
    ```css
    .class1 {
-     background-color: red;
+     color: red;
    }
    ```
 
@@ -226,7 +226,7 @@ Pro následující úlohy použijte tento HTML kód:
 
    ```css
    a {
-     background-color: red;
+     color: red;
    }
    ```
 
@@ -238,7 +238,7 @@ Pro následující úlohy použijte tento HTML kód:
 
    ```css
    .class2.class3 {
-     background-color: red;
+     color: red;
    }
    ```
 
@@ -249,19 +249,20 @@ Pro následující úlohy použijte tento HTML kód:
      <summary>řešení</summary>
 
    ```css
-   .class2.class3 {
+   .class2 p {
      background-color: red;
    }
    ```
 
    </details>
 
-6. změň barvu pozadí pro text 5 a text 6
+6. změň barvu pozadí pro text 5, text 6 a text 7
    <details>
      <summary>řešení</summary>
 
    ```css
-   .class2.class3 {
+   .class5,
+   a {
      background-color: red;
    }
    ```
@@ -273,7 +274,7 @@ Pro následující úlohy použijte tento HTML kód:
      <summary>řešení</summary>
 
    ```css
-   .class2.class3 {
+   .class2 > p {
      background-color: red;
    }
    ```
@@ -285,7 +286,7 @@ Pro následující úlohy použijte tento HTML kód:
      <summary>řešení</summary>
 
    ```css
-   .class2.class3 {
+   .class6 {
      background-color: red;
    }
    ```
@@ -297,7 +298,8 @@ Pro následující úlohy použijte tento HTML kód:
      <summary>řešení</summary>
 
    ```css
-   .class2.class3 {
+   .class2,
+   .class6 {
      background-color: red;
    }
    ```
