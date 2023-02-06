@@ -216,15 +216,93 @@ p {
 
 ### Pozadí
 
+Už umíme nastavit barvu pozadí. Nyní nastavme jako pozadí obrázek.
+
+```css
+div {
+  background-image: url("image.png");
+}
+```
+
+často chceme nastavit vlastnost `background-repeat`. Pomocí příkladu níže zajistíme, že se nám obrázek nebude opakovat.
+
+```css
+div {
+  background-image: url("image.png");
+  background-repeat: no-repeat;
+}
+```
+
 ### Ohraničení
+
+V rámci ohraničení můžeme nastavit např. následující vlastnosti:
+
+- `border-style`
+  - `solid`
+  - `dotted`
+  - ...
+- `border-width`
+- `border-color`
+- `border-radius`
+  vše zapíšeme takto:
+
+```css
+div {
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  /* další properties */
+}
+```
+
+případně lze zkrátit takto:
+
+```css
+div {
+  border: 5px solid black;
+}
+```
 
 ### Box model
 
+Box model je box okolo každého HTML elementu. Skládá se z `margin`, `border`, `padding` a `content`.
 ![Box model](./images/boxmodel.png)
 
 #### Margin
 
+`margin` se používá pro vytvoření prostoru okolo elementu vně ohraničení.
+
+```css
+div {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+/* nebo zkráceně */
+div {
+  margin: 100px 100px 150px 80px;
+}
+```
+
 #### Padding
+
+`margin` se používá pro vytvoření prostoru okolo elementu uvnitř ohraničení.
+
+```css
+div {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 150px;
+  padding-left: 80px;
+}
+
+/* nebo zkráceně */
+div {
+  padding: 100px 100px 150px 80px;
+}
+```
 
 ### Odkazy
 
