@@ -190,8 +190,9 @@ Pro následující úlohy použijte tento HTML kód:
     </div>
     <a href="www.youtube.com">text 7</a>
   </div>
-  <div class="class2 class6">text 8</div>
-  <div class="class6">text 9</div>
+  <div class="class3">text 8</div>
+  <div class="class2 class6">text 9</div>
+  <div class="class6">text 10</div>
 </div>
 ```
 
@@ -219,12 +220,24 @@ Pro následující úlohy použijte tento HTML kód:
 
    </details>
 
-3. Third item with a hidden code block
+3. změň barvu textu pro text 7
    <details>
      <summary>řešení</summary>
 
    ```css
-   long console output here
+   a {
+     background-color: red;
+   }
+   ```
+
+4. změň barvu textu pro text 3, text 4, text 5, text 6
+   <details>
+     <summary>řešení</summary>
+
+   ```css
+   .class3 {
+     background-color: red;
+   }
    ```
 
    </details>
