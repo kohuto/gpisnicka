@@ -20,5 +20,4 @@
 
 ### Box model
 
-![Box model](boxmodel.png)
 ![Box model](./images/boxmodel.png)
