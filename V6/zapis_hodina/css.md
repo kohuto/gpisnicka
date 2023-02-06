@@ -162,6 +162,74 @@ komentáře se v CSS píšou takto:
 
 Pro komentáře v CSS platí to stejné, co pro komentáře v HTML.
 
+### Barvy
+
+můžeme nastavit barvu pozadí:
+
+```css
+p {
+  background-color: blue;
+}
+```
+
+barvu textu:
+
+```css
+p {
+  color: blue;
+}
+```
+
+#### Hodnoty barev
+
+barvy můžeme zapisovat pomocí názvu barvy:
+
+```css
+p {
+  background-color: orange;
+}
+```
+
+pomocí HEX hodnoty:
+
+```css
+p {
+  background-color: #ff6347;
+}
+```
+
+pomocí RGB hodnoty:
+
+```css
+p {
+  background-color: rgb(255, 99, 71);
+}
+```
+
+pomocí RGBA hodnoty:
+
+```css
+p {
+  background-color: rgba(255, 99, 71, 0.5);
+}
+```
+
+### Pozadí
+
+### Ohraničení
+
 ### Box model
 
 ![Box model](./images/boxmodel.png)
+
+#### Margin
+
+#### Padding
+
+### Odkazy
+
+### Seznamy
+
+### Display
+
+### Navbar
