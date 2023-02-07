@@ -316,3 +316,9 @@ V celém html dokumentu nesmí být dvě stejná `id`. Syntax vypadá takto:
 ```html
 <div id="MojeID"></div>
 ```
+
+### Kontejner
+občas potřebujeme více částí naší webové stránky (např více odstavců) spojit do jedné "části", protože patří logicky k sobě. Můžeme je strčit do pomyslného "kontejneru". Takovým kontejnerem je v HTML tag `<div>`
+```html
+<div>obsah<div>
+```
