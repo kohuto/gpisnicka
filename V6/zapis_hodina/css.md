@@ -25,6 +25,7 @@ obecná syntaxe v CSS je následující:
 ```css
 selector {
   property: value;
+  /* tady jsou další properties */
 }
 ```
 
