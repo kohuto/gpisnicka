@@ -192,6 +192,7 @@ Pro následující úlohy použijte tento HTML kód:
   <div class="class3">text 8</div>
   <div class="class2 class6">text 9</div>
   <div class="class6">text 10</div>
+  <p>text 11</p>
 </div>
 ```
 
