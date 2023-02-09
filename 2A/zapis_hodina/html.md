@@ -81,6 +81,8 @@ VS code je tzv. IDE (_integrated development environment_), neboli vývojové pr
 
 Při vyvíjení webu chceme mít vše **VŽDY** uložené v jedné složce. Proto si v počítači první vytvoříme složku (pojmenujeme ji třeba _mujPrvniWeb_). Nyní vy VS code klikneme na tlačítko `file` a vybereme možnost `open folder`. Najdeme Naši složku, klikneme na ni a vybereme možnost `vvybrat složku`. Čímž se nám složka otevře ve VS code.
 
+Jak propojit Visual Studio Code s githubem se dočtete zde [Návod](https://docs.google.com/presentation/d/194qc4h8idMwwMmFjHxTkirblxbMAQuqw9VajSgdy-_U/edit?usp=sharing)
+
 Vytvoříme nyní dokument s koncovkou `.html`. Nyní zmáčkneme `!` a stiskneme `Enter`, čímž se nám vygeneruje šablona.
 
 ```html
