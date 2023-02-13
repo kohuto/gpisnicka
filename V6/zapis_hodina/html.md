@@ -84,7 +84,7 @@ Později si ukážem, jak to stejné zapsat pomocí jazyka `HTML`. Zjistíme, ž
 
 VS code je tzv. IDE (_integrated development environment_), neboli vývojové prostředí, ve kterém lze mimo jiné hezky pracovat i s `.html` soubory.
 
-Při tvorbě webu chceme mít vše **VŽDY** uložené v jedné složce. Proto si v počítači první vytvoříme složku (pojmenujeme ji třeba _mujPrvniWeb_). Nyní ve VS code klikneme na tlačítko `file` a vybereme možnost `open folder`. Najdeme Naši složku, klikneme na ni a vybereme možnost `vvybrat složku`. Čímž se nám složka otevře ve VS code.
+Při tvorbě webu chceme mít vše **VŽDY** uložené v jedné složce. Proto si v počítači první vytvoříme složku (pojmenujeme ji třeba _mujPrvniWeb_). Nyní ve VS code klikneme na tlačítko `file` a vybereme možnost `open folder`. Najdeme Naši složku, klikneme na ni a vybereme možnost `vybrat složku`. Čímž se nám složka otevře ve VS code.
 
 Jak propojit Visual Studio Code s githubem se dočtete zde [Návod](https://docs.google.com/presentation/d/194qc4h8idMwwMmFjHxTkirblxbMAQuqw9VajSgdy-_U/edit?usp=sharing)
 
