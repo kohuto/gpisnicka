@@ -471,9 +471,104 @@ div {
 ```
 
 ### Odkazy
+```css
+a:link {
+  color: red;
+}
 
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+```
+`a:hover` MUST come after `a:link` and `a:visited` in the CSS definition in order to be effective.
+
+`a:active` MUST come after `a:hover` in the CSS definition in order to be effective.
+
+podtržení 
+```css
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+```
+
+pozadí
+
+```css
+a:link {
+  background-color: yellow;
+}
+
+a:visited {
+  background-color: cyan;
+}
+
+a:hover {
+  background-color: lightgreen;
+}
+
+a:active {
+  background-color: hotpink;
+} 
+```
+odkaz jako tlačítko
+```css
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+```
 ### Seznamy
-
+```css
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+```
 ### Display
-
+z blokového lze udělat inline
+```css
+li {
+  display: inline;
+}
+```
+z inline lze udělat blokového 
+```css
+a {
+  display: block;
+}
+```
 ### Navbar
