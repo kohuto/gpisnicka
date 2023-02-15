@@ -25,6 +25,7 @@ obecná syntaxe v CSS je následující:
 ```css
 selector {
   property: value;
+  /* tady jsou další properties */
 }
 ```
 
@@ -192,10 +193,11 @@ Pro následující úlohy použijte tento HTML kód:
   <div class="class3">text 8</div>
   <div class="class2 class6">text 9</div>
   <div class="class6">text 10</div>
+  <p>text 11</p>
 </div>
 ```
 
-1. změň pozadí pro text 1
+1. změň barvu pozadí pro text 1
    <details>
      <summary>řešení</summary>
 
@@ -207,49 +209,60 @@ Pro následující úlohy použijte tento HTML kód:
 
    </details>
 
-2. změň barvu textu pro všechny texty kromě nadpisu
+2. změň barvu pozadí pro všechny texty kromě nadpisu
    <details>
      <summary>řešení</summary>
 
    ```css
    .class1 {
-     color: red;
+      background-color: red;
    }
    ```
 
    </details>
 
-3. změň barvu textu pro text 7
+3. změň barvu pozadí pro text 7
       <details>
         <summary>řešení</summary>
 
    ```css
    a {
-     color: red;
+     background-color: red;
+   }
+   ```
+
+   </details>
+3. změň barvu pozadí pro text 3, text 4, text 5, text 6, text 11
+      <details>
+        <summary>řešení</summary>
+
+   ```css
+   p {
+     background-color: red;
    }
    ```
 
    </details>
 
-4. změň barvu textu pro text 3, text 4, text 5, text 6 a text 7
+4. změň barvu pozadí pro text 3, text 4, text 5, text 6 a text 7
    <details>
      <summary>řešení</summary>
 
    ```css
    .class2.class3 {
-     color: red;
+     background-color: red;
    }
    ```
 
    </details>
 
-5. změň barvu textu pro text 3, text 4, text 5, text 6
+5. změň barvu pozadí pro text 3, text 4, text 5, text 6
    <details>
      <summary>řešení</summary>
 
    ```css
    .class2 p {
-     background: red;
+     background-color: red;
    }
    ```
 
@@ -292,7 +305,7 @@ Pro následující úlohy použijte tento HTML kód:
 
    </details>
 
-9. změň barvu textu pro text 3, text 4, text 5, text 6, text 7, text 9, text 10,
+9. změň barvu pozadí pro text 3, text 4, text 5, text 6, text 7, text 9, text 10,
    <details>
      <summary>řešení</summary>
 
@@ -458,9 +471,105 @@ div {
 ```
 
 ### Odkazy
+```css
+a:link {
+  color: red;
+}
 
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+```
+`a:hover` MUST come after `a:link` and `a:visited` in the CSS definition in order to be effective.
+
+`a:active` MUST come after `a:hover` in the CSS definition in order to be effective.
+
+podtržení 
+```css
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+```
+
+pozadí
+
+```css
+a:link {
+  background-color: yellow;
+}
+
+a:visited {
+  background-color: cyan;
+}
+
+a:hover {
+  background-color: lightgreen;
+}
+
+a:active {
+  background-color: hotpink;
+} 
+```
+odkaz jako tlačítko
+```css
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+```
 ### Seznamy
-
+```css
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+```
 ### Display
-
+z blokového lze udělat inline
+```css
+li {
+  display: inline;
+}
+```
+z inline lze udělat blokového 
+```css
+a {
+  display: block;
+}
+```
 ### Navbar
+vytvořte navigační menu
