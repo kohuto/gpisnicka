@@ -274,11 +274,11 @@ Prvkem může být cokoliv, třeba další seznam:
 <ul>
   <li>prvek 1</li>
   <li>prvek 2</li>
-  <li>
+  <li>prvek 3
     <ul>
-      <li>prvek 1</li>
-      <li>prvek 2</li>
-      <li>prvek 3</li>
+      <li>podprvek 1</li>
+      <li>podprvek 2</li>
+      <li>podprvek 3</li>
     </ul>
   </li>
 </ul>
