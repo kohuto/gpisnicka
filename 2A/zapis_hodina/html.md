@@ -335,8 +335,10 @@ V celém html dokumentu nesmí být dvě stejná `id`. Syntax vypadá takto:
 občas potřebujeme více částí naší webové stránky (např více odstavců) spojit do jedné "části", protože patří logicky k sobě. Můžeme je strčit do pomyslného "kontejneru". Takovým kontejnerem je v HTML tag `<div>`
 ```html
 <div>
+  <h1>Nadpis</h1>
   <p>odstavec<p>
   <p>odstavec<p>
   <p>odstavec<p>
+  <a href="youtube.com">odkaz</a>
 <div>
 ```
