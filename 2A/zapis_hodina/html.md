@@ -283,7 +283,19 @@ Prvkem může být cokoliv, třeba další seznam:
   </li>
 </ul>
 ```
-
+HTML kód níže není správný (dokonce ani neprojde HTML validátorem!). Každý prvek v seznamu musí začínat a končit tagem `<li>`. Ovšem seznam podprvků není ohraničený tagem `<li>` (tudíž není prvek vnějšího seznamu).
+```html
+<ul>
+  <li>prvek 1</li>
+  <li>prvek 2</li>
+  <ul>
+      <li>podprvek 1</li>
+      <li>podprvek 2</li>
+      <li>podprvek 3</li>
+  </ul>
+  <li>prvek 3</li>
+</ul>
+```
 ### Block & inline elementy
 
 - block elementy
