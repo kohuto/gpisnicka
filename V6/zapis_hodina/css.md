@@ -215,7 +215,7 @@ Pro následující úlohy použijte tento HTML kód:
 
    ```css
    .class1 {
-      background-color: red;
+     background-color: red;
    }
    ```
 
@@ -232,7 +232,8 @@ Pro následující úlohy použijte tento HTML kód:
    ```
 
    </details>
-3. změň barvu pozadí pro text 3, text 4, text 5, text 6, text 11
+
+4. změň barvu pozadí pro text 3, text 4, text 5, text 6, text 11
       <details>
         <summary>řešení</summary>
 
@@ -244,7 +245,7 @@ Pro následující úlohy použijte tento HTML kód:
 
    </details>
 
-4. změň barvu pozadí pro text 3, text 4, text 5, text 6 a text 7
+5. změň barvu pozadí pro text 3, text 4, text 5, text 6 a text 7
    <details>
      <summary>řešení</summary>
 
@@ -256,7 +257,7 @@ Pro následující úlohy použijte tento HTML kód:
 
    </details>
 
-5. změň barvu pozadí pro text 3, text 4, text 5, text 6
+6. změň barvu pozadí pro text 3, text 4, text 5, text 6
    <details>
      <summary>řešení</summary>
 
@@ -268,7 +269,7 @@ Pro následující úlohy použijte tento HTML kód:
 
    </details>
 
-6. změň barvu pozadí pro text 5, text 6 a text 7
+7. změň barvu pozadí pro text 5, text 6 a text 7
    <details>
      <summary>řešení</summary>
 
@@ -281,7 +282,7 @@ Pro následující úlohy použijte tento HTML kód:
 
    </details>
 
-7. změň barvu pozadí pro text 3 a text 4
+8. změň barvu pozadí pro text 3 a text 4
    <details>
      <summary>řešení</summary>
 
@@ -293,7 +294,7 @@ Pro následující úlohy použijte tento HTML kód:
 
    </details>
 
-8. změň barvu pozadí pro text 9 a text 10
+9. změň barvu pozadí pro text 9 a text 10
    <details>
      <summary>řešení</summary>
 
@@ -305,18 +306,18 @@ Pro následující úlohy použijte tento HTML kód:
 
    </details>
 
-9. změň barvu pozadí pro text 3, text 4, text 5, text 6, text 7, text 9, text 10,
-   <details>
-     <summary>řešení</summary>
+10. změň barvu pozadí pro text 3, text 4, text 5, text 6, text 7, text 9, text 10,
+    <details>
+      <summary>řešení</summary>
 
-   ```css
-   .class2,
-   .class6 {
-     background-color: red;
-   }
-   ```
+    ```css
+    .class2,
+    .class6 {
+      background-color: red;
+    }
+    ```
 
-   </details>
+    </details>
 
 ### Komentář
 
@@ -471,6 +472,7 @@ div {
 ```
 
 ### Odkazy
+
 ```css
 a:link {
   color: red;
@@ -491,11 +493,13 @@ a:active {
   color: blue;
 }
 ```
+
 `a:hover` MUST come after `a:link` and `a:visited` in the CSS definition in order to be effective.
 
 `a:active` MUST come after `a:hover` in the CSS definition in order to be effective.
 
-podtržení 
+podtržení
+
 ```css
 a:link {
   text-decoration: none;
@@ -531,11 +535,14 @@ a:hover {
 
 a:active {
   background-color: hotpink;
-} 
+}
 ```
+
 odkaz jako tlačítko
+
 ```css
-a:link, a:visited {
+a:link,
+a:visited {
   background-color: white;
   color: black;
   border: 2px solid green;
@@ -545,12 +552,15 @@ a:link, a:visited {
   display: inline-block;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   background-color: green;
   color: white;
 }
 ```
+
 ### Seznamy
+
 ```css
 ul {
   list-style-type: none;
@@ -558,18 +568,63 @@ ul {
   padding: 0;
 }
 ```
+
 ### Display
+
 z blokového lze udělat inline
+
 ```css
 li {
   display: inline;
 }
 ```
-z inline lze udělat blokového 
+
+z inline lze udělat blokového
+
 ```css
 a {
   display: block;
 }
 ```
+
+### Overflow
+
+V případě, že je obsah elementu tak velký, že se do elementu nevleze, tak vlastnost `overflow` specifikuje, jak se má obsah zobrazit.
+
+```css
+div {
+  background-color: coral;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  /* overflow: visible; */
+  /* overflow: scroll; */
+}
+```
+
+### Float
+
+```html
+<div class="box">
+  <p>text 1</p>
+</div>
+<div class="box">
+  <p>text 2</p>
+</div>
+<div class="box">
+  <p>text 3</p>
+</div>
+```
+
+```css
+.box {
+  border: solid 2px;
+  float: left;
+  width: 20%;
+  padding: 5%;
+}
+```
+
 ### Navbar
+
 vytvořte navigační menu
