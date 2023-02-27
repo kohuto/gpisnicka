@@ -628,3 +628,29 @@ div {
 ### Navbar
 
 vytvořte navigační menu
+
+```html
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+```
+
+```css
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 15px;
+}
+```
