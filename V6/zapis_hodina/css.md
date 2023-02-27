@@ -625,6 +625,21 @@ div {
 }
 ```
 
+### Align
+
+```html
+<div class="center">
+  <p>This text is centered.</p>
+</div>
+```
+
+```css
+.center {
+  text-align: center;
+  border: 3px solid green;
+}
+```
+
 ### Navbar
 
 vytvořte navigační menu
