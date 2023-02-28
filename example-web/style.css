@@ -95,16 +95,6 @@
     background-image: url("./images/Business-landscape.jpg");
     background-repeat: no-repeat;
   }
-  
-  .fakeimg5{
-    background-image: url("./images/0x0.jpg");
-    background-repeat: no-repeat;
-  }
-  
-  .fakeimg6{
-    background-image: url("./images/Tailwind-CSS-vs.-Bootstrap.jpeg");
-    background-repeat: no-repeat;
-  }
 
   /* Footer */
   .footer {
@@ -112,7 +102,6 @@
     text-align: center;
     background: #ddd;
   }
-
 
   .footer {
     background-color: #f2f2f2;
@@ -137,6 +126,33 @@
   
   
   
+   /* Basic styles for the post */
+   .post {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Styles for the post heading */
+  .post h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Styles for the post image */
+  .post img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Styles for the post text */
+  .post p {
+    margin-bottom: 0;
+  }
   
   
   
