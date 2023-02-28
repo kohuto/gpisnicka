@@ -14,7 +14,10 @@
 10. [Odkazy](#odkazy)
 11. [Seznamy](#seznamy)
 12. [Display](#display)
-13. [Navigační menu](#navbar)
+13. [Overflow](#overflow)
+14. [Float](#float)
+15. [Align](#align)
+16. [Navigační menu](#navbar)
 
 ### CSS
 
