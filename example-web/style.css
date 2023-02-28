@@ -4,7 +4,7 @@
   
   /* Style the body */
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
   }
   
@@ -12,9 +12,12 @@
   .header {
     padding: 80px;
     text-align: center;
-    background: #1abc9c;
-    color: white;
+    position: relative;
+    /*background: #1abc9c;*/
+    color: rgb(29, 29, 29);
+    background-image: url("./images/sun-rays-mountain-landscape-5721010.jpg");
   }
+
   
   /* Increase the font size of the heading */
   .header h1 {
@@ -84,10 +87,13 @@
   }
   
   /* Fake image, just for this example */
-  .fakeimg {
-    background-color: #aaa;
+  .fakeimg1, .fakeimg2, .fakeimg3, .fakeimg4, .fakeimg5, .fakeimg6 {
     width: 100%;
+    min-height: 300px;
     padding: 20px;
+    height: auto;
+    background-image: url("./images/Business-landscape.jpg");
+    background-repeat: no-repeat;
   }
   
   /* Footer */
