@@ -590,6 +590,14 @@ a {
 }
 ```
 
+elementy lze pomocí `display` schovat
+
+```css
+.div {
+  display: none;
+}
+```
+
 ### Overflow
 
 V případě, že je obsah elementu tak velký, že se do elementu nevleze, tak vlastnost `overflow` specifikuje, jak se má obsah zobrazit.
@@ -652,23 +660,13 @@ vytvořte navigační menu
   <li><a href="#home">Home</a></li>
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+  <li>
+    <a href="#about">About</a>
+    <div class="dropdown-content">
+      <a href="#">Project</a>
+      <a href="#">Hobbies</a>
+      <a href="#">Friends</a>
+    </div>
+  </li>
 </ul>
-```
-
-```css
-ul {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #dddddd;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  padding: 15px;
-}
 ```
