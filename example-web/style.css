@@ -10,18 +10,14 @@
   
   /* Header/logo Title */
   .header {
-    padding: 80px;
+    padding: 110px;
     text-align: center;
-    position: relative;
-    /*background: #1abc9c;*/
-    color: rgb(29, 29, 29);
     background-image: url("./images/sun-rays-mountain-landscape-5721010.jpg");
   }
 
-  
   /* Increase the font size of the heading */
   .header h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
   
   /* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
@@ -29,7 +25,6 @@
     overflow: hidden;
     background-color: #333;
     position: sticky;
-    position: -webkit-sticky;
     top: 0;
   }
   
@@ -63,16 +58,12 @@
   
   /* Column container */
   .row {  
-    display: -ms-flexbox; /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
   }
   
   /* Create two unequal columns that sits next to each other */
   /* Sidebar/left column */
   .side {
-    -ms-flex: 30%; /* IE10 */
     flex: 30%;
     background-color: #f1f1f1;
     padding: 20px;
@@ -80,43 +71,25 @@
   
   /* Main column */
   .main {   
-    -ms-flex: 70%; /* IE10 */
     flex: 70%;
     background-color: white;
     padding: 20px;
-  }
-  
-  /* Fake image, just for this example */
-  .fakeimg1, .fakeimg2, .fakeimg3, .fakeimg4, .fakeimg5, .fakeimg6 {
-    width: 100%;
-    min-height: 300px;
-    padding: 20px;
-    height: auto;
-    background-image: url("./images/Business-landscape.jpg");
-    background-repeat: no-repeat;
   }
 
   /* Footer */
   .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #474747;
   }
 
-  .footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
   /* Center the text */
   .footer p {
     text-align: center;
-  }
-  
-  /* Set the font size and color */
-  .footer p {
+    
+    /* Set the font size and color */
     font-size: 14px;
-    color: #555;
+    color: #d8d8d8;
   }
   
   /* Set the link color */
@@ -124,15 +97,12 @@
     color: #008080;
   }
   
-  
-  
    /* Basic styles for the post */
    .post {
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
 
   /* Styles for the post heading */
@@ -142,22 +112,11 @@
   }
 
   /* Styles for the post image */
-  .post img {
-    display: block;
+   img {
     max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
-  /* Styles for the post text */
-  .post p {
-    margin-bottom: 0;
-  }
-  
-  
-  
-
-  
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) {
     .row {   
