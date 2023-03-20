@@ -2,7 +2,7 @@
 
 ## Přehled
 
-1. [Bootsrap](#bootstrap)
+1. [Bootstrap](#bootstrap)
 2. [Navigančí menu](#navigační-menu)
 3. [Jumbotron](#jumbotron)
 4. [Tlačítko](#tlačítko)
