@@ -340,7 +340,7 @@ Vytvořit tlačítko pomocí Bootstrapu je velice jednoduché.
 Zde je ukázka, jak lze vytvořit Carousel
 
 ```html
-<div class="container mt-5">
+<div class="container">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -388,7 +388,8 @@ Třídy `container`, `mt-5`, `row`, `col-md-4`, `btn` a `btn-primary` jsme již 
 - `card-text` definuje popisek karty
 
 ```html
-<div class="container mt-5">
+<div class="container">
+  <h1>My portfolio</h1>
   <div class="row">
     <div class="col-md-4">
       <div class="card">
