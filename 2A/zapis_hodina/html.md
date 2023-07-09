@@ -275,7 +275,8 @@ Prvkem může být cokoliv, třeba další seznam:
 <ul>
   <li>prvek 1</li>
   <li>prvek 2</li>
-  <li>prvek 3
+  <li>
+    prvek 3
     <ul>
       <li>podprvek 1</li>
       <li>podprvek 2</li>
@@ -284,19 +285,22 @@ Prvkem může být cokoliv, třeba další seznam:
   </li>
 </ul>
 ```
+
 HTML kód níže není správný (dokonce ani neprojde HTML validátorem!). Každý prvek v seznamu musí začínat a končit tagem `<li>`. Ovšem seznam podprvků není ohraničený tagem `<li>` (tudíž není prvek vnějšího seznamu).
+
 ```html
 <ul>
   <li>prvek 1</li>
   <li>prvek 2</li>
   <ul>
-      <li>podprvek 1</li>
-      <li>podprvek 2</li>
-      <li>podprvek 3</li>
+    <li>podprvek 1</li>
+    <li>podprvek 2</li>
+    <li>podprvek 3</li>
   </ul>
   <li>prvek 3</li>
 </ul>
 ```
+
 ### Block & inline elementy
 
 - block elementy
@@ -333,13 +337,21 @@ V celém html dokumentu nesmí být dvě stejná `id`. Syntax vypadá takto:
 ```
 
 ### Kontejner
+
 občas potřebujeme více částí naší webové stránky (např více odstavců) spojit do jedné "části", protože patří logicky k sobě. Můžeme je strčit do pomyslného "kontejneru". Takovým kontejnerem je v HTML tag `<div>`
+
 ```html
 <div>
   <h1>Nadpis</h1>
-  <p>odstavec<p>
-  <p>odstavec<p>
-  <p>odstavec<p>
-  <a href="youtube.com">odkaz</a>
-<div>
+  <p>odstavec</p>
+  <p></p>
+  <p>odstavec</p>
+  <p></p>
+  <p>odstavec</p>
+  <p>
+    <a href="youtube.com">odkaz</a>
+  </p>
+
+  <div></div>
+</div>
 ```
