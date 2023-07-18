@@ -44,7 +44,7 @@ Abychom mohli psát programy v pythonu, je potřeba nainstalovat interpreter pro
 
 programy budeme psát ve Visual Studiu Code (VS code). VS code je potřeba nainstalovat nainstalovat do počítače z [oficiálních stránek](https://code.visualstudio.com/).
 
-V momentě kdy máte nainstalované VS code, je potřeba nainstalovat
+V momentě kdy máte nainstalované VS code, je potřeba nainstalovat ještě rozšíření ve VS code. V sekci `extension` vyhledejte `python` a vyberte první možnost (viz obrázek):
 
 ## Virtuální prostředí
 
