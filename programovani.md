@@ -145,7 +145,7 @@ Nic se nestalo (to je správně!). Python si vytvořil _proměnnou_ s _názvem_ 
 
 Lze si to představit jako krabičku. Text na krabičce je _název_ proměnné, zatímco to, co dáme dovnitř krabičky je _hodnota_ proměnné:
 
-![variable as box](images\variableasbox.jpg)
+![variable as box](images/variableasbox.jpg)
 
 ### Úloha 2
 
