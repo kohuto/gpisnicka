@@ -46,7 +46,7 @@ programy budeme psát ve Visual Studiu Code (VS code). VS code je potřeba nains
 
 V momentě kdy máte nainstalované VS code, je potřeba nainstalovat ještě rozšíření ve VS code. V sekci `extension` vyhledejte `python` a vyberte první možnost (viz obrázek):
 
-![vs code extension](images\vscodeextension.png)
+![vs code extension](images/vscodeextension.png)
 
 Program lze spustit bud pomocí `ctrl+F5` nebo tlačítkem `run python file` v pravém horním rohu.
 
@@ -323,6 +323,155 @@ Zaplatíš 159.2 korun
 
 Jakou výslednou cenu program vypíše pro výrobek, jehož původní cena byla 399 korun, jestliže sleva činí 30 %?
 
+## Kreslení
+
+Doposud programy počítaly a vypisovaly textové zprávy. Nyní zkusíme kreslit obrázky. Postupuj takto:
+
+1. Vytvoř následující program:
+
+```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+```
+
+2. Program spusť – na obrazovce uvidíš nové okno.
+3. Zjisti, zda se dá okno posouvat, měnit jeho velikost. Nakonec toto nové okno zavři.
+   program vyrobil grafickou plochu `canvas`.
+
+### Úkol 1
+
+Přidej do programu nový příkaz:
+
+```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+canvas.create_rectangle(50, 70, 220, 150)
+```
+
+příkaz vykreslí obdelník.
+
+### Úkol 2
+
+V závorkách příkazu `canvas.create_rectangle( , , , )` jsou 4 čísla. Zkus je postupně měnit. Program pokaždé spusť, abys viděl, co nakreslí:
+
+```python
+canvas.create_rectangle(0, 0, 220, 150)
+canvas.create_rectangle(0, 0, 50, 50)
+canvas.create_rectangle(0, 0, 250, 50)
+canvas.create_rectangle(20, 10, 250, 50)
+canvas.create_rectangle(20, 10, 50, 250)
+```
+
+### Jak fungují souřadnice v tkinteru
+
+Souřadnice fungují v tkinter trochu netradičně:
+
+![coordinates](images\canvas_coordinates.png)
+
+V matematice jsme zvyklí, že střed je "uprostřed". Zde ale leží bod se souřadnicemi $[0, 0]$ v levém horním rohu. Osa $x$ jde zleva doprava. Osa $y$ jde shora dolů (čím větší číslo, tím níže).
+
+V příkazu `canvas.create_rectangle(x1, y1, x2, y2)` píšeme do závorek souřadnice protilehlých vrcholů obdélníku:
+
+![rectangle](images\rectangle_coord_1.png)
+
+Tyto souřadnice vrcholů bychom mohli znázornit na souřadnicových osách následujícím způsobem:
+
+![rectangle](images\rectangle_coord_2.png)
+
+### Úkol 3
+
+Nakresli obdélník, který má souřadnice
+protilehlých vrcholů $[50, 30]$ a $[300, 200]$.
+
+### Úkol 4
+
+Nakresli obdélník, který má jeden vrchol na souřadnicích $[200, 100]$, jeho šířka je 60 a výška 140.
+
+### Úkol 5
+
+Nakresli dva čtverce se stranami délky 80 (pozici čtverců zvol podle uvážení):
+
+![two squares](images/twosquares.png)
+
+### Úkol 6
+
+Nakresli dva velké čtverce – jeden se stranou
+délky 100 a druhý 150. Čtverce budou mít společný střed jako na následujícím obrázku:
+
+![inside squares](images/inside%20squares.png)
+
+### Úkol 7
+
+Nakresli ze tří obdélníků o rozměrech 150x50, 100x50
+a 50x50 následující pyramidu:
+
+![pyramid](images/pyramid.png)
+
+### Úkol 8\*
+
+Vytvoř z pěti čtverců následující ornament.
+Rozměry čtverců zvol podle svého uvážení (všechny menší čtverce budou stejně velké):
+
+![ornament](images/ornament.png)
+
+### Úkol 9
+
+Obdélník lze i vybarvit:
+
+```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+canvas.create_rectangle(30, 30, 130, 130, fill='red')
+```
+
+### Úkol 10
+
+Přidej do programu z úkolu 9 další 3 příkazy na kreslení obdélníků, abys dostal následující obrázek:
+
+![four squares](images/foursquares.png)
+
+Další barvy získáš, když místo slova `red` napíšeš `green`, `blue` nebo `yellow`.
+
+### Úkol 11
+
+Vytvoř program, který nakreslí nizozemskou vlajku:
+
+![nizozemi](images/nizozemi.png)
+
+### Úkol 12
+
+Vytvoř program, který nakreslí irskou vlajku s barvou `orange`:
+
+![irsko](images/irsko.png)
+
+### Úkol 13
+
+Následující obrázek vznikl ze čtyř čtverců. První z nich má souřadnice levého horního vrcholu $[50, 50]$. Napiš program, který nakreslí následující obrázek (zvol libovolné barvy):
+
+![overlay squares](images/overlaysquares.png)
+
+### Úkol 14\*
+
+Vytvoř program, který vykreslí norskou vlajku:
+
+![norsko](images/norsko.png)
+
+### Úkol 15\*
+
+Vytvoř nový program, ve kterém uprav následující kód tak, aby
+nakreslil stejný obrázek, ale aby program obsahoval jen 3 příkazy pro kreslení obdélníků:
+
+```python
+canvas.create_rectangle(90, 90, 150, 150, fill='yellow')
+canvas.create_rectangle(150, 90, 210, 150, fill='red')
+canvas.create_rectangle(90, 150, 150, 210, fill='green')
+canvas.create_rectangle(30, 90, 90, 150, fill='red')
+canvas.create_rectangle(90, 30, 150, 90, fill='green')
+```
+
 ## Podprogramy
 
 Doposud jsme psali jen takové příkazy, které počítač znal (`print`, `int`, `str`). Nyní budeme vytvářet své vlastní příkazy – tzv. podprogramy (též funkce).
@@ -449,49 +598,6 @@ else:
 `if ... else ...` je příkaz pro větvení programu. `teplota > 20` je podmínka, podle které se počítač rozhodne, kterou větev dále vykoná. `print('Dnes je teplo.')` je větev `if`. ` print('Dnes je zima.')` je větev `else`.
 
 Když počítač uvidí příkaz `if ... else ...`, nejdříve vyhodnotí podmínku. Když je podmínka splněná, vykoná se příkaz ve větvi `if`, jinak se vykoná příkaz ve větvi `else`.
-
-## Tkinter
-
-`tkinter` je knihovna pro tvorbu GUI.
-
-```python
-import tkinter
-canvas = tkinter.Canvas()
-canvas.pack()
-```
-
-program vyrobil grafickou plochu `canvas`.
-
-Lze vykreslit třeba obdélník:
-
-```python
-import tkinter
-canvas = tkinter.Canvas()
-canvas.pack()
-canvas.create_rectangle(50, 70, 220, 150)
-```
-
-Souřadnice fungují v tkinter trochu netradičně:
-![coordinates](images\canvas_coordinates.png)
-
-V matematice jsme zvyklí, že střed je "uprostřed". Zde ale leží bod se souřadnicemi $[0, 0]$ v levém horním rohu. Osa $x$ jde zleva doprava. Osa $y$ jde shora dolů (čím větší číslo, tím níže).
-
-V příkazu `canvas.create_rectangle(x1, y1, x2, y2)` píšeme do závorek souřadnice protilehlých vrcholů obdélníku:
-
-![rectangle](images\rectangle_coord_1.png)
-
-Tyto souřadnice vrcholů bychom mohli znázornit na souřadnicových osách následujícím způsobem:
-
-![rectangle](images\rectangle_coord_2.png)
-
-Obdélník může být i vybarvený:
-
-```python
-import tkinter
-canvas = tkinter.Canvas()
-canvas.pack()
-canvas.create_rectangle(30, 30, 130, 130, fill='red')
-```
 
 ## Pygame
 
