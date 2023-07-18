@@ -38,9 +38,13 @@ Proč právě Python?
 - kratší programy oproti ostatním jazykům
 - lze pracovat procedurálním způsobem, objektově orientovaným způsobem nebo funkcionálním způsobem.
 
+Abychom mohli psát programy v pythonu, je potřeba nainstalovat interpreter pro python. Instalační balíček stáhněte [zde](https://www.python.org/downloads/).
+
 ## VS code
 
-programy budeme psát ve Visual Studiu Code (VS code)
+programy budeme psát ve Visual Studiu Code (VS code). VS code je potřeba nainstalovat nainstalovat do počítače z [oficiálních stránek](https://code.visualstudio.com/).
+
+V momentě kdy máte nainstalované VS code, je potřeba nainstalovat
 
 ## Virtuální prostředí
 
@@ -67,7 +71,7 @@ cislo = 42    # proměnná číslo s hodnotou 42
 text = "muj_text"    # proměnná text s hodnotou muj_text
 ```
 
-Do proměnné lze dosadit i výraz. Uloží se hodnota výrazu (výsledek):
+Do proměnné lze dosadit i výraz. Uloží se výsledek výrazu:
 
 ```python
 vysledek = 4 * 3    # proměnná výsledek s hodnotou 12
