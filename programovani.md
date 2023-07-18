@@ -46,11 +46,13 @@ programy budeme psát ve Visual Studiu Code (VS code). VS code je potřeba nains
 
 V momentě kdy máte nainstalované VS code, je potřeba nainstalovat ještě rozšíření ve VS code. V sekci `extension` vyhledejte `python` a vyberte první možnost (viz obrázek):
 
+![vs code extension](images\vscodeextension.png)
+
+Program lze spustit bud pomocí `ctrl+F5` nebo tlačítkem `run python file` v pravém horním rohu.
+
 ## Virtuální prostředí
 
-https://code.visualstudio.com/docs/python/environments
-
-projekty tvoříme ve virtuálním prostředí.
+projekty tvoříme ve [virtuálním prostředí](https://code.visualstudio.com/docs/python/environments).
 
 k čemu to je?
 
@@ -62,31 +64,264 @@ Jak vytvořit virtuální prostředí (virtual enviroment - venv)?
 4. vybereme možnost `Venv`
 5. vybereme požadovaný interpretr
 
+## Výpisy
+
+### Úloha 1
+
+Zkusme napsat první program:
+
+```python
+print(1 + 2 + 3)
+```
+
+`print` je [funkce](#podprogramy) (funkcím se budeme věnovat později). To, co napíšeme do závorek se vypíše do konzole.
+
+### Úloha 2
+
+Python dokáže fungovat jako kalkulačka. Jaké budou výsledky následujících výrazů?
+
+```python
+print(123)
+print(42 - 17)
+print(3 + 4 * 5)
+print((3 + 4) * 5)
+print(132 / 11)
+print(1 + 2 * 3 / (5 – 1))
+```
+
+### Úloha 3
+
+Pozor, zápisy musí být správně, jinak se objeví chyba. Co se
+stane, pokud zadáš následující příkazy?
+
+```python
+print(22 + 7 *)
+print(19 - (3 4))
+```
+
+### Úloha 4
+
+Někdy se však i po správném zápise může objevit chybové hlášení. Co se stane, pokud zadáš následující příkaz?
+
+```python
+print(10 / (6 – 2 * 3))
+```
+
+### Úloha 5
+
+Petrovi bylo přesně před dvěma měsíci 16 let. Využij Python jako kalkulačku a spočítej:
+
+1. Kolik je mu nyní přibližně dní?
+2. Kolik je to hodin?
+3. Kolik je to sekund?
+
+Předpokládej, že rok má 365 dní a měsíc má 30 dní.
+
+### Úloha 6
+
+Zjisti, která číslice se vyskytuje nejčastěji ve výsledku výrazu:
+$123456789 * 111111111111111111111$
+
+### Úloha 7
+
+Výpočet $2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2$ je umocnění $2^{10}$. V Pythonu se umocnění zapisuje jako `2 ** 10`.
+
+- Tipni si, kolik číslic bude mít $2^{30}$.
+- Vypočítej pomocí pythonu a ručně spočítej počet číslic ve výsledku.
+
 ## Proměnná
 
-Proměnná se používá pro ukládání hodnot. Zapisujeme vždy jako `název proměnné` = `hodnota proměnné`:
+V matematice je zvykem označovat hodnoty písmeny, například délka strany čtverce $a = 100$ nebo poloměr kruhu $r=4$. To samé můžeš udělat i v Pythonu.
+
+### Úloha 1
+
+Zkus napsat následující program:
 
 ```python
-cislo = 42    # proměnná číslo s hodnotou 42
-text = "muj_text"    # proměnná text s hodnotou muj_text
+a = 100
 ```
 
-Do proměnné lze dosadit i výraz. Uloží se výsledek výrazu:
+Nic se nestalo (to je správně!). Python si vytvořil _proměnnou_ s _názvem_ `a` a přitom si zapamatoval, že má _hodnotu_ 100.
+
+Lze si to představit jako krabičku. Text na krabičce je _název_ proměnné, zatímco to, co dáme dovnitř krabičky je _hodnota_ proměnné:
+
+![variable as box](images\variableasbox.jpg)
+
+### Úloha 2
+
+Zkusme nyní vypsat proměnnou `a`:
 
 ```python
-vysledek = 4 * 3    # proměnná výsledek s hodnotou 12
-x = 5 + 5 - 2    # proměnná x s hodnotou 8
+a = 100
+print(a)
 ```
 
-Do proměnné lze dosadit i jinou proměnnou:
+Vypíše se hodnota uložená v proměnné.
+
+### Úloha 3
+
+Vyzkoušej vytvořit a nastavit i jiné proměnné:
 
 ```python
-x = 3    # v proměnné x je hodnota 3
-y = x    # v proměnné y je hodnota x (hodnota 3)
-z = x - 1    # v proměnné z je hodnota 2
+vyska = 167
+cena = 22 + 7
 ```
 
-## Datový typ
+Zkontroluj, jaké hodnoty se do proměnných uložily.
+
+Proměnných můžeme vytvořit, kolik budeme chtít a později je používat v dalších výpočtech.
+
+### Úloha 3
+
+Definujme tři proměnné:
+
+```python
+a = 100
+vyska = 167
+cena = 29
+```
+
+Co se stane, když bychom chtěli vypsat proměnnou `vek`, kterou jsme zatím nedefinovali?
+
+```python
+print(vek)
+```
+
+### Úloha 4
+
+Proměnné můžeš použít i v matematických zápisech a Python namísto názvu proměnné dosadí její hodnotu. Mějme proměnné `a`, `vyska` a `cena` ze cvičení 3. Urči výsledek následujících příkazů:
+
+```python
+print(190 - vyska)
+print(3 * cena + 10)
+print(cena + vyska)
+```
+
+### Úloha 5
+
+Proměnným můžeme změnit jejich obsah – vyzkoušej:
+
+```python
+cena = 29
+cena = 6 * 7
+print(cena)
+```
+
+### Úloha 5
+
+Změň hodnotu proměnné vyska tak, aby v ní byla tvoje výška v centimetrech.
+
+### Úloha 5
+
+Přiřaď do proměnné `zmrzlina` cenu jedné zmrzliny (například 25 korun). Do proměnné `pocet` přiraď počet kamarádů, kterým chceš koupit po jedné zmrzlině. Za
+použití proměnných sestav přiřazovací příkaz, pomocí kterého se do třetí proměnné `zaplatit` přiřadí celková cena, kterou zaplatíš.
+
+### Úloha 6
+
+V matematice značíme obsah kruhu $S$ a počítáme jej podle vzorce $\pi  r^2$. Obvod kruhu značíme $O$ a počítáme jej podle vzorce $2 \pi  r$. Vytvoř proměnné pro `poloměr`, `obsah` i `obvod` kruhu a přiřaď do nich správné výrazy. Vytvoř si proměnnou `pi` s hodnotou $3.14$.
+
+### Úloha 7
+
+Vyzkoušej, které z následujících názvu lze použít jako název proměnné:
+
+- kuk
+- Ahoj!
+- 1.A
+- prvni_trida
+- cerno-bile
+- OK
+- o0o0o0o
+- asdf
+- věk
+- počet osob
+- trida(3)
+
+## Vypisování
+
+### Úloha 1
+
+Příkaz `print` již známe. Vyzkoušej, co vypíše následující program:
+
+```python
+print('Ahoj, já jsem počítač')
+```
+
+Příkaz `print` slouží na vypisování textů. Text, který se má vypsat, napíšeš mezi apostrofy.
+
+### Úloha 2
+
+Zjisti, co Python vypíše v případě následujících příkazů:
+
+```python
+print(1 + 2 * 3)
+print('1 + 2 * 3')
+print()
+```
+
+### Úloha 3
+
+Příkaz `print` umí vypsat víc věcí – vyzkoušej následující příkazy. Co způsobí čárka v jednotlivých příkazech?
+
+```python
+print('Mám rád', 'kapustu')
+print('Moje oblíbené číslo je', 42)
+print('Do školy jsem šel', 2 * 10, 'minut')
+```
+
+### Úloha 4
+
+V příkazu `print` lze kombinovat i proměnné. Zkus, co vypíše následující program:
+
+```python
+vek = 16
+print('Je mi', vek, 'let')
+```
+
+### Úloha 5
+
+Rozšiř program z úlohy 4 tak, aby navíc vypsal zprávu: _Příští rok mi bude 17 let_.
+
+### Úloha 6
+
+Představ si, že program z úlohy 5 spustí tvůj otec. Vyzkoušej program za něj – dosaď do proměnné věk jeho skutečný věk. Zobrazí se správný výsledek i na druhém řádku svého výstupu? Jestli ne, program oprav.
+
+### Úloha 7
+
+Vytvoř nový program. Na začátku přiřaď do proměnně `penize`, kolik korun máš. Do proměnné `platba` přiřaď cenu nákupu. Použij proměnné a vypiš pomocí nich:
+
+```
+Mám ... korun
+Platím ... korun
+Zbyde mi ... korun
+```
+
+### Úloha 8
+
+Hřiště má šířku 50 metrů a délku 80 metrů. Budeš běhat po obvodě. Vytvoř program, který vypíše, kolik metrů uběhneš po
+7 kolech. Do proměnné `sirka` přiřaď hodnotu 50, do proměnné
+`delka` hodnotu 80 a do proměnné `pocet_kol` hodnotu 7. Vypiš text:
+
+```
+Šířka hřiště je 50 metrů, délka je 80 metrů
+Jedno kolo okolo hřiště je 260 metrů
+Po 7 kolech uběhneš 1820 metrů
+```
+
+Předpokládejme nyní, že šířka je 45 metrů a délka 70 metrů. Přepiš hodnoty v proměnných. Zobrazí program správné
+hodnoty na druhém a na třetím řádku výstupu? Jestli ne, program oprav.
+
+### Úloha 9
+
+Obchod nabízí 20% slevu. Původní cena výrobku byla 199 korun. Napiš program, který vypočítá, kolik zaplatíš. V programu
+použij proměnné `puvodni_cena`, `sleva`, `cena_po_sleve` a pomocí nich vypiš:
+
+```
+Cena alba je 199 korun
+Sleva činí 20 procent
+Zaplatíš 159.2 korun
+```
+
+Jakou výslednou cenu program vypíše pro výrobek, jehož původní cena byla 399 korun, jestliže sleva činí 30 %?
 
 ## Podprogramy
 
