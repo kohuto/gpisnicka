@@ -1020,8 +1020,7 @@ print(4 - 7 < 2 + 1)    # program vypíš true
 
 ### Úkol 2
 
-Vytvoříme program, který nám řekne, zda je teplo nebo
-zima. Do proměnné teplota přiřadíme číslo. Počítač pro teplotu větší než 20 stupňů vypíše, že je teplo. Jinak řekne, že je zima:
+Vytvoříme program, který nám řekne, zda je teplo nebo zima. Do proměnné `teplota` přiřadíme číslo. Počítač pro teplotu větší než 20 stupňů vypíše, že je teplo. Jinak řekne, že je zima:
 
 ```python
 teplota = 25
@@ -1034,6 +1033,10 @@ else:
 `if ... else ...` je příkaz pro větvení programu. `teplota > 20` je podmínka, podle které se počítač rozhodne, kterou větev dále vykoná. `print('Dnes je teplo.')` je větev `if`. ` print('Dnes je zima.')` je větev `else`.
 
 Když počítač uvidí příkaz `if ... else ...`, nejdříve vyhodnotí podmínku. Když je podmínka splněná, vykoná se příkaz ve větvi `if`, jinak se vykoná příkaz ve větvi `else`.
+
+### Úkol 3
+
+Změň předchozí program hodnotu proměnné `teplota` z 25 na 10. Program spusť. Co se vypíše?
 
 ## Pygame
 
