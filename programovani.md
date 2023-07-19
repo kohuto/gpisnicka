@@ -1038,6 +1038,39 @@ Když počítač uvidí příkaz `if ... else ...`, nejdříve vyhodnotí podmí
 
 Změň předchozí program hodnotu proměnné `teplota` z 25 na 10. Program spusť. Co se vypíše?
 
+### Úkol 4
+
+Uprav přechozé program tak, aby pro:
+
+- záporné teploty vypsal _Vezmi si rukavice_,
+- jinak vypsal _Rukavice nejsou potřeba_.
+
+Ověř, že program funguje správně pro kladné i záporné hodnoty. Co tvůj program vypíše pro 0?
+
+### Úkol 5
+
+Vytvoř program, který určí cenu dopisu. Na začátku programu přiřaď do proměnné `hmotnost` číslo s hmotností dopisu. Použij příkaz pro větvení programu, aby pro dopis s hmotností:
+
+- větší než 50 vypsal Zaplatíš 55 korun,
+- jinak vypsal Zaplatíš 47 korun.
+
+Ověř, že program počítá správně cenu dopisu pro hmotnosti: 30, 50 a 100.
+
+### Úkol 6
+
+Máme krabici ve tvaru obdélníku s délkami stran, které jsou uložené v proměnných `a`, `b`. Krabici chceme položit vždy naležato. Vytvoř program, ve kterém na začátku přiřadíš do proměnných `a`, `b` rozměry krabice. Program nakreslí krabici tak, aby vždy ležela delší stranou na zemi:
+
+![rectangles](images/rectangleonlongside.png)
+
+### Úkol 7
+
+Mobilní operátor počítá platby za přenesená data podle následujících pravidel:
+
+- když za den přeneseš méně než 10 megabajtů dat, zaplatíš za každý megabajt 2 koruny,
+- jinak zaplatíš za celý den 20 korun.
+
+Napiš program, ve kterém do proměnné `megabajty` přiřadíš počet přenesených megabajtů dat za jeden den. Použij příkaz větvení na to, abys do proměnné `cena` přiřadil vyúčtovanou cenu.
+
 ## Pygame
 
 https://www.pygame.org/news
