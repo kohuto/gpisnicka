@@ -472,9 +472,58 @@ canvas.create_rectangle(30, 90, 90, 150, fill='red')
 canvas.create_rectangle(90, 30, 150, 90, fill='green')
 ```
 
+### Úkol 16
+
+Opiš do něj kód uvedený níže. V proměnných `x`, `y` jsou uložené souřadnice levého horního rohu čtverce. Dokonči kód programu tak, abys pomocí uvedených proměnných nakreslil čtverec se stranou délky
+100:
+
+```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+x = 100
+y = 70
+canvas.create_rectangle(x, y, x + , , fill='yellow')
+```
+
+### Úkol 17
+
+Vytvoř program, který použije čtyři proměnné `x`, `y`, `sirka`, `vyska` a na jejich základě nakreslí obdélník s levým horním rohem na
+souřadnicích `x`, `y`, danou šířkou a výškou. Barvu si zvol podle svého.
+
+### Úkol 18
+
+Vytvoř program, který nakreslí následující čtverce:
+
+![three squares](images/threesquares.png)
+
+Tyto čtverce mají společný levý horní roh, jehož souřadnice jsou v proměnných `x`, `y`. Čtverce se postupně zmenšují tak, že červený má délku strany 100, modrý 70 a tmavomodrý 40.
+
+### Úkol 19
+
+Vytvoř program, který nakreslí tři vzájemně se dotýkající obdélníky:
+
+![three rectangles](images/threerectangles.png)
+
+Souřadnice levého horního rohu prvního obdélníku jsou uložené v proměnných `x`, `y`. Všechny tři obdélníky mají stejnou šířku a výšku – tyto rozměry jsou uložené v proměnných `a`, `b`.
+
+Bude program fungovat správně i v případě, že hodnotu proměnné `a` zvětšíš o 20 a hodnotu proměnné `y` zvětšíš o 10? Jestli ne, program oprav.
+
+### Úkol 20
+
+Pět barevných čtverců leží těsně vedle sebe na jedné podložce. Velikosti stran jsou postupně 100, 80, 60, 40, 20. Souřadnice levého dolního rohu prvního čtverce jsou v proměnných `x`, `y`. Napiš program, který vykreslí tyto čtverce:
+
+![sequence](images/sequencesquares.png)
+
 ## Podprogramy
 
-Doposud jsme psali jen takové příkazy, které počítač znal (`print`, `int`, `str`). Nyní budeme vytvářet své vlastní příkazy – tzv. podprogramy (též funkce).
+Doposud jsme psali jen takové příkazy, které počítač znal (`print`, `create_rectangle`, `Canvas`). Nyní budeme vytvářet své vlastní příkazy – tzv. podprogramy (též funkce).
+
+### Úkol 1
+
+Jak vytvořit vlastní podprogram?
+
+1. Opiš následující kód:
 
 ```python
 def vypis_text():
@@ -482,10 +531,29 @@ def vypis_text():
     print('** Python **')
     print('************')
 ```
+
+2. Program spusť – pokud se nic nestalo, je to v pořádku.
+3. Vlož ještě příkaz `vypis_text()`:
+
+```python
+def vypis_text():
+    print('************')
+    print('** Python **')
+    print('************')
+
+vypis_text()
+```
+
+4. Pokud nyní program spustíš, vypíše se text.
 
 Slovem `def` začíná definice tvého nového příkazu – podprogramu. `vypiš_text` je název podprogramu (podobně jako `print` je název pro podprogram, který vypisuje text). Tři příkazy `print` se nazvývají tělo programu.
 
-Když bychom tento program spustili, nic se nestane. Tímto způsobem jsme pouze počítač naučili nový příkaz `vypiš_text`. Nyní ho musíme ještě zavolat:
+Po spuštění programu se počítač naučil nový příkaz `vypis_text`. Počítač ho zatím
+nevykonal, jen se ho naučil. Skupinu příkazů `print` – tedy tělo podprogramu `vypis_text` – počítač vykoná až tehdy, když narazí na příkaz `vypis_text()`. Takovýto zápis se nazývá volání podprogramu.
+
+### Úkol 2
+
+Přidej do programu další příkazy – pozor, tyto příkazy nesmí mít odsazení, protože už nepatří do podprogramu:
 
 ```python
 def vypis_text():
@@ -493,45 +561,183 @@ def vypis_text():
     print('** Python **')
     print('************')
 
-vypiš_text()    # volání podprogramu
+print('Vítej!')
+vypis_text()
+print()
+vypis_text()
+print('to je konec')
 ```
 
-_poznámka: závorky za `vypiš_text` jsou velice důležité_
+V tomto programu se nejdříve definoval podprogram `vypis_text`. Za ním následují příkazy `print` a příkazy pro volání podprogramu `vypis_text`. Python zobrazil svoji
+vizitku dvakrát, protože v programu jsou dvě volání podprogramu `vypis_text`. Podprogram tedy můžeme volat i vícekrát.
 
-Podprogram můžeme volat, kolikrát budeme chtít:
+### Úkol 3
+
+Změň předchozí program tak, aby počítač vypsal:
+
+```
+Hello!
+*****************
+** I am Python **
+*****************
+How are you?
+*****************
+** I am Python **
+*****************
+I am fine.
+*****************
+** I am Python **
+*****************
+The end
+```
+
+### Úkol 4
+
+Vytvoř nový program, který bude obsahovat následující kód:
 
 ```python
-def vypis_text():
-    print('************')
-    print('** Python **')
-    print('************')
-
-vypiš_text()    # 1. volání podprogramu
-vypiš_text()    # 2. volání podprogramu
-vypiš_text()    # 3. volání podprogramu
+refren()
+refren()
+print()
+print('když já jím dám ovsa')
+print('oni skáčou hopsa')
+print()
+refren()
+refren()
+def refren():
+print('já mám koně vraný koně')
+print('to jsou koně mí')
 ```
 
-Pozor! Podprogram musí být první definovaný a až poté ho můžeme volat. Následující kód nebude fungovat, protože první se snažíme podprogram volat a až poté ho definujeme:
+Když program spustíš, Python vypíše chybové hlášení. Python tím říká, že na 1. řádku programu není možné volat podprogram `refren`, protože tento podprogram ještě nebyl definován. Uprav program tak, aby se úryvek písně vypsal správně.
+
+### Úkol 5
+
+Ve svém programu můžeš definovat i více podprogramů. Vytvoř nový program a definuj v něm tři podprogramy. Každý z nich zobrazí jeden z následujících obrázků:
+
+- podprogram noha nakreslí takovouto nohu (dole jsou dvě podtržítka vlevo i vpravo):
+
+```
+  |
+__|__
+```
+
+- podprogram obdelnik nakreslí takovýto obdélník:
+
+```
+#####
+#   #
+#####
+```
+
+- podprogram trojúhelník nakreslí takovýto trojúhelník:
+
+```
+  *
+ ***
+*****
+```
+
+Potom zkus pomocí vytvořených podprogramů zobrazit následující obrázky:
+
+```
+  *
+ ***
+*****
+  *
+ ***
+*****
+  |
+__|__
+```
+
+```
+  *
+ ***
+*****
+#####
+#   #
+#####
+  |
+__|__
+```
+
+```
+#####
+#   #
+#####
+  |
+__|__
+#####
+#   #
+#####
+```
+
+```
+toto je noha:
+  |
+__|__
+toto je obdélník:
+#####
+#   #
+#####
+toto je trojúhelník:
+  *
+ ***
+*****
+```
+
+### Úkol 6
+
+Vytvoř nový program a vyzkoušej následující kód:
 
 ```python
-vypiš_text()    # volání podprogramu
-
-def vypis_text():
-    print('************')
-    print('** Python **')
-    print('************')
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+def kresli():
+    canvas.create_rectangle(10, 20, 30, 40, fill='red')
+kresli()
 ```
+
+### Úkol 7
+
+Vytvoř nový program a v něm definuj podprogram `kriz`, který po zavolání nakreslí červený kříž:
+
+![cross](images/cross.png)
+
+### Úkol 8\*
+
+Vytvoř nový program, který bude schopen nakreslit robota. V programu budou čtyři podprogramy – `hlava`, `ruce`, `nohy`, `telo` – a každý z nich bude schopen
+nakreslit část robota. Když je zavoláš v následujícím pořadí:
+
+```python
+hlava()
+ruce()
+nohy()
+telo()
+```
+
+nakreslí se celý robot jako na obrázku:
+
+![robot](images/robot.png)
 
 ## Náhoda
 
-V pythonu můžeme generovat náhodná čísla následujícím způsobem:
+### Úkol 1
+
+Zkus spustit následující program:
 
 ```python
 import random
 print(random.randint(1, 6))
 ```
 
-Program vypíše náhodné číslo od 1 do 6. Hodnoty lze samozřejmě ukládat do proměnné:
+Program vypíše náhodné číslo od 1 do 6.
+
+### Úkol 2
+
+Náhodné číslo si můžeš zapamatovat – napiš program s následujícím kódem a spusť jej (i vícekrát):
 
 ```python
 import random
@@ -539,41 +745,269 @@ n = random.randint(1, 6)
 print('Na kostce padla', n)
 ```
 
-## Opakování
+### Úkol 3
 
-Když budeme chtít pomocí příkazu `print` vypsat
-text _Těším se na prázdniny_ pětkrát pod sebe, můžeme to udělat takto:
+Uprav program z úkolu 2 – vytvoř podprogram `hod_kostkou` a doplň kód programu tak, aby se simulovalo deset hodů za sebou:
 
 ```python
-print("Těším se na prázdniny")
-print("Těším se na prázdniny")
-print("Těším se na prázdniny")
-print("Těším se na prázdniny")
-print("Těším se na prázdniny")
+import random
+def hod_kostkou():
+    n = random.randint(1, 6)
+    print('Na kostce padla', n)
+hod_kostkou()
 ```
 
-Raději ale použijeme opakování (tzv. cyklus):
+### Úkol 4
+
+Uprav program z úkolu 3, aby počítač simuloval jeden hod na dvacetistěnné kostce.
+
+### Úkol 5\*
+
+Máme _sudou_ hrací kostku, která má na stěnách čísla 2, 4, 6, 8, 10, 12. Uprav program z úkolu 3, aby simuloval hod takovou kostkou.
+
+### Úkol 6\*
+
+Máme _lichou_ hrací kostku, která má na stěnách čísla 1, 3, 5, 7, 9, 11. Uprav předchozí program, aby simuloval hod takovou kostkou.
+
+### Úkol 7\*
+
+Máme _exotickou_ hrací kostku, která má na stěnách čísla 1, 4, 9, 16, 25, 36. Uprav předchozí program, aby simuloval hod takovou kostkou.
+
+### Úkol 8
+
+Vytvoř program, který vygeneruje náhodný PIN pro tvůj mobil. Do čtyř proměnných `a`, `b`, `c`, `d` přiřaď náhodná čísla od 0 po 9 a potom je jediným příkazem
+`print` vypiš. Výpis může vypadat například takto:
+
+```
+Tvůj nový PIN je 1 3 7 3
+```
+
+### Úkol 9
+
+Vytvoř nový program – generátor náhodných dat (pro jednoduchost nechť má každý měsíc 30 dní). Po spuštění program vypíše informaci s vygenerovaným náhodným datem, například:
+
+```
+Pokoj si uklidím 30 . 2 . 2025
+```
+
+### Úkol 10
+
+Vytvoř nový program, ve kterém pomocí následujícího kódu
+nakreslíš náhodně umístěný čtverec:
+
+```python
+import tkinter
+import random
+canvas = tkinter.Canvas()
+canvas.pack()
+def nahodny_ctverec():
+    x = random.randint(10, 300)
+    y = random.randint(10, 200)
+    canvas.create_rectangle(x, y, x + 50, y + 50,fill='orange')
+nahodny_ctverec()
+```
+
+### Úkol 11
+
+Doplň do předchozího programu příkazy tak, aby program nakreslil pět náhodných čtverců.
+
+### Úkol 12
+
+Uprav předchozí program tak, aby se čtverce kreslily nejen na náhodných pozicích, ale také aby měl každý čtverec náhodnou velikost z intervalu od 10 do 100.
+
+## Kreslení textu
+
+### Úkol 1
+
+Pro psaní textů do grafické plochy lze použít následující příkaz:
+
+```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+canvas.create_text(150, 50, text='posílám pozdrav z grafické plochy')
+```
+
+### Úkol 2
+
+Vytvoř program a napiš do něj příkazy, kterými pojmenuješ
+okraje grafické plochy jako na následujícím obrázku (souřadnice odhadni):
+
+![corners](images/corners.png)
+
+### Úkol 3
+
+Vytvoř program, ve kterém vytvoř podprogram `nahodne_cislo`, který na náhodnou pozici v grafické ploše vypíše náhodné šesticiferné číslo, tedy číslo z intervalu od 100000 do 999999.
+
+## Opakování
+
+### Úkol 1
+
+Zaznamenáváme naši GPS pozici. Vytvoř program a v něm podprogram `gps`, který vygeneruje náhodné souřadnice `x`, `y` představující GPS pozici. Na tomto místě nakreslí značku `+` a pod ni vypíše danou pozici – čísla x, y. Po
+deseti zavoláních podprogramu `gps` můžeš dostat například takovýto výsledek:
+
+![gps](images/gps.png)
+
+### Úkol 2
+
+Vytvoř program bez grafické plochy, který pomocí příkazu `print` vypíše text _Těším se na prázdniny_ pětkrát pod sebe.
+
+### Úkol 3
+
+V obou předchozích programech jsi měl vícekrát nakopírované příkazy `gps()` nebo `print()`. Abys je nemusel opakovaně kopírovat, můžeš to zapsat jednodušeji. Uprav kód programu z úkolu 2 následovně:
 
 ```python
 for i in range(5):
     print('Těším se na prázdniny')
 ```
 
-Slovem for začíná příkaz cyklu. Pětka v závorce udává počet zopakování. `print` je tělo cyklu (tělo známe již z podprogramů). `i` je proměnná, do které příkaz `for` postupně dosazuje celá čísla od 0 do 4:
+Zkus místo čísla 5 dát číslo 10 a program znovu spusť. Urči, co je tímto číslem ovlivňováno.
+
+### Úkol 4
+
+Uprav program stejně, jako je uvedeno níže, a spusť jej:
 
 ```python
 for i in range(5):
-    print('opakování:', i)
-
-# program vypíše:
-# opakování: 0
-# opakování: 1
-# opakování: 2
-# opakování: 3
-# opakování: 4
+    print('Těším se na prázdniny')
+    print('=====================')
 ```
 
+Slovem `for` začíná příkaz cyklu. Pětka v závorce udává počet zopakování. Dva příkazy `print` tvoří tělo cyklu (tělo známe již z podprogramů). Příkazy v těle cyklu se vykonají 5x.
+
+### Úkol 5
+
+Je důležité odsadit od kraje příkazy, které tvoří tělo cyklu. Vyzkoušej, co vypíše takto upravený program:
+
+```python
+for i in range(5):
+    print('Těším se na prázdniny')
+    print('=====================')
+```
+
+### Úkol 6
+
+Uprav program z úkolu 1, a opakované volání podprogramu `gps()` zapiš pomocí `for` cyklu.
+
+### Úkol 7
+
+Vytvoř nový program a v něm podprogram `cerveny_ctverec()`. Ten nakreslí na grafickou plochu na náhodné souřadnice červený čtverec se stranou délky 10. Použij `for` cyklus na to, abys nakreslil 2000 červených čtverců.
+
+### Úkol 8
+
+Doplň do předchozího programu podprogram `modry_ctverec()`. Tento podprogram bude kreslit na náhodné souřadnice modrý čtverec se stranou délky 10. Zajisti, aby tělo cyklu obsahovalo volání podprogramu `cerveny_ctverec()` i podprogramu `modry_ctverec()`. Výsledek může vypadat
+například jako na následujícím obrázku:
+
+![thousand](images/thousandsquares.png)
+
+### Úkol 9
+
+Vytvoř nový program, který nakreslí hvězdnou
+oblohu:
+
+![night sky](images/nightsky.png)
+
+Návod:
+
+- Napiš podprogram hvězdička, který nakreslí na náhodnou pozici malý žlutý čtvereček. Velikost jeho strany bude náhodné číslo z rozsahu od 2 do 4.
+- Tmavomodrou oblohu nakresli jako velký obdélník s barvou _navy_.
+- Potom zavolej tisíckrát podprogram hvezdicka.
+
+### Úkol 10
+
+Napiš program, který simuluje hody dvěma kostkami. Zapiš pomocí `for` cyklu pět hodů, kdy se v těle cyklu do dvou proměnných přiřadí dvě náhodná čísla, ta se vypíšou a vypíše se i jejich součet. Výpis může vypadat například takto:
+
+```python
+Na první kostce padlo číslo 4
+Na druhé kostce padlo číslo 3
+Součet obou čísel je 7
+
+Na první kostce padlo číslo 2
+Na druhé kostce padlo číslo 4
+Součet obou čísel je 6
+
+Na první kostce padlo číslo 5
+Na druhé kostce padlo číslo 2
+Součet obou čísel je 7
+
+Na první kostce padlo číslo 3
+Na druhé kostce padlo číslo 1
+Součet obou čísel je 4
+
+Na první kostce padlo číslo 1
+Na druhé kostce padlo číslo 4
+Součet obou čísel je 5
+```
+
+### Úkol 11
+
+Vytvoř nový program, který bude představovat generátor náhodného QR kódu a který bude schopen generovat podobný QR kód jako na obrázku níže:
+
+![qr code](images/qrcode.png)
+
+Obrázek se skládá z velkého počtu černých čtverečků. Každý má délku strany 10 a je nakreslený v jednom náhodně vybraném políčku mřížky, která obsahuje 21x21 políček.
+
+### Úkol 12
+
+Vytvoř program a pomocí následujícího kódu vypiš celá čísla od 0 do 9:
+
+```python
+for i in range(10):
+    print('číslo', i)
+```
+
+Jak to funguje? `i` je proměnná, do které příkaz `for` postupně přiřazuje celá čísla od 0 do 9.
+
+### Úkol 13
+
+Urči, co je potřeba v předchozím programu změnit, aby se vypsala čísla:
+
+1. 0, 1, ... 10 – tedy i číslo 10
+2. 1, 2, ... 10
+3. 2, 4, ... 20
+4. 10, 20, ... 100
+
+### Úkol 14
+
+Vytvoř program, který pomocí `for` cyklu vypíše čísla a jejich druhé mocniny:
+
+```
+0 na druhou je 0
+1 na druhou je 1
+2 na druhou je 4
+3 na druhou je 9
+4 na druhou je 16
+5 na druhou je 25
+6 na druhou je 36
+```
+
+### Úkol 15
+
+Vytvoř program a v něm pomocí cyklu nakresli devět čtverců
+s délkou strany 30. Mezi čtverci bude mezera o velikosti 10. Použij proměnnou `x`, ve které bude uložena x-ová souřadnice levého horního rohu kresleného čtverce. Hodnota této
+proměnné bude v cyklu zvýšena pokaždé o 40.
+
+![square row](images/squarerow.png)
+
+### Úkol 16
+
+Zlatokop našel poklad – 10 zlatých krychliček různých velikostí. Ty postupně ukládal na stůl těsně vedle sebe. Vytvoř program, který takový poklad nakreslí. Každá zlatá krychlička má náhodně zvolenou velikost z rozsahu od 10 do 40. Použij proměnnou, do které budeš ukládat náhodné číslo pro velikost krychličky. Kromě ní použij další proměnnou, pomocí níž budeš evidovat x-ovou pozici krychličky.
+
+![golden row](images/goldenrow.png)
+
+### Úkol 17
+
+Vylepši předchozí program tak, aby byly mezi zlatými krychličkami mezery o velikosti 5.
+
+![golden space row](images/goldenspacerow.png)
+
+### Úkol 18
+
+Existuje pověst o králi, který slíbil mudrcovi za odměnu tolik zrnek pšenice, kolik jich bude na všech políčkách šachovnice? Král mudrcovi dovolil, aby na první políčko dal 10 zrnek, na druhé 20, na třetí 30 atd. Kolik by mudrc dostal zrnek rýže? Políček na šachovnici je 64.
+
 ## Větvení
+
+### Úkol 1
 
 Počítač dokáže porovnávat dvě hodnoty (čísla):
 
@@ -583,6 +1017,8 @@ print(4 < 2)    # program vypíš false
 print(4 < 2 + 1)    # program vypíš false
 print(4 - 7 < 2 + 1)    # program vypíš true
 ```
+
+### Úkol 2
 
 Vytvoříme program, který nám řekne, zda je teplo nebo
 zima. Do proměnné teplota přiřadíme číslo. Počítač pro teplotu větší než 20 stupňů vypíše, že je teplo. Jinak řekne, že je zima:
