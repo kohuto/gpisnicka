@@ -368,17 +368,17 @@ canvas.create_rectangle(20, 10, 50, 250)
 
 Souřadnice fungují v tkinter trochu netradičně:
 
-![coordinates](images\canvas_coordinates.png)
+![coordinates](images/canvas_coordinates.png)
 
 V matematice jsme zvyklí, že střed je "uprostřed". Zde ale leží bod se souřadnicemi $[0, 0]$ v levém horním rohu. Osa $x$ jde zleva doprava. Osa $y$ jde shora dolů (čím větší číslo, tím níže).
 
 V příkazu `canvas.create_rectangle(x1, y1, x2, y2)` píšeme do závorek souřadnice protilehlých vrcholů obdélníku:
 
-![rectangle](images\rectangle_coord_1.png)
+![rectangle](images/rectangle_coord_1.png)
 
 Tyto souřadnice vrcholů bychom mohli znázornit na souřadnicových osách následujícím způsobem:
 
-![rectangle](images\rectangle_coord_2.png)
+![rectangle](images/rectangle_coord_2.png)
 
 ### Úkol 3
 
