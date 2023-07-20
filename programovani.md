@@ -1170,13 +1170,21 @@ Chceš porovnat svůj věk s věkem kamarádky. Vytvoř program, ve kterém do p
 
 Vytvoř program, ve kterém budeš kreslit na plátno
 německou vlajku. Tu budeš vytvářet tak, že pomocí cyklu vygeneruješ 10 000x náhodné
-souřadnice x, y. Souřadnice x bude z intervalu od 10 do 350 a souřadnice y bude
-z intervalu od 10 do 250. Na tyto souřadnice [x, y] nakreslíš barevný kroužek
-s poloměrem 5. Barvu kroužku zvolíš podle y-ové souřadnice následovně:
- když je y < 90, nakreslíš černý kroužek,
- jinak, když je y < 170, nakreslíš červený kroužek,
- jinak nakreslíš žlutý kroužek.
+souřadnice $x$, $y$. Souřadnice $x$ bude z intervalu od 10 do 350 a souřadnice $y$ bude z intervalu od 10 do 250. Na tyto souřadnice $[x, y]$ nakreslíš barevný obdélník se stranou délky 5. Barvu obdélníku zvolíš podle $y$-ové souřadnice následovně:
+
+- když je $y$ < 90, nakreslíš černý obdélník,
+- jinak, když je $y$ < 170, nakreslíš červený obdélník,
+- jinak nakreslíš žlutý obdélník.
+
 Výsledek by měl vypadat podobně jako na obrázku níže:
+
+![german](images/german.png)
+
+### Úkol 16
+
+Vytvoř program, který podobnou technikou, jako byla použita v předchozí úloze, nakreslí obrázek podobný české vlajce. Výsledek může vypadat například takto:
+
+![czech](images/czech.png)
 
 ## Pygame
 
