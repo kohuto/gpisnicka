@@ -917,7 +917,7 @@ Návod:
 
 Napiš program, který simuluje hody dvěma kostkami. Zapiš pomocí `for` cyklu pět hodů, kdy se v těle cyklu do dvou proměnných přiřadí dvě náhodná čísla, ta se vypíšou a vypíše se i jejich součet. Výpis může vypadat například takto:
 
-```python
+```
 Na první kostce padlo číslo 4
 Na druhé kostce padlo číslo 3
 Součet obou čísel je 7
@@ -1070,6 +1070,113 @@ Mobilní operátor počítá platby za přenesená data podle následujících p
 - jinak zaplatíš za celý den 20 korun.
 
 Napiš program, ve kterém do proměnné `megabajty` přiřadíš počet přenesených megabajtů dat za jeden den. Použij příkaz větvení na to, abys do proměnné `cena` přiřadil vyúčtovanou cenu.
+
+### Úkol 8
+
+Vytvoř program, který zobrazí absolutní hodnotu čísla. Do proměnné `a` přiřaď číslo. Použij příkaz větvení, abys vypsal absolutní hodnotu tohoto čísla.
+Například:
+
+- když bude a = -7, program vypíše Absolutní hodnota -7 je 7,
+- když bude a = 13, program vypíše Absolutní hodnota 13 je 13.
+
+### Úkol 9
+
+Zatím umíš porovnávat dvě čísla pomocí `<`, `>`. Vyzkoušej, jak fungují testy rovnosti `==`
+a nerovnosti `!=` . Napiš do příkazového řádku následující výrazy a zjisti, co Python vypíše:
+
+```python
+print(1 == 1)
+print(1 == 2)
+print(0 != 2)
+print(0 != 0)
+print(x = 100)
+print(x == 10 * 10)
+print(x != 10 * 10)
+print(11 * 11 - 21 == x)
+print(1000 / 10 - 1 != x)
+```
+
+### Úkol 10
+
+Vytvoř program. Do proměnných `a`, `b` přiřaď délky stran útvaru, u nějž nevíme, zda je to obdélník nebo čtverec. Napiš kód, který určí a vypíše, zda je daný útvar obdélníkem nebo čtvercem.
+
+### Úkol 11
+
+Házíme desetkrát hrací kostkou a chceme vědět, kolikrát padla šestka a kolikrát jiné číslo.
+Vytvoř program, který pomocí cyklu, generování náhodných čísel a příkazu větvení simuluje deset hodů kostkou, hozená čísla vypíše a spočítá,
+kolikrát padla šestka a kolikrát jiné číslo. Tyto počty poté vypíše. Spuštění může například vypadat takto:
+
+```
+5
+6
+5
+2
+2
+3
+1
+4
+5
+3
+Padlo 1 šestek a 9 jiných čísel
+```
+
+### Úkol 12\*
+
+Hrajeme hru, ve které házíme desetkrát kostkou a získáváme prémii vždy, když za sebou
+padnou dvě stejná čísla. Vytvoř program, který simuluje deset hodů kostkou, hozená čísla vypíše a spočítá počet prémií. Tento počet prémií potom vypíše. Spuštění může například vypadat takto:
+
+```
+4
+4
+6
+5
+3
+3
+3
+1
+5
+5
+Počet prémií: 4
+```
+
+### Úkol 13
+
+Fotbaloví rozhodčí stanovili, jak budou hráče hodnotit za přestupky proti pravidlům:
+
+- když se hráč dopustil 0 přestupků, hraje férově,
+- když se dopustil 1 nebo 2 přestupků, dostane žlutou kartu,
+- jinak dostane červenou kartu a je vyloučen ze hry.
+
+Vidíš, že v této úloze je více podmínek. Prohlédni si následující řešení:
+
+```python
+pocet = 0
+if pocet == 0:
+    print('Hraješ férově')
+else:
+    if pocet < 3:
+        print('Máš žlutou kartu')
+    else:
+        print('Máš červenou kartu')
+```
+
+Co program vypíše pro hodnoty 0, 1, 2, 3, 4, -1
+
+### Úkol 14
+
+Chceš porovnat svůj věk s věkem kamarádky. Vytvoř program, ve kterém do proměnných `ja` a `ona` přiřadíš svůj věk a věk tvé kamarádky. Program tyto údaje porovná a podle toho vypíše: _Jsme stejně staří_, _Jsem mladší_ nebo _Ona je mladší_.
+
+### Úkol 15
+
+Vytvoř program, ve kterém budeš kreslit na plátno
+německou vlajku. Tu budeš vytvářet tak, že pomocí cyklu vygeneruješ 10 000x náhodné
+souřadnice x, y. Souřadnice x bude z intervalu od 10 do 350 a souřadnice y bude
+z intervalu od 10 do 250. Na tyto souřadnice [x, y] nakreslíš barevný kroužek
+s poloměrem 5. Barvu kroužku zvolíš podle y-ové souřadnice následovně:
+ když je y < 90, nakreslíš černý kroužek,
+ jinak, když je y < 170, nakreslíš červený kroužek,
+ jinak nakreslíš žlutý kroužek.
+Výsledek by měl vypadat podobně jako na obrázku níže:
 
 ## Pygame
 
