@@ -1186,6 +1186,129 @@ Vytvoř program, který podobnou technikou, jako byla použita v předchozí úl
 
 ![czech](images/czech.png)
 
+## Podprogramy s parametrem
+
+### Úkol 1
+
+Dokonči jednotlivé podprogramy, aby vypisovaly věk:
+
+```python
+def jemi10():
+    vek = 10
+    print('Je mi', vek, 'let')
+def jemi20():
+    vek = ......
+    print('Je mi', vek, 'let')
+def jemi30():
+    vek = 30
+    print(...................)
+
+jemi10()
+jemi20()
+jemi30()
+```
+
+Udělej to tak, aby se všechny tři podprogramy navzájem co nejvíc podobaly.
+
+### Úkol 2
+
+Předchozí řešení se dá zapsat pomocí jediného podprogramu:
+
+```python
+def jemi(vek):
+    print('Je mi', vek, 'let')
+
+jemi(10)
+jemi(20)
+jemi(30)
+```
+
+V závorce je název parametru `vek`. Ve funkci `print` se parametr používá. Parametr funguje jako proměnná. Při volání podprogramu se do parametru `vek` přiřadí hodnota.
+
+### Úkol 3
+
+Dokonči následující podprogram `vypis`, který používá parametr `x` na to, aby vypsal hodnotu parametru `x` a jeho druhou mocninu:
+
+```python
+def vypis(x):
+    print('Číslo', ...)
+    print('Umocněné na druhou se rovná', ............)
+
+vypis(1)
+vypis(2)
+vypis(3)
+```
+
+### Úkol 4
+
+Doplň do předchozího podprogramu příkaz, kterým se vypíše i převrácená hodnota `x`. Připomeňme, že převrácená hodnota čísla $x$ je rovna $\frac{1}{x}$. Program by měl po spuštění vypsat:
+
+```
+Číslo 1
+Umocněné na druhou se rovná 1
+Převrácená hodnota se rovná 1.0
+Číslo 2
+Umocněné na druhou se rovná 4
+Převrácená hodnota se rovná 0.5
+Číslo 3
+Umocněné na druhou se rovná 9
+Převrácená hodnota se rovná 0.3333333333333333
+```
+
+### Úkol 5
+
+Dokonči podprogram `kruh` tak, aby kreslil kruhy se středem $[200, 150]$ a poloměrem `r`, který bude parametrem podprogramu:
+
+```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+def kruh(r):
+    canvas.create_oval(............, ............, ............, ............)
+kruh(10)
+kruh(100)
+kruh(50)
+```
+
+### Úkol 6
+
+Vytvoř program a v něm definuj podprogram `nahodny_kruh` s parametrem `r`, který nakreslí na náhodných souřadnicích červený kruh o poloměru `r`. Zavolej tento podprogram pro různé hodnoty parametru.
+
+### Úkol 7
+
+Vyzkoušej, co předchozí program nakreslí, když zavoláš podprogram `nahodny_kruh` následujícím způsobem:
+
+```python
+for i in range(10):
+    nahodny_kruh(i)
+```
+
+### Úkol 8
+
+Vytvoř program a v něm definuj podprogram `obliba`
+s parametrem `cislo`. Podprogram podle následujících pravidel vypíše, zda má číslo v oblibě:
+
+- když je číslo menší než 7, vypíše: _Mám rád číslo ..._
+- jinak vypíše: _Číslo ... se mi nelíbí_
+
+### Úkol 9
+
+Uprav předchozí program tak, aby pomocí cyklu zavolal podprogram `obliba` pro čísla od 0 do 10. Výsledek by měl vypadat následovně:
+
+```
+Mám rád číslo 0
+Mám rád číslo 1
+...
+Mám rád číslo 6
+Číslo 7 se mi nelíbí
+...
+Číslo 10 se mi nelíbí
+```
+
+### Úkol 10
+
+Vytvoř nový program a v něm definuj podprogram `ctverec` s parametrem `a`, který udává délku strany čtverce. Podprogram by měl fungovat tak, že čtverec kreslí jen pro kladné hodnoty parametru `a`, ale pro záporné hodnoty vypíše zprávu _Nedá se_. Levý horní roh kresleného čtverce bude mít souřadnice $[10, 10]$. Zprávu vypiš přibližně do středu grafické plochy.
+
 ## Pygame
 
 https://www.pygame.org/news
