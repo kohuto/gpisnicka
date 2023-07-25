@@ -5,7 +5,7 @@
 1. [Co je Python?](#html)
 2. [VS code](#vs-code)
 3. [Virtuální prostředí](#virtuální-prostředí)
-4. [Komentář](#komentář)
+4. [Výpisy](#komentář)
 5. [Řídící struktury](#nadpis)
 6. [Funkce](#odstavec)
 7. [Pole](#kontejner)
@@ -1308,6 +1308,26 @@ Mám rád číslo 6
 ### Úkol 10
 
 Vytvoř nový program a v něm definuj podprogram `ctverec` s parametrem `a`, který udává délku strany čtverce. Podprogram by měl fungovat tak, že čtverec kreslí jen pro kladné hodnoty parametru `a`, ale pro záporné hodnoty vypíše zprávu _Nedá se_. Levý horní roh kresleného čtverce bude mít souřadnice $[10, 10]$. Zprávu vypiš přibližně do středu grafické plochy.
+
+## Čtení ze souborů
+
+Vytvoř textový soubor `basnicka.txt` a napiš do něj libovolný text. Poté vytvoř následující program:
+
+```python
+with open('basnicka.txt', 'r') as file:
+    content = file.read()
+print(content)
+```
+
+Program ulož do stejného adresáře, kde je uložen soubor `basnicka.txt`. Po spuštění vypíše obsah souboru.
+
+funkce open() vrací hodnotu, která představuje otevřený soubor. Tahle hodnota má vlastní metody. Tady používáme metodu read(), která najednou přečte celý obsah souboru a vrátí ho jako řetězec.
+
+Soubory se dají přirovnat k ledničce: abys něco mohl/a z ledničky vzít, nebo dát dovnitř, musíš ji předtím otevřít a potom zavřít. Bez zavření to sice na první pohled funguje taky, ale pravděpodobně potom brzo něco zplesniví.
+
+Stejně tak je docela důležité soubor zavřít po tom, co s ním přestaneš pracovat. Bez zavření to na první pohled funguje, ale složitější programy se můžou dostat do problémů. Operační systémy mají limity na počet současně otevřených souborů, které se nezavíráním dají snadno překročit. Na Windows navíc nemůžeš soubor, který je stále otevřený, otevřít znovu.
+
+Příkaz with vezme otevřený soubor (který vrací funkce open) a přiřadí ho do proměnné soubor. Pak následuje odsazený blok kódu, kde se souborem můžeš pracovat – v tomhle případě pomocí metody read přečíst obsah jako řetězec. Když se Python dostane na konec odsazeného bloku, soubor automaticky zavře.
 
 ## Pygame
 
