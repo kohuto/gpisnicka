@@ -1329,6 +1329,192 @@ Stejně tak je docela důležité soubor zavřít po tom, co s ním přestaneš 
 
 Příkaz with vezme otevřený soubor (který vrací funkce open) a přiřadí ho do proměnné soubor. Pak následuje odsazený blok kódu, kde se souborem můžeš pracovat – v tomhle případě pomocí metody read přečíst obsah jako řetězec. Když se Python dostane na konec odsazeného bloku, soubor automaticky zavře.
 
+## OOP
+
+znovupoužitel­nost
+vynálezu základních
+komponent
+Poskládání programu z komponent je výhodnější a levnější. Můžeme
+mu věřit, je otestovaný (o komponentách se ví, že fungují, jsou
+otestovány a udržovány)
+Pokud je někde chyba, stačí ji opravit na
+jednom místě.
+snažíme se nasimulovat realitu tak, jak ji jsme
+zvyklí vnímat.
+
+Základní jednotkou je objekt, který odpovídá nějakému
+Každý objekt má své atributy a metody.
+
+Atributy objektu jsou vlastnosti neboli
+data, která uchovává
+
+Metody jsou schopnostmi, které umí objekt
+vykonávat.
+
+Třída je
+vzor, podle kterého se objekty vytváří. Definuje jejich vlastnosti a schopnosti.
+
+Objekt, který se vytvoří podle třídy, se nazývá
+instance.
+instance se navzájem liší svými daty (atributy)
+
+OOP stojí na základních třech pilířích:
+Zapouzdření, Dědičnost a Polymorfismus.
+
+## a
+
+Třídy se vytvářejí klíčovým slovem `class`. Třídu pojmenujeme `Kostka`
+
+```python
+class Kostka:
+```
+
+Přidáme do třídy metodu `hod_sest()`:
+
+```python
+class Kostka:
+    def hod_sest(self):
+        return 6
+```
+
+Nyní vytvoříme instanci třídy `Kostka`:
+
+```python
+class Kostka:
+    def hod_sest(self):
+        return 6
+
+kostka = Kostka()
+```
+
+Při vytvoření instance se zavolá tzv. _konstruktor_.
+Závorky při vytváření instance píšeme, protože _konstruktor_ je speciální metoda, voláme tedy tuto "vytvářecí" metodu.
+
+My jsme zatím konstruktor nedeklarovali, proto se vytvořil tzv. _implicitní (prázdný) konstruktor_.
+
+V proměnné `kostka` máme uloženou instanci třídy `Kostka`. Můžeme proto zavolat metodu `hod_sest()`:
+
+```python
+class Kostka:
+    def hod_sest(self):
+        return 6
+
+kostka = Kostka()
+print(kostka.hod_sest())
+```
+
+Taková kostka by byla nepraktická. Místo metody `hod_sest` vytvořte metodu `hod`, která bude vracet náhodné číslo od 1 do 6:
+
+```python
+class Kostka:
+    def hod(self):
+        return random.randint(1, 6)
+
+kostka = Kostka()
+print(kostka.hod())
+```
+
+Pojďme nyní vytvořit atribut `pocet_sten`. K tomu nám poslouží již zmíněný _konstruktor_. Víme, že to je metoda.
+Pomocí této metody můžeme např. vytvořit v objektu požadované atributy a uložit do nich hodnoty.
+
+Konstruktor se deklaruje jako metoda se jménem `__init__()`:
+
+```python
+class Kostka:
+    def __init__(self):
+        pass
+
+    def hod(self):
+        return random.randint(1, 6)
+
+kostka = Kostka()
+```
+
+Atributy objektů se vytvářejí slůvkem `self`. Za self následuje tečka a název atributu. Vytvoříme atribut `pocet_sten`:
+
+```python
+class Kostka:
+    def __init__(self):
+        self.pocet_sten = 6
+
+    def hod(self):
+        return random.randint(1, 6)
+
+kostka = Kostka()
+```
+
+Hodnotu atributu můžeme nyní vypsat:
+
+```python
+class Kostka:
+    def __init__(self):
+        self.pocet_sten = 6
+
+    def hod(self):
+        return random.randint(1, 6)
+
+kostka = Kostka()
+print(kostka.pocet_sten)
+```
+
+Konstruktor (jako každá metoda) může mít parametry. Díky tomu můžeme například nastavit, kolik stěn bude mít kostka:
+
+```python
+class Kostka:
+    def __init__(self, pocet_sten):
+        self.pocet_sten = pocet_sten
+
+    def hod(self):
+        return random.randint(1, 6)
+
+kostka = Kostka()
+print(kostka.pocet_sten)
+```
+
+Nyní, když zavoláme konstruktor, tak se hodnota parametru `pocet_sten` dosadí do atributu `pocet_sten` (ano, je to trochu matoucí, ale pojmenovávat atribut a parametr stejně je dobrým zvykem):
+
+```python
+class Kostka:
+    def __init__(self, pocet_sten):
+        self.pocet_sten = pocet_sten
+
+    def hod(self):
+        return random.randint(1, 6)
+
+kostka = Kostka(10)
+print(kostka.pocet_sten)
+```
+
+Všimněte si, že nyní nemůžeme vytvořit kostku bez parametru. Lze to však obejít pomocí uvedení výchozí hodnoty argumentu pocet_sten v definici konstruktoru.
+
+```python
+class Kostka:
+    def __init__(self, pocet_sten = 6):
+        self.pocet_sten = pocet_sten
+
+    def hod(self):
+        return random.randint(1, 6)
+
+desetistenna = Kostka(10)
+sestistenna = Kostka()
+print(desetistenna.pocet_sten)
+print(sestistenna.pocet_sten)
+```
+
+Poslední věc, která zbývá upravit, je metoda `hod`. Upravte ji tak, aby nejvyšší hozené číslo odpovídalo počtu stěn. Pokud nyní parametr nenastavíme, dosadí se do atributu `pocet_sten` výchozí hodnota:
+
+```python
+class Kostka:
+    def __init__(self, pocet_sten = 6):
+        self.pocet_sten = pocet_sten
+
+    def hod(self):
+        return random.randint(1, self.pocet_sten)
+
+kostka = Kostka(10)
+print(kostka.pocet_sten)
+```
+
 ## Pygame
 
 https://www.pygame.org/news
