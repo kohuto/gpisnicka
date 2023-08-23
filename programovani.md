@@ -1337,6 +1337,7 @@ Vyzkoušej, který z následujících seznamů můžeme v pythonu vytvořit a n�
 - [1, 2, 3, 4]
 - ["jedna", "dva", "tri", "ctyri"]
 - [1, "dva", 3, "ctyri"]
+- [1, "dva", 1 + 2, "ctyri"]
 - [1, "dva", ctyri"]
 - [
   "\U0001F600",
@@ -1364,7 +1365,7 @@ již víme, že příkaz `for` postupně přiřazuje do proměnné `i` hodnoty 0
 
 ### Úkol 6
 
-Napište podprogram, který dostane dva parametry - pole a prvek. Program vypíše "ano", pokud se daný prvek nachází v poli, případně vypíše "ne", pokud se prvek v poli nenachází.
+Napište podprogram, který dostane dva parametry - pole a prvek. Program vypíše "ano", pokud se daný prvek nachází v poli.
 
 ### Úkol 7
 
