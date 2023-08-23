@@ -1457,27 +1457,98 @@ Další simulace vhodné k programování naleznete [zde](https://www.fi.muni.cz
 
 ## Čtení ze souborů
 
+### Úkol 1
+
 Vytvoř textový soubor `basnicka.txt` a napiš do něj libovolný text. Poté vytvoř následující program:
 
 ```python
-with open('basnicka.txt', 'r') as file:
-    content = file.read()
+with open('basnicka.txt', 'r') as soubor:
+    content = soubor.read()
 print(content)
 ```
 
-Program ulož do stejného adresáře, kde je uložen soubor `basnicka.txt`. Po spuštění vypíše obsah souboru.
+Program ulož do stejného adresáře, kde je uložen soubor `basnicka.txt`. Co vypíše program po spuštění?
 
-funkce open() vrací hodnotu, která představuje otevřený soubor. Tahle hodnota má vlastní metody. Tady používáme metodu read(), která najednou přečte celý obsah souboru a vrátí ho jako řetězec.
+### Úkol 2
 
-Soubory se dají přirovnat k ledničce: abys něco mohl/a z ledničky vzít, nebo dát dovnitř, musíš ji předtím otevřít a potom zavřít. Bez zavření to sice na první pohled funguje taky, ale pravděpodobně potom brzo něco zplesniví.
+funkce `open()` vrací hodnotu, která představuje otevřený soubor. Tahle hodnota má vlastní metody. Tady používáme metodu `read()`, která najednou přečte celý obsah souboru a vrátí ho jako řetězec.
 
-Stejně tak je docela důležité soubor zavřít po tom, co s ním přestaneš pracovat. Bez zavření to na první pohled funguje, ale složitější programy se můžou dostat do problémů. Operační systémy mají limity na počet současně otevřených souborů, které se nezavíráním dají snadno překročit. Na Windows navíc nemůžeš soubor, který je stále otevřený, otevřít znovu.
+Soubory se dají přirovnat k ledničce:
 
-Příkaz with vezme otevřený soubor (který vrací funkce open) a přiřadí ho do proměnné soubor. Pak následuje odsazený blok kódu, kde se souborem můžeš pracovat – v tomhle případě pomocí metody read přečíst obsah jako řetězec. Když se Python dostane na konec odsazeného bloku, soubor automaticky zavře.
+> abys něco mohl/a z ledničky vzít, nebo dát dovnitř, musíš ji předtím otevřít a potom zavřít. Bez zavření to sice na první pohled funguje taky, ale pravděpodobně potom brzo něco zplesniví.
+
+Analogicky je potřeba zavřít soubor poté, co s ním přestaneš pracovat. Existují např. limity na počet současně otevřených souborů. Na Windows navíc nemůžeš soubor, který je stále otevřený, otevřít znovu.
+
+Příkaz `with` vezme otevřený soubor (který vrací funkce open) a přiřadí ho do proměnné `soubor`. Pak následuje práce se souborem – v tomhle případě pomocí metody `read` čteme jeho obsah jako řetězec. Na konci od odsazeného bloku se soubor automaticky zavře.
+
+### Úkol 3
+
+Stáhni tento [soubor](https://drive.google.com/file/d/1o5l-Qe7hZTiRG6ggefP-nChuTSmTET7T/view?usp=drive_link) a vytvořte podprogram:
+
+1. `head`, který dostane parametr `n` a vypíš prvních `n` řádků souboru
+2. `tail`, který dostane parametr `n` a posledních `n` řádků souboru
+
+Pomoct může následující funkce `readlines()`
+
+```python
+content = input_file.read()  # nacteni celeho obsahu souboru do jednoho retezce
+lines = input_file.readlines()  # nacteni souboru souboru jako seznam radku
+```
+
+### Úkol 4
+
+Slovník v Pythonu umožňuje ukládat párová data ve formátu `klíč:hodnota`. To znamená, že místo toho, abyste přistupovali k hodnotám pomocí jejich indexu (jako v seznamu), používáte k tomu unikátní klíč.
+
+Příklad slovníku:
+
+```python
+osoba = {
+    "jmeno": "Anna",
+    "věk": 30,
+    "město": "Praha"
+}
+```
+
+V tomto slovníku jsou klíče: `"jmeno"`, `"věk"`, `"město"`. Jejich odpovídající hodnoty jsou: `"Anna"`, `30`, `"Praha"`.
+
+K hodnotám můžete přistupovat pomocí klíče:
+
+```python
+print(osoba["jmeno"])  # vypíše "Anna"
+```
+
+Případně hodnoty měnit, podobně jako v seznamu:
+
+```python
+osoba["jmeno"] = "Pepa"
+print(osoba["jmeno"])  # vypíše "Pepa"
+```
+
+### Úkol 5
+
+Stáhněte tento [soubor](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing) a vypište 10 nejčastěji se vyskytujících slov v textu. Pro zajímavost se omezte pouze na slova délky 3 a více.
+
+### Úkol 6
+
+Analyzujte text v tomto [souboru](https://drive.google.com/file/d/1o5l-Qe7hZTiRG6ggefP-nChuTSmTET7T/view?usp=drive_link) a vraťte průměrný počet slov ve větě.
+
+### Úkol 7
+
+Proveďte frekvenční analýzu některého z výše uvedených souborů. Vypište, kolikrát se v textu vyskytují jednotlivá písmena.
+
+Tip: pro ověření, že je daný znak písmeno, můžete použít funkci `isalpha`.
+
+### Úkol 8
+
+Pro každé písmeno v textu vypište 5 písmen, které za ním následují nejčastěji.
+
+### Úkol 9
+
+Napište podprogram, který analyzuje text v [souboru](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing). Podprogram pak vygeneruje pseudo-náhodný text o `length` slovech. Text se generuje po slovech. Další generované slovo se náhodně vybírá z těch, které v původním textu po naposledy vygenerovaném slově následovaly.
 
 ## Algoritmizace
 
-první čtení ze souborů, pak frekvenční analýza v souboru (kniha), pak moduly, pak třídící algoritmy
+pak moduly, pak třídící algoritmy
 
 naprogramovat i erasthothenovo síto, ekulidův algoritmus, binární vyhledávání.
 
