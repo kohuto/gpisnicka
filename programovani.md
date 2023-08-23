@@ -1313,20 +1313,42 @@ Vytvoř nový program a v něm definuj podprogram `ctverec` s parametrem `a`, kt
 
 ### Úkol 1
 
-do proměnné nemusíme ukládat pouze jednu hodnotu. Můžeme uložit i celý seznam hodnot. Vyzkoušej co vypíše následující program:
-
-```python
-a = [1, 2, 3]
-print(a)
-```
+Ve třídě je pět žáků. Všichni psali test. Vytvoř pro každého žáka jednu proměnnou, do které uložíš získanou známku z testu (známky si vymysli). Následně spočítej průměrnou známku z testu.
 
 ### Úkol 2
 
-Vytvoř seznam, který bude obsahovat všechny dny v týdnu. Názvy dnů jsou uloženy jako textové hodnoty. Pole vypište pomocí příkazu `print`
+Kolik proměnných bychom potřebovali vytvořit, kdyby žáci psali 4 testy? A kolik bychom potřebovali celkem proměnných, kdyby ve třídě bylo 30 žáků? A jak bychom řešili úlohu, kdybychom něvěděli, kolik žáků ve třídě přesně je?
 
 ### Úkol 3
 
-Zkus spustit postupně oba programy níže. Jaký je rozdíl ve výpisu?
+Lepší variantou, jak uchovávat podobný výčet hodnot je seznam. Vyzkoušej, co vypíše následující program:
+
+```python
+znamky = [5, 1, 4, 3, 1, 1, 2]
+print(znamky)
+```
+
+Lze si to představit jako poličku. Do každé přihrádky můžeme umístit libovolný prvek.
+
+### Úkol 4
+
+Vyzkoušej, který z následujících seznamů můžeme v pythonu vytvořit a následně vypsat:
+
+- [1, 2, 3, 4]
+- ["jedna", "dva", "tri", "ctyri"]
+- [1, "dva", 3, "ctyri"]
+- [1, "dva", ctyri"]
+- [
+  "\U0001F600",
+  "\U0001F601",
+  "\U0001F602",
+  "\U0001F603",
+  "\U0001F604",
+  ]
+
+### Úkol 5
+
+Zkus spustit postupně všechny programy níže. Jaký je rozdíl ve výpisu?
 
 ```python
 for i in range(5):
@@ -1338,20 +1360,99 @@ for i in [0, 1, 2, 3, 4]:
     print('číslo', i)
 ```
 
-již víme, že příkaz `for` postupně přiřazuje do proměnné `i` hodnoty 0 až 5. Podobně lze dosazovat hodnoty s pole.
-
-### Úkol 4
-
-Rozšiřte program z úkolu 3. Dny v týdnu vypište pomocí cyklu.
-
-### Úkol 5
+již víme, že příkaz `for` postupně přiřazuje do proměnné `i` hodnoty 0 až 5. Podobně lze dosazovat všechny hodnoty z pole.
 
 ### Úkol 6
 
-jak často padají součty na dvou kostkách
+Napište podprogram, který dostane dva parametry - pole a prvek. Program vypíše "ano", pokud se daný prvek nachází v poli, případně vypíše "ne", pokud se prvek v poli nenachází.
 
-galtonova deska (galtons board)
-https://www.youtube.com/shorts/jstkPuhLDEw
+### Úkol 7
+
+Napište podprogram, který dostane jako parametr pole, a který vypíše, kolik je v poli prvků.
+
+### Úkol 8
+
+Napište podprogram, který dostane jako parametr pole čísel a vypíše součet všech čísel v poli.
+
+### Úkol 9
+
+Jednotlivé prvky v poli lze měnit. Vyzkoušej, co vypíše následující program:
+
+```python
+cisla = [2, 6, 3, 4, 5]
+print(cisla)
+
+cisla[1] = 40
+cisla[2] = 41
+cisla[3] = 42
+print(cisla)
+```
+
+zapisem `cisla[1] = 40` říkáme, že chceme změnit v seznamu `cisla` prvek na pozici `1` a nová hodnota tohoto prvku je `40`.
+
+_Pozice v seznamu se číslují od 0. První prvek je na pozici 0, druhý prvek na pozici 1 atd._
+
+### Úkol 10
+
+Vytvořte seznam o šesti prvcích s hodnotou nula. Následně simulujte hod šestistěnnou kostkou tím, že vygenerujete náhodné číslo v rozmezí od 1 do 6. Podle výsledku hodu nastavte příslušný prvek v seznamu na hodnotu 1. Přitom si uvědomte, že indexy v seznamu začínají od 0, tedy číslo 1 z kostky odpovídá indexu 0 v seznamu, číslo 2 indexu 1 atd.
+
+### Úkol 11
+
+Upravte předchozí kód tak, abychom hodnotu na daném indexu nenastavovali, ale pouze zvyšili o jedna.
+
+### Úkol 12
+
+Upravte předchozí kód tak, abyste nesimulovali pouze jeden hod kostkou, ale 1000 hodů kostkou. Hodnoty postupně navyšujte. Budou výsledná čísla v seznamu přibližně stejná?
+
+### Úkol 13
+
+Upravte předchozí kód tak, abyste simulovali hod dvěma kostkami. Do seznam ukládejte součet na obou kostkách. Kolik prvků musí mít seznam? Opět prověďte 1000 hodů. Proč tentokrát nebudou všechny hodnoty v seznamu podobné?
+
+### Úkol 14\*
+
+Vytvořte podprogram `galtonova_deska`, který bude simulovat Galtonovu desku. Jak deska funguje znázorňuje toto [video](https://www.youtube.com/shorts/jstkPuhLDEw)
+
+### Úkol 15\*
+
+Opilec je na půli cesty mezi domovem a hospodou, každý krok udělá náhodně jedním směrem. Napište funkci, která bude simulovat opilcův pohyb. Jejími parametry budou vzdálenost mezi domovem a hospodou a počet kroků do opilcova usnutí (tj. maximální délka simulace). Simulace skončí buď tehdy, když opilec dojede domů nebo do hospody, případně po vyčerpání počtu kroků.
+
+```
+home . . . . . * . . . . pub
+home . . . . * . . . . . pub
+home . . . * . . . . . . pub
+home . . . . * . . . . . pub
+home . . . * . . . . . . pub
+home . . . . * . . . . . pub
+home . . . * . . . . . . pub
+home . . * . . . . . . . pub
+home . * . . . . . . . . pub
+home . . * . . . . . . . pub
+home . . . * . . . . . . pub
+home . . * . . . . . . . pub
+home . . . * . . . . . . pub
+home . . * . . . . . . . pub
+home . . . * . . . . . . pub
+home . . . . * . . . . . pub
+home . . . . . * . . . . pub
+home . . . . * . . . . . pub
+home . . . . . * . . . . pub
+home . . . . * . . . . . pub
+home . . . . . * . . . . pub
+home . . . . . . * . . . pub
+home . . . . . * . . . . pub
+home . . . . . . * . . . pub
+home . . . . . . . * . . pub
+home . . . . . . . . * . pub
+home . . . . . . . . . * pub
+home . . . . . . . . * . pub
+home . . . . . . . . . * pub
+home . . . . . . . . . . pub
+Ended in the pub again!
+```
+
+### Úkol 16\*
+
+Další simulace vhodné k programování naleznete [zde](https://www.fi.muni.cz/IB111/sbirka/04-nahodna_cisla.html#simulace-a-analyzy).
 
 ## Čtení ze souborů
 
