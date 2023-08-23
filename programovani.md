@@ -1309,6 +1309,50 @@ Mám rád číslo 6
 
 Vytvoř nový program a v něm definuj podprogram `ctverec` s parametrem `a`, který udává délku strany čtverce. Podprogram by měl fungovat tak, že čtverec kreslí jen pro kladné hodnoty parametru `a`, ale pro záporné hodnoty vypíše zprávu _Nedá se_. Levý horní roh kresleného čtverce bude mít souřadnice $[10, 10]$. Zprávu vypiš přibližně do středu grafické plochy.
 
+## Pole
+
+### Úkol 1
+
+do proměnné nemusíme ukládat pouze jednu hodnotu. Můžeme uložit i celý seznam hodnot. Vyzkoušej co vypíše následující program:
+
+```python
+a = [1, 2, 3]
+print(a)
+```
+
+### Úkol 2
+
+Vytvoř seznam, který bude obsahovat všechny dny v týdnu. Názvy dnů jsou uloženy jako textové hodnoty. Pole vypište pomocí příkazu `print`
+
+### Úkol 3
+
+Zkus spustit postupně oba programy níže. Jaký je rozdíl ve výpisu?
+
+```python
+for i in range(5):
+    print('číslo', i)
+```
+
+```python
+for i in [0, 1, 2, 3, 4]:
+    print('číslo', i)
+```
+
+již víme, že příkaz `for` postupně přiřazuje do proměnné `i` hodnoty 0 až 5. Podobně lze dosazovat hodnoty s pole.
+
+### Úkol 4
+
+Rozšiřte program z úkolu 3. Dny v týdnu vypište pomocí cyklu.
+
+### Úkol 5
+
+### Úkol 6
+
+jak často padají součty na dvou kostkách
+
+galtonova deska (galtons board)
+https://www.youtube.com/shorts/jstkPuhLDEw
+
 ## Čtení ze souborů
 
 Vytvoř textový soubor `basnicka.txt` a napiš do něj libovolný text. Poté vytvoř následující program:
@@ -1328,6 +1372,12 @@ Soubory se dají přirovnat k ledničce: abys něco mohl/a z ledničky vzít, ne
 Stejně tak je docela důležité soubor zavřít po tom, co s ním přestaneš pracovat. Bez zavření to na první pohled funguje, ale složitější programy se můžou dostat do problémů. Operační systémy mají limity na počet současně otevřených souborů, které se nezavíráním dají snadno překročit. Na Windows navíc nemůžeš soubor, který je stále otevřený, otevřít znovu.
 
 Příkaz with vezme otevřený soubor (který vrací funkce open) a přiřadí ho do proměnné soubor. Pak následuje odsazený blok kódu, kde se souborem můžeš pracovat – v tomhle případě pomocí metody read přečíst obsah jako řetězec. Když se Python dostane na konec odsazeného bloku, soubor automaticky zavře.
+
+## Algoritmizace
+
+první čtení ze souborů, pak frekvenční analýza v souboru (kniha), pak moduly, pak třídící algoritmy
+
+naprogramovat i erasthothenovo síto, ekulidův algoritmus, binární vyhledávání.
 
 ## OOP
 
