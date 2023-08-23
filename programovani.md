@@ -1546,11 +1546,55 @@ Pro každé písmeno v textu vypište 5 písmen, které za ním následují nej�
 
 Napište podprogram, který analyzuje text v [souboru](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing). Podprogram pak vygeneruje pseudo-náhodný text o `length` slovech. Text se generuje po slovech. Další generované slovo se náhodně vybírá z těch, které v původním textu po naposledy vygenerovaném slově následovaly.
 
+## Moduly
+
 ## Algoritmizace
 
-pak moduly, pak třídící algoritmy
+třídicí algoritmy - povídání
 
-naprogramovat i erasthothenovo síto, ekulidův algoritmus, binární vyhledávání.
+### Úkol 1
+
+Bubble sort
+
+### Úkol 2
+
+Selection sort
+
+### Úkol 3
+
+Heap sort
+
+### Úkol 4
+
+Quick sort
+
+### Úkol 5
+
+Speed test třídících algoritmů.
+
+### Úkol 6
+
+Vytvoř podprogram, který dostane jako parametr číslo a určí, jestli je dané číslo prvočíslo, nebo ne.
+
+### Úkol 7
+
+Eratosthenovo síto
+
+### Úkol 8
+
+Vytvoř podporgram, který určí největší společný dělitel dvou čísel
+
+### Úkol 9
+
+Vytvoř podprogram, který dostane dva parametry `x` a `y`, který pomocí euklidova algoritmu najde největší společná dělitel čísel `x` a `y`.
+
+### Úkol 10
+
+Vytvoř podprogram, který dostane jako parametr seznam setřízených čísel a číslo `x`. Podprogram určí, jestli se číslo v seznamu nachází.
+
+### Úkol 11
+
+Na řešení přechozí úlohy použijte binární vyhledávání.
 
 ## OOP
 
