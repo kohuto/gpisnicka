@@ -2,26 +2,23 @@
 
 ## Přehled
 
-1. [Co je LATEX?](#co-je-python)
-2. [VS code](#vs-code)
-3. [Virtuální prostředí](#virtuální-prostředí)
-4. [Výpisy](#výpisy)
-5. [Proměnná](#proměnná)
-6. [Vypisování](#vypisování)
-7. [Kreslení](#kreslení)
-8. [Podprogramy](#podprogramy)
-9. [Náhoda](#náhoda)
-10. [Kreslení textu](#kreslení-textu)
-11. [Opakování](#opakování)
-12. [Větvení](#větvení)
-13. [Podprogramy s parametrem](#podprogramy-s-parametrem)
-14. [Pole](#pole)
-15. [Čtení ze souborů](#čtení-ze-souborů)
-16. [Moduly](#moduly)
-17. [Výjimky](#výjimky)
-18. [Algoritmizace](#algoritmizace)
-19. [OOP](#oop)
-20. [Formulářové aplikace](#oop)
+1. [Co je LATEX?](#co-je-latex)
+2. [Overleaf](#overleaf)
+3. [První dokument](#první-dokument)
+4. [Preambule dokumentu](#preambule-dokumentu)
+5. [Komentáře](#komentáře)
+6. [Tučné, kurzíva, podtržení](#tučné-kurzíva-podtržení)
+7. [Obrázky](#obrázky)
+8. [Popisky](#popisky)
+9. [Seznamy](#seznamy)
+10. [Matematika](#matematika)
+11. [Abstrakt](#abstrakt)
+12. [Odstavec](#odstavce)
+13. [Kapitoly a sekce](#kapitoly-a-sekce)
+14. [Tabulky](#tabulky)
+15. [Kód a pseudokód](#kód-a-pseudokód)
+16. [Obsah](#obsah)
+17. [Závěr](#závěr)
 
 ## Co je LaTeX
 
@@ -252,7 +249,7 @@ Většina příkazu je sebevysvětlujících, poznamenáme pouze, že přííkaz
 
 Tvorba tabulek je v LaTeXu (dle mého názoru) natolik nepěkná, že doporučuji raději použít kterýkoliv online [generátor tabulek](https://tableconvert.com/latex-generator)
 
-## Kód
+## Kód a pseudokód
 
 ## Obsah
 
