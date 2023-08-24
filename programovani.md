@@ -16,10 +16,12 @@
 12. [Větvení](#větvení)
 13. [Podprogramy s parametrem](#podprogramy-s-parametrem)
 14. [Pole](#pole)
-15. [Moduly](#kontejner)
-16. [Výjimky](#kontejner)
-17. [Vstup/výstup](#kontejner)
-18. [Třídící algoritmy](#kontejner)
+15. [Čtení ze souborů](#čtení-ze-souborů)
+16. [Moduly](#moduly)
+17. [Výjimky](#výjimky)
+18. [Algoritmizace](#algoritmizace)
+19. [OOP](#oop)
+20. [Formulářové aplikace](#oop)
 
 ## Co je Python?
 
@@ -1550,53 +1552,187 @@ Napište podprogram, který analyzuje text v [souboru](https://drive.google.com/
 
 ## Moduly
 
-## Algoritmizace
-
-třídicí algoritmy - povídání
+## Výjimky
 
 ### Úkol 1
 
-Bubble sort
+Podívej se na kód níže a vymysli příklad, kdy program selže:
+
+```python
+def nacti_cislo():
+    """Získá od uživatele celé číslo a vrátí ho"""
+    odpoved = input('Zadej číslo: ')
+    return int(odpoved)
+```
 
 ### Úkol 2
 
-Selection sort
+Jak docílíme následující chybové hlášky?
+
+```
+Traceback (most recent call last):
+  File "ukazka.py", line 4, in nacti_cislo
+    cislo = int(odpoved)
+ValueError: invalid literal for int() with base 10: 'pes'
+```
 
 ### Úkol 3
 
-Heap sort
+Řešením problémů v předchozích úkolech by mohla být nějaká funkce `obsahuje_jen_cislice()`, existuje v pythonu podobná funkce? Je vhodné je používat?
 
 ### Úkol 4
 
-Quick sort
+Jaké budou výstupy následujícího kódu:
+
+```python
+print('123'.isnumeric())
+print('abc'.isnumeric())
+print('½'.isnumeric)
+print(int('½'))
+print(int(1/2))
+print('௩三๓໓'.isnumeric())
+print(int(' 42'))
+print(' 42'.isdecimal())
+```
 
 ### Úkol 5
 
-Speed test třídících algoritmů.
+Chceme-li tedy zjisti, zda funkce `int` umí převést řetězec na číslo, je nejlepší na to skutečně použít funkci `int`.
+
+V případě, že by došlo k selhání, existuje v pythonu příkaz `try/except`. Zkus spustit následující kód a zadávat různé platné i neplatné vstupy:
+
+```python
+def nacti_cislo():
+    while True:
+        vstup = input('Zadej číslo: ')
+        try:
+            return int(vstup)
+        except ValueError:
+            print('Toto není číslo!')
+```
+
+Jak to funguje? Příkazy v bloku `try` se provedou, ale když nastane uvedená výjimka, Python přeskočí zbytek bloku `try` a provede všechno v bloku `except`. Pokud výjimka nenastala, přeskočí se celý blok `except`.
 
 ### Úkol 6
 
-Vytvoř podprogram, který dostane jako parametr číslo a určí, jestli je dané číslo prvočíslo, nebo ne.
+V úkolu 5 bylo za slovíčkem `except` uvedeno ještě `ValueError`. To je název chyby. Všechny názvy jsou uvedeny [zde](https://docs.python.org/3/library/exceptions.html#exception-hierarchy).
+
+Vytvořte podprogram, v němž bude použit příkaz `try/except` a bude využívat nějaký jiný druh chyby.
 
 ### Úkol 7
 
-Eratosthenovo síto
+Vymysli, jak by vypadalo tělo podprogramu `neco_udelej()`, aby se vypsalo vždy některé z čísel. Lze vypsat všechna čísla (ne nutně najednou)?
+
+```python
+try:
+    neco_udelej()
+except ValueError:
+    print('1')
+except NameError:
+    print('2')
+except Exception:
+    print('3')
+except TypeError:
+    print('4')
+else:
+    print('5')
+finally:
+    print('6')
+```
 
 ### Úkol 8
 
-Vytvoř podporgram, který určí největší společný dělitel dvou čísel
+Napište podprogram, který dostane jako parametr délku strany čtverce a následně vypočítá jeho obsah.
 
 ### Úkol 9
 
+Co nám vrátí předchozí podprogram, když ho zavoláme ásledujícím způsobem?
+
+```python
+obsah_ctverce(-5)
+```
+
+V takovéme případě bychom asi chtěli, aby program zahlásil chybu. Prakticky to lze provést následovně:
+
+```python
+def obsah_ctverce(strana):
+    if strana > 0:
+        return strana ** 2
+    else:
+        raise ValueError(f'Strana musí být kladná, číslo {strana} kladné není!')
+```
+
+Podobně jako `return` i příkaz `raise` ukončí funkci. A nejen tu – pokud na tuhle konkrétní chybu není program předem připravený, ukončí se celý program.
+
+## Algoritmizace
+
+1. Algoritmus:
+   Algoritmus je postup, který popisuje, jak řešit určitý problém. Jedná se o abstraktní sérii kroků, které mají vést k požadovanému výstupu. Algoritmy existují i mimo svět počítačů.
+
+2. Program:
+   Program je konkrétní implementace algoritmu pomocí programovacího jazyka.
+
+Zjednodušeně řečeno, algoritmus je jako recept, který říká, co a jak udělat, zatímco program je hotové jídlo připravené podle tohoto receptu.
+
+### Úkol 1
+
+Na základě tohoto [videa](https://www.youtube.com/watch?v=nUHbVRSLlEs) uveď základní vlastnosti algoritmu.
+
+### Úkol 1
+
+Vytvoř podprogram, který dostane jako parametr číslo a určí, jestli je dané číslo prvočíslo, nebo ne.
+
+### Úkol 2
+
+Eratosthenovo síto
+
+### Úkol 3
+
+Vytvoř podporgram, který určí největší společný dělitel dvou čísel
+
+### Úkol 4
+
 Vytvoř podprogram, který dostane dva parametry `x` a `y`, který pomocí euklidova algoritmu najde největší společná dělitel čísel `x` a `y`.
 
-### Úkol 10
+### Úkol 5
 
 Vytvoř podprogram, který dostane jako parametr seznam setřízených čísel a číslo `x`. Podprogram určí, jestli se číslo v seznamu nachází.
 
-### Úkol 11
+### Úkol 6
 
 Na řešení přechozí úlohy použijte binární vyhledávání.
+
+### Úkol 7
+
+Bubble sort
+
+### Úkol 8
+
+Selection sort
+
+### Úkol 9
+
+Heap sort
+
+### Úkol 10
+
+Quick sort
+
+### Úkol 11
+
+Speed test třídících algoritmů.
+
+### Úkol 12
+
+Frekvenční analýza:
+
+Zde je zašifrovaný text:
+
+```
+mafbo apsjdqej asdjy ycxm padpa asd asdasd asdasase asd asdass ajoi njijq naoijdqww lajqjw jqwj jaij jqlej qjwe ja iqoiwheo qj a joi joijosaj ajdsj qwasde qwdsae iojoij
+```
+
+Analyzujte následující [soubor](soubor.txt). Proveďte na něm frekvenční analýzu písmen. Následně pomocí získných informací a frekvence písmen v zašifrovaném textu rozluště zašifrovaný text.
 
 ## OOP
 
