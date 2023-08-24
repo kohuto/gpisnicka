@@ -2,22 +2,24 @@
 
 ## Přehled
 
-1. [Co je Python?](#html)
+1. [Co je Python?](#co-je-python)
 2. [VS code](#vs-code)
 3. [Virtuální prostředí](#virtuální-prostředí)
-4. [Výpisy](#komentář)
-5. [Řídící struktury](#nadpis)
-6. [Funkce](#odstavec)
-7. [Pole](#kontejner)
-8. [Proměnná](#zalomení-řádku)
-9. [OOP](#třídy-a-id)
-10. [Dědičnost](#kontejner)
-11. [Práce se soubory](#kontejner)
-12. [Složitost](#kontejner)
-13. [Moduly](#kontejner)
-14. [Výjimky](#kontejner)
-15. [Vstup/výstup](#kontejner)
-16. [Třídící algoritmy](#kontejner)
+4. [Výpisy](#výpisy)
+5. [Proměnná](#proměnná)
+6. [Vypisování](#vypisování)
+7. [Kreslení](#kreslení)
+8. [Podprogramy](#podprogramy)
+9. [Náhoda](#náhoda)
+10. [Kreslení textu](#kreslení-textu)
+11. [Opakování](#opakování)
+12. [Větvení](#větvení)
+13. [Podprogramy s parametrem](#podprogramy-s-parametrem)
+14. [Pole](#pole)
+15. [Moduly](#kontejner)
+16. [Výjimky](#kontejner)
+17. [Vstup/výstup](#kontejner)
+18. [Třídící algoritmy](#kontejner)
 
 ## Co je Python?
 
