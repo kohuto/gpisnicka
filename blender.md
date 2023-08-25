@@ -61,24 +61,88 @@ Pro každý objekt, který označíme, nabízí Blender dva základní módy. Ak
 
 ## Edit mode
 
-Vlevo nahoře máme v Edit Mode (hned vedle volby) tři možnost:
+Přepneme se nyní do _Edit modu_. Tvar objektu lze upravovat třemi způsoby:
 
 1. vertex select
 2. edge select
 3. face select
 
-výběr provedeme pomocí přetažení (označení). V levé liště pak vidíme možnosti, co s daným výběrem vrcholů/hran/stěn můžeme dělat
+Všechny tři možnosti najdeme hned vedle tlačítka pro změnu modu. Vybereme možnost _Face select_. Následně vyzkoušíme první ze tří možností pro změnu tvaru. Nejdříve klikneme na horní stěnu krychle a následně vybereme z levé lišty možnost _Insert faces_.
 
-- face select → insert faces → vytvoříme "zdi", 4 zdi označíme → extrude region (vytáhne zdi nahoru)
+![edit-mode](images/edit-mode-1.png)
 
-označíme dva body (první přepneme na vertex select) → můžeme hýbat pomocí move → deformace
+Objeví se žlutý kruh. Když do něj klikneme a začneme přetahovat myš směrem doprostřed vrchní stěny, tak uvidíme jak se objeví nová stěna (uvnitř vrchní stěny). Boční stěny se zároveň rozdělili na čtyři samostatné stěny.
 
-zkusíme-li označit všechny body, pak po natočení zjistíme, že se to nepovedlo → vpravo nahoře TOGGLE X-RAY
+![insert faces](images/insert-faces.png)
 
-Chceme na krabici přidat text → vrátíme se do Object Mode v horní noabídce (vedle Object mode) vybereme Add → přidávání objektů (v mesh - dokonce i opice), my chceme ale text → oba objekty vidíme v menu vlevo (cube, text)
+Nyní z levé lišty vybereme možnost _Extrude region_ a označíme všechny čtyři zdi (viz [základní ovládání](#základní-ovládání)).
 
-změna nápisu → Edit mode, v Object mode ho můžeme přesouvat a natáčet
+![extrude region](images/extrude-region.png)
 
-text je 2D (v menu vlevo vidíme rozdílné ikony u cube a u text, Cube je typ mesh, text je typ Curve) → OBJECT (vlevo nahoře) → convert → mesh
+Kliknutím na žluté tlačítko plus, které se objevilo, a tažením směrem nahoru se zdi začnou zvyšovat.
 
-Stále bude 2D, stačí se přepnout do Edit Mode → vidíme, že to už je směs bodů a hran → označit vše lze pomocí A, pak už pomocí extrude region uděláme text 3D. Zpět do Object mode → vsuneme do zdi → chceme spojit do jednoho objektu → MODIFIERS (lišta, kde jsme nastavovali scenes, modrý klíč)
+![extrude region](images/extrude-region-2.png)
+
+Nyní změníme volbu na _Vertex select_. Následně vybereme z lišty vlevo možnost výběr objektů a označíme čtyři vrcholy.
+
+![vertex select](images/vertex-select-1.png)
+
+Následně se v liště vlevo přepneme na možnost _Move_ a přesuneme vybrané body pomocí modré šipky níže.
+
+![vertex select](images/vertex-select-2.png)
+
+Přemněme se na výběr objektů a zkusme označit všechny body. Po natočení objektu zjistíme, že body v zadní části se neoznačili. Abychom viděli všechny body najednou, můžeme v Blenderu zapnout možnost _Toggle X-Ray_.
+
+![x-ray](images/x-ray.png)
+
+Ukažme si ještě možnost _Bevel_, která ruší ostré hrany. Nejdříve se přepnětě na _Select edges_ (poslední ze tří možností výběru). Následně vyberte možnost _Bevel_ z levé lišty a označte všechny vnější hrany objektu. Objeví se žluté kolečko, které když přetáhnete směrem nahoru, tak začnou mizet ostré hrany.
+
+![bevel](images/bevel.png)
+
+## Text
+
+Nyní pojďme přidat na objekt nějaký text. Přepneme se zpět do _Object mode_. Z horní lišty vybereme možnost _Add_ a z nabídky vybereme _Text_. Nabídka obsahuje řadu dalších objektů, které lze přidat (v sekci _Mesh_ je i opice), my se ale zatím omezíme pouze na text.
+
+![add](images/add.png)
+
+Text si přesuneme mimo objekt. Zároveň vidíme, že se v pravém menu přidal nový objekt _Text_. Když na něj klikneme, tak objekt vybereme. Nápis budeme chtít umístit na stěnu našeho objektu, proto vyvoláme pomocí klávesy `n` vlastnosti objektu a otočíme text o 90° podle osy X.
+
+![text](images/text.png)
+
+Abychom mohli nápis změnit, musíme se přesunout do _Edit mode_. V _Edit mode_ stačí text pouze smazat pomocí delete a přepsat.
+
+Vraťme se nyní do _Object mode_. V seznamu objektu vpravo vidíme podle ikony, že text není 3D objekt, ale pouze křivka. To změníme tak, že text označíme, v horní liště klikněme na _Object_, vybereme možnost _Convert_ a následně _Mesh_. To nám text převede na 3D objekt, už však nepůjdou měnit písmena, pouze jejich tvar.
+
+![mesh](images/mesh.png)
+
+Nyní je text stále plochý. Přesňme se proto do _Edit mode_, celý text označme a jako dříve pomocí volby _Extrude region_ text "vytáhneme" do 3D.
+
+![3d tex](images/3d-text.png)
+
+## Modifiers
+
+Nyní bychom chtěli objekt a 3D text sjednotit do jednoho objektu. Vraťme se do _Object mode_, zmenšeme text a přesuňme ho tak, aby byl uvnitř objektu a částečně z něj vyčuhoval. Klikneme na objekt a z pravé lišty následně vybereme možnost _Modifiers_.
+
+![modifiers](images/modifiers.png)
+
+Klikneme na _Add modifier_ a vybereme možnost _Boolean_.
+
+![modifiers select](images/select-modifier.png)
+
+My chceme objekt a text sjednotit, proto vybereme možnost _Union_. Následně klikneme na kapátko a kapátkem klikneme na text.
+
+![union](images/union.png)
+
+Poté již stačí rozbalit nabídku a vybrat možnost _Apply_.
+
+![apply](images/apply.png)
+
+V momentě, kdy jsme aplikovali _Modifier_ a došlo k sjednocení, můžeme ze seznamu objektů smazat text.
+
+![delete text](images/delete-text.png)
+
+## Export
+
+Když je váš 3D model připraven na tisk, stačí z horní lišty vybrat _File_, poté _Export_ a vybrat formát `.xtl`.
+
+![export](images/export.png)
