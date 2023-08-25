@@ -1674,9 +1674,67 @@ Podobně jako `return` i příkaz `raise` ukončí funkci. A nejen tu – pokud 
 
 Zjednodušeně řečeno, algoritmus je jako recept, který říká, co a jak udělat, zatímco program je hotové jídlo připravené podle tohoto receptu.
 
+Je toto definice? HLOUPOST!!! Jestli někdo bude tvrdit, že zná přesnou definici algoritmu, tak vám kecá.
+
 ### Úkol 1
 
 Na základě tohoto [videa](https://www.youtube.com/watch?v=nUHbVRSLlEs) uveď základní vlastnosti algoritmu.
+
+U algoritmů budeme tyto vlastnosti vždy kontrolovat.
+
+### Úkol 1
+
+![map](images\map.gif)
+
+1. Turista nemá mapu
+2. Vy nemáte mapu, ale znáte cestu
+3. Turista stojící u stadionu se ptá na cestu k nemocnici.
+
+### Úkol 1
+
+- Pochopí turista popis cesty? → srozumitelnost
+- Bude vědět v každém okamžiku co má dělat? → jednoznačnost
+- Dojde do cíle? → ověření, správnost
+- Je to jediná možná cesta? Není jiná lepší? → efektivita
+
+Turista je cizinec.
+
+- Neumíme vzájemný jazyk → kompromis pochopitelný pro oba → symboly → programovací jazyk, překladače
+
+### Úkol 1
+
+Dostanete sadu kartiček s čísly:
+
+1. Seřaďte karty (čísla) podle velikosti
+2. Sepište stručný návod pro řazení
+3. Ověřte, že se jedná o algoritmus
+4. Řešte ve skupině, diskuse je důležitá.
+
+### Úkol 1
+
+1. Seřaďte karty podle instrukcí jiné skupiny
+   > Dodržet zápis, neodhadovat, „nedomýšlet“
+2. Kontrolujte, že se opravdu jedná o algoritmus
+3. Najděte chybná místa
+4. Navrhněte opravu
+
+### Úkol 1
+
+Přichází testování a ladění:
+
+1. Do balíčku karet přidáme speciální karty
+2. Je-li třeba navrhněte opravu
+3. Určete povolené vstupní hodnoty
+
+### Úkol 1
+
+Který algoritmus je nejlepší?
+
+Co je to nejlepší?
+
+- Pokud chci posuzovat, musím si určit kritéria
+- Žádné kritérium není apriori špatné, záleží na situaci
+- Více kritérií => priorita kritérií
 
 ### Úkol 1
 
