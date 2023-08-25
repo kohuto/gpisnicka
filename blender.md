@@ -21,7 +21,7 @@ Blender stáhněte z oficiálních [stránek](https://www.blender.org/)
 
 Po otevření aplikace uvidíte podobnou obrazovku. Z nabídky vyberte možnost **_General_.**
 
-![landing page](images\landing-page-blender.png)
+![landing page](images/landing-page-blender.png)
 
 Zobrazí se klasická 3D scéna.
 
@@ -45,21 +45,21 @@ V momentě kdy máme vybraný objekt:
 
 ## Jednotky
 
+Vytvaříme model pro 3D tiskárnu, v takovém případě se doporučuje mít všechny jednoty v milimetrech. Z nabídky vlevo vyberte _Scene_ a rozklikněte nabídku _Units_. Nastavte _Length_ na _Millimeters_ a _Unit Scale_ nastavte na hodnotu 0.001.
+
 ![units](images/units.png)
 
-exit změny → zpět na tlačítko select box
+Na první pohled to vypadá, že nám zmizela mřížka. Aby se opět správně zobrazovala, vyberte možnost _Overlays_ a opět nastavte _Scale_ na hodnotu 0.001.
 
-→ jednotky jsou defaultně v metrech. Pro 3D tisk chceme mm
-→ změna jednotky - vpravo SCENE property → LENGTH na mm a UNIT SCALE na 0,001
-"zmizel grid" → nezmizel, je potřeba i mu upravit jednotky
-→ SHOW OVERLAYS vpravo nahoře → SCALE na 0,001
+![units](images/grid-scale.png)
 
-změnil jsem rozměry krychle (60x60x5) → zoom out
+## Módy
 
-blender má dva hlavní módy (vlevo nahoře):
+Pro každý objekt, který označíme, nabízí Blender dva základní módy. Aktuálně jsme v _Object mode_. V něm lze pouze objekty přesouvat, rotovat, či měnit vělikost. Druhý je _Edit mode_, který umožňuje vybraný objekt různě tvarovat.
 
-1. Object Mode (v tom jsme) - můžeme zvětšovat/změnšovat objekty, otáčet, přesouvat
-2. Edit Mode - pokud chceme objekty skutečně měnit
+![edit-mode](images/edit-mode.png)
+
+## Edit mode
 
 Vlevo nahoře máme v Edit Mode (hned vedle volby) tři možnost:
 
