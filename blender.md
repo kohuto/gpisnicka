@@ -37,6 +37,7 @@ Ovládání je následující:
 - `kolečko myši` - přiblížení
 - `klik` - výběr objektu
 - `Shift` + `klik` - výběr více objektů
+- `čísla` - natáčení kamery
 
 V momentě kdy máme vybraný objekt:
 
@@ -45,6 +46,7 @@ V momentě kdy máme vybraný objekt:
 - `r` - rotace objektu
 - `s` - zvětšení objektu
 - `n` - informace o objektu
+- `tab` - přepnutí do [_Edit mode_](#edit-mode)
 
 ## Jednotky
 
@@ -143,6 +145,22 @@ Poté již stačí rozbalit nabídku a vybrat možnost _Apply_.
 V momentě, kdy jsme aplikovali _Modifier_ a došlo k sjednocení, můžeme ze seznamu objektů smazat text.
 
 ![delete text](images/delete-text.png)
+
+Nyní zkusíme do objektu ještě vyříznout díru. Přes možnost _Add_ v horním menu vložíme ze sekce _Mesh_ válec (_Cylinder_).
+
+![add cylinder](images/add-mesh.png)
+
+Upravíme rozměry válce aby se díra nebyla příliš velká a válec protáhneme.
+
+![size of cylinder](images/cylinder-size.png)
+
+Nyní vybereme původní objekt (protože z něj chceme něco odstranit), vybereme možnost _Modifiers_ → _Add modifier_ → _Boolean_. Tentorkát naší volbou není _Union_ ale _Difference_. Kapátkem označíme válec a zvolíme _Apply_.
+
+![modifier difference](images/modifiers-difference.png)
+
+Nyní již můžeme odstranit válec (po odečtení válec nezmizí). V původním objektu nám zůstane po válci díra.
+
+![delete cylinder](images/delete-cylinder.png)
 
 ## Export
 
