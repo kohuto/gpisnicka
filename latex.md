@@ -251,6 +251,57 @@ Tvorba tabulek je v LaTeXu (dle mého názoru) natolik nepěkná, že doporučuj
 
 ## Kód a pseudokód
 
+V LaTeXu můžete psát kód a pseudokód pomocí různých balíčků, z nichž každý vyhovuje specifickým potřebám. Zde jsou dva nejběžnější balíčky.
+
+### Kód
+
+Balíček `listings` se používá k sazbě zdrojového kódu v různých programovacích jazycích s příslušným zvýrazněním syntaxe. Můžete jej použít takto:
+
+```latex
+\documentclass{article}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+  basicstyle=\ttfamily,
+  numbers=left,
+  numberstyle=\tiny,
+  keywordstyle=\color{blue},
+  commentstyle=\color{green},
+}
+
+\begin{document}
+\begin{lstlisting}[language=Python, caption=Python code example]
+def hello_world():
+    print("Hello, world!")
+\end{lstlisting}
+\end{document}
+```
+
+### Pseudokód
+
+Chcete-li prezentovat algoritmy a pseudokód ve strukturovanějším formátu, můžete použít balíčky `algorithm` a `algpseudocode`. Zde je příklad:
+
+```latex
+\documentclass{article}
+\usepackage{algpseudocode}
+\begin{document}
+\begin{algorithmic}
+\State $i \gets 10$
+\If{$i\geq 5$}
+    \State $i \gets i-1$
+\Else
+    \If{$i\leq 3$}
+        \State $i \gets i+2$
+    \EndIf
+\EndIf
+\end{algorithmic}
+
+\end{document}
+```
+
+Více o možnostech nastavení tohoto balíčku [zde](https://www.overleaf.com/learn/latex/Algorithms)
+
 ## Obsah
 
 O většinu práce se postará příkaz `\tableofcontents`
