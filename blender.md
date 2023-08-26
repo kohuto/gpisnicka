@@ -10,7 +10,9 @@
 6. [Edit mód](#edit-mode)
 7. [Text](#text)
 8. [Modifiers](#modifiers)
-9. [Export](#export)
+9. [SVG grafika](#svg-grafika)
+10. [Rotace křivky](#rotace-křivky)
+11. [Export](#export)
 
 ## Co je Blender
 
@@ -100,7 +102,11 @@ Přemněme se na výběr objektů a zkusme označit všechny body. Po natočení
 
 ![x-ray](images/x-ray.png)
 
-Ukažme si ještě možnost _Bevel_, která ruší ostré hrany. Nejdříve se přepnětě na _Select edges_ (poslední ze tří možností výběru). Následně vyberte možnost _Bevel_ z levé lišty a označte všechny vnější hrany objektu. Objeví se žluté kolečko, které když přetáhnete směrem nahoru, tak začnou mizet ostré hrany.
+Ukažme si ještě možnost _Bevel_, která ruší ostré hrany. Nejdříve se přepnětě na _Select edges_ (poslední ze tří možností výběru). Následně vyberte možnost _Bevel_ z levé lišty a označte všechny vnější hrany objektu.
+
+> při zmáčknutí klávesy `alt` a následném kliknutí na jednu z hran se vybere celá hrana
+
+Objeví se žluté kolečko, které když přetáhnete směrem nahoru, tak začnou mizet ostré hrany.
 
 ![bevel](images/bevel.png)
 
@@ -162,7 +168,47 @@ Nyní již můžeme odstranit válec (po odečtení válec nezmizí). V původn�
 
 ![delete cylinder](images/delete-cylinder.png)
 
+## SVG grafika
+
+Nyní si ukážeme, jak lze udělat v Blenderu z `.svg` souboru objekt.
+
+V programu pro tvorbu vektorové grafiky (př. inkscape) vytvoříme libovolný obrázek, který následně uložíme jako `.svg` soubor. Před uložením doporučuji sjednotit všechny části do jedné.
+
+![inkscape](images/inkscape.png)
+
+> Poznámka: vytvořil jsem si nový projekt, provedl všechna zmíněná nastavení a krychli jsem nastavil rozměry 40x40x2mm.
+
+V momentě, kdy máme `.svg` soubor uložený v počítači, vybereme z horního menu možnost _File_ → _Import_ → _Scalable Vector Graphics (.svg)_ a z počítače vybereme náš `.svg` soubor.
+
+![big footstep](images/big-footstep.png)
+
+Obrázek bude pravděpodobně příliš velký. Rozměry jde nastavit již v inkscape, stejně dobře to však lze udělat i v blenderu. Pro snadnější manipulaci ještě doporučuji kliknout pravým tlačítkem myši na obrázek a vybrat možnost _Set Origin_ → _Geometry To Origin_.
+
+![set origin](images/set-origin.png)
+
+Nyní akorát zbývá již obrázek převést na 3D. Klikneme na stopu, přejdeme do nabídky _Modifiers_ a vybereme možnost _Solidify_. Nastavíme _Thickness_ na 3mm a _Offset_ na 0.
+
+![solidify](images/solidify.png)
+
+Pokud chcete s obrázkem dále pracovat jako s objektem, stačí ho obdobně jako dříve text převést na _Mesh_.
+
+## Rotace křivky
+
+## Nůž
+
+https://www.youtube.com/watch?v=0I-4a1q0YLE
+
+## Strom
+
+https://www.youtube.com/watch?v=V0LyhVM6ILk
+
+## ChatGPT a Blender
+
+https://www.youtube.com/watch?v=x60zHw_z4NM
+
 ## Export
+
+https://www.youtube.com/watch?v=0IPILHZGvsg
 
 Když je váš 3D model připraven na tisk, stačí z horní lišty vybrat _File_, poté _Export_ a vybrat formát `.xtl`.
 
