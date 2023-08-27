@@ -132,6 +132,8 @@ Nyní je text stále plochý. Přesňme se proto do _Edit mode_, celý text ozna
 
 ## Modifiers
 
+shrnutí všech _Moidifiers_ [zde](https://www.youtube.com/watch?v=idcFMhoSdIc)
+
 Nyní bychom chtěli objekt a 3D text sjednotit do jednoho objektu. Vraťme se do _Object mode_, zmenšeme text a přesuňme ho tak, aby byl uvnitř objektu a částečně z něj vyčuhoval. Klikneme na objekt a z pravé lišty následně vybereme možnost _Modifiers_.
 
 ![modifiers](images/modifiers.png)
