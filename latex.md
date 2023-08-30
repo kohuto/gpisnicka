@@ -2,23 +2,28 @@
 
 ## Přehled
 
+1. [Šablona](#šablona)
 1. [Co je LATEX?](#co-je-latex)
-2. [Overleaf](#overleaf)
-3. [První dokument](#první-dokument)
-4. [Preambule dokumentu](#preambule-dokumentu)
-5. [Komentáře](#komentáře)
-6. [Tučné, kurzíva, podtržení](#tučné-kurzíva-podtržení)
-7. [Obrázky](#obrázky)
-8. [Popisky](#popisky)
-9. [Seznamy](#seznamy)
-10. [Matematika](#matematika)
-11. [Abstrakt](#abstrakt)
-12. [Odstavec](#odstavce)
-13. [Kapitoly a sekce](#kapitoly-a-sekce)
-14. [Tabulky](#tabulky)
-15. [Kód a pseudokód](#kód-a-pseudokód)
-16. [Obsah](#obsah)
-17. [Závěr](#závěr)
+1. [Overleaf](#overleaf)
+1. [První dokument](#první-dokument)
+1. [Preambule dokumentu](#preambule-dokumentu)
+1. [Komentáře](#komentáře)
+1. [Tučné, kurzíva, podtržení](#tučné-kurzíva-podtržení)
+1. [Obrázky](#obrázky)
+1. [Popisky](#popisky)
+1. [Seznamy](#seznamy)
+1. [Matematika](#matematika)
+1. [Abstrakt](#abstrakt)
+1. [Odstavec](#odstavce)
+1. [Kapitoly a sekce](#kapitoly-a-sekce)
+1. [Tabulky](#tabulky)
+1. [Kód a pseudokód](#kód-a-pseudokód)
+1. [Obsah](#obsah)
+1. [Závěr](#závěr)
+
+## Šablona
+
+Šablona ke stažení [zde](https://www.overleaf.com/read/jhqftdgrtcmf)
 
 ## Co je LaTeX
 
