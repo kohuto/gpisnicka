@@ -5,9 +5,9 @@
 1. [Co je Python?](#co-je-python)
 2. [VS code](#vs-code)
 3. [Virtuální prostředí](#virtuální-prostředí)
-4. [Výpisy](#výpisy)
+4. [Vypisování](#vypisování)
 5. [Proměnná](#proměnná)
-6. [Vypisování](#vypisování)
+6. [Vypisování podruhé](#vypisování-podruhé)
 7. [Kreslení](#kreslení)
 8. [Podprogramy](#podprogramy)
 9. [Náhoda](#náhoda)
@@ -68,7 +68,7 @@ Jak vytvořit virtuální prostředí (virtual enviroment - venv)?
 4. vybereme možnost `Venv`
 5. vybereme požadovaný interpretr
 
-## Výpisy
+## Vypisování
 
 ### Úloha 1
 
@@ -213,7 +213,7 @@ print(cena)
 
 ### Úloha 7
 
-Změň hodnotu proměnné vyska tak, aby v ní byla tvoje výška v centimetrech.
+Změň hodnotu proměnné `vyska` z úlohy 4 tak, aby v ní byla tvoje výška v centimetrech.
 
 ### Úloha 8
 
@@ -240,7 +240,7 @@ Vyzkoušej, které z následujících názvu lze použít jako název proměnné
 - počet osob
 - trida(3)
 
-## Vypisování
+## Vypisování podruhé
 
 ### Úloha 1
 

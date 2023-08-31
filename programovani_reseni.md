@@ -58,47 +58,238 @@ cena = 22 + 7
 print(cena) # 29
 ```
 
-### Úloha
+### Úloha 4
 
 Objeví se chyba `NameError: name 'vek' is not defined`
 
-### Úloha
+### Úloha 5
 
 ```
+23
+97
+196
+```
+
+### Úloha 7
+
+```python
+a = 100
+vyska = 167 * 100
+cena = 29
+```
+
+### Úloha 8
+
+```python
+zmrzlina = 25
+pocet = 7
+zaplatit = zmrzlina * pocet
+print(zaplatit)
+```
+
+### Úloha 9
+
+```python
+polomer = 4
+pi = 3.14
+obvod = 2 * pi * polomer
+obsah = pi * polomer ** 2
+print(obvod)
+print(obsah)
+```
+
 ### Úloha
+
+```python
+kuk # ano
+Ahoj! # ne - obsahuje vykřičník
+1.A # ne - začíná číslem a obsahuje tečku
+prvni_trida # ano
+cerno-bile # ne - python to chápe jako odčítání dvou proměnných
+OK # ano
+o0o0o0o # ano - ale špatně čitelné
+asdf # ano - ale nepoznáme význam proměnné z jejího názvu
+věk # ano - ale nedporoučuje se diakritika
+počet osob # ne - obsahuje mezeru
+trida(3) # ne - obsahuje závorky
+```
+
+### Úloha
+
+```python
 
 ```
 
 ### Úloha
 
-```
-### Úloha
+```python
 
 ```
 
 ### Úloha
 
-```
-### Úloha
+```python
 
 ```
 
 ### Úloha
 
-```
-### Úloha
+```python
 
 ```
 
 ### Úloha
 
-```
-### Úloha
+```python
 
 ```
 
 ### Úloha
 
+```python
+
 ```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
 
 ```
