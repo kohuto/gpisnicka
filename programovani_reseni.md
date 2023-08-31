@@ -187,82 +187,146 @@ print('Zaplatíš', cena_po_sleve,'korun')
 
 ## Kreslení
 
-### Úloha
+### Úloha 3
 
 ```python
-
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+canvas.create_rectangle(50, 30, 300, 200)
+input()
 ```
 
-### Úloha
+### Úloha 4
 
 ```python
-
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+canvas.create_rectangle(200, 100, 260, 240)
+input()
 ```
 
-### Úloha
+### Úloha 5
 
 ```python
-
+canvas.create_rectangle(100, 50, 100 + 80, 50 + 80)
+canvas.create_rectangle(200, 50, 200 + 80, 50 + 80)
 ```
 
-### Úloha
+### Úloha 6
 
 ```python
-
+canvas.create_rectangle(100, 50, 250, 200)
+canvas.create_rectangle(100 + 25, 50 + 25, 250 - 25, 200 - 25)
 ```
 
-### Úloha
+### Úloha 7
 
 ```python
-
+canvas.create_rectangle(100, 200, 100 + 150, 200 + 50)
+canvas.create_rectangle(100 + 25, 150, 100 + 150 - 25, 150 + 50)
+canvas.create_rectangle(100 + 50, 100, 100 + 150 - 50, 100 + 50)
 ```
 
-### Úloha
+### Úloha 8
 
 ```python
-
+canvas.create_rectangle(100, 100, 200, 200)
+canvas.create_rectangle(100, 100 - 50, 100 + 50, 100)
+canvas.create_rectangle(200 - 50, 200, 200, 200 + 50)
+canvas.create_rectangle(100 - 50, 200 - 50, 100, 200)
+canvas.create_rectangle(200, 100, 200 + 50, 100 + 50)
 ```
 
-### Úloha
+### Úloha 10
 
 ```python
-
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+canvas.create_rectangle(30, 30, 130, 130, fill='red')
+canvas.create_rectangle(150, 30, 250, 130, fill='green')
+canvas.create_rectangle(30, 150, 130, 250, fill='blue')
+canvas.create_rectangle(150, 150, 250, 250, fill='yellow')
+input()
 ```
 
-### Úloha
+### Úloha 11
 
 ```python
-
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+canvas.create_rectangle(50, 50, 300, 100, fill='red')
+canvas.create_rectangle(50, 100, 300, 150, fill='white')
+canvas.create_rectangle(50, 150, 300, 200, fill='blue')
+input()
 ```
 
-### Úloha
+### Úloha 12
 
 ```python
-
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+canvas.create_rectangle(50, 50, 150, 200, fill='green')
+canvas.create_rectangle(150, 50, 250, 200, fill='white')
+canvas.create_rectangle(250, 50, 350, 200, fill='orange')
+input()
 ```
 
-### Úloha
+### Úloha 13
 
 ```python
-
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+canvas.create_rectangle(50, 50, 150, 150, fill='magenta')
+canvas.create_rectangle(70, 70, 170, 170, fill='violet')
+canvas.create_rectangle(90, 90, 190, 190, fill='plum')
+canvas.create_rectangle(110, 110, 210, 210, fill='pink')
+input()
 ```
 
-### Úloha
+### Úloha 14
 
 ```python
-
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+canvas.create_rectangle(50, 50, 300, 210, fill='white')
+canvas.create_rectangle(50, 50, 110, 110, fill='red')
+canvas.create_rectangle(150, 50, 300, 110, fill='red')
+canvas.create_rectangle(50, 150, 110, 210, fill='red')
+canvas.create_rectangle(150, 150, 300, 210, fill='red')
+canvas.create_rectangle(50, 120, 300, 140, fill='navy')
+canvas.create_rectangle(120, 50, 140, 210, fill='navy')
+input()
 ```
 
-### Úloha
+### Úloha 15
 
 ```python
-
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+canvas.create_rectangle(30, 90, 210, 150, fill='red')
+canvas.create_rectangle(90, 30, 150, 210, fill='green')
+canvas.create_rectangle(90, 90, 150, 150, fill='yellow')
+input()
 ```
 
-### Úloha
+### Úloha 16
 
 ```python
-
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+x = 100
+y = 70
+canvas.create_rectangle(x, y, x + 100, y + 100, fill='yellow')
+input()
 ```
 
 ### Úloha

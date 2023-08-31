@@ -344,7 +344,7 @@ input()
 3. Zjisti, zda se dá okno posouvat, měnit jeho velikost. Nakonec toto nové okno zavři.
    program vyrobil grafickou plochu `canvas`.
 
-> `input()` na konci nemá s oknem nic společného. Jedná se o příkaz, který čeká, až mu uživatel do konzole napíše nějaký vstup. Kdyby tam příkaz nebyl, tak by program ihned skončil a okno by se ihned po otevření zavřelo.
+> `input()` na konci nemá s oknem nic společného. Jedná se o příkaz, který čeká, až mu uživatel do konzole napíše nějaký vstup. Kdyby tam příkaz nebyl, tak by program ihned skončil a okno by se ihned po otevření zavřelo. V následujících příkladech proto vždy nakonec programu napište `input()`, aby okno zůstalo otevřené.
 
 ### Úkol 1
 
@@ -472,11 +472,15 @@ Vytvoř nový program, ve kterém uprav následující kód tak, aby
 nakreslil stejný obrázek, ale aby program obsahoval jen 3 příkazy pro kreslení obdélníků:
 
 ```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
 canvas.create_rectangle(90, 90, 150, 150, fill='yellow')
 canvas.create_rectangle(150, 90, 210, 150, fill='red')
 canvas.create_rectangle(90, 150, 150, 210, fill='green')
 canvas.create_rectangle(30, 90, 90, 150, fill='red')
 canvas.create_rectangle(90, 30, 150, 90, fill='green')
+input()
 ```
 
 ### Úkol 16
@@ -491,6 +495,7 @@ canvas.pack()
 x = 100
 y = 70
 canvas.create_rectangle(x, y, x + , , fill='yellow')
+input()
 ```
 
 ### Úkol 17
