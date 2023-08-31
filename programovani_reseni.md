@@ -98,7 +98,7 @@ print(obvod)
 print(obsah)
 ```
 
-### Úloha
+### Úloha 10
 
 ```python
 kuk # ano
@@ -114,53 +114,78 @@ počet osob # ne - obsahuje mezeru
 trida(3) # ne - obsahuje závorky
 ```
 
-### Úloha
+# Vypisování podruhé
 
-```python
-
-```
-
-### Úloha
-
-```python
+### Úloha 1
 
 ```
-
-### Úloha
-
-```python
-
+Ahoj, já jsem počítač
 ```
 
-### Úloha
+### Úloha 2
 
 ```python
-
+7 # spočítá výraz
+1 + 2 * 3 # vypíše text v apostrofech
+    # vypíše prázdný řádek
 ```
 
-### Úloha
+### Úloha 3
+
+- Výsledný text bude na jednom řádku, mezi vypisované texty se vloží mezera
+- Můžeme kombinovat texty i hodnoty (a mezi vypisované části se též vloží mezera)
+- Když uvedeme výraz, ten se vyhodnotí a na obrazovku se vypíše výsledek
+
+### Úloha 4
+
+```
+Je mi 16 let
+```
+
+### Úloha 5
 
 ```python
-
+vek = 16
+print('Je mi', vek, 'let')
+print('Příští rok mi bude', vek + 1, 'let')
 ```
 
-### Úloha
+### Úloha 7
 
 ```python
-
+penize = 100
+platba = 20
+print('Mám', penize, 'korun')
+print('Platím', platba, 'korun')
+print('Zbyde mi', penize - platba, 'korun')
 ```
 
-### Úloha
+### Úloha 8
 
 ```python
-
+sirka = 50
+delka = 80
+pocet_kol = 7
+print('Šířka hřiště je', sirka, 'metrů, délka je', delka,
+'metrů')
+print('Jedno kolo okolo hřiště je', 2 * (sirka + delka),
+'metrů')
+print('Po', pocet_kol, 'kolech uběhneš',
+2 * (sirka + delka) * pocet_kol, 'metrů')
 ```
 
-### Úloha
+### Úloha 9
 
 ```python
-
+puvodni_cena = 199
+sleva = 20
+cena_po_sleve = puvodni_cena - puvodni_cena * sleva / 100
+print('Cena alba je', puvodni_cena, 'korun')
+print('Sleva činí', sleva, 'procent')
+print('Zaplatíš', cena_po_sleve,'korun')
 ```
+
+## Kreslení
 
 ### Úloha
 
