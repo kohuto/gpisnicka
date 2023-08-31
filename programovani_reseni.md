@@ -1144,6 +1144,76 @@ ctverec(-50)
 ctverec(100)
 ```
 
+## Seznamy
+
+### Úloha 1
+
+```python
+import tkinter
+import random
+canvas = tkinter.Canvas()
+canvas.pack()
+x = random.randint(0, 3)
+if x == 0:
+    canvas.create_rectangle(50, 50, 80, 80, fill='red')
+else:
+    if x == 1:
+         canvas.create_rectangle(50, 50, 80, 80, fill='green')
+    else:
+        if x == 2:
+             canvas.create_rectangle(50, 50, 80, 80, fill='blue')
+        else:
+             canvas.create_rectangle(50, 50, 80, 80, fill='yellow')
+input()
+```
+
+### Úloha 5
+
+```python
+def je_v_poli(pole, prvek):
+    for i in pole:
+        if i == prvek:
+            print("ano")
+```
+
+### Úloha 6
+
+```python
+def kolik_v_poli(pole):
+    pocitadlo = 0
+    for i in pole:
+        pocitadlo = pocitadlo + 1
+    print(pocitadlo)
+```
+
+### Úloha 7
+
+```python
+def soucet_cisel(pole):
+    soucet = 0
+    for i in pole:
+        soucet = soucet + i
+    print(pocitadlo)
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
+### Úloha
+
+```python
+
+```
+
 ### Úloha
 
 ```python

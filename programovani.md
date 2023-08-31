@@ -1334,24 +1334,25 @@ vygeneruj 7 místný pin -> vygeneruj pin náhodné délky od 5-10
 
 ### Úkol 1
 
-Ve třídě je pět žáků. Všichni psali test. Vytvoř pro každého žáka jednu proměnnou, do které uložíš získanou známku z testu (známky si vymysli). Následně spočítej průměrnou známku z testu.
+Vygeneruj náhodné číslo od 0 do 3. Na základě vygenerovaného čísla vykresli čtverec s levým horním rohem na souřadnicích $[50, 50]$ o délce strany 30 podle následujících pravidel:
+
+- pro číslo 0, bude čtverec červený
+- pro číslo 1, bude čtverec zelený
+- pro číslo 2, bude čtverec modrý
+- pro číslo 3, bude čtverec žlutý
 
 ### Úkol 2
 
-Kolik proměnných bychom potřebovali vytvořit, kdyby žáci psali 4 testy? A kolik bychom potřebovali celkem proměnných, kdyby ve třídě bylo 30 žáků? A jak bychom řešili úlohu, kdybychom něvěděli, kolik žáků ve třídě přesně je?
-
-### Úkol 3
-
-Lepší variantou, jak uchovávat podobný výčet hodnot je seznam. Vyzkoušej, co vypíše následující program:
+Kdybychom podobným způsobem chtěli vykreslovat čtverce 20 různých barev, tak by se stal kód nečitelným. Lepší variantou, jak uchovávat nějaký výčet hodnot je seznam. Vyzkoušej, co vypíše následující program:
 
 ```python
 znamky = [5, 1, 4, 3, 1, 1, 2]
 print(znamky)
 ```
 
-Lze si to představit jako poličku. Do každé přihrádky můžeme umístit libovolný prvek.
+Lze si to představit jako řadu skříněk. Do každé skříňky můžeme umístit libovolný prvek.
 
-### Úkol 4
+### Úkol 3
 
 Vyzkoušej, který z následujících seznamů můžeme v pythonu vytvořit a následně vypsat:
 
@@ -1368,7 +1369,7 @@ Vyzkoušej, který z následujících seznamů můžeme v pythonu vytvořit a n�
   "\U0001F604",
   ]
 
-### Úkol 5
+### Úkol 4
 
 Zkus spustit postupně všechny programy níže. Jaký je rozdíl ve výpisu?
 
@@ -1384,19 +1385,19 @@ for i in [0, 1, 2, 3, 4]:
 
 již víme, že příkaz `for` postupně přiřazuje do proměnné `i` hodnoty 0 až 5. Podobně lze dosazovat všechny hodnoty z pole.
 
-### Úkol 6
+### Úkol 5
 
 Napište podprogram, který dostane dva parametry - pole a prvek. Program vypíše "ano", pokud se daný prvek nachází v poli.
 
-### Úkol 7
+### Úkol 6
 
 Napište podprogram, který dostane jako parametr pole, a který vypíše, kolik je v poli prvků.
 
-### Úkol 8
+### Úkol 7
 
 Napište podprogram, který dostane jako parametr pole čísel a vypíše součet všech čísel v poli.
 
-### Úkol 9
+### Úkol 8
 
 Jednotlivé prvky v poli lze měnit. Vyzkoušej, co vypíše následující program:
 
@@ -1414,27 +1415,27 @@ zapisem `cisla[1] = 40` říkáme, že chceme změnit v seznamu `cisla` prvek na
 
 _Pozice v seznamu se číslují od 0. První prvek je na pozici 0, druhý prvek na pozici 1 atd._
 
-### Úkol 10
+### Úkol 9
 
 Vytvořte seznam o šesti prvcích s hodnotou nula. Následně simulujte hod šestistěnnou kostkou tím, že vygenerujete náhodné číslo v rozmezí od 1 do 6. Podle výsledku hodu nastavte příslušný prvek v seznamu na hodnotu 1. Přitom si uvědomte, že indexy v seznamu začínají od 0, tedy číslo 1 z kostky odpovídá indexu 0 v seznamu, číslo 2 indexu 1 atd.
 
-### Úkol 11
+### Úkol 10
 
 Upravte předchozí kód tak, abychom hodnotu na daném indexu nenastavovali, ale pouze zvyšili o jedna.
 
-### Úkol 12
+### Úkol 11
 
 Upravte předchozí kód tak, abyste nesimulovali pouze jeden hod kostkou, ale 1000 hodů kostkou. Hodnoty postupně navyšujte. Budou výsledná čísla v seznamu přibližně stejná?
 
-### Úkol 13
+### Úkol 12
 
 Upravte předchozí kód tak, abyste simulovali hod dvěma kostkami. Do seznam ukládejte součet na obou kostkách. Kolik prvků musí mít seznam? Opět prověďte 1000 hodů. Proč tentokrát nebudou všechny hodnoty v seznamu podobné?
 
-### Úkol 14\*
+### Úkol 13\*
 
 Vytvořte podprogram `galtonova_deska`, který bude simulovat Galtonovu desku. Jak deska funguje znázorňuje toto [video](https://www.youtube.com/shorts/jstkPuhLDEw)
 
-### Úkol 15\*
+### Úkol 14\*
 
 Opilec je na půli cesty mezi domovem a hospodou, každý krok udělá náhodně jedním směrem. Napište funkci, která bude simulovat opilcův pohyb. Jejími parametry budou vzdálenost mezi domovem a hospodou a počet kroků do opilcova usnutí (tj. maximální délka simulace). Simulace skončí buď tehdy, když opilec dojede domů nebo do hospody, případně po vyčerpání počtu kroků.
 
@@ -1472,7 +1473,7 @@ home . . . . . . . . . . pub
 Ended in the pub again!
 ```
 
-### Úkol 16\*
+### Úkol 15\*
 
 Další simulace vhodné k programování naleznete [zde](https://www.fi.muni.cz/IB111/sbirka/04-nahodna_cisla.html#simulace-a-analyzy).
 
