@@ -1081,7 +1081,7 @@ def vypis(x):
     print('Převrácená hodnota se rovná', 1 / x)
 ```
 
-### Úloha
+### Úloha 5
 
 ```python
 import tkinter
@@ -1095,10 +1095,53 @@ ctverec(50)
 input()
 ```
 
-### Úloha
+### Úloha 6
 
 ```python
+import tkinter
+import random
+canvas = tkinter.Canvas()
+canvas.pack()
+def nahodny_ctverec(a):
+    x = random.randint(10, 350)
+    y = random.randint(10, 250)
+    canvas.create_rectangle(x, y, x + a, y + a, fill='red')
+nahodny_ctverec(10)
+nahodny_ctverec(20)
+nahodny_ctverec(30)
+input()
+```
 
+### Úloha 8
+
+```python
+def obliba(cislo):
+if cislo < 7:
+    print('Mám rád číslo', cislo)
+else:
+    print('Číslo', cislo, 'se mi nelíbí')
+```
+
+### Úloha 9
+
+```python
+for i in range(11):
+    obliba(i)
+```
+
+### Úloha 10
+
+```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+def ctverec(a):
+    if a > 0:
+        canvas.create_rectangle(10, 10, 10 + a, 10 + a)
+    else:
+        canvas.create_text(200, 150, text='Nedá se')
+ctverec(-50)
+ctverec(100)
 ```
 
 ### Úloha

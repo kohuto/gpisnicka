@@ -1273,13 +1273,13 @@ Převrácená hodnota se rovná 0.3333333333333333
 
 ### Úkol 5
 
-Dokonči podprogram `ctverec` tak, aby kreslil čtverc s levým horním vrcholem na souřadnicích $[200, 150]$ a délkou strany `x`, která bude parametrem podprogramu:
+Dokonči podprogram `ctverec` tak, aby kreslil čtverc s levým horním vrcholem na souřadnicích $[200, 150]$ a délkou strany `a`, která bude parametrem podprogramu:
 
 ```python
 import tkinter
 canvas = tkinter.Canvas()
 canvas.pack()
-def ctverec(x):
+def ctverec(a):
     canvas.create_rectangle(............, ............, ............, ............)
 ctverec(10)
 ctverec(100)
@@ -1289,7 +1289,7 @@ input()
 
 ### Úkol 6
 
-Vytvoř program a v něm definuj podprogram `nahodny_ctverec` s parametrem `x`, který nakreslí na náhodných souřadnicích červený čteverc se stranami délky `x`. Zavolej tento podprogram pro různé hodnoty parametru.
+Vytvoř program a v něm definuj podprogram `nahodny_ctverec` s parametrem `a`, který nakreslí na náhodných souřadnicích červený čtverec se stranami délky `a`. Zavolej tento podprogram pro různé hodnoty parametru.
 
 ### Úkol 7
 
