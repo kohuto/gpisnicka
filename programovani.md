@@ -558,7 +558,7 @@ vypis_text()
 
 4. Pokud nyní program spustíš, vypíše se text.
 
-Slovem `def` začíná definice tvého nového příkazu – podprogramu. `vypiš_text` je název podprogramu (podobně jako `print` je název pro podprogram, který vypisuje text). Tři příkazy `print` se nazvývají tělo programu.
+Slovem `def` začíná definice tvého nového příkazu – podprogramu. `vypiš_text` je název podprogramu (podobně jako `print` je název pro podprogram, který vypisuje text). Tři příkazy `print` se nazývají tělo podprogramu.
 
 Po spuštění programu se počítač naučil nový příkaz `vypis_text`. Počítač ho zatím
 nevykonal, jen se ho naučil. Skupinu příkazů `print` – tedy tělo podprogramu `vypis_text` – počítač vykoná až tehdy, když narazí na příkaz `vypis_text()`. Takovýto zápis se nazývá volání podprogramu.
@@ -617,8 +617,8 @@ print()
 refren()
 refren()
 def refren():
-print('já mám koně vraný koně')
-print('to jsou koně mí')
+    print('já mám koně vraný koně')
+    print('to jsou koně mí')
 ```
 
 Když program spustíš, Python vypíše chybové hlášení. Python tím říká, že na 1. řádku programu není možné volat podprogram `refren`, protože tento podprogram ještě nebyl definován. Uprav program tak, aby se úryvek písně vypsal správně.
@@ -689,10 +689,12 @@ __|__
 toto je noha:
   |
 __|__
+
 toto je obdélník:
 #####
 #   #
 #####
+
 toto je trojúhelník:
   *
  ***
@@ -1322,6 +1324,10 @@ Mám rád číslo 6
 Vytvoř nový program a v něm definuj podprogram `ctverec` s parametrem `a`, který udává délku strany čtverce. Podprogram by měl fungovat tak, že čtverec kreslí jen pro kladné hodnoty parametru `a`, ale pro záporné hodnoty vypíše zprávu _Nedá se_. Levý horní roh kresleného čtverce bude mít souřadnice $[10, 10]$. Zprávu vypiš přibližně do středu grafické plochy.
 
 ## Pole
+
+čtverec s náhodnou barvou (potřebuju barvy v poli, vyberu náhodný index)
+
+vygeneruj 7 místný pin -> vygeneruj pin náhodné délky od 5-10
 
 ### Úkol 1
 

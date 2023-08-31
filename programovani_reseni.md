@@ -329,17 +329,286 @@ canvas.create_rectangle(x, y, x + 100, y + 100, fill='yellow')
 input()
 ```
 
-### Úloha
+### Úloha 17
 
 ```python
-
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+x = 100
+y = 70
+sirka = 200
+vyska = 50
+canvas.create_rectangle(x, y, x + sirka, y + vyska, fill='red')
+input()
 ```
 
-### Úloha
+### Úloha 18
 
 ```python
-
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+x = 100
+y = 70
+canvas.create_rectangle(x, y, x + 100, y + 100, fill='red')
+canvas.create_rectangle(x, y, x + 70, y + 70, fill='blue')
+canvas.create_rectangle(x, y, x + 40, y + 40, fill='navy')
+input()
 ```
+
+### Úloha 19
+
+```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+x = 30
+y = 100
+a = 100
+b = 70
+canvas.create_rectangle(x, y, x + a, y + b, fill='blue')
+canvas.create_rectangle(x + a, y, x + 2 * a, y + b, fill='light blue')
+canvas.create_rectangle(x + 2 * a, y, x + 3 * a, y + b, fill='dark blue')
+input()
+```
+
+### Úloha 20
+
+```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+x = 50
+y = 200
+canvas.create_rectangle(x, y - 100, x + 100, y, fill='red')
+canvas.create_rectangle(x + 100, y - 80, x + 180, y, fill='yellow')
+canvas.create_rectangle(x + 180, y - 60, x + 240, y, fill='green')
+canvas.create_rectangle(x + 240, y - 40, x + 280, y, fill='violet')
+canvas.create_rectangle(x + 280, y - 20, x + 300, y, fill='blue')
+input()
+```
+
+## Podprogramy
+
+### Úloha 3
+
+```python
+print('Hello')
+vypis_text()
+print('How are you?')
+vypis_text()
+print('I am fine.')
+vypis_text()
+print('The end')
+```
+
+### Úloha 4
+
+```python
+def refren():
+    print('já mám koně vraný koně')
+    print('to jsou koně mí')
+refren()
+refren()
+print()
+print('když já jím dám ovsa')
+print('oni skáčou hopsa')
+print()
+refren()
+refren()
+```
+
+### Úloha 5
+
+```python
+# definice podporgramů
+def trojuhelnik():
+    print(' *')
+    print(' ***')
+    print('*****')
+def obdelnik():
+    print('#####')
+    print('# #')
+    print('#####')
+def noha():
+    print(' |')
+    print('__|__')
+
+# obrázek 1
+trojuhelnik()
+trojuhelnik()
+noha()
+
+# obrázek 2
+trojuhelnik()
+obdelnik()
+noha()
+
+# obrázek 3
+obdelnik()
+noha()
+obdelnik()
+
+# obrázek 4
+print('toto je noha:')
+noha()
+print()
+print('toto je obdélník:')
+obdelnik()
+print()
+print('toto je trojúhelník:')
+trojuhelnik()
+```
+
+### Úloha 7
+
+```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+def kriz():
+    canvas.create_rectangle(150 - 90, 100 - 30, 150 + 90, 100 + 30, fill='red')
+    canvas.create_rectangle(150 - 30, 100 - 90, 150 + 30, 100 + 90, fill='red')
+kriz()
+input()
+```
+
+### Úloha 8
+
+```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+def hlava():
+    canvas.create_rectangle(160, 40, 200, 100, fill='sky blue')
+    canvas.create_rectangle(150, 10, 210, 55, fill='steel blue')
+def telo():
+    canvas.create_rectangle(140, 70, 220, 190, fill='royal blue')
+def ruce():
+    canvas.create_rectangle(80, 90, 280, 110, fill='tomato')
+def nohy():
+    canvas.create_rectangle(150, 160, 170, 250, fill='purple')
+    canvas.create_rectangle(190, 160, 210, 250, fill='purple')
+hlava()
+ruce()
+nohy()
+telo()
+input()
+```
+
+## Náhoda
+
+### Úloha 3
+
+```python
+import random
+def hod_kostkou():
+    n = random.randint(1, 6)
+    print('Na kostce padla', n)
+hod_kostkou()
+hod_kostkou()
+hod_kostkou()
+hod_kostkou()
+hod_kostkou()
+hod_kostkou()
+hod_kostkou()
+hod_kostkou()
+hod_kostkou()
+hod_kostkou()
+```
+
+### Úloha 4
+
+```python
+def hod_kostkou():
+    n = random.randint(1, 20)
+    print('Na kostce padla', n)
+```
+
+### Úloha 5
+
+```python
+def hod_kostkou():
+    n = random.randint(1, 6) * 2
+    print('Na kostce padla', n)
+```
+
+### Úloha 6
+
+```python
+def hod_kostkou():
+    n = random.randint(1, 6) * 2 - 1
+    print('Na kostce padla', n)
+```
+
+### Úloha 7
+
+```python
+def hod_kostkou():
+    n = random.randint(1, 6) ** 2
+    print('Na kostce padla', n)
+```
+
+### Úloha 8
+
+```python
+import random
+a = random.randint(0, 9)
+b = random.randint(0, 9)
+c = random.randint(0, 9)
+d = random.randint(0, 9)
+print('Tvůj nový PIN je', a, b, c, d)
+```
+
+### Úloha 9
+
+```python
+import random
+den = random.randint(1, 30)
+mesic = random.randint(1, 12)
+rok = random.randint(2018, 2099)
+print('Pokoj si uklidím', den, '.', mesic, '.', rok)
+```
+
+### Úloha 11
+
+```python
+import tkinter
+import random
+canvas = tkinter.Canvas()
+canvas.pack()
+def nahodny_ctverec():
+    x = random.randint(10, 300)
+    y = random.randint(10, 200)
+    canvas.create_rectangle(x, y, x + 50, y + 50,fill='orange')
+nahodny_ctverec()
+nahodny_ctverec()
+nahodny_ctverec()
+nahodny_ctverec()
+nahodny_ctverec()
+input()
+```
+
+### Úloha 12
+
+```python
+import tkinter
+import random
+def nahodny_ctverec():
+    x = random.randint(10, 300)
+    y = random.randint(10, 200)
+    a = random.randint(10, 100)
+    canvas.create_rectangle(x, y, x + a, y + a, fill='orange')
+nahodny_ctverec()
+nahodny_ctverec()
+nahodny_ctverec()
+nahodny_ctverec()
+nahodny_ctverec()
+input()
+```
+
+## Kreslení textu
 
 ### Úloha
 
