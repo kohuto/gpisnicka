@@ -840,6 +840,7 @@ import tkinter
 canvas = tkinter.Canvas()
 canvas.pack()
 canvas.create_text(150, 50, text='posílám pozdrav z grafické plochy')
+input()
 ```
 
 ### Úkol 2
@@ -896,7 +897,7 @@ Je důležité odsadit od kraje příkazy, které tvoří tělo cyklu. Vyzkouše
 ```python
 for i in range(5):
     print('Těším se na prázdniny')
-    print('=====================')
+print('=====================')
 ```
 
 ### Úkol 6
@@ -953,7 +954,7 @@ Na druhé kostce padlo číslo 4
 Součet obou čísel je 5
 ```
 
-### Úkol 11
+### Úkol 11\*
 
 Vytvoř nový program, který bude představovat generátor náhodného QR kódu a který bude schopen generovat podobný QR kód jako na obrázku níže:
 
@@ -1054,7 +1055,7 @@ Změň předchozí program hodnotu proměnné `teplota` z 25 na 10. Program spus
 
 ### Úkol 4
 
-Uprav přechozé program tak, aby pro:
+Uprav předchzí program tak, aby pro:
 
 - záporné teploty vypsal _Vezmi si rukavice_,
 - jinak vypsal _Rukavice nejsou potřeba_.
@@ -1090,8 +1091,8 @@ Napiš program, ve kterém do proměnné `megabajty` přiřadíš počet přenes
 Vytvoř program, který zobrazí absolutní hodnotu čísla. Do proměnné `a` přiřaď číslo. Použij příkaz větvení, abys vypsal absolutní hodnotu tohoto čísla.
 Například:
 
-- když bude a = -7, program vypíše Absolutní hodnota -7 je 7,
-- když bude a = 13, program vypíše Absolutní hodnota 13 je 13.
+- když bude a = -7, program vypíše _Absolutní hodnota -7 je 7_,
+- když bude a = 13, program vypíše _Absolutní hodnota 13 je 13_.
 
 ### Úkol 9
 
@@ -1103,7 +1104,8 @@ print(1 == 1)
 print(1 == 2)
 print(0 != 2)
 print(0 != 0)
-print(x = 100)
+
+x = 100
 print(x == 10 * 10)
 print(x != 10 * 10)
 print(11 * 11 - 21 == x)
@@ -1271,30 +1273,31 @@ Převrácená hodnota se rovná 0.3333333333333333
 
 ### Úkol 5
 
-Dokonči podprogram `kruh` tak, aby kreslil kruhy se středem $[200, 150]$ a poloměrem `r`, který bude parametrem podprogramu:
+Dokonči podprogram `ctverec` tak, aby kreslil čtverc s levým horním vrcholem na souřadnicích $[200, 150]$ a délkou strany `x`, která bude parametrem podprogramu:
 
 ```python
 import tkinter
 canvas = tkinter.Canvas()
 canvas.pack()
-def kruh(r):
-    canvas.create_oval(............, ............, ............, ............)
-kruh(10)
-kruh(100)
-kruh(50)
+def ctverec(x):
+    canvas.create_rectangle(............, ............, ............, ............)
+ctverec(10)
+ctverec(100)
+ctverec(50)
+input()
 ```
 
 ### Úkol 6
 
-Vytvoř program a v něm definuj podprogram `nahodny_kruh` s parametrem `r`, který nakreslí na náhodných souřadnicích červený kruh o poloměru `r`. Zavolej tento podprogram pro různé hodnoty parametru.
+Vytvoř program a v něm definuj podprogram `nahodny_ctverec` s parametrem `x`, který nakreslí na náhodných souřadnicích červený čteverc se stranami délky `x`. Zavolej tento podprogram pro různé hodnoty parametru.
 
 ### Úkol 7
 
-Vyzkoušej, co předchozí program nakreslí, když zavoláš podprogram `nahodny_kruh` následujícím způsobem:
+Vyzkoušej, co předchozí program nakreslí, když zavoláš podprogram `nahodny_ctverec` následujícím způsobem:
 
 ```python
 for i in range(10):
-    nahodny_kruh(i)
+    nahodny_ctverec(i)
 ```
 
 ### Úkol 8
