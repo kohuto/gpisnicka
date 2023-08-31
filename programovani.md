@@ -337,11 +337,14 @@ Doposud programy počítaly a vypisovaly textové zprávy. Nyní zkusíme kresli
 import tkinter
 canvas = tkinter.Canvas()
 canvas.pack()
+input()
 ```
 
 2. Program spusť – na obrazovce uvidíš nové okno.
 3. Zjisti, zda se dá okno posouvat, měnit jeho velikost. Nakonec toto nové okno zavři.
    program vyrobil grafickou plochu `canvas`.
+
+> `input()` na konci nemá s oknem nic společného. Jedná se o příkaz, který čeká, až mu uživatel do konzole napíše nějaký vstup. Kdyby tam příkaz nebyl, tak by program ihned skončil a okno by se ihned po otevření zavřelo.
 
 ### Úkol 1
 
