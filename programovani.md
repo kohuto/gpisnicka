@@ -1328,10 +1328,6 @@ Vytvoř nový program a v něm definuj podprogram `ctverec` s parametrem `a`, kt
 
 ## Pole
 
-čtverec s náhodnou barvou (potřebuju barvy v poli, vyberu náhodný index)
-
-vygeneruj 7 místný pin -> vygeneruj pin náhodné délky od 5-10
-
 ### Úkol 1
 
 Vygeneruj náhodné číslo od 0 do 3. Na základě vygenerovaného čísla vykresli čtverec s levým horním rohem na souřadnicích $[50, 50]$ o délce strany 30 podle následujících pravidel:
@@ -1413,11 +1409,11 @@ print(cisla)
 
 zapisem `cisla[1] = 40` říkáme, že chceme změnit v seznamu `cisla` prvek na pozici `1` a nová hodnota tohoto prvku je `40`.
 
-_Pozice v seznamu se číslují od 0. První prvek je na pozici 0, druhý prvek na pozici 1 atd._
+> Pozice v seznamu se číslují od 0. První prvek je na pozici 0, druhý prvek na pozici 1 atd.
 
 ### Úkol 9
 
-Vytvořte seznam o šesti prvcích s hodnotou nula. Následně simulujte hod šestistěnnou kostkou tím, že vygenerujete náhodné číslo v rozmezí od 1 do 6. Podle výsledku hodu nastavte příslušný prvek v seznamu na hodnotu 1. Přitom si uvědomte, že indexy v seznamu začínají od 0, tedy číslo 1 z kostky odpovídá indexu 0 v seznamu, číslo 2 indexu 1 atd.
+Vytvořte seznam o šesti prvcích s hodnotou nula. Následně simulujte hod šestistěnnou kostkou tím, že vygenerujete náhodné číslo v rozmezí od 1 do 6. Podle výsledku hodu nastavte příslušný prvek v seznamu na hodnotu 1. Přitom si uvědomte, že indexy v seznamu začínají od 0, tedy číslo 1 z kostky odpovídá indexu 0 v seznamu, číslo 2 indexu 1 atd. Celý seznam následně vypište.
 
 ### Úkol 10
 
@@ -1429,13 +1425,17 @@ Upravte předchozí kód tak, abyste nesimulovali pouze jeden hod kostkou, ale 1
 
 ### Úkol 12
 
-Upravte předchozí kód tak, abyste simulovali hod dvěma kostkami. Do seznam ukládejte součet na obou kostkách. Kolik prvků musí mít seznam? Opět prověďte 1000 hodů. Proč tentokrát nebudou všechny hodnoty v seznamu podobné?
+Upravte předchozí kód tak, abyste simulovali hod dvěma kostkami. Do seznam ukládejte součet na obou kostkách. Kolik prvků musí mít seznam? Prověďte 10000 hodů. Proč tentokrát nebudou všechny hodnoty v seznamu podobné?
 
-### Úkol 13\*
+### Úkol 13
+
+Upravte kód z úlohy 1. Vytvořte pole, do kterého uložte čtyři názvy barev. Po vygenerování náhodného čísla uložte barvu z dané pozice v poli do proměnné.
+
+### Úkol 14\*
 
 Vytvořte podprogram `galtonova_deska`, který bude simulovat Galtonovu desku. Jak deska funguje znázorňuje toto [video](https://www.youtube.com/shorts/jstkPuhLDEw)
 
-### Úkol 14\*
+### Úkol 15\*
 
 Opilec je na půli cesty mezi domovem a hospodou, každý krok udělá náhodně jedním směrem. Napište funkci, která bude simulovat opilcův pohyb. Jejími parametry budou vzdálenost mezi domovem a hospodou a počet kroků do opilcova usnutí (tj. maximální délka simulace). Simulace skončí buď tehdy, když opilec dojede domů nebo do hospody, případně po vyčerpání počtu kroků.
 
@@ -1473,7 +1473,7 @@ home . . . . . . . . . . pub
 Ended in the pub again!
 ```
 
-### Úkol 15\*
+### Úkol 16\*
 
 Další simulace vhodné k programování naleznete [zde](https://www.fi.muni.cz/IB111/sbirka/04-nahodna_cisla.html#simulace-a-analyzy).
 

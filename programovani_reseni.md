@@ -1193,35 +1193,68 @@ def soucet_cisel(pole):
     soucet = 0
     for i in pole:
         soucet = soucet + i
-    print(pocitadlo)
+    print(soucet)
 ```
 
-### Úloha
+### Úloha 9
 
 ```python
-
+import random
+hody = [0, 0, 0, 0, 0, 0]
+x = random.randint(1, 6) - 1
+hody[x] = 1
+print(hody)
 ```
 
-### Úloha
+### Úloha 10
 
 ```python
-
+import random
+hody = [0, 0, 0, 0, 0, 0]
+x = random.randint(1, 6) - 1
+hody[x] = hody[x] + 1
+print(hody)
 ```
 
-### Úloha
+### Úloha 11
 
 ```python
+import random
+hody = [0, 0, 0, 0, 0, 0]
 
+for i in range(1000):
+    x = random.randint(1, 6) - 1
+    hody[x] = hody[x] + 1
+print(hody)
 ```
 
-### Úloha
+### Úloha 12
 
 ```python
+import random
+hody = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
+for i in range(1000):
+    x = random.randint(1, 6)
+    y = random.randint(1, 6)
+    soucet = x + y - 1
+    hody[soucet] = hody[soucet] + 1
+print(hody)
 ```
 
-### Úloha
+### Úloha 13
 
 ```python
+import tkinter
+import random
+canvas = tkinter.Canvas()
+canvas.pack()
 
+x = random.randint(0, 3)
+barvy = ['red', 'green', 'blue', 'yellow']
+barva = barvy[x]
+
+canvas.create_rectangle(50, 50, 80, 80, fill=barva)
+
+input()
 ```
