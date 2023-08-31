@@ -1258,3 +1258,23 @@ canvas.create_rectangle(50, 50, 80, 80, fill=barva)
 
 input()
 ```
+
+### Úloha 14
+
+```python
+import random
+
+prihradky = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+for a in range(10000):
+    pozice = 6
+    for i in range(12):
+        smer = random.randint(0, 1)
+        if smer == 0:
+            pozice -= 0.5
+        else:
+            pozice += 0.5
+    prihradky[int(pozice)] = prihradky[int(pozice)] + 1
+
+print(prihradky)
+```

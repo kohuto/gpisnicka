@@ -1332,14 +1332,14 @@ Vytvoř nový program a v něm definuj podprogram `ctverec` s parametrem `a`, kt
 
 Vygeneruj náhodné číslo od 0 do 3. Na základě vygenerovaného čísla vykresli čtverec s levým horním rohem na souřadnicích $[50, 50]$ o délce strany 30 podle následujících pravidel:
 
-- pro číslo 0, bude čtverec červený
-- pro číslo 1, bude čtverec zelený
-- pro číslo 2, bude čtverec modrý
-- pro číslo 3, bude čtverec žlutý
+- pro číslo 0 bude čtverec červený
+- pro číslo 1 bude čtverec zelený
+- pro číslo 2 bude čtverec modrý
+- pro číslo 3 bude čtverec žlutý
 
 ### Úkol 2
 
-Kdybychom podobným způsobem chtěli vykreslovat čtverce 20 různých barev, tak by se stal kód nečitelným. Lepší variantou, jak uchovávat nějaký výčet hodnot je seznam. Vyzkoušej, co vypíše následující program:
+Kdybychom podobným způsobem chtěli vykreslovat čtverce 20 různých barev, tak by se stal kód nečitelným. Lepší variantou, jak uchovávat nějaký výčet hodnot je seznam. K úloze 1 se ještě později vrátíme. Vyzkoušej, co vypíše následující program:
 
 ```python
 znamky = [5, 1, 4, 3, 1, 1, 2]
@@ -1367,7 +1367,7 @@ Vyzkoušej, který z následujících seznamů můžeme v pythonu vytvořit a n�
 
 ### Úkol 4
 
-Zkus spustit postupně všechny programy níže. Jaký je rozdíl ve výpisu?
+Zkus spustit postupně spustit oba programy níže. Jaký je rozdíl ve výpisu?
 
 ```python
 for i in range(5):
@@ -1433,7 +1433,9 @@ Upravte kód z úlohy 1. Vytvořte pole, do kterého uložte čtyři názvy bare
 
 ### Úkol 14\*
 
-Vytvořte podprogram `galtonova_deska`, který bude simulovat Galtonovu desku. Jak deska funguje znázorňuje toto [video](https://www.youtube.com/shorts/jstkPuhLDEw)
+Vytvořte podprogram `galtonova_deska`, který bude simulovat Galtonovu desku. Jak deska funguje znázorňuje toto [video](https://www.youtube.com/shorts/jstkPuhLDEw).
+
+Dole je 13 přihrádek. Kuličky padají postupně přes 12 pater. V každém patře se můžou posunout buď o půl pozice doleva nebo o půl pozice doprava. Všechny kuličky začínají nad prostřední přihrádkou. Nakonec každá kulička spadne do jedné ze 13 přihrádek. Kuliček je 1000. Kolik bude nakonec v jednotlivých přihrádkách kuliček.
 
 ### Úkol 15\*
 
