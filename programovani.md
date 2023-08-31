@@ -90,7 +90,7 @@ print(42 - 17)
 print(3 + 4 * 5)
 print((3 + 4) * 5)
 print(132 / 11)
-print(1 + 2 * 3 / (5 – 1))
+print(1 + 2 * 3 / (5 - 1))
 ```
 
 ### Úloha 3
@@ -108,7 +108,7 @@ print(19 - (3 4))
 Někdy se však i po správném zápise může objevit chybové hlášení. Co se stane, pokud zadáš následující příkaz?
 
 ```python
-print(10 / (6 – 2 * 3))
+print(10 / (6 - 2 * 3))
 ```
 
 ### Úloha 5
@@ -175,7 +175,7 @@ Zkontroluj, jaké hodnoty se do proměnných uložily.
 
 Proměnných můžeme vytvořit, kolik budeme chtít a později je používat v dalších výpočtech.
 
-### Úloha 3
+### Úloha 4
 
 Definujme tři proměnné:
 
@@ -191,7 +191,7 @@ Co se stane, když bychom chtěli vypsat proměnnou `vek`, kterou jsme zatím ne
 print(vek)
 ```
 
-### Úloha 4
+### Úloha 5
 
 Proměnné můžeš použít i v matematických zápisech a Python namísto názvu proměnné dosadí její hodnotu. Mějme proměnné `a`, `vyska` a `cena` ze cvičení 3. Urči výsledek následujících příkazů:
 
@@ -201,7 +201,7 @@ print(3 * cena + 10)
 print(cena + vyska)
 ```
 
-### Úloha 5
+### Úloha 6
 
 Proměnným můžeme změnit jejich obsah – vyzkoušej:
 
@@ -211,20 +211,20 @@ cena = 6 * 7
 print(cena)
 ```
 
-### Úloha 5
+### Úloha 7
 
 Změň hodnotu proměnné vyska tak, aby v ní byla tvoje výška v centimetrech.
 
-### Úloha 5
+### Úloha 8
 
 Přiřaď do proměnné `zmrzlina` cenu jedné zmrzliny (například 25 korun). Do proměnné `pocet` přiraď počet kamarádů, kterým chceš koupit po jedné zmrzlině. Za
 použití proměnných sestav přiřazovací příkaz, pomocí kterého se do třetí proměnné `zaplatit` přiřadí celková cena, kterou zaplatíš.
 
-### Úloha 6
+### Úloha 9
 
 V matematice značíme obsah kruhu $S$ a počítáme jej podle vzorce $\pi  r^2$. Obvod kruhu značíme $O$ a počítáme jej podle vzorce $2 \pi  r$. Vytvoř proměnné pro `poloměr`, `obsah` i `obvod` kruhu a přiřaď do nich správné výrazy. Vytvoř si proměnnou `pi` s hodnotou $3.14$.
 
-### Úloha 7
+### Úloha 10
 
 Vyzkoušej, které z následujících názvu lze použít jako název proměnné:
 
