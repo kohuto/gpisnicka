@@ -93,7 +93,7 @@ Stáhněte tento [soubor](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwL
 
 ### Úkol 6
 
-Stáhněte tento [soubor](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing) a vypište 10 nejčastěji se vyskytujících slov v textu. Pro zajímavost se omezte pouze na slova délky 3 a více.
+Stáhněte tento [soubor](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing) a vypište 10 nejčastěji se vyskytujících slov v textu. Zkuste vypsat pouze slova, která mají alespoň 3 písmena.
 
 ### Úkol 7
 
