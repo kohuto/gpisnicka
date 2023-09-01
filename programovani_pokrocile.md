@@ -89,7 +89,7 @@ print(osoba)
 
 ### Úkol 5
 
-Stáhněte tento [soubor](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing) a vypište prvních 10 slov v textu.
+Stáhněte tento [soubor](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing) a vypište prvních 10 slov v textu. Zkuste vypsat pouze slova, která mají alespoň 3 písmena.
 
 ### Úkol 6
 
