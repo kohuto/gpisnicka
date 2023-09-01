@@ -79,7 +79,7 @@ osoba["jmeno"] = "Pepa"
 print(osoba["jmeno"])  # vypíše "Pepa"
 ```
 
-Pokud dvojice `klíč:hodnota`` ve lsovníku není, přidá se:
+Pokud dvojice `klíč:hodnota` ve slovníku není, tak se dvojice přidá:
 
 ```python
 osoba["pohlaví"] = "žena"
