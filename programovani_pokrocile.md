@@ -89,23 +89,27 @@ print(osoba)
 
 ### Úkol 5
 
-Stáhněte tento [soubor](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing) a vypište 10 nejčastěji se vyskytujících slov v textu. Pro zajímavost se omezte pouze na slova délky 3 a více.
+Stáhněte tento [soubor](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing) a vypište prvních 10 slov v textu.
 
 ### Úkol 6
 
-Analyzujte text v tomto [souboru](https://drive.google.com/file/d/1o5l-Qe7hZTiRG6ggefP-nChuTSmTET7T/view?usp=drive_link) a vraťte průměrný počet slov ve větě.
+Stáhněte tento [soubor](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing) a vypište 10 nejčastěji se vyskytujících slov v textu. Pro zajímavost se omezte pouze na slova délky 3 a více.
 
 ### Úkol 7
+
+Analyzujte text v tomto [souboru](https://drive.google.com/file/d/1o5l-Qe7hZTiRG6ggefP-nChuTSmTET7T/view?usp=drive_link) a vraťte průměrný počet slov ve větě.
+
+### Úkol 8
 
 Proveďte frekvenční analýzu některého z výše uvedených souborů. Vypište, kolikrát se v textu vyskytují jednotlivá písmena.
 
 Tip: pro ověření, že je daný znak písmeno, můžete použít funkci `isalpha`.
 
-### Úkol 8
+### Úkol 9
 
 Pro každé písmeno v textu vypište 5 písmen, které za ním následují nejčastěji.
 
-### Úkol 9
+### Úkol 10
 
 Napište podprogram, který analyzuje text v [souboru](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing). Podprogram pak vygeneruje pseudo-náhodný text o `length` slovech. Text se generuje po slovech. Další generované slovo se náhodně vybírá z těch, které v původním textu po naposledy vygenerovaném slově následovaly.
 
