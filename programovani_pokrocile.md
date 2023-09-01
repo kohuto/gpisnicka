@@ -2,10 +2,13 @@
 
 ## Přehled
 
+1. [Datové typy](#datové-typy)
 1. [Čtení ze souborů](#čtení-ze-souborů)
-2. [Výjimky](#výjimky)
-3. [Moduly](#moduly)
-4. [Testy](#testy)
+1. [Výjimky](#výjimky)
+1. [Moduly](#moduly)
+1. [Testy](#testy)
+
+## Datové typy
 
 ## Čtení ze souborů
 
