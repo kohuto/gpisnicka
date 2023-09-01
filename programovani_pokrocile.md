@@ -223,7 +223,7 @@ print(' 42'.isdecimal())
 
 ### Úkol 5
 
-Chceme-li tedy zjisti, zda funkce `int` umí převést řetězec na číslo, je nejlepší na to skutečně použít funkci `int`.
+Chceme-li tedy zjistit, zda funkce `int` umí převést řetězec na číslo, je nejlepší na to skutečně použít funkci `int`.
 
 V případě, že by došlo k selhání, existuje v pythonu příkaz `try/except`. Zkus spustit následující kód a zadávat různé platné i neplatné vstupy:
 
@@ -278,7 +278,7 @@ Co nám vrátí předchozí podprogram, když ho zavoláme následujícím způs
 obsah_ctverce(-5)
 ```
 
-V takovéme případě bychom asi chtěli, aby program zahlásil chybu. Prakticky to lze provést následovně:
+V takovém případě bychom asi chtěli, aby program zahlásil chybu. Prakticky to lze provést následovně:
 
 ```python
 def obsah_ctverce(strana):
