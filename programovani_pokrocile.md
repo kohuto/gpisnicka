@@ -5,6 +5,7 @@
 1. [Čtení ze souborů](#čtení-ze-souborů)
 2. [Výjimky](#výjimky)
 3. [Moduly](#moduly)
+4. [Testy](#testy)
 
 ## Čtení ze souborů
 
@@ -210,3 +211,62 @@ def obsah_ctverce(strana):
 Podobně jako `return` i příkaz `raise` ukončí funkci. A nejen tu – pokud na tuhle konkrétní chybu není program předem připravený, ukončí se celý program.
 
 ## Moduly
+
+## Testy
+
+Nyní si ukážeme, jak psát testy v jazyce Python pomocí knihovny `pytest`. Pytest je populární nástroj pro psaní a spouštění testů, který usnadňuje vytváření a organizaci testovacího kódu.
+
+Zatím jsme programy testovali tak, že jsme je zkusili spustit, něco jsme zadali a podívali se, jestli jsou výsledky v pořádku. U větších programů už by to bylo náročné kontrolovat. Proto se v praxi napíše jiný program, které náš program testuje za nás. Jedná se o funkce s parametrem a použití modulů, které program spouští a ověří, že se při změně nerozbilo nic, co dříve fungovalo.
+
+### Instalace pytest
+
+Knihovnu `pytest` je potřeba nainstalovat následujícím příkazem:
+
+```
+pip install pytest
+```
+
+### Adresářová struktura
+
+Vytvořte následující adresářovou strukturu:
+
+```
+my_project/
+├─ calculator.py
+└─ test_calculator.py
+```
+
+Do souboru `calculator.py` vložte následující kód
+
+```python
+def add(a, b):
+    return a + b
+```
+
+Do souboru `test_calculator.py`
+
+```python
+from calculator import add
+
+def test_addition():
+    result = add(2, 3)
+    assert result == 5
+```
+
+### Spuštění
+
+Vytvořili jsme funkci `test_addition`, která testuje funkci `add` z naší kalkulačky. Příkaz `assert` vyhodnotí výraz za ním a pokud výsledek není pravdivý, vyvolá výjimku, která způsobí, že test selže.
+
+Testy můžeme nyní spustit pomocí následujícího příkazu:
+
+```
+pytest
+```
+
+### Úkol 1
+
+### Úkol 2
+
+### Úkol 3
+
+### Úkol 4
