@@ -79,6 +79,14 @@ osoba["jmeno"] = "Pepa"
 print(osoba["jmeno"])  # vypíše "Pepa"
 ```
 
+Pokud dvojice `klíč:hodnota`` ve lsovníku není, přidá se:
+
+```python
+osoba["pohlaví"] = "žena"
+print(osoba)
+# vypíš {'jmeno': 'Anna', 'věk': 30, 'město': 'Praha', 'pohlaví': 'žena'}
+```
+
 ### Úkol 5
 
 Stáhněte tento [soubor](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing) a vypište 10 nejčastěji se vyskytujících slov v textu. Pro zajímavost se omezte pouze na slova délky 3 a více.
