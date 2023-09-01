@@ -10,6 +10,71 @@
 
 ## Datové typy
 
+### Připomenutí načítání vstupu
+
+Co vypíše následující program?
+
+```python
+cislo = input("Zadejte celé číslo: ")
+print(cislo * 2)
+```
+
+### Shrnutí datových typů
+
+Už jsme viděli následující datové typy:
+
+#### Celá čísla
+
+```python
+x = 5
+y = -10
+```
+
+#### Desetinná čísla
+
+```python
+a = 3.14
+b = -0.5
+```
+
+#### Řetězce
+
+```python
+text1 = 'Ahoj, světe!'
+text2 = "Python je skvělý."
+```
+
+#### Logická hodnota
+
+```python
+pravda = True
+nepravda = False
+```
+
+#### Seznamy
+
+```python
+cisla = [1, 2, 3, 4, 5]
+jmena = ['Anna', 'Petr', 'Eva']
+```
+
+#### Slovníky
+
+```python
+osoba = {
+    'jmeno': 'Jan',
+    'prijmeni': 'Novák',
+    'vek': 30
+}
+```
+
+Na datový typ je potřeba myslet napřiklad při načítání vstupu, jak jsme viděli v úvodním příkladu. Funkce `input()` vrací řetězec, proto je potřeba provést konverzi na požadovaný datový typ:
+
+```python
+cislo = int(input("Zadejte celé číslo: "))
+print(cislo * 2)
+```
+
 ## Čtení ze souborů
 
 ### Úkol 1
