@@ -423,3 +423,116 @@ Třída `Bus` by měla mít následující metody:
 Nakonec napište funkci `simulate_bus_trip(num_stops, capacity)`, která simuluje cestu autobusem skrze zastávky. Parametr `num_stops` určuje celkový počet zastávek a parametr `capacity` určuje maximální kapacitu autobusu. Funkce by měla vytvořit instanci třídy `Bus` a simulovat cestu autobusem skrze jednotlivé zastávky.
 
 **Poznámka:** Ujistěte se, že student správně implementuje všechny metody a že výstupy z funkce `simulate_bus_trip` budou podobné těm výstupům, které generuje poskytnutý kód.
+
+### Úkol 2
+
+Napište program, který simuluje ekosystém na malém ostrůvku. Na ostrůvku žijí různí druhy zvířat, kteří interagují mezi sebou a s prostředím. Vytvořte třídy pro různé druhy zvířat, umožněte jim hledat potravu, rozmnožovat se a interagovat s jinými zvířaty.
+
+Zadání:
+
+1. Vytvořte třídu `Animal`, která bude reprezentovat zvíře v ekosystému. Tato třída by měla obsahovat alespoň následující atributy:
+
+   - `species`: Druh zvířete.
+   - `age`: Věk zvířete.
+   - `hunger_level`: Úroveň hladu zvířete.
+   - `is_alive`: Informace o tom, zda je zvíře stále naživu.
+
+2. Vytvořte třídy pro různé druhy zvířat, například `Lion`, `Gazelle`, `Tree`, atd. Každá třída by měla dědit z třídy `Animal` a měla by mít specifické metody, které modelují chování daného druhu v ekosystému. Například `Lion` by mohl loviti `Gazelle`, `Gazelle` by mohla hledat potravu a množit se, `Tree` by mohlo sloužit jako útočiště, atd.
+
+3. Implementujte třídu `Ecosystem`, která bude reprezentovat celý ekosystém na ostrůvku. Tato třída by měla obsahovat seznam zvířat a prostředí na ostrůvku.
+
+4. Napište funkci `simulate_ecosystem(num_steps)`, která bude simulovat vývoj ekosystému na ostrůvku po určitý počet kroků. V každém kroku by měly zvířata provádět různé akce, jako hledání potravy, rozmnožování a interakce s prostředím a jinými zvířaty. Funkce by měla vypisovat stav ekosystému v každém kroku.
+
+MOŽNÁ BY STÁLO ZA TO VYTVOŘIT 2D GRID, KDY NA ZAČÁTKU BY BYLY NÁHODNĚ ROZMÍSTĚNÉ POSTAVY. V KAŽDÉM KROKU SIMULACE SE FIGURKA PŘESUNE NA VEDLEJŠÍ POLE. POKUD SE SEJDOU DVA NA JEDNOM POLI, POSTUPUJE SE NÁSLEDOVNĚ:
+
+- POKUD SE POTKAJÍ DVA STEJNÉ DRUHY, ROZMNOŽÍ SE
+- POKUD JSOU DRUHY ROZDÍLNÉ ALE BÝLOŽRAVCI, NIC SE NEDĚJE
+- POKUD JSOU DRUHY ROZDÍLNÉ, JEDEN MASOŽRAVEC A DRUHÝ BÝLOŽRAVEC, TAK BÝLOŽRAVEC UMÍRÁ
+  MASOŽRAVEC MUSÍ PRAVIDELNĚ ŽRÁT, JINAK PO URČITÉ DOBĚ UMŘE. BÝLOŽRAVCI ROVNĚŽ. V KAŽDÉ ITERACI VYROSTE NÁHODNĚ NÁHODNÝ POČET STROMŮ. ZABRAŇUJE TO PŘEMNOŽENÍ BÝLOŽRAVCŮ.
+
+### Úkol 3
+
+Napište program, který simuluje šíření lesního požáru v 2D mřížce. Každé políčko mřížky může být prázdné, obsahovat strom nebo být v plamenech. Požár se může šířit mezi stromy, a pokud je políčko s ohněm vedle stromu, ten se také zapálí.
+
+Zadání:
+
+1. Vytvořte třídu `Cell`, která bude reprezentovat jedno políčko v 2D mřížce. Tato třída by měla mít atributy pro stav políčka (prázdné, strom, oheň) a měla by mít metodu `ignite()`, která změní stav políčka na oheň.
+
+2. Implementujte třídu `Forest`, která bude reprezentovat lesní oblast s 2D mřížkou. Tato třída by měla obsahovat mřížku políček a měla by mít metody pro:
+
+   - Výběr náhodného políčka pro náhodný růst stromů.
+   - Šíření ohně mezi stromy na základě pravidel.
+
+3. Napište funkci `simulate_fire_spread(grid_size, num_trees, num_iterations)`, která bude simulovat šíření lesního požáru v zadané 2D mřížce. Parametr `grid_size` určuje velikost mřížky, `num_trees` určuje počet stromů na začátku simulace a `num_iterations` určuje počet iterací simulace.
+
+Pravidla simulace:
+
+- Na začátku simulace jsou náhodně rozmístěny stromy.
+- V každé iteraci se náhodně vybere několik políček, na kterých vyroste nový strom.
+- Pokud je políčko s ohněm, šíří se oheň na sousední stromy (pokud jsou).
+- Ohněm zapálené stromy se v další iteraci stávají ohněm.
+
+**Poznámka:** Ujistěte se, že student správně implementuje třídy pro políčka a lesní oblast, včetně metod pro šíření ohně a růst stromů. Funkce `simulate_fire_spread` by měla simulovat šíření požáru a vypisovat stav mřížky v každé iteraci.
+
+### Úkol 4
+
+**Simulace Epidemiologického Šíření:**
+
+Napište program, který simuluje šíření infekčního onemocnění v populaci. Jednotlivé osoby budou interagovat a může dojít k přenosu infekce. Simulace bude sledovat šíření onemocnění skrze několik kroků.
+
+Zadání:
+
+1. Vytvořte třídu `Person`, která bude reprezentovat jednotlivé osoby v populaci. Tato třída by měla mít atributy pro:
+   - `status`: Stav osoby (zdravá, nakažená, uzdravená).
+   - `infection_time`: Čas, kdy se osoba nakazila.
+   - `recovery_time`: Doba, po které se osoba uzdraví.
+2. Implementujte třídu `Population`, která bude reprezentovat populaci osob. Tato třída by měla obsahovat seznam osob a metody pro:
+
+   - Náhodný výběr osob pro nákazu.
+   - Šíření infekce mezi osobami na základě pravidel.
+   - Uzdravování osob po určité době.
+
+3. Napište funkci `simulate_epidemic(population_size, infection_rate, recovery_time, num_steps)`, která bude simulovat šíření infekčního onemocnění v populaci. Parametr `population_size` určuje velikost populace, `infection_rate` určuje pravděpodobnost přenosu infekce mezi osobami, `recovery_time` určuje dobu, po které se osoba uzdraví, a `num_steps` určuje počet kroků simulace.
+
+Pravidla simulace:
+
+- Na začátku jsou některé osoby náhodně nakazeny.
+- V každé iteraci se náhodně vybere několik osob pro přenos infekce.
+- Infekce se šíří mezi nakaženými a zdravými osobami s určitou pravděpodobností.
+- Osoby se uzdravují po uplynutí určité doby.
+
+**Poznámka:** Ujistěte se, že student správně implementuje třídy pro osoby a populaci, včetně metod pro šíření infekce a uzdravování osob. Funkce `simulate_epidemic` by měla simulovat šíření onemocnění a vypisovat stav populace v každé iteraci.
+
+### Úkol 5
+
+**Simulace Obchodního Centra:**
+
+Napište program, který simuluje chování zákazníků v obchodním centru. Zákazníci budou vstupovat do obchodů, nakupovat zboží a interagovat s ostatními zákazníky. Simulace bude sledovat, jak se lidé pohybují mezi obchody a jak se jednotlivé interakce odrážejí na celkovém průběhu dne.
+
+Zadání:
+
+1. Vytvořte třídu `Customer`, která bude reprezentovat jednotlivé zákazníky v obchodním centru. Tato třída by měla mít atributy pro:
+   - `id`: Unikátní identifikátor zákazníka.
+   - `shopping_list`: Seznam zboží, které zákazník chce nakoupit.
+2. Implementujte třídu `Store`, která bude reprezentovat obchod v obchodním centru. Tato třída by měla obsahovat atributy pro:
+
+   - `name`: Název obchodu.
+   - `inventory`: Inventář zboží v obchodě.
+   - `customers`: Seznam zákazníků ve frontě na nákup.
+   - `interactions`: Metoda pro interakce mezi zákazníky a zaměstnanci obchodu.
+
+3. Implementujte třídu `ShoppingMall`, která bude reprezentovat celé obchodní centrum. Tato třída by měla obsahovat seznam obchodů a metody pro:
+
+   - Pohyb zákazníků mezi různými obchody.
+   - Rozdělování zákazníků do front na nákup.
+   - Vytváření zákazníků s nákupním seznamem.
+
+4. Napište funkci `simulate_shopping_mall(mall_size, num_customers, num_steps)`, která bude simulovat chování zákazníků v obchodním centru. Parametr `mall_size` určuje velikost obchodního centra, `num_customers` určuje počet zákazníků a `num_steps` určuje počet kroků simulace.
+
+Pravidla simulace:
+
+- Zákazníci se pohybují mezi různými obchody a interagují s ostatními zákazníky.
+- Zákazníci nakupují zboží podle svého nákupního seznamu.
+- Obchody mají inventář zboží, který se postupně vyprazdňuje během nákupu.
+
+**Poznámka:** Ujistěte se, že student správně implementuje třídy pro zákazníky, obchody a obchodní centrum, včetně metod pro interakce mezi zákazníky a obchody. Funkce `simulate_shopping_mall` by měla simulovat pohyb a interakce zákazníků v obchodním centru a vypisovat stav v každé iteraci.
