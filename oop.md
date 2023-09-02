@@ -1,4 +1,16 @@
-## OOP
+# OOP
+
+## Přehled
+
+1. [Úvod](#úvod)
+2. [Třída](#třída)
+3. [Metody](#metody)
+4. [Atributy](#atributy)
+5. [Instance](#instance)
+6. [Konstruktor](#konstruktor)
+7. [Simulace]()
+
+## Úvod
 
 znovupoužitel­nost
 vynálezu základních
@@ -30,7 +42,15 @@ instance se navzájem liší svými daty (atributy)
 OOP stojí na základních třech pilířích:
 Zapouzdření, Dědičnost a Polymorfismus.
 
-## a
+## Třída
+
+## Metody
+
+## Atributy
+
+## Instance
+
+## Konstruktor
 
 Třídy se vytvářejí klíčovým slovem `class`. Třídu pojmenujeme `Kostka`
 
@@ -374,3 +394,32 @@ Existující nedostatky:
   útočí i druhý bojovník, nehledě na to, zda ho první nezabil.
 - Druhým nedostatkem je, že bojovníci vždy bojují ve stejném pořadí,
   čili zde "Zalgoren" má vždy výhodu. Pojďme vnést další prvek náhody a pomocí kostky rozhodněme, který z bojovníků bude začínat.
+
+## Simulace
+
+### Úkol 1
+
+Zadání:
+Napište program, který simuluje cestu autobusem skrze několik zastávek. Autobus má omezenou kapacitu pro cestující a může přijímat a vypouštět cestující na každé zastávce. Každý cestující má určenou cílovou zastávku, na které má vystoupit.
+
+Vytvořte třídu `Person`, která bude reprezentovat cestujícího. Tato třída by měla mít následující atributy:
+
+- `passenger_number`: Unikátní číslo cestujícího.
+- `destination_stop`: Číslo zastávky, na které má cestující vystoupit.
+
+Vytvořte třídu `Bus`, která bude reprezentovat autobus. Tato třída by měla mít následující atributy:
+
+- `num_stops`: Celkový počet zastávek na trase autobusu.
+- `capacity`: Maximální kapacita autobusu pro cestující.
+- `passengers`: Seznam obsahující instance třídy `Person`, které jsou právě uvnitř autobusu.
+- `boarded_passengers`: Seznam obsahující instance třídy `Person`, které nastoupily na aktuální zastávce.
+
+Třída `Bus` by měla mít následující metody:
+
+- `board_passengers(self, num_passengers, stop)`: Metoda pro nástup cestujících na autobus na dané zastávce. Parametr `num_passengers` určuje počet cestujících, kteří nastoupí. Cestující by měli být vytvořeni s náhodnými cílovými zastávkami od aktuální zastávky až po poslední zastávku. Metoda by měla aktualizovat seznam `passengers` a `boarded_passengers`.
+- `disembark_passengers(self, current_stop)`: Metoda pro výstup cestujících z autobusu na dané zastávce. Cestující, jejichž cílová zastávka je aktuální zastávkou, by měli být odebráni ze seznamu `passengers`.
+- `report_status(self, current_stop)`: Metoda pro výpis informací o aktuálním stavu autobusu na zastávce. Zahrnuje informace o nastoupených cestujících (`boarded_passengers`) a cestujících v autobuse (`passengers`).
+
+Nakonec napište funkci `simulate_bus_trip(num_stops, capacity)`, která simuluje cestu autobusem skrze zastávky. Parametr `num_stops` určuje celkový počet zastávek a parametr `capacity` určuje maximální kapacitu autobusu. Funkce by měla vytvořit instanci třídy `Bus` a simulovat cestu autobusem skrze jednotlivé zastávky.
+
+**Poznámka:** Ujistěte se, že student správně implementuje všechny metody a že výstupy z funkce `simulate_bus_trip` budou podobné těm výstupům, které generuje poskytnutý kód.
