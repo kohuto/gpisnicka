@@ -2,11 +2,26 @@
 
 ## Přehled
 
-1. [Datové typy](#datové-typy)
-1. [Čtení ze souborů](#čtení-ze-souborů)
-1. [Výjimky](#výjimky)
-1. [Moduly](#moduly)
-1. [Testy](#testy)
+1. [Virtuální prostředí](#virtuální-prostředí)
+2. [Datové typy](#datové-typy)
+3. [Čtení ze souborů](#čtení-ze-souborů)
+4. [Výjimky](#výjimky)
+5. [Moduly](#moduly)
+6. [Testy](#testy)
+
+## Virtuální prostředí
+
+projekty tvoříme ve [virtuálním prostředí](https://code.visualstudio.com/docs/python/environments).
+
+k čemu to je?
+
+Jak vytvořit virtuální prostředí (virtual enviroment - venv)?
+
+1. otevřete paletu příkazů (Ctrl+Shift+P)
+2. vyhledejte položku `Python: Create Environment` a vyberte ji
+3. objeví se dvě možnosti `Venv` or `Conda`.
+4. vybereme možnost `Venv`
+5. vybereme požadovaný interpretr
 
 ## Datové typy
 

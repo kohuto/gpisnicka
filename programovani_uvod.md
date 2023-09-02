@@ -4,24 +4,17 @@
 
 1. [Co je Python?](#co-je-python)
 2. [VS code](#vs-code)
-3. [Virtuální prostředí](#virtuální-prostředí)
-4. [Vypisování](#vypisování)
-5. [Proměnná](#proměnná)
-6. [Vypisování podruhé](#vypisování-podruhé)
-7. [Kreslení](#kreslení)
-8. [Podprogramy](#podprogramy)
-9. [Náhoda](#náhoda)
-10. [Kreslení textu](#kreslení-textu)
-11. [Opakování](#opakování)
-12. [Větvení](#větvení)
-13. [Podprogramy s parametrem](#podprogramy-s-parametrem)
-14. [Pole](#pole)
-15. [Čtení ze souborů](#čtení-ze-souborů)
-16. [Moduly](#moduly)
-17. [Výjimky](#výjimky)
-18. [Algoritmizace](#algoritmizace)
-19. [OOP](#oop)
-20. [Formulářové aplikace](#oop)
+3. [Vypisování](#vypisování)
+4. [Proměnná](#proměnná)
+5. [Vypisování podruhé](#vypisování-podruhé)
+6. [Kreslení](#kreslení)
+7. [Podprogramy](#podprogramy)
+8. [Náhoda](#náhoda)
+9. [Kreslení textu](#kreslení-textu)
+10. [Opakování](#opakování)
+11. [Větvení](#větvení)
+12. [Podprogramy s parametrem](#podprogramy-s-parametrem)
+13. [Pole](#pole)
 
 ## Co je Python?
 
@@ -53,20 +46,6 @@ V momentě kdy máte nainstalované VS code, je potřeba nainstalovat ještě ro
 ![vs code extension](images/vscodeextension.png)
 
 Program lze spustit bud pomocí `ctrl+F5` nebo tlačítkem `run python file` v pravém horním rohu.
-
-## Virtuální prostředí
-
-projekty tvoříme ve [virtuálním prostředí](https://code.visualstudio.com/docs/python/environments).
-
-k čemu to je?
-
-Jak vytvořit virtuální prostředí (virtual enviroment - venv)?
-
-1. otevřete paletu příkazů (Ctrl+Shift+P)
-2. vyhledejte položku `Python: Create Environment` a vyberte ji
-3. objeví se dvě možnosti `Venv` or `Conda`.
-4. vybereme možnost `Venv`
-5. vybereme požadovaný interpretr
 
 ## Vypisování
 
