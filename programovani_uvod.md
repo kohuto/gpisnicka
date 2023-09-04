@@ -45,6 +45,16 @@ V momentě kdy máte nainstalované VS code, je potřeba nainstalovat ještě ro
 
 ![vs code extension](images/vscodeextension.png)
 
+Nyní již můžeme vytvořit první soubor. Soubory, které obsahují programy napsané v pythonu, mají koncovku `.py`. Univerzální cesta jak vytvořit nový soubor ve VS code je v horním menu vybrat _file_ a z nabídky vybrat _new file_.
+
+![new file](images/new_file.png)
+
+Následně se objeví nabídka. Z nabídky vyberte možnost _Python File_ (pokud tato možnost v nabídce není, napište _Python File_ do vstupního pole).
+
+![python file](images/python_file.png)
+
+Pomocí `ctrl` + `s` soubor uložte k sobě do počítače.
+
 Program lze spustit bud pomocí `ctrl+F5` nebo tlačítkem `run python file` v pravém horním rohu.
 
 ## Vypisování

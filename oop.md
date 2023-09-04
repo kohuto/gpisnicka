@@ -456,23 +456,17 @@ Napište program, který simuluje šíření lesního požáru v 2D mřížce. K
 
 Zadání:
 
-1. Vytvořte třídu `Cell`, která bude reprezentovat jedno políčko v 2D mřížce. Tato třída by měla mít atributy pro stav políčka (prázdné, strom, oheň) a měla by mít metodu `ignite()`, která změní stav políčka na oheň.
+1. Vytvořte třídu `Cell`, která bude reprezentovat jedno políčko v 2D mřížce. Tato třída by měla mít atributy pro stav políčka (prázdné, strom, oheň).
 
-2. Implementujte třídu `Forest`, která bude reprezentovat lesní oblast s 2D mřížkou. Tato třída by měla obsahovat mřížku políček a měla by mít metody pro:
-
-   - Výběr náhodného políčka pro náhodný růst stromů.
-   - Šíření ohně mezi stromy na základě pravidel.
-
-3. Napište funkci `simulate_fire_spread(grid_size, num_trees, num_iterations)`, která bude simulovat šíření lesního požáru v zadané 2D mřížce. Parametr `grid_size` určuje velikost mřížky, `num_trees` určuje počet stromů na začátku simulace a `num_iterations` určuje počet iterací simulace.
+2. Napište funkci `simulate_fire_spread(grid_size, num_trees, num_iterations)`, která bude simulovat šíření lesního požáru v zadané 2D mřížce. Parametr `grid_size` určuje velikost mřížky, `num_trees` určuje počet stromů přidaných v každé iteraci simulace a `num_iterations` určuje počet iterací simulace. Parametr `fire_frequency` určuje, jak často vzinkne jeden požár (pokud je parametr nastaven na 5, tak vznikne jeden oheň každých 5 iterací)
 
 Pravidla simulace:
 
-- Na začátku simulace jsou náhodně rozmístěny stromy.
 - V každé iteraci se náhodně vybere několik políček, na kterých vyroste nový strom.
-- Pokud je políčko s ohněm, šíří se oheň na sousední stromy (pokud jsou).
+- Pokud je čas (podle parametru `fire_frequency` na založení požáru, vybere se jedno políčko, kde vyroste nový strom)
+- Pokud je políčko s ohněm, šíří se oheň na sousední stromy (pokud jsou, vždy na vzdálenost max jedno políčko do stran, dopředu a dozadu a do uhlopříčky.).
 - Ohněm zapálené stromy se v další iteraci stávají ohněm.
-
-**Poznámka:** Ujistěte se, že student správně implementuje třídy pro políčka a lesní oblast, včetně metod pro šíření ohně a růst stromů. Funkce `simulate_fire_spread` by měla simulovat šíření požáru a vypisovat stav mřížky v každé iteraci.
+- PRvní políčko s ohněm zapálí okolní políčka a následně se stává prázdným políčkem.
 
 ### Úkol 4
 
@@ -536,3 +530,37 @@ Pravidla simulace:
 - Obchody mají inventář zboží, který se postupně vyprazdňuje během nákupu.
 
 **Poznámka:** Ujistěte se, že student správně implementuje třídy pro zákazníky, obchody a obchodní centrum, včetně metod pro interakce mezi zákazníky a obchody. Funkce `simulate_shopping_mall` by měla simulovat pohyb a interakce zákazníků v obchodním centru a vypisovat stav v každé iteraci.
+
+### Úkol 6
+
+call centrum:
+
+customers_handled
+
+class CallCenter:
+def **init**()
+num_employees =
+def support(self, cutomer):
+random_time()
+print(support finished)
+customer_handled += 1
+
+class Customer>=:
+print(customer enters waiting queue at {time})
+def enter_call():
+print(customer enters call at {time})
+def left_call(customer left call at {time})
+
+def simulate_call_center()
+call_center = CallCenter()
+for time in range (sim_time):
+...
+
+number of employees
+customer_interval
+sim_time
+simulate_call_center()
+
+### ÚKOL 7
+
+Převoz písku.
