@@ -2,9 +2,7 @@
 
 ## Přehled
 
-1. [Čtení ze souborů](#čtení-ze-souborů)
-2. [Výjimky](#výjimky)
-3. [Moduly](#moduly)
+1. [Úvod](#úvod)
 
 ## Úvod
 
@@ -80,11 +78,11 @@ Co je to nejlepší?
 
 ### Úkol 8
 
-Vytvoř podprogram, který dostane jako parametr číslo a určí, jestli je dané číslo prvočíslo, nebo ne.
+Vytvoř podprogram, který dostane jako parametr číslo a určí, jestli je dané číslo prvočíslo, nebo ne. Pomocí tohoto programu urči pro prvních `n` přirozených čísel, jestli se jedná o prvočísla.
 
 ### Úkol 9
 
-Vytvoř podprogram `eratosthenovo_sito`, který dostane jako parametr číslo `n` a určí pro prvních `čísel`, jestli se jedná o prvočísla.
+Vytvoř podprogram `eratosthenovo_sito`, který dostane jako parametr číslo `n` a určí pro prvních `n` čísel, jestli se jedná o prvočísla.
 
 ### Úkol 10
 
@@ -92,7 +90,7 @@ Vytvoř podprogram, který určí největší společný dělitel dvou čísel
 
 ### Úkol 11
 
-Vytvoř podprogram, který dostane dva parametry `x` a `y`, který pomocí euklidova algoritmu najde největší společná dělitel čísel `x` a `y`.
+Vytvoř podprogram, který dostane dva parametry `x` a `y`, který pomocí eukleidova algoritmu najde největší společná dělitel čísel `x` a `y`.
 
 ### Úkol 12
 
@@ -120,16 +118,10 @@ Quick sort
 
 ### Úkol 18
 
-Speed test třídících algoritmů.
+Porovnání rychlosti třídicích algoritmů.
 
 ### Úkol 19
 
 Frekvenční analýza:
 
-Zde je zašifrovaný text:
-
-```
-mafbo apsjdqej asdjy ycxm padpa asd asdasd asdasase asd asdass ajoi njijq naoijdqww lajqjw jqwj jaij jqlej qjwe ja iqoiwheo qj a joi joijosaj ajdsj qwasde qwdsae iojoij
-```
-
-Analyzujte následující [soubor](soubor.txt). Proveďte na něm frekvenční analýzu písmen. Následně pomocí získných informací a frekvence písmen v zašifrovaném textu rozluště zašifrovaný text.
+[Zde](https://drive.google.com/file/d/13ysONFxR1HhOEoC3kUxUamGUrxAN5JPb/view?usp=sharing) je zašifrovaný text. Analyzujte libovolný soubor. Zašifrovaný text je však v angličtině, proto i analyzovaný text by musí být v angličtině. Pro analýzu můžete použít třeba tento [soubor](https://drive.google.com/file/d/1uFDzXUQa4GJtZ7eGNg95QLSdZY-2EK4Y/view?usp=drive_link).
