@@ -55,7 +55,7 @@ Následně se objeví nabídka. Z nabídky vyberte možnost _Python File_ (pokud
 
 Pomocí `ctrl` + `s` soubor uložte k sobě do počítače.
 
-Program lze spustit bud pomocí `ctrl+F5` nebo tlačítkem `run python file` v pravém horním rohu.
+Nyní již můžeme do souboru začít psát programy. Program lze spustit bud pomocí `ctrl+F5` nebo tlačítkem `run python file` v pravém horním rohu.
 
 ## Vypisování
 
