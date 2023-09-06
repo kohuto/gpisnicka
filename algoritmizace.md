@@ -78,19 +78,19 @@ Co je to nejlepší?
 
 ### Úkol 8
 
-Vytvoř podprogram, který dostane jako parametr číslo a určí, jestli je dané číslo prvočíslo, nebo ne. Pomocí tohoto programu urči pro prvních `n` přirozených čísel, jestli se jedná o prvočísla.
+Vytvoř podprogram, který určí největší společný dělitel dvou čísel
 
 ### Úkol 9
 
-Vytvoř podprogram `eratosthenovo_sito`, který dostane jako parametr číslo `n` a určí pro prvních `n` čísel, jestli se jedná o prvočísla.
+Vytvoř podprogram, který dostane dva parametry `x` a `y`, který pomocí eukleidova algoritmu najde největší společná dělitel čísel `x` a `y`.
 
 ### Úkol 10
 
-Vytvoř podprogram, který určí největší společný dělitel dvou čísel
+Vytvoř podprogram, který dostane jako parametr číslo a určí, jestli je dané číslo prvočíslo, nebo ne. Pomocí tohoto programu urči pro prvních `n` přirozených čísel, jestli se jedná o prvočísla.
 
 ### Úkol 11
 
-Vytvoř podprogram, který dostane dva parametry `x` a `y`, který pomocí eukleidova algoritmu najde největší společná dělitel čísel `x` a `y`.
+Vytvoř podprogram `eratosthenovo_sito`, který dostane jako parametr číslo `n` a určí pro prvních `n` čísel, jestli se jedná o prvočísla.
 
 ### Úkol 12
 
@@ -102,26 +102,60 @@ Na řešení přechozí úlohy použijte binární vyhledávání.
 
 ### Úkol 14
 
-Bubble sort
+Časová složitost algoritmu
 
 ### Úkol 15
 
-Selection sort
+Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
+
+```python
+def ... (arr, item):
+   for i in arr:
+      if i == item:
+         return true
+   return false
+```
 
 ### Úkol 16
 
-Heap sort
+Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
+
+```python
+def ... ():
+   for x in range(1, 11):
+      for y in range(1, 11):
+         print(x*y, end=" ")
+      print()
+```
 
 ### Úkol 17
 
-Quick sort
+Určete časovou složitost následujících algoritmů:
+
+1. Eukleidův algoritmus
+2. Eratosthenovo síto
+3. Binární vyhledávání
 
 ### Úkol 18
 
-Porovnání rychlosti třídicích algoritmů.
+Bubble sort
 
 ### Úkol 19
 
-Frekvenční analýza:
+Selection sort
 
-[Zde](https://drive.google.com/file/d/13ysONFxR1HhOEoC3kUxUamGUrxAN5JPb/view?usp=sharing) je zašifrovaný text. Analyzujte libovolný soubor. Zašifrovaný text je však v angličtině, proto i analyzovaný text by musí být v angličtině. Pro analýzu můžete použít třeba tento [soubor](https://drive.google.com/file/d/1uFDzXUQa4GJtZ7eGNg95QLSdZY-2EK4Y/view?usp=drive_link).
+### Úkol 20
+
+Heap sort
+
+### Úkol 21
+
+Quick sort
+
+### Úkol 22
+
+Napište program, který změří, jak rychle jednotlivé třídicí algoritmy setřídí pole náhodných čísel. Otestujte pro různé délky pole (10, 100, 1000, 10000, 100000, 1000000, ...), Následně určete časovou složitost jednotlivých třídících algoritmů.
+
+### Úkol 23
+
+Rozšifrujte tento [soubor](https://drive.google.com/file/d/13ysONFxR1HhOEoC3kUxUamGUrxAN5JPb/view?usp=sharing) pomocí frekvenční analýzy. Pro analýzu jazyka použijte libovolný soubor obsahující anglický text (zašifrovaný text je v angličtině) např. tento [soubor](https://drive.google.com/file/d/1uFDzXUQa4GJtZ7eGNg95QLSdZY-2EK4Y/view?usp=drive_link).
