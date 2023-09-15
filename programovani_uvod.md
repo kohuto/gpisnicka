@@ -35,7 +35,23 @@ Proč právě Python?
 - kratší programy oproti ostatním jazykům
 - lze pracovat procedurálním způsobem, objektově orientovaným způsobem nebo funkcionálním způsobem.
 
-Abychom mohli psát programy v pythonu, je potřeba nainstalovat interpreter pro python. Instalační balíček stáhněte [zde](https://www.python.org/downloads/).
+Abychom mohli psát programy v pythonu, je potřeba nainstalovat interpreter pro python. Instalační balíček
+stáhněte [zde](https://www.python.org/downloads/) kliknutím na žluté tlačítko _Download python_. Pokud používáte jiný operační systém než windows, tak vyberte z dalších nabízených možností.
+
+![download python](images/download_python.png).
+
+Následně stažený instalátor dvojklikem spusť (bude ve stažených souborech).
+
+![python interpreter](images/python_interpreter.png).
+
+Na začátku instalace zaškrtni:
+
+- Add python.exe to PATH
+- Use admin privilegies when installing py.exe (pokud máte admin práva na počítači, pokud ne, není potřeba to řešit)
+
+![installation](images/instalation.png).
+
+Poté klikněte na Install Now.
 
 ## VS code
 
