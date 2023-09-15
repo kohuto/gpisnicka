@@ -51,11 +51,11 @@ Na začátku instalace zaškrtni:
 
 ![installation](images/instalation.png).
 
-Poté klikněte na Install Now.
+Poté klikněte na _Install Now_. Poté, co instalace doběhne, okno zavřete.
 
 ## VS code
 
-programy budeme psát ve Visual Studiu Code (VS code). VS code je potřeba nainstalovat nainstalovat do počítače z [oficiálních stránek](https://code.visualstudio.com/).
+Pro psaní programu budeme používat Visual Studio Code (VS code). VS code je potřeba nainstalovat do počítače z [oficiálních stránek](https://code.visualstudio.com/).
 
 V momentě kdy máte nainstalované VS code, je potřeba nainstalovat ještě rozšíření ve VS code. V sekci `extension` vyhledejte `python` a vyberte první možnost (viz obrázek):
 
@@ -65,9 +65,9 @@ Nyní již můžeme vytvořit první soubor. Soubory, které obsahují programy 
 
 ![new file](images/new_file.png)
 
-Následně se objeví nabídka. Z nabídky vyberte možnost _Python File_ (pokud tato možnost v nabídce není, napište _Python File_ do vstupního pole).
+Následně se objeví nabídka. Z nabídky vyberte možnost _Python File_ (pokud tato možnost v nabídce není, napište _python_ do vstupního pole a vyberte možnost _Python File Python_).
 
-![python file](images/python_file.png)
+![new file](images/new_python_file.png)
 
 Pomocí `ctrl` + `s` soubor uložte k sobě do počítače.
 
