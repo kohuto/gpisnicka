@@ -3,18 +3,19 @@
 ## Přehled
 
 1. [Co je Python?](#co-je-python)
-2. [VS code](#vs-code)
-3. [Vypisování](#vypisování)
-4. [Proměnná](#proměnná)
-5. [Vypisování podruhé](#vypisování-podruhé)
-6. [Kreslení](#kreslení)
-7. [Podprogramy](#podprogramy)
-8. [Náhoda](#náhoda)
-9. [Kreslení textu](#kreslení-textu)
-10. [Opakování](#opakování)
-11. [Větvení](#větvení)
-12. [Podprogramy s parametrem](#podprogramy-s-parametrem)
-13. [Pole](#pole)
+2. [Instalace Pythonu](#instalace-pythonu)
+3. [VS code](#vs-code)
+4. [Vypisování](#vypisování)
+5. [Proměnná](#proměnná)
+6. [Vypisování podruhé](#vypisování-podruhé)
+7. [Kreslení](#kreslení)
+8. [Podprogramy](#podprogramy)
+9. [Náhoda](#náhoda)
+10. [Kreslení textu](#kreslení-textu)
+11. [Opakování](#opakování)
+12. [Větvení](#větvení)
+13. [Podprogramy s parametrem](#podprogramy-s-parametrem)
+14. [Pole](#pole)
 
 ## Co je Python?
 
@@ -34,6 +35,8 @@ Proč právě Python?
 - jednoduchá syntaxe
 - kratší programy oproti ostatním jazykům
 - lze pracovat procedurálním způsobem, objektově orientovaným způsobem nebo funkcionálním způsobem.
+
+## Instalace Pythonu
 
 Abychom mohli psát programy v pythonu, je potřeba nainstalovat interpreter pro python. Instalační balíček
 stáhněte [zde](https://www.python.org/downloads/) kliknutím na žluté tlačítko _Download python_. Pokud používáte jiný operační systém než windows, tak vyberte z dalších nabízených možností.
@@ -65,13 +68,15 @@ Nyní již můžeme vytvořit první soubor. Soubory, které obsahují programy 
 
 ![new file](images/new_file.png)
 
-Následně se objeví nabídka. Z nabídky vyberte možnost _Python File_ (pokud tato možnost v nabídce není, napište _python_ do vstupního pole a vyberte možnost _Python File Python_).
+Následně se objeví vstupní pole, do kterého napište jméno vašeho souboru (třeba muj soubor) a vyberte možnost _Create New File (jmeno_souboru)_.
 
-![new file](images/new_python_file.png)
+![new file](images/new-file-name.png)
 
-Pomocí `ctrl` + `s` soubor uložte k sobě do počítače.
+Otevře se klasické okno pro ukládání souboru. Do kolonky _Název souboru_ je potřeba za název souboru dopsat `.py`, což je koncovka pro soubory, které obsahují programy v pythonu.
 
-Nyní již můžeme do souboru začít psát program. Program lze spustit bud pomocí `ctrl+F5` nebo tlačítkem `run python file` v pravém horním rohu.
+![new file](images/file_extension.png)
+
+Poté stačí uložit a můžeme začít psát první program. Program lze spustit bud pomocí `ctrl+F5` nebo tlačítkem `run python file` v pravém horním rohu.
 
 ## Vypisování
 
