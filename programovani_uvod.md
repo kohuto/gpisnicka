@@ -1446,6 +1446,8 @@ Dole je 13 přihrádek. Kuličky padají postupně přes 12 pater. V každém pa
 
 Opilec je na půli cesty mezi domovem a hospodou, každý krok udělá náhodně jedním směrem. Napište funkci, která bude simulovat opilcův pohyb. Jejími parametry budou vzdálenost mezi domovem a hospodou a počet kroků do opilcova usnutí (tj. maximální délka simulace). Simulace skončí buď tehdy, když opilec dojede domů nebo do hospody, případně po vyčerpání počtu kroků.
 
+\*Rozšíření: Vyzkoušejte různé kombinace parametrů. Při jaké konfigurace dochází domů už celkem pravidelně?
+
 ```
 home . . . . . * . . . . pub
 home . . . . * . . . . . pub
