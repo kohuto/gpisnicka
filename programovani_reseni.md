@@ -12,7 +12,7 @@
 8. [Opakování](#opakování)
 9. [Větvení](#větvení)
 10. [Podprogramy s parametrem](#podprogramy-s-parametrem)
-11. [Pole](#pole)
+11. [Seznamy](#seznamy)
 
 ## Výpisy
 
@@ -1277,4 +1277,10 @@ for a in range(10000):
     prihradky[int(pozice)] = prihradky[int(pozice)] + 1
 
 print(prihradky)
+```
+
+### Úloha 15
+
+```python
+
 ```
