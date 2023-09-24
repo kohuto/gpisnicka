@@ -348,14 +348,14 @@ def zapas(self):
     print("Dnes se utkají {0} s {1}!".format(self._bojovnik_1, self._bojovnik_2))
     print("Zápas může začít...")
     # cyklus s bojem
-     while self._bojovnik_1.je_nazivu() and self._bojovnik_2.je_nazivu():
-            self._bojovnik_1.utoc(self._bojovnik_2)
-            print(self._bojovnik_1.vrat_zpravu())
-            print(self._bojovnik_2.vrat_zpravu())
-            self._bojovnik_2.utoc(self._bojovnik_1)
-            print(self._bojovnik_2.vrat_zpravu())
-            print(self._bojovnik_1.vrat_zpravu())
-            print()
+    while self._bojovnik_1.je_nazivu() and self._bojovnik_2.je_nazivu():
+        self._bojovnik_1.utoc(self._bojovnik_2)
+        print(self._bojovnik_1.vrat_zpravu())
+        print(self._bojovnik_2.vrat_zpravu())
+        self._bojovnik_2.utoc(self._bojovnik_1)
+        print(self._bojovnik_2.vrat_zpravu())
+        print(self._bojovnik_1.vrat_zpravu())
+        print()
 ```
 
 Nyní můžeme odstartovat zápas:
