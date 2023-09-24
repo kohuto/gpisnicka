@@ -286,8 +286,17 @@ Nakonec bychom chtěli umět vypisovat zprávy (aby z toho uživatel něco měl)
 self._zprava = ""
 ```
 
-Vytvoříme také dvě nové metody `nastav_zpravu()` a `vrat_zpravu()`. První bere jako parametr text zprávy, který uloží do proměnné `zprava`. Druhá bude jednoudeš vracet obsah této proměnné. O práci se zprávami obohatíme naše metody utoc() a
-bran_se(), nyní budou vypadat takto:
+Vytvoříme také dvě nové metody `nastav_zpravu()` a `nastav_zpravu()`. První bere jako parametr text zprávy, který uloží do proměnné `zprava`. Druhá bude jednoduše vracet obsah této proměnné.
+
+```python
+def nastav_zpravu(self, text):
+    self.zprava = text
+
+def nastav_zpravu(self):
+    return self.zprava
+```
+
+O práci se zprávami obohatíme naše metody `utoc()` a `bran_se()`, nyní budou vypadat takto:
 
 ```python
 def bran_se(self, uder):
