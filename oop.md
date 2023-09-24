@@ -286,13 +286,13 @@ Nakonec bychom chtěli umět vypisovat zprávy (aby z toho uživatel něco měl)
 self._zprava = ""
 ```
 
-Vytvoříme také dvě nové metody `nastav_zpravu()` a `nastav_zpravu()`. První bere jako parametr text zprávy, který uloží do proměnné `zprava`. Druhá bude jednoduše vracet obsah této proměnné.
+Vytvoříme také dvě nové metody `_nastav_zpravu()` a `vrat_zpravu()`. První bere jako parametr text zprávy, který uloží do proměnné `zprava`. Druhá bude jednoduše vracet obsah této proměnné.
 
 ```python
-def nastav_zpravu(self, text):
-    self.zprava = text
+def _nastav_zpravu(self, zprava):
+    self.zprava = zprava
 
-def nastav_zpravu(self):
+def vrat_zpravu(self):
     return self.zprava
 ```
 
@@ -300,20 +300,20 @@ O práci se zprávami obohatíme naše metody `utoc()` a `bran_se()`, nyní budo
 
 ```python
 def bran_se(self, uder):
-    zraneni = uder - (self._obrana + self._kostka.hod())
-    if zraneni > 0:
-        zprava = "{0} utrpěl poškození {1} hp.".format(self._jmeno, zraneni)
-        self._zivot = self._zivot - zraneni
-        if self._zivot < 0:
-            self._zivot = 0
-            zprava = zprava[:-1] + " a zemřel."
-    else:
-        zprava = "{0} odrazil útok.".format(self._jmeno)
-    self._nastav_zpravu(zprava)
+        zraneni = uder - (self._obrana + self._kostka.hod())
+        if zraneni > 0:
+            zprava = f"{self._jmeno} utrpěl poškození {zraneni} hp."
+            self._zivot = self._zivot - zraneni
+            if self._zivot < 0:
+                self._zivot = 0
+                zprava += ".. a zemřel."
+        else:
+            zprava = f"{self._jmeno} odrazil útok."
+        self._nastav_zpravu(zprava)
 
 def utoc(self, souper):
     uder = self._utok + self._kostka.hod()
-    zprava = "{0} útočí s úderem za {1} hp.".format(self._jmeno, uder)
+    zprava = f"{self._jmeno} útočí s úderem za {uder} hp."
     self._nastav_zpravu(zprava)
     souper.bran_se(uder)
 ```
@@ -325,8 +325,8 @@ kostka = Kostka(10)
 bojovnik = Bojovnik("Zalgoren", 100, 20, 10, kostka)
 souper = Bojovnik("Shadow", 60, 18, 15, kostka)
 souper.utoc(bojovnik)
-print(souper.vrat_posledni_zpravu())
-print(bojovnik.vrat_posledni_zpravu())
+print(souper.vrat_zpravu())
+print(bojovnik.vrat_zpravu())
 ```
 
 Nyní bychom chtěli simulovat souboj dvou bojovníků. Pro tyto potřeby vytvoříme novou třídu `Arena`.
@@ -340,49 +340,22 @@ class Arena:
         self._kostka = kostka
 ```
 
-Zamysleme se nad metodami. Z veřejných metod bude určitě potřeba jen ta
-k simulaci zápasu. Výstup programu na konzoli uděláme trochu na úrovni a
-také umožníme třídě Arena, aby přímo ke konzoli
-přistupovala. Rozhodli jsme se, že výpis bude v kompetenci třídy, jelikož
-se nám to zde vyplatí. Naopak kdyby výpis prováděli i bojovníci, bylo by
-to na škodu. Potřebujeme tedy metodu, která vykreslí obrazovku s
-aktuálními údaji o kole a životy bojovníků. Zprávy o útoku a obraně
-budeme chtít vypisovat s dramatickou pauzou, aby byl výsledný efekt lepší,
-uděláme si pro takový typ zprávy ještě pomocnou metodu. Začněme s
-vykreslením informační obrazovky:
-Zdroj: https://www.itnetwork.cz/python/oop/python-tutorial-arena-s-objektovymi-bojovniky
-
-```python
-def _vykresli(self):
-    slf._vycisti_obrazovku()
-    print("-------------- Aréna -------------- \n")
-    print("Zdraví bojovníků: \n")
-    print("{0} {1}".format(self._bojovnik_1,
-                           self._bojovnik_1.graficky_zivot()))
-    print("{0} {1}".format(self._bojovnik_2,
-                           self._bojovnik_2.graficky_zivot()))
-```
-
-Přesuneme se již k samotnému zápasu. Metoda `zapas()` nebude
-mít žádné parametry a nebude ani nic vracet. Uvnitř bude cyklus, který bude na střídačku volat útoky bojovníků navzájem a vypisovat informační obrazovku a zprávy. Metoda by mohla vypadat takto:
+Uvnitř arény vytvoříme jednu metodu `zapas()`. Metoda `zapas()` nebude mít žádné parametry a nebude ani nic vracet. Uvnitř bude cyklus, který bude na střídačku volat útoky bojovníků navzájem a vypisovat zprávy. Metoda by mohla vypadat takto:
 
 ```python
 def zapas(self):
     print("Vítejte v aréně!")
     print("Dnes se utkají {0} s {1}!".format(self._bojovnik_1, self._bojovnik_2))
-    print("Zápas může začít...", end=" ")
-    input()
+    print("Zápas může začít...")
     # cyklus s bojem
-    while (self._bojovnik_1.je_nazivu() and self._bojovnik_2.je_nazivu()):
-        self._bojovnik_1.utoc(self._bojovnik_2)
-        self._vykresli()
-        self._vypis_zpravu(self._bojovnik_1.vrat_posledni_zpravu())
-        self._vypis_zpravu(self._bojovnik_2.vrat_posledni_zpravu())
-        self._bojovnik_2.utoc(self._bojovnik_1)
-        self._vykresli()
-        self._vypis_zpravu(self._bojovnik_2.vrat_posledni_zpravu())
-        self._vypis_zpravu(self._bojovnik_1.vrat_posledni_zpravu())
-        print("")
+     while self._bojovnik_1.je_nazivu() and self._bojovnik_2.je_nazivu():
+            self._bojovnik_1.utoc(self._bojovnik_2)
+            print(self._bojovnik_1.vrat_zpravu())
+            print(self._bojovnik_2.vrat_zpravu())
+            self._bojovnik_2.utoc(self._bojovnik_1)
+            print(self._bojovnik_2.vrat_zpravu())
+            print(self._bojovnik_1.vrat_zpravu())
+            print()
 ```
 
 Nyní můžeme odstartovat zápas:
