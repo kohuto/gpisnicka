@@ -365,6 +365,7 @@ import tkinter
 canvas = tkinter.Canvas()
 canvas.pack()
 canvas.create_rectangle(50, 70, 220, 150)
+input()
 ```
 
 příkaz vykreslí obdelník.

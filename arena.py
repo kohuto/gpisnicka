@@ -43,7 +43,7 @@ class Bojovnik:
         self._nastav_zpravu(zprava)
         souper.bran_se(uder)
 
-    def _nastav_zpravu(self, zprava):
+    def nastav_zpravu(self, zprava):
         self._zprava = zprava
 
     def vrat_zpravu(self):
