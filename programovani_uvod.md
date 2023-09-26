@@ -364,11 +364,15 @@ Přidej do programu nový příkaz:
 import tkinter
 canvas = tkinter.Canvas()
 canvas.pack()
+
 canvas.create_rectangle(50, 70, 220, 150)
+
 input()
 ```
 
 příkaz vykreslí obdelník.
+
+> Příkaz `input()` musí být pořád na konci programu
 
 ### Úkol 2
 
@@ -443,6 +447,7 @@ import tkinter
 canvas = tkinter.Canvas()
 canvas.pack()
 canvas.create_rectangle(30, 30, 130, 130, fill='red')
+input()
 ```
 
 ### Úkol 10
