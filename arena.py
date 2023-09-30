@@ -10,7 +10,7 @@ class Kostka:
 
 
 class Bojovnik:
-    def __init__(self, jmeno, zivot, utok, obrana, kostka, test):
+    def __init__(self, jmeno, zivot, utok, obrana, kostka):
         self._jmeno = jmeno
         self._zivot = zivot
         self._max_zivot = zivot
@@ -51,7 +51,26 @@ class Bojovnik:
 
 
 class Mag(Bojovnik):
-    pass
+    def __init__(self, jmeno, zivot, utok, obrana, kostka, mana, magicky_utok):
+        super().__init__(jmeno, zivot, utok, obrana, kostka)
+        self._mana = mana
+        self._max_mana = mana
+        self._magicky_utok = magicky_utok
+
+    def utoc(self, souper):
+        # mana není naplněna
+        if self._mana < self._max_mana:
+            self._mana = self._mana + 10
+            if self._mana > self._max_mana:
+                self._mana = self._max_mana
+            super().utoc(souper)
+        # magický útok
+        else:
+            uder = self._magicky_utok + self._kostka.hod()
+            zprava = f"{self._jmeno} použil magii za {uder} hp."
+            self._nastav_zpravu(zprava)
+            self._mana = 0
+            souper.bran_se(uder)
 
 
 class Arena:
@@ -76,8 +95,8 @@ class Arena:
 
 # vytvoření objektů
 kostka = Kostka(10)
-zalgoren = Bojovnik("Zalgoren", 100, 20, 10, kostka)
-shadow = Bojovnik("Shadow", 60, 18, 15, kostka)
-arena = Arena(zalgoren, shadow, kostka)
+gandalf = Mag("Gandalf", 150, 20, 10, kostka, 30, 30)
+shadow = Bojovnik("Shadow", 150, 18, 10, kostka)
+arena = Arena(gandalf, shadow, kostka)
 # zápas
 arena.zapas()
