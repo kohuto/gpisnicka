@@ -10,7 +10,7 @@ class Kostka:
 
 
 class Bojovnik:
-    def __init__(self, jmeno, zivot, utok, obrana, kostka):
+    def __init__(self, jmeno, zivot, utok, obrana, kostka, test):
         self._jmeno = jmeno
         self._zivot = zivot
         self._max_zivot = zivot
@@ -43,11 +43,15 @@ class Bojovnik:
         self._nastav_zpravu(zprava)
         souper.bran_se(uder)
 
-    def nastav_zpravu(self, zprava):
+    def _nastav_zpravu(self, zprava):
         self._zprava = zprava
 
     def vrat_zpravu(self):
         return self._zprava
+
+
+class Mag(Bojovnik):
+    pass
 
 
 class Arena:

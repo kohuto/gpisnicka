@@ -372,10 +372,66 @@ arena.zapas()
 
 Existující nedostatky:
 
-- V cyklu s bojem útočí první bojovník na druhého. Poté však vždy
-  útočí i druhý bojovník, nehledě na to, zda ho první nezabil.
-- Druhým nedostatkem je, že bojovníci vždy bojují ve stejném pořadí,
-  čili zde "Zalgoren" má vždy výhodu. Pojďme vnést další prvek náhody a pomocí kostky rozhodněme, který z bojovníků bude začínat.
+- V cyklu s bojem útočí první bojovník na druhého. Poté však vždy útočí i druhý bojovník, nehledě na to, zda ho první nezabil.
+- Druhým nedostatkem je, že bojovníci vždy bojují ve stejném pořadí, čili zde "Zalgoren" má vždy výhodu. Pojďme vnést další prvek náhody a pomocí kostky rozhodněme, který z bojovníků bude začínat.
+
+Nyní do naší arény přidáme postavu mága. Mág bude fungovat stejně, jako bojovník. Kromě života bude mít však i manu. Zpočátku bude mana plná. V případě plné many vykoná mág magický útok, který manu vybije na 0. Každé kolo se bude mana zvyšovat o 10 a mág bude podnikat jen běžný útok. Jakmile se mana zcela doplní, opět bude moci magický útok použít.
+
+Vytvoříme tedy třídu Mag, zdědíme ji z Bojovnik.
+
+```python
+class Mag(Bojovnik)
+```
+
+Nemůžeme použít původní konstruktor potomka, neboť máme u mága 2 parametry navíc (mana a magický útok). Definujeme si tedy konstruktor v potomkovi, který bere parametry potřebné pro vytvoření bojovníka a několik parametrů navíc pro mága.
+
+```python
+def __init__(self, jmeno, zivot, utok, obrana, kostka, mana, magicky_utok):
+    super().__init__(jmeno, zivot, utok, obrana, kostka)
+    self._mana = mana
+    self._max_mana = mana
+    self._magicky_utok = magicky_utok
+```
+
+Chceme aby `Arena` mohla pracovat s mágem stejně jako s bojovníkem (_Polymorfismus_). Aréna volá metodu `utoc()` se soupeřem v parametru nezávisle na tom, jestli bude útok vykonávat bojovník nebo mág. U mága si tedy přepíšeme metodu `utoc()` z předka tak, aby útok pracoval s manou - podle hodnoty many buď provedeme útok běžný nebo magický. Poté buď snížíme manu na 0 nebo zvýšíme o 10 (podle toho, jaký typ útok proběhl).
+
+```python
+def utoc(self, souper):
+    # mana není naplněna
+    if self._mana < self._max_mana:
+        self._mana = self._mana + 10
+        if self._mana > self._max_mana:
+            self._mana = self._max_mana
+        uder = self._utok + self._kostka.hod()
+        zprava = f"{self._jmeno} útočí s úderem za {uder} hp."
+        self._nastav_zpravu(zprava)
+    #magický útok
+    else:
+        uder = self._magicky_utok + self._kostka.hod()
+        zprava = f"{self._jmeno} použil magii za {uder} hp."
+        self._nastav_zpravu(zprava)
+        self._mana = 0
+    souper.bran_se(uder)
+```
+
+Útok výše v podstatě vykonává původní metoda `utoc()`. Proto použijeme opět `super()`.
+
+```python
+def utoc(self, souper):
+    # mana není naplněna
+    if self._mana < self._max_mana:
+        self._mana = self._mana + 10
+        if self._mana > self._max_mana:
+            self._mana = self._max_mana
+        super().utoc(souper)
+    #magický útok
+    else:
+        uder = self._magicky_utok + self._kostka.hod()
+        zprava = "{0} použil magii za {1} hp.".format(self._jmeno, uder)
+        self._nastav_zpravu(zprava)
+        self._mana = 0
+        souper.bran_se(uder)
+```
 
 ## Simulace
 
