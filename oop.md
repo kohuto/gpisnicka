@@ -459,38 +459,8 @@ Každá osoba se po uplynutí určité doby uzdraví a získává rezistenci.
 
 ### Obchodní centrum
 
-Napište program, který simuluje chování zákazníků v obchodním centru. V centru máme několik obchodů. Na začátku simulace se vygeneruje určitý počet zákazníků. Každý zákazník má seznam obchodů, které musí navštívit. Také má každý zákazník nastavenou trpělivost, jak dlouho dokáže stát ve frontě. Zákazník navštěvuje obchody podle toho, jak jsou napsané v seznamu. Vždy přijde do obchodu, postaví se do fronty a čeká. Pokud mu dojde trpělivost ve frontě, přechází do dalšího obchodu (později se však do daného ochodu vrátí). V každém kroku simulace se fronta zákazníků zmenší o jednoho zákazníka (v každém kroku je jeden zákazník obsloužen). Kdžy je zákazník obsloužen, přechází do dalšího obchodu ze seznamu, případně odchází z obchodního centra, když navštívil všechny obchody.
+Napište program, který simuluje chování zákazníků v obchodním centru. V centru máme několik obchodů. Na začátku simulace se vygeneruje určitý počet zákazníků. Každý zákazník má seznam obchodů, které musí navštívit. Také má každý zákazník nastavenou trpělivost, jak dlouho dokáže stát ve frontě. Zákazník navštěvuje obchody podle toho, jak jsou napsané v seznamu. Vždy přijde do obchodu, postaví se do fronty a čeká. Pokud mu dojde trpělivost ve frontě, přechází do dalšího obchodu (později se však do daného ochodu vrátí). V každém kroku simulace se fronta zákazníků zmenší o jednoho zákazníka (v každém kroku je jeden zákazník obsloužen). Když je zákazník obsloužen, přechází do dalšího obchodu ze seznamu, případně odchází z obchodního centra, když navštívil všechny obchody.
 
-### Úkol 6
+### Call centrum
 
-call centrum:
-
-customers_handled
-
-class CallCenter:
-def **init**()
-num_employees =
-def support(self, cutomer):
-random_time()
-print(support finished)
-customer_handled += 1
-
-class Customer>=:
-print(customer enters waiting queue at {time})
-def enter_call():
-print(customer enters call at {time})
-def left_call(customer left call at {time})
-
-def simulate_call_center()
-call_center = CallCenter()
-for time in range (sim_time):
-...
-
-number of employees
-customer_interval
-sim_time
-simulate_call_center()
-
-### ÚKOL 7
-
-Napište program, který simuluje převoz písku. V místě
+### Převoz písku
