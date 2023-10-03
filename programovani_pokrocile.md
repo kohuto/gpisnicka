@@ -33,7 +33,7 @@ Pro načtení vstupu z konzole používáme funkci `input()`. Napište program, 
 
 #### BMI
 
-Napište program, který dostane na vstupu výšku a váhu a na výstup vypíše BMI uživatele.
+Napište program, který dostane na vstupu výšku v metrech a váhu v kg a na výstup vypíše BMI uživatele.
 
 ### Shrnutí datových typů
 
