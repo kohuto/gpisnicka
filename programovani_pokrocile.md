@@ -27,7 +27,13 @@ Jak vytvořit virtuální prostředí (virtual enviroment - venv)?
 
 ### Připomenutí načítání vstupu
 
+#### Kalkulačka
+
 Pro načtení vstupu z konzole používáme funkci `input()`. Napište program, který načte dvě čísla `a` a `b`. Program vypíše jejich součet, rozdíl, podíl a součin.
+
+#### BMI
+
+Napište program, který dostane na vstupu výšku a váhu a na výstup vypíše BMI uživatele.
 
 ### Shrnutí datových typů
 
@@ -92,7 +98,7 @@ print(cislo * 2)
 Vytvoř textový soubor `basnicka.txt` a napiš do něj libovolný text. Poté vytvoř následující program:
 
 ```python
-with open('basnicka.txt', 'r') as soubor:
+with open('basnicka.txt', 'r', encoding='utf-8') as soubor:
     content = soubor.read()
 print(content)
 ```
