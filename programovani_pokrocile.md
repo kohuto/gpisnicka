@@ -27,12 +27,7 @@ Jak vytvořit virtuální prostředí (virtual enviroment - venv)?
 
 ### Připomenutí načítání vstupu
 
-Co vypíše následující program?
-
-```python
-cislo = input("Zadejte celé číslo: ")
-print(cislo * 2)
-```
+Pro načtení vstupu z konzole používáme funkci `input()`. Napište program, který načte dvě čísla `a` a `b`. Program vypíše jejich součet, rozdíl, podíl a součin.
 
 ### Shrnutí datových typů
 
