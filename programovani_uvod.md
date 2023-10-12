@@ -676,15 +676,7 @@ print('Na kostce padla', n)
 
 ### Úkol 3
 
-Uprav program z úkolu 2 – vytvoř podprogram `hod_kostkou` a doplň kód programu tak, aby se simulovalo deset hodů za sebou:
-
-```python
-import random
-def hod_kostkou():
-    n = random.randint(1, 6)
-    print('Na kostce padla', n)
-hod_kostkou()
-```
+Uprav program z úkolu 2 – vytvoř podprogram `hod_kostkou`. Pomocí volání tohoto podprogramu nasimuluj pět hodů za sebou.
 
 ### Úkol 4
 
@@ -721,7 +713,7 @@ Pokoj si uklidím 30 . 2 . 2025
 
 ### Úkol 10
 
-Vytvoř podprogram _nahodny_ctverec_, který vykreslí čtverec na náhodné pozici (souřadnice jednoho rohu budou náhodně vygenerované čísla) a který bude mít stranu délky 50.
+Vytvoř podprogram _nahodny_ctverec_, který vykreslí čtverec na náhodné pozici (souřadnice jednoho rohu budou náhodně vygenerované čísla). Čtverec bude mít stranu délky 50.
 
 ### Úkol 11
 
