@@ -351,8 +351,7 @@ input()
 ```
 
 2. Program spusť – na obrazovce uvidíš nové okno.
-3. Zjisti, zda se dá okno posouvat, měnit jeho velikost. Nakonec toto nové okno zavři.
-   program vyrobil grafickou plochu `canvas`.
+3. Zjisti, zda se dá okno posouvat, měnit jeho velikost. Nakonec toto nové okno zavři. program vyrobil grafickou plochu `canvas`.
 
 > `input()` na konci nemá s oknem nic společného. Jedná se o příkaz, který čeká, až mu uživatel do konzole napíše nějaký vstup. Kdyby tam příkaz nebyl, tak by program ihned skončil a okno by se ihned po otevření zavřelo. V následujících příkladech proto vždy nakonec programu napište `input()`, aby okno zůstalo otevřené.
 
@@ -392,7 +391,7 @@ Souřadnice fungují v tkinter trochu netradičně:
 
 ![coordinates](images/canvas_coordinates.png)
 
-V matematice jsme zvyklí, že střed je "uprostřed". Zde ale leží bod se souřadnicemi $[0, 0]$ v levém horním rohu. Osa $x$ jde zleva doprava. Osa $y$ jde shora dolů (čím větší číslo, tím níže).
+V matematice jsme zvyklí, že střed je "uprostřed". Zde ale leží bod se souřadnicemi $[0, 0]$ v levém horním rohu. Čísla na ose $x$ se zleva doprava. zvětšují. Čísla na ose $y$ se zvětšují shora dolů (čím větší číslo, tím níže).
 
 V příkazu `canvas.create_rectangle(x1, y1, x2, y2)` píšeme do závorek souřadnice protilehlých vrcholů obdélníku:
 
@@ -413,32 +412,9 @@ Nakresli obdélník, který má jeden vrchol na souřadnicích $[200, 100]$, jeh
 
 ### Úkol 5
 
-Nakresli dva čtverce se stranami délky 80 (pozici čtverců zvol podle uvážení):
-
-![two squares](images/twosquares.png)
+Nakresli dva různé čtverce se stranami délky 80 (pozici čtverců zvol podle uvážení).
 
 ### Úkol 6
-
-Nakresli dva velké čtverce – jeden se stranou
-délky 100 a druhý 150. Čtverce budou mít společný střed jako na následujícím obrázku:
-
-![inside squares](images/inside%20squares.png)
-
-### Úkol 7
-
-Nakresli ze tří obdélníků o rozměrech 150x50, 100x50
-a 50x50 následující pyramidu:
-
-![pyramid](images/pyramid.png)
-
-### Úkol 8\*
-
-Vytvoř z pěti čtverců následující ornament.
-Rozměry čtverců zvol podle svého uvážení (všechny menší čtverce budou stejně velké):
-
-![ornament](images/ornament.png)
-
-### Úkol 9
 
 Obdélník lze i vybarvit:
 
@@ -450,58 +426,13 @@ canvas.create_rectangle(30, 30, 130, 130, fill='red')
 input()
 ```
 
-### Úkol 10
+### Úkol 7
 
-Přidej do programu z úkolu 9 další 3 příkazy na kreslení obdélníků, abys dostal následující obrázek:
+Vytvoř program, který nakreslí 4 čtverce sestranou délky 50 různé barvy.
 
-![four squares](images/foursquares.png)
+### Úkol 8
 
-Další barvy získáš, když místo slova `red` napíšeš `green`, `blue` nebo `yellow`.
-
-### Úkol 11
-
-Vytvoř program, který nakreslí nizozemskou vlajku:
-
-![nizozemi](images/nizozemi.png)
-
-### Úkol 12
-
-Vytvoř program, který nakreslí irskou vlajku s barvou `orange`:
-
-![irsko](images/irsko.png)
-
-### Úkol 13
-
-Následující obrázek vznikl ze čtyř čtverců. První z nich má souřadnice levého horního vrcholu $[50, 50]$. Napiš program, který nakreslí následující obrázek (zvol libovolné barvy):
-
-![overlay squares](images/overlaysquares.png)
-
-### Úkol 14\*
-
-Vytvoř program, který vykreslí norskou vlajku:
-
-![norsko](images/norsko.png)
-
-### Úkol 15\*
-
-Vytvoř nový program, ve kterém uprav následující kód tak, aby
-nakreslil stejný obrázek, ale aby program obsahoval jen 3 příkazy pro kreslení obdélníků:
-
-```python
-import tkinter
-canvas = tkinter.Canvas()
-canvas.pack()
-canvas.create_rectangle(90, 90, 150, 150, fill='yellow')
-canvas.create_rectangle(150, 90, 210, 150, fill='red')
-canvas.create_rectangle(90, 150, 150, 210, fill='green')
-canvas.create_rectangle(30, 90, 90, 150, fill='red')
-canvas.create_rectangle(90, 30, 150, 90, fill='green')
-input()
-```
-
-### Úkol 16
-
-Opiš do něj kód uvedený níže. V proměnných `x`, `y` jsou uložené souřadnice levého horního rohu čtverce. Dokonči kód programu tak, abys pomocí uvedených proměnných nakreslil čtverec se stranou délky
+V proměnných `x`, `y` jsou uložené souřadnice levého horního rohu čtverce. Dokonči kód programu tak, abys pomocí uvedených proměnných nakreslil čtverec se stranou délky
 100:
 
 ```python
@@ -514,34 +445,17 @@ canvas.create_rectangle(x, y, x + , , fill='yellow')
 input()
 ```
 
-### Úkol 17
+### Úkol 9
 
-Vytvoř program, který použije čtyři proměnné `x`, `y`, `sirka`, `vyska` a na jejich základě nakreslí obdélník s levým horním rohem na
-souřadnicích `x`, `y`, danou šířkou a výškou. Barvu si zvol podle svého.
+Vytvoř program, který použije čtyři proměnné `x`, `y`, `sirka`, `vyska` a na jejich základě nakreslí obdélník s levým horním rohem na souřadnicích `x`, `y`, danou šířkou a výškou. Barvu si zvol podle svého.
 
-### Úkol 18
+### Úkol 10
 
 Vytvoř program, který nakreslí následující čtverce:
 
 ![three squares](images/threesquares.png)
 
 Tyto čtverce mají společný levý horní roh, jehož souřadnice jsou v proměnných `x`, `y`. Čtverce se postupně zmenšují tak, že červený má délku strany 100, modrý 70 a tmavomodrý 40.
-
-### Úkol 19
-
-Vytvoř program, který nakreslí tři vzájemně se dotýkající obdélníky:
-
-![three rectangles](images/threerectangles.png)
-
-Souřadnice levého horního rohu prvního obdélníku jsou uložené v proměnných `x`, `y`. Všechny tři obdélníky mají stejnou šířku a výšku – tyto rozměry jsou uložené v proměnných `a`, `b`.
-
-Bude program fungovat správně i v případě, že hodnotu proměnné `a` zvětšíš o 20 a hodnotu proměnné `y` zvětšíš o 10? Jestli ne, program oprav.
-
-### Úkol 20
-
-Pět barevných čtverců leží těsně vedle sebe na jedné podložce. Velikosti stran jsou postupně 100, 80, 60, 40, 20. Souřadnice levého dolního rohu prvního čtverce jsou v proměnných `x`, `y`. Napiš program, který vykreslí tyto čtverce:
-
-![sequence](images/sequencesquares.png)
 
 ## Podprogramy
 
@@ -732,25 +646,7 @@ kresli()
 
 ### Úkol 7
 
-Vytvoř nový program a v něm definuj podprogram `kriz`, který po zavolání nakreslí červený kříž:
-
-![cross](images/cross.png)
-
-### Úkol 8\*
-
-Vytvoř nový program, který bude schopen nakreslit robota. V programu budou čtyři podprogramy – `hlava`, `ruce`, `nohy`, `telo` – a každý z nich bude schopen
-nakreslit část robota. Když je zavoláš v následujícím pořadí:
-
-```python
-hlava()
-ruce()
-nohy()
-telo()
-```
-
-nakreslí se celý robot jako na obrázku:
-
-![robot](images/robot.png)
+Vytvoř dva podprogramy. První pojmenuj _maly_ctverec_ a druhý pojmenuj _velky_ctverec_. První podprogram vykreslí na souřadnicicích $[10, 20]$ čtverec se stranou délky 20. Druhý podprogram vykreslí čtverec na souřadnicích $[40, 40]$ čtverec se stranou délky 80. Pomocí zavolání obou programu vykreslete do jednoho plátna oba čtverce.
 
 ## Náhoda
 
@@ -822,20 +718,7 @@ Pokoj si uklidím 30 . 2 . 2025
 
 ### Úkol 10
 
-Vytvoř nový program, ve kterém pomocí následujícího kódu
-nakreslíš náhodně umístěný čtverec:
-
-```python
-import tkinter
-import random
-canvas = tkinter.Canvas()
-canvas.pack()
-def nahodny_ctverec():
-    x = random.randint(10, 300)
-    y = random.randint(10, 200)
-    canvas.create_rectangle(x, y, x + 50, y + 50,fill='orange')
-nahodny_ctverec()
-```
+Vytvoř podprogram _nahodny_ctverec_, který vykreslí čtverec na náhodné pozici (souřadnice jednoho rohu budou náhodně vygenerované čísla) a který bude mít stranu délky 50.
 
 ### Úkol 11
 
@@ -845,47 +728,15 @@ Doplň do předchozího programu příkazy tak, aby program nakreslil pět náho
 
 Uprav předchozí program tak, aby se čtverce kreslily nejen na náhodných pozicích, ale také aby měl každý čtverec náhodnou velikost z intervalu od 10 do 100.
 
-## Kreslení textu
-
-### Úkol 1
-
-Pro psaní textů do grafické plochy lze použít následující příkaz:
-
-```python
-import tkinter
-canvas = tkinter.Canvas()
-canvas.pack()
-canvas.create_text(150, 50, text='posílám pozdrav z grafické plochy')
-input()
-```
-
-### Úkol 2
-
-Vytvoř program a napiš do něj příkazy, kterými pojmenuješ
-okraje grafické plochy jako na následujícím obrázku (souřadnice odhadni):
-
-![corners](images/corners.png)
-
-### Úkol 3
-
-Vytvoř program, ve kterém vytvoř podprogram `nahodne_cislo`, který na náhodnou pozici v grafické ploše vypíše náhodné šesticiferné číslo, tedy číslo z intervalu od 100000 do 999999.
-
 ## Opakování
 
 ### Úkol 1
 
-Zaznamenáváme naši GPS pozici. Vytvoř program a v něm podprogram `gps`, který vygeneruje náhodné souřadnice `x`, `y` představující GPS pozici. Na tomto místě nakreslí značku `+` a pod ni vypíše danou pozici – čísla x, y. Po
-deseti zavoláních podprogramu `gps` můžeš dostat například takovýto výsledek:
-
-![gps](images/gps.png)
+Vytvoř program, který pomocí příkazu `print` vypíše text _Těším se na prázdniny_ pětkrát pod sebe.
 
 ### Úkol 2
 
-Vytvoř program bez grafické plochy, který pomocí příkazu `print` vypíše text _Těším se na prázdniny_ pětkrát pod sebe.
-
-### Úkol 3
-
-V obou předchozích programech jsi měl vícekrát nakopírované příkazy `gps()` nebo `print()`. Abys je nemusel opakovaně kopírovat, můžeš to zapsat jednodušeji. Uprav kód programu z úkolu 2 následovně:
+V předchozím programu jsi měl vícekrát nakopírované příkazy `print()`. Abys je nemusel opakovaně kopírovat, můžeš to zapsat jednodušeji. Uprav kód programu z úkolu 1 následovně:
 
 ```python
 for i in range(5):
@@ -894,7 +745,7 @@ for i in range(5):
 
 Zkus místo čísla 5 dát číslo 10 a program znovu spusť. Urči, co je tímto číslem ovlivňováno.
 
-### Úkol 4
+### Úkol 3
 
 Uprav program stejně, jako je uvedeno níže, a spusť jej:
 
@@ -906,7 +757,7 @@ for i in range(5):
 
 Slovem `for` začíná příkaz cyklu. Pětka v závorce udává počet zopakování. Dva příkazy `print` tvoří tělo cyklu (tělo známe již z podprogramů). Příkazy v těle cyklu se vykonají 5x.
 
-### Úkol 5
+### Úkol 4
 
 Je důležité odsadit od kraje příkazy, které tvoří tělo cyklu. Vyzkoušej, co vypíše takto upravený program:
 
@@ -916,22 +767,18 @@ for i in range(5):
 print('=====================')
 ```
 
-### Úkol 6
-
-Uprav program z úkolu 1, a opakované volání podprogramu `gps()` zapiš pomocí `for` cyklu.
-
-### Úkol 7
+### Úkol 5
 
 Vytvoř nový program a v něm podprogram `cerveny_ctverec()`. Ten nakreslí na grafickou plochu na náhodné souřadnice červený čtverec se stranou délky 10. Použij `for` cyklus na to, abys nakreslil 2000 červených čtverců.
 
-### Úkol 8
+### Úkol 6
 
 Doplň do předchozího programu podprogram `modry_ctverec()`. Tento podprogram bude kreslit na náhodné souřadnice modrý čtverec se stranou délky 10. Zajisti, aby tělo cyklu obsahovalo volání podprogramu `cerveny_ctverec()` i podprogramu `modry_ctverec()`. Výsledek může vypadat
 například jako na následujícím obrázku:
 
 ![thousand](images/thousandsquares.png)
 
-### Úkol 9
+### Úkol 7
 
 Vytvoř nový program, který nakreslí hvězdnou
 oblohu:
@@ -944,7 +791,7 @@ Návod:
 - Tmavomodrou oblohu nakresli jako velký obdélník s barvou _navy_.
 - Potom zavolej tisíckrát podprogram hvezdicka.
 
-### Úkol 10
+### Úkol 8
 
 Napiš program, který simuluje hody dvěma kostkami. Zapiš pomocí `for` cyklu pět hodů, kdy se v těle cyklu do dvou proměnných přiřadí dvě náhodná čísla, ta se vypíšou a vypíše se i jejich součet. Výpis může vypadat například takto:
 
@@ -970,7 +817,7 @@ Na druhé kostce padlo číslo 4
 Součet obou čísel je 5
 ```
 
-### Úkol 11\*
+### Úkol 9\*
 
 Vytvoř nový program, který bude představovat generátor náhodného QR kódu a který bude schopen generovat podobný QR kód jako na obrázku níže:
 
@@ -978,7 +825,7 @@ Vytvoř nový program, který bude představovat generátor náhodného QR kódu
 
 Obrázek se skládá z velkého počtu černých čtverečků. Každý má délku strany 10 a je nakreslený v jednom náhodně vybraném políčku mřížky, která obsahuje 21x21 políček.
 
-### Úkol 12
+### Úkol 10
 
 Vytvoř program a pomocí následujícího kódu vypiš celá čísla od 0 do 9:
 
@@ -989,7 +836,7 @@ for i in range(10):
 
 Jak to funguje? `i` je proměnná, do které příkaz `for` postupně přiřazuje celá čísla od 0 do 9.
 
-### Úkol 13
+### Úkol 11
 
 Urči, co je potřeba v předchozím programu změnit, aby se vypsala čísla:
 
@@ -997,8 +844,9 @@ Urči, co je potřeba v předchozím programu změnit, aby se vypsala čísla:
 2. 1, 2, ... 10
 3. 2, 4, ... 20
 4. 10, 20, ... 100
+5. 10, 9, ... 1
 
-### Úkol 14
+### Úkol 12
 
 Vytvoř program, který pomocí `for` cyklu vypíše čísla a jejich druhé mocniny:
 
@@ -1012,7 +860,7 @@ Vytvoř program, který pomocí `for` cyklu vypíše čísla a jejich druhé moc
 6 na druhou je 36
 ```
 
-### Úkol 15
+### Úkol 13
 
 Vytvoř program a v něm pomocí cyklu nakresli devět čtverců
 s délkou strany 30. Mezi čtverci bude mezera o velikosti 10. Použij proměnnou `x`, ve které bude uložena x-ová souřadnice levého horního rohu kresleného čtverce. Hodnota této
@@ -1020,19 +868,7 @@ proměnné bude v cyklu zvýšena pokaždé o 40.
 
 ![square row](images/squarerow.png)
 
-### Úkol 16
-
-Zlatokop našel poklad – 10 zlatých krychliček různých velikostí. Ty postupně ukládal na stůl těsně vedle sebe. Vytvoř program, který takový poklad nakreslí. Každá zlatá krychlička má náhodně zvolenou velikost z rozsahu od 10 do 40. Použij proměnnou, do které budeš ukládat náhodné číslo pro velikost krychličky. Kromě ní použij další proměnnou, pomocí níž budeš evidovat x-ovou pozici krychličky.
-
-![golden row](images/goldenrow.png)
-
-### Úkol 17
-
-Vylepši předchozí program tak, aby byly mezi zlatými krychličkami mezery o velikosti 5.
-
-![golden space row](images/goldenspacerow.png)
-
-### Úkol 18
+### Úkol 14
 
 Existuje pověst o králi, který slíbil mudrcovi za odměnu tolik zrnek pšenice, kolik jich bude na všech políčkách šachovnice? Král mudrcovi dovolil, aby na první políčko dal 10 zrnek, na druhé 20, na třetí 30 atd. Kolik by mudrc dostal zrnek rýže? Políček na šachovnici je 64.
 
