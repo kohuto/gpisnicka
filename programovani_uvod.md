@@ -639,14 +639,17 @@ Vytvoř nový program a vyzkoušej následující kód:
 import tkinter
 canvas = tkinter.Canvas()
 canvas.pack()
+
 def kresli():
     canvas.create_rectangle(10, 20, 30, 40, fill='red')
 kresli()
+
+input()
 ```
 
 ### Úkol 7
 
-Vytvoř dva podprogramy. První pojmenuj _maly_ctverec_ a druhý pojmenuj _velky_ctverec_. První podprogram vykreslí na souřadnicicích $[10, 20]$ čtverec se stranou délky 20. Druhý podprogram vykreslí čtverec na souřadnicích $[40, 40]$ čtverec se stranou délky 80. Pomocí zavolání obou programu vykreslete do jednoho plátna oba čtverce.
+Vytvoř dva podprogramy. První pojmenuj _maly_ctverec_ a druhý pojmenuj _velky_ctverec_. První podprogram vykreslí na souřadnicicích $[10, 20]$ čtverec se stranou délky 20. Druhý podprogram vykreslí čtverec na souřadnicích $[40, 40]$ se stranou délky 80. Pomocí zavolání obou programů vykreslete do jednoho plátna oba čtverce.
 
 ## Náhoda
 
