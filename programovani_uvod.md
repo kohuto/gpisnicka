@@ -820,8 +820,10 @@ Zkus měnit hodnoty v proměnné teplota tak, aby se program dostal i do větve 
 
 Uprav předchzí program tak, aby pro:
 
-- záporné teploty vypsal _Vezmi si rukavice_,
-- jinak vypsal _Rukavice nejsou potřeba_.
+- záporné teploty vypsal _Venku je -25 stupňů, vezmi si rukavice_,
+- jinak vypsal _Venku je 10 stupňů, rukavice nejsou potřeba_.
+
+> místo čísel dosadíš hodnotu uloženou v proměnné
 
 Ověř, že program funguje správně pro kladné i záporné hodnoty. Co tvůj program vypíše pro 0?
 
@@ -836,7 +838,7 @@ Ověř, že program počítá správně cenu dopisu pro hmotnosti: 30, 50 a 100.
 
 ### Úkol 6
 
-Máme krabici ve tvaru obdélníku s délkami stran, které jsou uložené v proměnných `a`, `b`. Krabici chceme položit vždy naležato. Vytvoř program, ve kterém na začátku přiřadíš do proměnných `a`, `b` rozměry krabice. Program nakreslí krabici tak, aby vždy ležela delší stranou na zemi:
+Délky stran obdélníku jsou uložené v proměnných `a`, `b`. Vytvoř program, který nakreslí obdélník tak, aby vždy ležel delší stranou na zemi:
 
 ![rectangles](images/rectangleonlongside.png)
 
