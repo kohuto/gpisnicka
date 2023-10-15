@@ -36,8 +36,7 @@ Proč právě Python?
 
 ## Instalace Pythonu
 
-Abychom mohli psát programy v pythonu, je potřeba nainstalovat interpreter pro python. Instalační balíček
-stáhněte [zde](https://www.python.org/downloads/) kliknutím na žluté tlačítko _Download python_. Pokud používáte jiný operační systém než windows, tak vyberte z dalších nabízených možností.
+Abychom mohli psát programy v pythonu, je potřeba nainstalovat interpreter pro python. Instalační balíček stáhněte [zde](https://www.python.org/downloads/) kliknutím na žluté tlačítko _Download python_. Pokud používáte jiný operační systém než windows, tak vyberte z dalších nabízených možností.
 
 ![download python](images/download_python.png).
 
@@ -56,7 +55,7 @@ Poté klikněte na _Install Now_. Poté, co instalace doběhne, okno zavřete.
 
 ## VS code
 
-Pro psaní programu budeme používat Visual Studio Code (VS code). VS code je potřeba nainstalovat do počítače z [oficiálních stránek](https://code.visualstudio.com/).
+Pro psaní programu budeme používat Visual Studio Code (VS code), které nainstalujte do počítače z [oficiálních stránek](https://code.visualstudio.com/).
 
 V momentě kdy máte nainstalované VS code, je potřeba nainstalovat ještě rozšíření ve VS code. V sekci `extension` vyhledejte `python` a vyberte první možnost (viz obrázek):
 
@@ -66,7 +65,7 @@ Nyní již můžeme vytvořit první soubor. Soubory, které obsahují programy 
 
 ![new file](images/new_file.png)
 
-Následně se objeví vstupní pole, do kterého napište jméno vašeho souboru (třeba muj soubor) a vyberte možnost _Create New File (jmeno_souboru)_.
+Následně se objeví vstupní pole, do kterého napište jméno vašeho souboru (třeba `muj_soubor`) a vyberte možnost _Create New File (jmeno_souboru)_.
 
 ![new file](images/new-file-name.png)
 
