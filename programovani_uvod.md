@@ -830,7 +830,7 @@ Ověř, že program funguje správně pro kladné i záporné hodnoty. Co tvůj 
 Vytvoř program, který určí cenu dopisu. Na začátku programu přiřaď do proměnné `hmotnost` číslo s hmotností dopisu. Použij příkaz pro větvení programu, aby pro dopis s hmotností:
 
 - větší než 50 vypsal _Zaplatíš 55 korun_
-- jinak vypsal _Zaplatíš 47 korun_
+- jinak vypíše _Zaplatíš 47 korun_
 
 Ověř, že program počítá správně cenu dopisu pro hmotnosti: 30, 50 a 100.
 
@@ -846,10 +846,10 @@ Vytvoř program, ve kterém do proměnných `a`, `b` přiřaď délky stran útv
 
 ### Úkol 7
 
-Vytvořte program, kterí pro:
+Vytvořte program, který pomocí cyklu a příkazu větvení vypíše pro:
 
-- čísla menší než 7 vypíše _Číslo ... je menší než 7_
-- ostatní čísla (až do čísla 20) vypíše _Číslo ... je větší nebo rovno 7_
+- čísla menší než 7 _Číslo ... je menší než 7_
+- ostatní čísla (až do čísla 20) _Číslo ... je větší nebo rovno 7_
 
 ### Úkol 8
 
