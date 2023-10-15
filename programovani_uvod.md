@@ -102,7 +102,7 @@ print(132 / 11)
 print(1 + 2 * 3 / (5 - 1))
 ```
 
-> $2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2$ neboli umocnění $2^{10}$ se v Pythonu zapisuje jako `2 ** 10`
+> 2 \* 2 \* 2 \* 2 \* 2 \* 2 \* 2 \* 2 \* 2 \* 2 neboli umocnění 2 na 10 se v Pythonu zapisuje jako `2 ** 10`
 
 ### Úloha 3
 
