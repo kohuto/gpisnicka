@@ -217,7 +217,7 @@ Přiřaď do proměnné `zmrzlina` cenu jedné zmrzliny (například 25 korun). 
 Koupil jsem 4 x zmrzlinu a zaplatil jsem 100 korun.
 ```
 
-### Úloha 9
+### Úloha 8
 
 V matematice značíme obsah kruhu $S$ a počítáme jej podle vzorce $\pi  r^2$. Obvod kruhu značíme $O$ a počítáme jej podle vzorce $2 \pi  r$. Vytvoř proměnné pro `poloměr`, `obsah` i `obvod` kruhu a přiřaď do nich správné výrazy. Vytvoř si proměnnou `pi` s hodnotou $3.14$. Výsledek vypiš následujícím způsobem:
 
@@ -225,7 +225,7 @@ V matematice značíme obsah kruhu $S$ a počítáme jej podle vzorce $\pi  r^2$
 Kruh s poloměrem 4 má obvod 25.12 a obsah 50.24
 ```
 
-### Úloha 8
+### Úloha 9
 
 Představ si, že bych chtěl použít program pro kruh s poloměrem 73. Změn hodnotu v proměnné `polomer` a spusť program. Zobrazí se ve výpisu správný výsledek? Jestli ne, program oprav.
 
