@@ -825,7 +825,7 @@ Uprav předchozí program tak, aby pro:
 
 Ověř, že program funguje správně pro kladné i záporné hodnoty. Co tvůj program vypíše pro 0?
 
-### Úkol 5
+### Úkol 4
 
 Vytvoř program, který určí cenu dopisu. Na začátku programu přiřaď do proměnné `hmotnost` číslo s hmotností dopisu. Použij příkaz pro větvení programu, aby pro dopis s hmotností:
 
@@ -834,15 +834,15 @@ Vytvoř program, který určí cenu dopisu. Na začátku programu přiřaď do p
 
 Ověř, že program počítá správně cenu dopisu pro hmotnosti: 30, 50 a 100.
 
-### Úkol 6
+### Úkol 5
 
 Délky stran obdélníku jsou uložené v proměnných `a`, `b`. Vytvoř program, který nakreslí obdélník tak, aby vždy ležel delší stranou na zemi:
 
 ![rectangles](images/rectangleonlongside.png)
 
-### Úkol 7
+### Úkol 6
 
-Vytvoř program. Do proměnných `a`, `b` přiřaď délky stran útvaru, u nějž nevíme, zda je to obdélník nebo čtverec. Napiš kód, který určí a vypíše, zda je daný útvar obdélníkem nebo čtvercem.
+Vytvoř program, ve kterém do proměnných `a`, `b` přiřaď délky stran útvaru, u nějž nevíme, zda je to obdélník nebo čtverec. Napiš kód, který určí a vypíše, zda je daný útvar obdélníkem nebo čtvercem.
 
 ### Úkol 8
 
