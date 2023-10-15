@@ -132,6 +132,28 @@ Petrovi bylo přesně před dvěma měsíci 16 let. Využij Python jako kalkula�
 
 Předpokládej, že rok má 365 dní a měsíc má 30 dní.
 
+### Úloha 6
+
+Zjisti, co Python vypíše v případě následujících příkazů:
+
+```python
+print(1 + 2 * 3)
+print("1 + 2 * 3")
+print()
+```
+
+Příkaz `print` slouží na vypisování textů. Text, který se má vypsat, napíšeš mezi uvozovky.
+
+### Úloha 7
+
+Příkaz `print` umí vypsat víc věcí – vyzkoušej následující příkazy. Co způsobí čárka v jednotlivých příkazech?
+
+```python
+print("Mám rád", "kapustu")
+print("Moje oblíbené číslo je", 42)
+print("Do školy jsem šel", 2 * 10, "minut")
+```
+
 ## Proměnná
 
 V matematice je zvykem označovat hodnoty písmeny, například délka strany čtverce $a = 100$ nebo poloměr kruhu $r=4$. To samé můžeš udělat i v Pythonu.
@@ -163,65 +185,49 @@ Vypíše se hodnota uložená v proměnné.
 
 ### Úloha 3
 
-Vyzkoušej vytvořit a nastavit i jiné proměnné:
-
-```python
-vyska = 167
-cena = 22 + 7
-```
-
-Zkontroluj, jaké hodnoty se do proměnných uložily.
-
-Proměnných můžeme vytvořit, kolik budeme chtít a později je používat v dalších výpočtech.
+Proměnných můžeme vytvořit, kolik budeme chtít a později je používat v dalších výpočtech. Vyzkoušej vytvořit a nastavit dvě proměnné `vyska` a `hmostnost`, do kterých ulož svou výšku a hmostnost. Pomocí příkazu `print` zkontroluj, jaké hodnoty se do proměnných uložily.
 
 ### Úloha 4
 
-Definujme tři proměnné:
+Co se stane, když bychom chtěli vypsat proměnnou `bmi`, kterou jsme zatím nedefinovali?
 
 ```python
-a = 100
-vyska = 167
-cena = 29
-```
-
-Co se stane, když bychom chtěli vypsat proměnnou `vek`, kterou jsme zatím nedefinovali?
-
-```python
-print(vek)
+print(bmi)
 ```
 
 ### Úloha 5
 
-Proměnné můžeš použít i v matematických zápisech a Python namísto názvu proměnné dosadí její hodnotu. Mějme proměnné `a`, `vyska` a `cena` ze cvičení 3. Urči výsledek následujících příkazů:
-
-```python
-print(190 - vyska)
-print(3 * cena + 10)
-print(cena + vyska)
-```
+Proměnné můžeš použít i v matematických zápisech a Python namísto názvu proměnné dosadí její hodnotu. Vytvoř proměnnou `bmi` a ulož do ní tvou hodnotu BMI. Pro výpočet BMI použij proměnné `vyska` a `hmotnost` ze cvičení 3.
 
 ### Úloha 6
 
 Proměnným můžeme změnit jejich obsah – vyzkoušej:
 
 ```python
-cena = 29
-cena = 6 * 7
-print(cena)
+hmotnost = 70
+hmotnost = 73
+print(hmotnost)
 ```
 
 ### Úloha 7
 
-Změň hodnotu proměnné `vyska` z úlohy 4 tak, aby v ní byla tvoje výška v centimetrech.
+Přiřaď do proměnné `zmrzlina` cenu jedné zmrzliny (například 25 korun). Do proměnné `pocet` přiraď počet kamarádů, kterým chceš koupit po jedné zmrzlině. Za použití proměnných sestav přiřazovací příkaz, pomocí kterého se do třetí proměnné `zaplatit` přiřadí celková cena, kterou zaplatíš. Výsledek vypiš následujícím způsobem:
 
-### Úloha 8
-
-Přiřaď do proměnné `zmrzlina` cenu jedné zmrzliny (například 25 korun). Do proměnné `pocet` přiraď počet kamarádů, kterým chceš koupit po jedné zmrzlině. Za
-použití proměnných sestav přiřazovací příkaz, pomocí kterého se do třetí proměnné `zaplatit` přiřadí celková cena, kterou zaplatíš.
+```
+Koupil jsem 4 x zmrzlinu a zaplatil jsem 100 korun.
+```
 
 ### Úloha 9
 
-V matematice značíme obsah kruhu $S$ a počítáme jej podle vzorce $\pi  r^2$. Obvod kruhu značíme $O$ a počítáme jej podle vzorce $2 \pi  r$. Vytvoř proměnné pro `poloměr`, `obsah` i `obvod` kruhu a přiřaď do nich správné výrazy. Vytvoř si proměnnou `pi` s hodnotou $3.14$.
+V matematice značíme obsah kruhu $S$ a počítáme jej podle vzorce $\pi  r^2$. Obvod kruhu značíme $O$ a počítáme jej podle vzorce $2 \pi  r$. Vytvoř proměnné pro `poloměr`, `obsah` i `obvod` kruhu a přiřaď do nich správné výrazy. Vytvoř si proměnnou `pi` s hodnotou $3.14$. Výsledek vypiš následujícím způsobem:
+
+```
+Kruh s poloměrem 4 má obvod 25.12 a obsah 50.24
+```
+
+### Úloha 8
+
+Představ si, že bych chtěl použít program pro kruh s poloměrem 73. Změn hodnotu v proměnné `polomer` a spusť program. Zobrazí se ve výpisu správný výsledek? Jestli ne, program oprav.
 
 ### Úloha 10
 
@@ -238,93 +244,6 @@ Vyzkoušej, které z následujících názvu lze použít jako název proměnné
 - věk
 - počet osob
 - trida(3)
-
-## Vypisování podruhé
-
-### Úloha 1
-
-Příkaz `print` již známe. Vyzkoušej, co vypíše následující program:
-
-```python
-print('Ahoj, já jsem počítač')
-```
-
-Příkaz `print` slouží na vypisování textů. Text, který se má vypsat, napíšeš mezi apostrofy.
-
-### Úloha 2
-
-Zjisti, co Python vypíše v případě následujících příkazů:
-
-```python
-print(1 + 2 * 3)
-print('1 + 2 * 3')
-print()
-```
-
-### Úloha 3
-
-Příkaz `print` umí vypsat víc věcí – vyzkoušej následující příkazy. Co způsobí čárka v jednotlivých příkazech?
-
-```python
-print('Mám rád', 'kapustu')
-print('Moje oblíbené číslo je', 42)
-print('Do školy jsem šel', 2 * 10, 'minut')
-```
-
-### Úloha 4
-
-V příkazu `print` lze kombinovat i proměnné. Zkus, co vypíše následující program:
-
-```python
-vek = 16
-print('Je mi', vek, 'let')
-```
-
-### Úloha 5
-
-Rozšiř program z úlohy 4 tak, aby navíc vypsal zprávu: _Příští rok mi bude 17 let_.
-
-### Úloha 6
-
-Představ si, že program z úlohy 5 spustí tvůj otec. Vyzkoušej program za něj – dosaď do proměnné věk jeho skutečný věk. Zobrazí se správný výsledek i na druhém řádku svého výstupu? Jestli ne, program oprav.
-
-### Úloha 7
-
-Vytvoř nový program. Na začátku přiřaď do proměnně `penize`, kolik korun máš. Do proměnné `platba` přiřaď cenu nákupu. Použij proměnné a vypiš pomocí nich:
-
-```
-Mám ... korun
-Platím ... korun
-Zbyde mi ... korun
-```
-
-### Úloha 8
-
-Hřiště má šířku 50 metrů a délku 80 metrů. Budeš běhat po obvodě. Vytvoř program, který vypíše, kolik metrů uběhneš po
-7 kolech. Do proměnné `sirka` přiřaď hodnotu 50, do proměnné
-`delka` hodnotu 80 a do proměnné `pocet_kol` hodnotu 7. Vypiš text:
-
-```
-Šířka hřiště je 50 metrů, délka je 80 metrů
-Jedno kolo okolo hřiště je 260 metrů
-Po 7 kolech uběhneš 1820 metrů
-```
-
-Předpokládejme nyní, že šířka je 45 metrů a délka 70 metrů. Přepiš hodnoty v proměnných. Zobrazí program správné
-hodnoty na druhém a na třetím řádku výstupu? Jestli ne, program oprav.
-
-### Úloha 9
-
-Obchod nabízí 20% slevu. Původní cena výrobku byla 199 korun. Napiš program, který vypočítá, kolik zaplatíš. V programu
-použij proměnné `puvodni_cena`, `sleva`, `cena_po_sleve` a pomocí nich vypiš:
-
-```
-Cena alba je 199 korun
-Sleva činí 20 procent
-Zaplatíš 159.2 korun
-```
-
-Jakou výslednou cenu program vypíše pro výrobek, jehož původní cena byla 399 korun, jestliže sleva činí 30 %?
 
 ## Kreslení
 
