@@ -894,9 +894,9 @@ Počet prémií: 4
 
 Fotbaloví rozhodčí stanovili, jak budou hráče hodnotit za přestupky proti pravidlům:
 
-- když se hráč dopustil 0 přestupků, hraje férově,
-- když se dopustil 1 nebo 2 přestupků, dostane žlutou kartu,
-- jinak dostane červenou kartu a je vyloučen ze hry.
+- když se hráč dopustil 0 přestupků, hraje férově
+- když se dopustil 1 nebo 2 přestupků, dostane žlutou kartu
+- jinak dostane červenou kartu a je vyloučen ze hry
 
 Vidíš, že v této úloze je více podmínek. Prohlédni si následující řešení:
 
@@ -913,6 +913,8 @@ else:
 
 Co program vypíše pro hodnoty 0, 1, 2, 3, 4, -1
 
+### Úkol 11
+
 Aby byl program přehlednější, existuje v pythonu ještě příkaz `elif`:
 
 ```python
@@ -925,11 +927,11 @@ else:
     print('Máš červenou kartu')
 ```
 
-### Úkol 11
+### Úkol 12
 
 Chceš porovnat svůj věk s věkem kamarádky. Vytvoř program, ve kterém do proměnných `ja` a `ona` přiřadíš svůj věk a věk tvé kamarádky. Program tyto údaje porovná a podle toho vypíše: _Jsme stejně staří_, _Jsem mladší_ nebo _Ona je mladší_.
 
-### Úkol 12
+### Úkol 13
 
 Vytvoř program, ve kterém budeš kreslit na plátno
 německou vlajku. Tu budeš vytvářet tak, že pomocí cyklu vygeneruješ 10 000x náhodné
@@ -943,7 +945,7 @@ Výsledek by měl vypadat podobně jako na obrázku níže:
 
 ![german](images/german.png)
 
-### Úkol 13\*
+### Úkol 14\*
 
 Vytvoř program, který podobnou technikou, jako byla použita v předchozí úloze, nakreslí obrázek podobný české vlajce. Výsledek může vypadat například takto:
 
