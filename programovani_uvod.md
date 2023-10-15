@@ -11,11 +11,10 @@
 7. [Kreslení](#kreslení)
 8. [Podprogramy](#podprogramy)
 9. [Náhoda](#náhoda)
-10. [Kreslení textu](#kreslení-textu)
-11. [Opakování](#opakování)
-12. [Větvení](#větvení)
-13. [Podprogramy s parametrem](#podprogramy-s-parametrem)
-14. [Pole](#pole)
+10. [Opakování](#opakování)
+11. [Větvení](#větvení)
+12. [Podprogramy s parametrem](#podprogramy-s-parametrem)
+13. [Pole](#pole)
 
 ## Co je Python?
 
@@ -103,6 +102,8 @@ print(132 / 11)
 print(1 + 2 * 3 / (5 - 1))
 ```
 
+> $2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2$ neboli umocnění $2^{10}$ se v Pythonu zapisuje jako `2 ** 10`
+
 ### Úloha 3
 
 Pozor, zápisy musí být správně, jinak se objeví chyba. Co se
@@ -130,18 +131,6 @@ Petrovi bylo přesně před dvěma měsíci 16 let. Využij Python jako kalkula�
 3. Kolik je to sekund?
 
 Předpokládej, že rok má 365 dní a měsíc má 30 dní.
-
-### Úloha 6
-
-Zjisti, která číslice se vyskytuje nejčastěji ve výsledku výrazu:
-$123456789 * 111111111111111111111$
-
-### Úloha 7
-
-Výpočet $2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2$ je umocnění $2^{10}$. V Pythonu se umocnění zapisuje jako `2 ** 10`.
-
-- Tipni si, kolik číslic bude mít $2^{30}$.
-- Vypočítej pomocí pythonu a ručně spočítej počet číslic ve výsledku.
 
 ## Proměnná
 
