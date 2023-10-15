@@ -336,7 +336,7 @@ input()
 
 ### Úkol 7
 
-Vytvoř program, který nakreslí 4 čtverce sestranou délky 50 různé barvy.
+Vytvoř program, který nakreslí 4 čtverce se stranou délky 50. Každý čtverec bude mít jinou barvu.
 
 ### Úkol 8
 
@@ -784,9 +784,19 @@ Počítač dokáže porovnávat dvě hodnoty (čísla):
 ```python
 print(1 < 2)    # program vypíš true
 print(4 < 2)    # program vypíš false
-print(4 < 2 + 1)    # program vypíš false
-print(4 - 7 < 2 + 1)    # program vypíš true
+
+print(4 > 2 + 1)
+print(1 == 1)
+print(1 == 2)
+print(0 != 2)
+print(0 != 0)
+
+x = 100
+print(x == 10 * 10)
+print(x != 10 * 10 + 1)
 ```
+
+Znaménka větší/menší (`>` a `<`) známe z matematiky. Rovnost se zapisuje v pythonu jako `==` a nerovnost jako `!=`.
 
 ### Úkol 2
 
@@ -800,15 +810,13 @@ else:
     print('Dnes je zima.')
 ```
 
-`if ... else ...` je příkaz pro větvení programu. `teplota > 20` je podmínka, podle které se počítač rozhodne, kterou větev dále vykoná. `print('Dnes je teplo.')` je větev `if`. ` print('Dnes je zima.')` je větev `else`.
+`if ... else ...` je příkaz pro větvení programu. `teplota > 20` je podmínka, podle které se počítač rozhodne, kterou větev dále vykoná. `print('Dnes je teplo.')` je větev `if`. `print('Dnes je zima.')` je větev `else`.
 
 Když počítač uvidí příkaz `if ... else ...`, nejdříve vyhodnotí podmínku. Když je podmínka splněná, vykoná se příkaz ve větvi `if`, jinak se vykoná příkaz ve větvi `else`.
 
+Zkus měnit hodnoty v proměnné teplota tak, aby se program dostal i do větve `else`.
+
 ### Úkol 3
-
-Změň předchozí program hodnotu proměnné `teplota` z 25 na 10. Program spusť. Co se vypíše?
-
-### Úkol 4
 
 Uprav předchzí program tak, aby pro:
 
@@ -821,8 +829,8 @@ Ověř, že program funguje správně pro kladné i záporné hodnoty. Co tvůj 
 
 Vytvoř program, který určí cenu dopisu. Na začátku programu přiřaď do proměnné `hmotnost` číslo s hmotností dopisu. Použij příkaz pro větvení programu, aby pro dopis s hmotností:
 
-- větší než 50 vypsal Zaplatíš 55 korun,
-- jinak vypsal Zaplatíš 47 korun.
+- větší než 50 vypsal _Zaplatíš 55 korun_
+- jinak vypsal _Zaplatíš 47 korun_
 
 Ověř, že program počítá správně cenu dopisu pro hmotnosti: 30, 50 a 100.
 
@@ -848,24 +856,6 @@ Například:
 
 - když bude a = -7, program vypíše _Absolutní hodnota -7 je 7_,
 - když bude a = 13, program vypíše _Absolutní hodnota 13 je 13_.
-
-### Úkol 9
-
-Zatím umíš porovnávat dvě čísla pomocí `<`, `>`. Vyzkoušej, jak fungují testy rovnosti `==`
-a nerovnosti `!=` . Napiš do příkazového řádku následující výrazy a zjisti, co Python vypíše:
-
-```python
-print(1 == 1)
-print(1 == 2)
-print(0 != 2)
-print(0 != 0)
-
-x = 100
-print(x == 10 * 10)
-print(x != 10 * 10)
-print(11 * 11 - 21 == x)
-print(1000 / 10 - 1 != x)
-```
 
 ### Úkol 10
 
@@ -933,6 +923,8 @@ else:
 
 Co program vypíše pro hodnoty 0, 1, 2, 3, 4, -1
 
+> aby byl program přehlednější, existuje v pythonu ještě příkaz `elif`
+
 ### Úkol 14
 
 Chceš porovnat svůj věk s věkem kamarádky. Vytvoř program, ve kterém do proměnných `ja` a `ona` přiřadíš svůj věk a věk tvé kamarádky. Program tyto údaje porovná a podle toho vypíše: _Jsme stejně staří_, _Jsem mladší_ nebo _Ona je mladší_.
@@ -951,7 +943,7 @@ Výsledek by měl vypadat podobně jako na obrázku níže:
 
 ![german](images/german.png)
 
-### Úkol 16
+### Úkol 16\*
 
 Vytvoř program, který podobnou technikou, jako byla použita v předchozí úloze, nakreslí obrázek podobný české vlajce. Výsledek může vypadat například takto:
 
