@@ -7,14 +7,13 @@
 3. [VS code](#vs-code)
 4. [Vypisování](#vypisování)
 5. [Proměnná](#proměnná)
-6. [Vypisování podruhé](#vypisování-podruhé)
-7. [Kreslení](#kreslení)
-8. [Podprogramy](#podprogramy)
-9. [Náhoda](#náhoda)
-10. [Opakování](#opakování)
-11. [Větvení](#větvení)
-12. [Podprogramy s parametrem](#podprogramy-s-parametrem)
-13. [Pole](#pole)
+6. [Kreslení](#kreslení)
+7. [Podprogramy](#podprogramy)
+8. [Náhoda](#náhoda)
+9. [Opakování](#opakování)
+10. [Větvení](#větvení)
+11. [Podprogramy s parametrem](#podprogramy-s-parametrem)
+12. [Pole](#pole)
 
 ## Co je Python?
 
