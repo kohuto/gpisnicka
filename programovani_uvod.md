@@ -913,7 +913,17 @@ else:
 
 Co program vypíše pro hodnoty 0, 1, 2, 3, 4, -1
 
-> aby byl program přehlednější, existuje v pythonu ještě příkaz `elif`
+Aby byl program přehlednější, existuje v pythonu ještě příkaz `elif`:
+
+```python
+pocet = 0
+if pocet == 0:
+    print('Hraješ férově')
+elif pocet < 3:
+    print('Máš žlutou kartu')
+else:
+    print('Máš červenou kartu')
+```
 
 ### Úkol 11
 
