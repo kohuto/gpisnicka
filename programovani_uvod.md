@@ -820,10 +820,8 @@ Zkus měnit hodnoty v proměnné teplota tak, aby se program dostal i do větve 
 
 Uprav předchozí program tak, aby pro:
 
-- záporné teploty vypsal _Venku je -25 stupňů, vezmi si rukavice_,
-- jinak vypíše _Venku je 10 stupňů, rukavice nejsou potřeba_.
-
-> místo čísel dosadíš hodnotu uloženou v proměnné
+- záporné teploty vypsal _Venku je ... stupňů, vezmi si rukavice_,
+- jinak vypíše _Venku je ... stupňů, rukavice nejsou potřeba_.
 
 Ověř, že program funguje správně pro kladné i záporné hodnoty. Co tvůj program vypíše pro 0?
 
