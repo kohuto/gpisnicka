@@ -763,7 +763,7 @@ Vytvoř program, který pomocí `for` cyklu vypíše čísla a jejich druhé moc
 6 na druhou je 36
 ```
 
-### Úkol 13
+### Úkol 13\*
 
 Vytvoř program a v něm pomocí cyklu nakresli devět čtverců
 s délkou strany 30. Mezi čtverci bude mezera o velikosti 10. Použij proměnnou `x`, ve které bude uložena x-ová souřadnice levého horního rohu kresleného čtverce. Hodnota této
