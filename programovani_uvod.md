@@ -818,10 +818,10 @@ Zkus měnit hodnoty v proměnné teplota tak, aby se program dostal i do větve 
 
 ### Úkol 3
 
-Uprav předchzí program tak, aby pro:
+Uprav předchozí program tak, aby pro:
 
 - záporné teploty vypsal _Venku je -25 stupňů, vezmi si rukavice_,
-- jinak vypsal _Venku je 10 stupňů, rukavice nejsou potřeba_.
+- jinak vypíše _Venku je 10 stupňů, rukavice nejsou potřeba_.
 
 > místo čísel dosadíš hodnotu uloženou v proměnné
 
@@ -844,24 +844,14 @@ Délky stran obdélníku jsou uložené v proměnných `a`, `b`. Vytvoř program
 
 ### Úkol 7
 
-Mobilní operátor počítá platby za přenesená data podle následujících pravidel:
-
-- když za den přeneseš méně než 10 megabajtů dat, zaplatíš za každý megabajt 2 koruny,
-- jinak zaplatíš za celý den 20 korun.
-
-Napiš program, ve kterém do proměnné `megabajty` přiřadíš počet přenesených megabajtů dat za jeden den. Použij příkaz větvení na to, abys do proměnné `cena` přiřadil vyúčtovanou cenu.
+Vytvoř program. Do proměnných `a`, `b` přiřaď délky stran útvaru, u nějž nevíme, zda je to obdélník nebo čtverec. Napiš kód, který určí a vypíše, zda je daný útvar obdélníkem nebo čtvercem.
 
 ### Úkol 8
 
-Vytvoř program, který zobrazí absolutní hodnotu čísla. Do proměnné `a` přiřaď číslo. Použij příkaz větvení, abys vypsal absolutní hodnotu tohoto čísla.
-Například:
+Vytvořte program, kterí pro:
 
-- když bude a = -7, program vypíše _Absolutní hodnota -7 je 7_,
-- když bude a = 13, program vypíše _Absolutní hodnota 13 je 13_.
-
-### Úkol 10
-
-Vytvoř program. Do proměnných `a`, `b` přiřaď délky stran útvaru, u nějž nevíme, zda je to obdélník nebo čtverec. Napiš kód, který určí a vypíše, zda je daný útvar obdélníkem nebo čtvercem.
+- čísla menší než 7 vypíše _Číslo ... je menší než 7_
+- ostatní čísla (až do čísla 20) vypíše _Číslo ... je větší nebo rovno 7_
 
 ### Úkol 11
 
