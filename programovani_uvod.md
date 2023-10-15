@@ -844,14 +844,14 @@ Délky stran obdélníku jsou uložené v proměnných `a`, `b`. Vytvoř program
 
 Vytvoř program, ve kterém do proměnných `a`, `b` přiřaď délky stran útvaru, u nějž nevíme, zda je to obdélník nebo čtverec. Napiš kód, který určí a vypíše, zda je daný útvar obdélníkem nebo čtvercem.
 
-### Úkol 8
+### Úkol 7
 
 Vytvořte program, kterí pro:
 
 - čísla menší než 7 vypíše _Číslo ... je menší než 7_
 - ostatní čísla (až do čísla 20) vypíše _Číslo ... je větší nebo rovno 7_
 
-### Úkol 11
+### Úkol 8
 
 Házíme desetkrát hrací kostkou a chceme vědět, kolikrát padla šestka a kolikrát jiné číslo.
 Vytvoř program, který pomocí cyklu, generování náhodných čísel a příkazu větvení simuluje deset hodů kostkou, hozená čísla vypíše a spočítá,
@@ -871,7 +871,7 @@ kolikrát padla šestka a kolikrát jiné číslo. Tyto počty poté vypíše. S
 Padlo 1 šestek a 9 jiných čísel
 ```
 
-### Úkol 12\*
+### Úkol 9\*
 
 Hrajeme hru, ve které házíme desetkrát kostkou a získáváme prémii vždy, když za sebou
 padnou dvě stejná čísla. Vytvoř program, který simuluje deset hodů kostkou, hozená čísla vypíše a spočítá počet prémií. Tento počet prémií potom vypíše. Spuštění může například vypadat takto:
@@ -890,7 +890,7 @@ padnou dvě stejná čísla. Vytvoř program, který simuluje deset hodů kostko
 Počet prémií: 4
 ```
 
-### Úkol 13
+### Úkol 10
 
 Fotbaloví rozhodčí stanovili, jak budou hráče hodnotit za přestupky proti pravidlům:
 
@@ -915,11 +915,11 @@ Co program vypíše pro hodnoty 0, 1, 2, 3, 4, -1
 
 > aby byl program přehlednější, existuje v pythonu ještě příkaz `elif`
 
-### Úkol 14
+### Úkol 11
 
 Chceš porovnat svůj věk s věkem kamarádky. Vytvoř program, ve kterém do proměnných `ja` a `ona` přiřadíš svůj věk a věk tvé kamarádky. Program tyto údaje porovná a podle toho vypíše: _Jsme stejně staří_, _Jsem mladší_ nebo _Ona je mladší_.
 
-### Úkol 15
+### Úkol 12
 
 Vytvoř program, ve kterém budeš kreslit na plátno
 německou vlajku. Tu budeš vytvářet tak, že pomocí cyklu vygeneruješ 10 000x náhodné
@@ -933,7 +933,7 @@ Výsledek by měl vypadat podobně jako na obrázku níže:
 
 ![german](images/german.png)
 
-### Úkol 16\*
+### Úkol 13\*
 
 Vytvoř program, který podobnou technikou, jako byla použita v předchozí úloze, nakreslí obrázek podobný české vlajce. Výsledek může vypadat například takto:
 
