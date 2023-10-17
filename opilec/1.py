@@ -1,7 +1,7 @@
 import random
 
-delka = 15  # int(input("Délka cesty: "))
-kroky = 20  # int(input("Maximální počet kroků: "))
+delka = int(input("Délka cesty: "))
+kroky = int(input("Maximální počet kroků: "))
 pozice = int(delka / 2)
 cesta = []
 for z in range(delka):
