@@ -953,18 +953,15 @@ Vytvoř program, který podobnou technikou, jako byla použita v předchozí úl
 
 ### Úkol 1
 
-Dokonči jednotlivé podprogramy, aby vypisovaly věk:
+Vytvoř tři podprogramy. Podprogram `velkyCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[200, 150]$ a délkou strany 200. Podprogram `stredniCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[200, 150]$ a délkou strany 100. Podprogram `malyCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[200, 150]$ a délkou strany 10.
 
 ```python
-def jemi10():
-    vek = 10
-    print('Je mi', vek, 'let')
-def jemi20():
-    vek = ......
-    print('Je mi', vek, 'let')
-def jemi30():
-    vek = 30
-    print(...................)
+def velkyCtverec():
+    canvas.create_rectangle(............, ............, ............, ............)
+def stredniCtverec():
+    canvas.create_rectangle(............, ............, ............, ............)
+def malyCtverec():
+    canvas.create_rectangle(............, ............, ............, ............)
 
 jemi10()
 jemi20()
