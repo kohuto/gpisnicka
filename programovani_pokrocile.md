@@ -119,19 +119,29 @@ Příkaz `with` vezme otevřený soubor (který vrací funkce open) a přiřadí
 
 ### Úkol 3
 
-Stáhni tento [soubor](https://drive.google.com/file/d/1o5l-Qe7hZTiRG6ggefP-nChuTSmTET7T/view?usp=drive_link) a vytvořte podprogram:
+Vytvoř podprogram, který spočítá, kolik je v souboru `basnicka.txt` znaků.
 
-1. `head`, který dostane parametr `n` a vypíš prvních `n` řádků souboru
-2. `tail`, který dostane parametr `n` a posledních `n` řádků souboru
+### Úkol 4
 
-Pomoct může následující funkce `readlines()`
+Vytvoř podprogram, který spočítá, kolik má soubor `basnicka.txt` řádků. Doporučuji použít funkci `readlines()`.
 
 ```python
 content = input_file.read()  # nacteni celeho obsahu souboru do jednoho retezce
 lines = input_file.readlines()  # nacteni souboru souboru jako seznam radku
 ```
 
-### Úkol 4
+### Úkol 5
+
+Vytvořte podprogram:
+
+1. `head`, který dostane parametr `n` a vypíš prvních `n` řádků ze souboru `basnicka.txt`
+2. `tail`, který dostane parametr `n` a posledních `n` řádků souboru `basnicka.txt`
+
+### Úkol 6
+
+Napište podprogram, který ze souboru básnička vypíše prvních 10 slov. Doporučuji použít funkci `split()`.
+
+### Úkol 7
 
 Slovník v Pythonu umožňuje ukládat párová data ve formátu `klíč:hodnota`. To znamená, že místo toho, abyste přistupovali k hodnotám pomocí jejich indexu (jako v seznamu), používáte k tomu unikátní klíč.
 
@@ -165,32 +175,28 @@ Pokud dvojice `klíč:hodnota` ve slovníku není, tak se dvojice přidá:
 ```python
 osoba["pohlaví"] = "žena"
 print(osoba)
-# vypíš {'jmeno': 'Anna', 'věk': 30, 'město': 'Praha', 'pohlaví': 'žena'}
+# vypíše {'jmeno': 'Anna', 'věk': 30, 'město': 'Praha', 'pohlaví': 'žena'}
 ```
-
-### Úkol 5
-
-Stáhněte tento [soubor](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing) a vypište prvních 10 slov v textu. Zkuste vypsat pouze slova, která mají alespoň 3 písmena.
-
-### Úkol 6
-
-Stáhněte tento [soubor](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing) a vypište 10 nejčastěji se vyskytujících slov v textu. Zkuste vypsat pouze slova, která mají alespoň 3 písmena.
-
-### Úkol 7
-
-Analyzujte text v tomto [souboru](https://drive.google.com/file/d/1o5l-Qe7hZTiRG6ggefP-nChuTSmTET7T/view?usp=drive_link) a vraťte průměrný počet slov ve větě.
 
 ### Úkol 8
 
-Proveďte frekvenční analýzu některého z výše uvedených souborů. Vypište, kolikrát se v textu vyskytují jednotlivá písmena.
+Proveďte frekvenční analýzu písmen v souboru básnička. Vypište, kolikrát se v souboru vyskytují jednotlivá písmena.
 
 Tip: pro ověření, že je daný znak písmeno, můžete použít funkci `isalpha`.
 
 ### Úkol 9
 
-Pro každé písmeno v textu vypište 5 písmen, které za ním následují nejčastěji.
+Upravte program ze cvičení 8, aby písmena ve slovníku seřadil podle toho, jak často se v textu vyskytovala. Poté vypište 5 nejčastěji se vyskytujících písmen v textu.
 
 ### Úkol 10
+
+Vytvořte program, který spočítá průměrný počet slov ve větě v souboru `basnicka.txt`.
+
+### Úkol 11 \*
+
+Pro každé písmeno v textu vypište 5 písmen, které za ním následují nejčastěji.
+
+### Úkol 12 \*
 
 Napište podprogram, který analyzuje text v [souboru](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing). Podprogram pak vygeneruje pseudo-náhodný text o `length` slovech. Text se generuje po slovech. Další generované slovo se náhodně vybírá z těch, které v původním textu po naposledy vygenerovaném slově následovaly.
 

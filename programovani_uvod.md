@@ -953,7 +953,7 @@ Vytvoř program, který podobnou technikou, jako byla použita v předchozí úl
 
 ### Úkol 1
 
-Vytvoř tři podprogramy. Podprogram `velkyCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[200, 150]$ a délkou strany 200. Podprogram `stredniCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[200, 150]$ a délkou strany 100. Podprogram `malyCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[200, 150]$ a délkou strany 10.
+Vytvoř tři podprogramy. Podprogram `velkyCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[50, 60]$ a délkou strany 200. Podprogram `stredniCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[50, 60]$ a délkou strany 100. Podprogram `malyCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[50, 60]$ a délkou strany 20. Podprogramy poté zavolej, aby se všechny tři čtverce vykreslily do jednoho okna.
 
 ```python
 def velkyCtverec():
@@ -962,28 +962,22 @@ def stredniCtverec():
     canvas.create_rectangle(............, ............, ............, ............)
 def malyCtverec():
     canvas.create_rectangle(............, ............, ............, ............)
-
-jemi10()
-jemi20()
-jemi30()
 ```
-
-Udělej to tak, aby se všechny tři podprogramy navzájem co nejvíc podobaly.
 
 ### Úkol 2
 
 Předchozí řešení se dá zapsat pomocí jediného podprogramu:
 
 ```python
-def jemi(vek):
-    print('Je mi', vek, 'let')
+def ctverec(strana):
+    canvas.create_rectangle(50, 60, 50 + strana, 60 + strana)
 
-jemi(10)
-jemi(20)
-jemi(30)
+ctverec(200)
+ctverec(100)
+ctverec(20)
 ```
 
-V závorce je název parametru `vek`. Ve funkci `print` se parametr používá. Parametr funguje jako proměnná. Při volání podprogramu se do parametru `vek` přiřadí hodnota.
+V závorce je název parametru `strana`. Ve funkci `create_rectangle` se parametr používá. Parametr funguje jako proměnná. Při volání podprogramu se do parametru `strana` přiřadí hodnota.
 
 ### Úkol 3
 
@@ -992,7 +986,7 @@ Dokonči následující podprogram `vypis`, který používá parametr `x` na to
 ```python
 def vypis(x):
     print('Číslo', ...)
-    print('Umocněné na druhou se rovná', ............)
+    print('Umocněné na druhou se rovná', ...)
 
 vypis(1)
 vypis(2)
@@ -1017,42 +1011,13 @@ Převrácená hodnota se rovná 0.3333333333333333
 
 ### Úkol 5
 
-Dokonči podprogram `ctverec` tak, aby kreslil čtverc s levým horním vrcholem na souřadnicích $[200, 150]$ a délkou strany `a`, která bude parametrem podprogramu:
-
-```python
-import tkinter
-canvas = tkinter.Canvas()
-canvas.pack()
-def ctverec(a):
-    canvas.create_rectangle(............, ............, ............, ............)
-ctverec(10)
-ctverec(100)
-ctverec(50)
-input()
-```
-
-### Úkol 6
-
-Vytvoř program a v něm definuj podprogram `nahodny_ctverec` s parametrem `a`, který nakreslí na náhodných souřadnicích červený čtverec se stranami délky `a`. Zavolej tento podprogram pro různé hodnoty parametru.
-
-### Úkol 7
-
-Vyzkoušej, co předchozí program nakreslí, když zavoláš podprogram `nahodny_ctverec` následujícím způsobem:
-
-```python
-for i in range(10):
-    nahodny_ctverec(i)
-```
-
-### Úkol 8
-
 Vytvoř program a v něm definuj podprogram `obliba`
 s parametrem `cislo`. Podprogram podle následujících pravidel vypíše, zda má číslo v oblibě:
 
 - když je číslo menší než 7, vypíše: _Mám rád číslo ..._
 - jinak vypíše: _Číslo ... se mi nelíbí_
 
-### Úkol 9
+### Úkol 6
 
 Uprav předchozí program tak, aby pomocí cyklu zavolal podprogram `obliba` pro čísla od 0 do 10. Výsledek by měl vypadat následovně:
 
@@ -1066,9 +1031,17 @@ Mám rád číslo 6
 Číslo 10 se mi nelíbí
 ```
 
-### Úkol 10
+### Úkol 7
 
-Vytvoř nový program a v něm definuj podprogram `ctverec` s parametrem `a`, který udává délku strany čtverce. Podprogram by měl fungovat tak, že čtverec kreslí jen pro kladné hodnoty parametru `a`, ale pro záporné hodnoty vypíše zprávu _Nedá se_. Levý horní roh kresleného čtverce bude mít souřadnice $[10, 10]$. Zprávu vypiš přibližně do středu grafické plochy.
+Vytvoř program a v něm definuj podprogram `nahodny_ctverec` s parametrem `a`, který nakreslí na náhodných souřadnicích červený čtverec se stranami délky `a`. Zavolej tento podprogram pro různé hodnoty parametru.
+
+### Úkol 8
+
+Vykresli pomocí podprogramu `nahodny_ctverec` z předchozího úkolu 10 čtverců. První bude mít délku strany 1, druhý stranu délky 2, třetí délku strany 3 atd.
+
+### Úkol 9
+
+Co se stane, když v podprogramu `nahodny_ctverec` z úkolu 7 nastavím hodnotu parametru na záporné číslo? Uprav program tak, aby vyreslil čtverec pouze pro kladné hodnoty parametru `a`. Pro záporné hodnoty vypíše do konzole zprávu _Nedá se_.
 
 ## Pole
 
