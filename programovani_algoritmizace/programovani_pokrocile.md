@@ -8,6 +8,7 @@
 4. [Výjimky](#výjimky)
 5. [Moduly](#moduly)
 6. [Testy](#testy)
+7. [Co dál?](#co-dál)
 
 ## Virtuální prostředí
 
