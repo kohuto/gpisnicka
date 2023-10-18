@@ -225,7 +225,7 @@ ValueError: invalid literal for int() with base 10: 'pes'
 
 ### Úkol 3
 
-Řešením problémů v předchozích úkolech by mohla být nějaká funkce `obsahuje_jen_cislice()`, existuje v pythonu podobná funkce? Je vhodné je používat?
+Řešením problémů v předchozích úkolech by mohla být nějaká hypotetická funkce `obsahuje_jen_cislice()`, existuje v pythonu podobná funkce? Je vhodné je používat?
 
 ### Úkol 4
 
@@ -366,7 +366,11 @@ pytest
 
 ### Úkol 1
 
+Vytvořte sadu testů pro funkci `add()`.
+
 ### Úkol 2
+
+Rozšiřte program `calculator.py` o další funkce, aby se jednalo o dobře vychovanou kalkulačku. Pro každou funkci vytvořte sadu testů.
 
 ### Úkol 3
 
