@@ -207,10 +207,9 @@ Napište podprogram, který analyzuje text v [souboru](https://drive.google.com/
 Podívej se na kód níže a vymysli příklad, kdy program selže:
 
 ```python
-def nacti_cislo():
-    """Získá od uživatele celé číslo a vrátí ho"""
-    odpoved = input('Zadej číslo: ')
-    return int(odpoved)
+def prevracena_hodnota():
+    cislo = int(input('Zadej číslo: '))
+    return 1 / cislo
 ```
 
 ### Úkol 2
