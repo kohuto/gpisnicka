@@ -771,7 +771,7 @@ proměnné bude v cyklu zvýšena pokaždé o 40.
 
 ### Úkol 14
 
-Existuje pověst o králi, který slíbil mudrcovi za odměnu tolik zrnek pšenice, kolik jich bude na všech políčkách šachovnice? Král mudrcovi dovolil, aby na první políčko dal 10 zrnek, na druhé 20, na třetí 30 atd. Kolik by mudrc dostal zrnek rýže? Políček na šachovnici je 64.
+Existuje pověst o králi, který slíbil mudrcovi za odměnu tolik zrnek rýže, kolik jich bude na všech políčkách šachovnice? Král mudrcovi dovolil, aby na první políčko dal 10 zrnek, na druhé 20, na třetí 30 atd. Kolik by mudrc dostal zrnek rýže? Políček na šachovnici je 64. Druhá varianta této pověsti hovoří o tom, že král dovolil mudrci položit na každé políčko dvakrát více rýže než na předešlé políčko, kolik zrnek by dostal v tomto případě?
 
 ## Větvení
 
