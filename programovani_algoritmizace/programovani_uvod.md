@@ -42,7 +42,7 @@ Abychom mohli psát programy v pythonu, je potřeba nainstalovat interpreter pro
 
 Následně stažený instalátor dvojklikem spusť (bude ve stažených souborech).
 
-![python interpreter](images/python_interpreter.png).
+![python interpreter](../images/python_interpreter.png).
 
 Na začátku instalace zaškrtni:
 
