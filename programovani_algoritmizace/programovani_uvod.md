@@ -38,7 +38,7 @@ Proč právě Python?
 
 Abychom mohli psát programy v pythonu, je potřeba nainstalovat interpreter pro python. Instalační balíček stáhněte [zde](https://www.python.org/downloads/) kliknutím na žluté tlačítko _Download python_. Pokud používáte jiný operační systém než windows, tak vyberte z dalších nabízených možností.
 
-![download python](images/download_python.png).
+![download python](../images/download_python.png).
 
 Následně stažený instalátor dvojklikem spusť (bude ve stažených souborech).
 
@@ -49,7 +49,7 @@ Na začátku instalace zaškrtni:
 - Add python.exe to PATH
 - Use admin privilegies when installing py.exe (pokud máte admin práva na počítači, pokud ne, není potřeba to řešit)
 
-![installation](images/instalation.png).
+![installation](../images/instalation.png).
 
 Poté klikněte na _Install Now_. Poté, co instalace doběhne, okno zavřete.
 
@@ -59,19 +59,19 @@ Pro psaní programu budeme používat Visual Studio Code (VS code), které nains
 
 V momentě kdy máte nainstalované VS code, je potřeba nainstalovat ještě rozšíření ve VS code. V sekci `extension` vyhledejte `python` a vyberte první možnost (viz obrázek):
 
-![vs code extension](images/vscodeextension.png)
+![vs code extension](../images/vscodeextension.png)
 
 Nyní již můžeme vytvořit první soubor. Soubory, které obsahují programy napsané v pythonu, mají koncovku `.py`. Univerzální cesta jak vytvořit nový soubor ve VS code je v horním menu vybrat _file_ a z nabídky vybrat _new file_.
 
-![new file](images/new_file.png)
+![new file](../images/new_file.png)
 
 Následně se objeví vstupní pole, do kterého napište jméno vašeho souboru (třeba `muj_soubor`) a vyberte možnost _Create New File (jmeno_souboru)_.
 
-![new file](images/new-file-name.png)
+![new file](../images/new-file-name.png)
 
 Otevře se klasické okno pro ukládání souboru. Do kolonky _Název souboru_ je potřeba za název souboru dopsat `.py`, což je koncovka pro soubory, které obsahují programy v pythonu.
 
-![new file](images/file_extension.png)
+![new file](../images/file_extension.png)
 
 Poté stačí uložit a můžeme začít psát první program. Program lze spustit bud pomocí `ctrl+F5` nebo tlačítkem `run python file` v pravém horním rohu.
 
@@ -168,7 +168,7 @@ Nic se nestalo (to je správně!). Python si vytvořil _proměnnou_ s _názvem_ 
 
 Lze si to představit jako krabičku. Text na krabičce je _název_ proměnné, zatímco to, co dáme dovnitř krabičky je _hodnota_ proměnné:
 
-![variable as box](images/variableasbox.jpg)
+![variable as box](../images/variableasbox.jpg)
 
 ### Úloha 2
 
@@ -295,17 +295,17 @@ canvas.create_rectangle(20, 10, 50, 250)
 
 Souřadnice fungují v tkinter trochu netradičně:
 
-![coordinates](images/canvas_coordinates.png)
+![coordinates](../images/canvas_coordinates.png)
 
 V matematice jsme zvyklí, že střed je "uprostřed". Zde ale leží bod se souřadnicemi $[0, 0]$ v levém horním rohu. Čísla na ose $x$ se zleva doprava. zvětšují. Čísla na ose $y$ se zvětšují shora dolů (čím větší číslo, tím níže).
 
 V příkazu `canvas.create_rectangle(x1, y1, x2, y2)` píšeme do závorek souřadnice protilehlých vrcholů obdélníku:
 
-![rectangle](images/rectangle_coord_1.png)
+![rectangle](../images/rectangle_coord_1.png)
 
 Tyto souřadnice vrcholů bychom mohli znázornit na souřadnicových osách následujícím způsobem:
 
-![rectangle](images/rectangle_coord_2.png)
+![rectangle](../images/rectangle_coord_2.png)
 
 ### Úkol 3
 
@@ -359,7 +359,7 @@ Vytvoř program, který použije čtyři proměnné `x`, `y`, `sirka`, `vyska` a
 
 Vytvoř program, který nakreslí následující čtverce:
 
-![three squares](images/threesquares.png)
+![three squares](../images/threesquares.png)
 
 Tyto čtverce mají společný levý horní roh, jehož souřadnice jsou v proměnných `x`, `y`. Čtverce se postupně zmenšují tak, že červený má délku strany 100, modrý 70 a tmavomodrý 40.
 
@@ -677,14 +677,14 @@ Vytvoř nový program a v něm podprogram `cerveny_ctverec()`. Ten nakreslí na 
 Doplň do předchozího programu podprogram `modry_ctverec()`. Tento podprogram bude kreslit na náhodné souřadnice modrý čtverec se stranou délky 10. Zajisti, aby tělo cyklu obsahovalo volání podprogramu `cerveny_ctverec()` i podprogramu `modry_ctverec()`. Výsledek může vypadat
 například jako na následujícím obrázku:
 
-![thousand](images/thousandsquares.png)
+![thousand](../images/thousandsquares.png)
 
 ### Úkol 7
 
 Vytvoř nový program, který nakreslí hvězdnou
 oblohu:
 
-![night sky](images/nightsky.png)
+![night sky](../images/nightsky.png)
 
 Návod:
 
@@ -722,7 +722,7 @@ Součet obou čísel je 5
 
 Vytvoř nový program, který bude představovat generátor náhodného QR kódu a který bude schopen generovat podobný QR kód jako na obrázku níže:
 
-![qr code](images/qrcode.png)
+![qr code](../images/qrcode.png)
 
 Obrázek se skládá z velkého počtu černých čtverečků. Každý má délku strany 10 a je nakreslený v jednom náhodně vybraném políčku mřížky, která obsahuje 21x21 políček.
 
@@ -767,7 +767,7 @@ Vytvoř program a v něm pomocí cyklu nakresli devět čtverců
 s délkou strany 30. Mezi čtverci bude mezera o velikosti 10. Použij proměnnou `x`, ve které bude uložena x-ová souřadnice levého horního rohu kresleného čtverce. Hodnota této
 proměnné bude v cyklu zvýšena pokaždé o 40.
 
-![square row](images/squarerow.png)
+![square row](../images/squarerow.png)
 
 ### Úkol 14
 
@@ -836,7 +836,7 @@ Ověř, že program počítá správně cenu dopisu pro hmotnosti: 30, 50 a 100.
 
 Délky stran obdélníku jsou uložené v proměnných `a`, `b`. Vytvoř program, který nakreslí obdélník tak, aby vždy ležel delší stranou na zemi:
 
-![rectangles](images/rectangleonlongside.png)
+![rectangles](../images/rectangleonlongside.png)
 
 ### Úkol 6
 
@@ -941,13 +941,13 @@ souřadnice $x$, $y$. Souřadnice $x$ bude z intervalu od 10 do 350 a souřadnic
 
 Výsledek by měl vypadat podobně jako na obrázku níže:
 
-![german](images/german.png)
+![german](../images/german.png)
 
 ### Úkol 14\*
 
 Vytvoř program, který podobnou technikou, jako byla použita v předchozí úloze, nakreslí obrázek podobný české vlajce. Výsledek může vypadat například takto:
 
-![czech](images/czech.png)
+![czech](../images/czech.png)
 
 ## Podprogramy s parametrem
 
