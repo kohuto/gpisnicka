@@ -10,7 +10,7 @@ print("ahoj")
 ```python
 a = 123
 b = "ahoj"
-print("text a proměnné", a, b)
+print("text + proměnné", a, b)
 ```
 
 ## Tkinter
