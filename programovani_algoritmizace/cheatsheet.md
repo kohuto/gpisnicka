@@ -9,7 +9,8 @@ print("ahoj")
 
 ```python
 a = 123
-a = "ahoj"
+b = "ahoj"
+print("text a proměnné", a, b)
 ```
 
 ## Tkinter
