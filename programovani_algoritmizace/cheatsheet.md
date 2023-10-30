@@ -3,6 +3,7 @@
 ```python
 print(123)
 print("ahoj")
+print("text + proměnné: ", a, b)
 ```
 
 ## Proměnná
@@ -10,7 +11,6 @@ print("ahoj")
 ```python
 a = 123
 b = "ahoj"
-print("text + proměnné", a, b)
 ```
 
 ## Tkinter
