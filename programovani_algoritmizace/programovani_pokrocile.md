@@ -307,7 +307,7 @@ Podobně jako `return` i příkaz `raise` ukončí funkci. A nejen tu – pokud 
 
 Vytvořte ve složce, kde jsou uložené programy `gsd.py`, `is_in_array.py` a `is_prime_number.py` čtvrtý soubor `main.py`.
 
-Na začátek souboru umístěte tento kód:
+Na začátek souboru `main.py` umístěte tento kód:
 
 ```python
 import is_in_array
