@@ -890,40 +890,42 @@ Počet prémií: 4
 
 ### Úkol 10
 
-Fotbaloví rozhodčí stanovili, jak budou hráče hodnotit za přestupky proti pravidlům:
+Systém vypisuje jestli má člověk nárok na slevu podle následjících pravidel:
 
-- když se hráč dopustil 0 přestupků, hraje férově
-- když se dopustil 1 nebo 2 přestupků, dostane žlutou kartu
-- jinak dostane červenou kartu a je vyloučen ze hry
+- když má člověk méně než 15 let, má nárok na dětskou slevu
+- když má člověk více než 65 let, má nárok na seniorskou slevu
+- jinak nemá nárok na slevu
 
-Vidíš, že v této úloze je více podmínek. Prohlédni si následující řešení:
+V této úloze je více podmínek. Prohlédni si následující řešení:
 
 ```python
-pocet = 0
-if pocet == 0:
-    print('Hraješ férově')
+vek = 13
+if vek < 15:
+    print('Dětská sleva')
 else:
-    if pocet < 3:
-        print('Máš žlutou kartu')
+    if vek > 65:
+        print('Seniorská sleva')
     else:
-        print('Máš červenou kartu')
+        print('Není nárok na slevu')
 ```
 
-Co program vypíše pro hodnoty 0, 1, 2, 3, 4, -1
+Co program vypíše pro hodnoty 5, 15, 23, 89, 65, -1?
 
 ### Úkol 11
 
 Aby byl program přehlednější, existuje v pythonu ještě příkaz `elif`:
 
 ```python
-pocet = 0
-if pocet == 0:
-    print('Hraješ férově')
-elif pocet < 3:
-    print('Máš žlutou kartu')
+vek = 13
+if vek < 15:
+    print('Dětská sleva')
+elif vek > 65:
+    print('Seniorská sleva')
 else:
-    print('Máš červenou kartu')
+    print('Není nárok na slevu')
 ```
+
+Rozšiř program, aby pro lidi od 15 do 26 let vypsal _Studentská sleva_
 
 ### Úkol 12
 

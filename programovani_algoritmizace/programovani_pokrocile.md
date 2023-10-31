@@ -210,40 +210,33 @@ Podívej se na kód níže a vymysli příklad, kdy program selže:
 ```python
 def prevracena_hodnota():
     cislo = int(input('Zadej číslo: '))
-    return 1 / cislo
+    return cislo
 ```
 
 ### Úkol 2
 
-Jak docílíme následující chybové hlášky?
-
-```
-Traceback (most recent call last):
-  File "ukazka.py", line 4, in nacti_cislo
-    cislo = int(odpoved)
-ValueError: invalid literal for int() with base 10: 'pes'
-```
+Řešením problémů v předchozím úkolu by mohla být nějaká hypotetická funkce `obsahuje_jen_cislice()`. Zkuste takovou funkci najít a upravte předchozí program pomocí příkazu `if` a této funkce tak, aby se text převáděl na číslo pouze, pokud obsahuje jen číslice.
 
 ### Úkol 3
-
-Řešením problémů v předchozích úkolech by mohla být nějaká hypotetická funkce `obsahuje_jen_cislice()`, existuje v pythonu podobná funkce? Je vhodné je používat?
-
-### Úkol 4
 
 Jaké budou výstupy následujícího kódu:
 
 ```python
 print('123'.isnumeric())
 print('abc'.isnumeric())
+
 print('½'.isnumeric)
 print(int('½'))
 print(int(1/2))
+
 print('௩三๓໓'.isnumeric())
+print(int('௩三๓໓'))
+
+print(' 42'.isnumeric())
 print(int(' 42'))
-print(' 42'.isdecimal())
 ```
 
-### Úkol 5
+### Úkol 4
 
 Chceme-li tedy zjistit, zda funkce `int` umí převést řetězec na číslo, je nejlepší na to skutečně použít funkci `int`.
 
@@ -261,15 +254,13 @@ def nacti_cislo():
 
 Jak to funguje? Příkazy v bloku `try` se provedou, ale když nastane uvedená výjimka, Python přeskočí zbytek bloku `try` a provede všechno v bloku `except`. Pokud výjimka nenastala, přeskočí se celý blok `except`.
 
+Za slovíčkem `except` je uvedeno ještě `ValueError`. To je název chyby. Všechny názvy jsou uvedeny [zde](https://docs.python.org/3/library/exceptions.html#exception-hierarchy).
+
 ### Úkol 6
 
-V úkolu 5 bylo za slovíčkem `except` uvedeno ještě `ValueError`. To je název chyby. Všechny názvy jsou uvedeny [zde](https://docs.python.org/3/library/exceptions.html#exception-hierarchy).
-
-Vytvořte podprogram, v němž bude použit příkaz `try/except` a bude využívat nějaký jiný druh chyby.
+V programu největší společný dělitel ošetřete pomocí odchytávání výjimek dělení nulou.
 
 ### Úkol 7
-
-Vymysli, jak by vypadalo tělo podprogramu `neco_udelej()`, aby se vypsalo vždy některé z čísel. Lze vypsat všechna čísla (ne nutně najednou)?
 
 ```python
 try:
@@ -313,6 +304,36 @@ def obsah_ctverce(strana):
 Podobně jako `return` i příkaz `raise` ukončí funkci. A nejen tu – pokud na tuhle konkrétní chybu není program předem připravený, ukončí se celý program.
 
 ## Moduly
+
+Vytvořte ve složce, kde jsou uložené programy `gsd.py`, `is_in_array.py` a `is_prime_number.py` čtvrtý soubor `main.py`.
+
+Na začátek souboru umístěte tento kód:
+
+```python
+import is_in_array
+```
+
+Nyní můžete volat v souboru `main.py` funkci `is_in_array()` tímto způsobem:
+
+```python
+import is_in_array
+is_in_array.is_in_array()
+```
+
+Zápis vlastně říká _Ze souboru is_in_array.py zavolej funkci is_in_array()_
+
+Pokud nechceme pořád psát `is_in_array.is_in_array()` můžeme na záčátek souboru napsat tento kód:
+
+```python
+from is_in_array import is_in_array
+```
+
+Nyní lze zavolat funkci tímto způsobem:
+
+```python
+from is_in_array import is_in_array
+is_in_array()
+```
 
 ## Testy
 
