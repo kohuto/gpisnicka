@@ -402,6 +402,6 @@ Vytvořte testy pro funkci `gsd()`
 
 Vytvořte testy pro funkci `is_in_array()`
 
-## Úkol 5
+### Úkol 5
 
 Vytvořte testy pro funkci `is_prime_number()`
