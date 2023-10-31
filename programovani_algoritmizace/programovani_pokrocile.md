@@ -396,6 +396,12 @@ Rozšiřte program `calculator.py` o další funkce, aby se jednalo o dobře vyc
 
 ### Úkol 3
 
+Vytvořte testy pro funkci `gsd()`
+
 ### Úkol 4
 
+Vytvořte testy pro funkci `is_in_array()`
+
 ## Co dál?
+
+Vytvořte testy pro funkci `is_prime_number()`
