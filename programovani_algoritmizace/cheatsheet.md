@@ -58,10 +58,6 @@ i = 3
 
 if i > 3:
     print("vetsi")
-elif i == 3:
-    print("rovno")
 else:
-    print("mensi")
+    print("mensi nebo rovno")
 ```
-
-## Pole
