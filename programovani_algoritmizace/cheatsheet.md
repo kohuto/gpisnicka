@@ -28,10 +28,8 @@ input()
 ## Podprogramy
 
 ```python
-def nazev(i):
+def nazev():
     print("ahoj")
-    print(i)
-    print(i + 1)
 
 nazev()
 ```
