@@ -1,5 +1,4 @@
 # Algoritmizace
-ahoj
 ## Přehled
 
 1. [Úvod](#úvod)
