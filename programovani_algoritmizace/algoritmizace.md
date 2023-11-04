@@ -85,7 +85,7 @@ Vytvoř podprogram, který určí největší společný dělitel dvou čísel
 
 ### Úkol 10
 
-Vytvoř podprogram, který dostane dva parametry `x` a `y`, který pomocí eukleidova algoritmu najde největší společná dělitel čísel `x` a `y`.
+Vytvoř podprogram, který dostane dva parametry `x` a `y`, který pomocí eukleidova algoritmu najde největší společný dělitel čísel `x` a `y`.
 
 ### Úkol 10
 
