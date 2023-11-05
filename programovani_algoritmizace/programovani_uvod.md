@@ -958,6 +958,10 @@ Vytvoř program, který podobnou technikou, jako byla použita v předchozí úl
 Vytvoř tři podprogramy. Podprogram `velkyCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[50, 60]$ a délkou strany 200. Podprogram `stredniCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[50, 60]$ a délkou strany 100. Podprogram `malyCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[50, 60]$ a délkou strany 20. Podprogramy poté zavolej, aby se všechny tři čtverce vykreslily do jednoho okna.
 
 ```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+
 def velkyCtverec():
     canvas.create_rectangle(............, ............, ............, ............)
 def stredniCtverec():
@@ -971,6 +975,10 @@ def malyCtverec():
 Předchozí řešení se dá zapsat pomocí jediného podprogramu:
 
 ```python
+import tkinter
+canvas = tkinter.Canvas()
+canvas.pack()
+
 def ctverec(strana):
     canvas.create_rectangle(50, 60, 50 + strana, 60 + strana)
 
