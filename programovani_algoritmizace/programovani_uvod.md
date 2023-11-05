@@ -955,7 +955,7 @@ Vytvoř program, který podobnou technikou, jako byla použita v předchozí úl
 
 ### Úkol 1
 
-Vytvoř tři podprogramy. Podprogram `velkyCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[50, 60]$ a délkou strany 200. Podprogram `stredniCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[50, 60]$ a délkou strany 100. Podprogram `malyCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[50, 60]$ a délkou strany 20. Podprogramy poté zavolej, aby se všechny tři čtverce vykreslily do jednoho okna.
+Vytvoř tři podprogramy. Podprogram `velkyCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[50, 60]$ a délkou strany 100. Podprogram `stredniCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[50, 60]$ a délkou strany 70. Podprogram `malyCtverec` vykreslí čtverec s levým horním vrcholem na souřadnicích $[50, 60]$ a délkou strany 40. Podprogramy poté zavolej, aby se všechny tři čtverce vykreslily do jednoho okna.
 
 ```python
 import tkinter
@@ -968,6 +968,8 @@ def stredniCtverec():
     canvas.create_rectangle(............, ............, ............, ............)
 def malyCtverec():
     canvas.create_rectangle(............, ............, ............, ............)
+
+input()
 ```
 
 ### Úkol 2
@@ -982,9 +984,11 @@ canvas.pack()
 def ctverec(strana):
     canvas.create_rectangle(50, 60, 50 + strana, 60 + strana)
 
-ctverec(200)
 ctverec(100)
-ctverec(20)
+ctverec(70)
+ctverec(40)
+
+input()
 ```
 
 V závorce je název parametru `strana`. Ve funkci `create_rectangle` se parametr používá. Parametr funguje jako proměnná. Při volání podprogramu se do parametru `strana` přiřadí hodnota.
