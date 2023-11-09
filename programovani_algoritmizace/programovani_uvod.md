@@ -900,15 +900,15 @@ Ověř, že program počítá správně cenu dopisu pro hmotnosti: 30, 50 a 100.
 
 ### Úkol 5
 
-Délky stran obdélníku jsou uložené v proměnných `a`, `b`. Vytvoř program, který nakreslí obdélník tak, aby vždy ležel delší stranou na zemi:
-
-![rectangles](../images/rectangleonlongside.png)
+Vytvoř program, ve kterém do proměnných `a`, `b` přiřaď délky stran útvaru, u nějž nevíme, zda je to obdélník nebo čtverec. Napiš kód, který určí a vypíše, zda je daný útvar obdélníkem nebo čtvercem.
 
 [řešení](./reseni/vetveni/5_ukol.md)
 
 ### Úkol 6
 
-Vytvoř program, ve kterém do proměnných `a`, `b` přiřaď délky stran útvaru, u nějž nevíme, zda je to obdélník nebo čtverec. Napiš kód, který určí a vypíše, zda je daný útvar obdélníkem nebo čtvercem.
+Délky stran obdélníku jsou uložené v proměnných `a`, `b`. Vytvoř program, který nakreslí obdélník tak, aby vždy ležel delší stranou na zemi:
+
+![rectangles](../images/rectangleonlongside.png)
 
 [řešení](./reseni/vetveni/6_ukol.md)
 
@@ -924,8 +924,7 @@ Vytvořte program, který pomocí cyklu a příkazu větvení vypíše pro:
 ### Úkol 8
 
 Házíme desetkrát hrací kostkou a chceme vědět, kolikrát padla šestka a kolikrát jiné číslo.
-Vytvoř program, který pomocí cyklu, generování náhodných čísel a příkazu větvení simuluje deset hodů kostkou, hozená čísla vypíše a spočítá,
-kolikrát padla šestka a kolikrát jiné číslo. Tyto počty poté vypíše. Spuštění může například vypadat takto:
+Vytvoř program, který pomocí cyklu, generování náhodných čísel a příkazu větvení simuluje deset hodů kostkou, hozená čísla vypíše a spočítá, kolikrát padla šestka a kolikrát jiné číslo. Tyto počty poté vypíše. Spuštění může například vypadat takto:
 
 ```
 5
