@@ -200,6 +200,7 @@ print(bmi)
 
 Proměnné můžeš použít i v matematických zápisech a Python namísto názvu proměnné dosadí její hodnotu. Vytvoř proměnnou `bmi` a ulož do ní tvou hodnotu BMI. Pro výpočet BMI použij proměnné `vyska` a `hmotnost` ze cvičení 3.
 
+[řešení](./reseni/promenne/5_ukol.md)
 ### Úkol 6
 
 Proměnným můžeme změnit jejich obsah – vyzkoušej:
@@ -217,6 +218,7 @@ Přiřaď do proměnné `zmrzlina` cenu jedné zmrzliny (například 25 korun). 
 ```
 Koupil jsem 4 x zmrzlinu a zaplatil jsem 100 korun.
 ```
+[řešení](./reseni/promenne/7_ukol.md)
 
 ### Úkol 8
 
@@ -225,6 +227,9 @@ V matematice značíme obsah kruhu $S$ a počítáme jej podle vzorce $\pi  r^2$
 ```
 Kruh s poloměrem 4 má obvod 25.12 a obsah 50.24
 ```
+
+[řešení](./reseni/promenne/8_ukol.md)
+
 
 ### Úkol 9
 
