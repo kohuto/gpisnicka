@@ -402,7 +402,7 @@ def vypis_text():
     print('************')
 ```
 
-2. Program spusť – pokud se nic nestalo, je to v pořádku.
+2. Program spusť – pokud se do konzole nic nevypsalo, je to v pořádku.
 3. Vlož ještě příkaz `vypis_text()`:
 
 ```python
@@ -423,7 +423,7 @@ nevykonal, jen se ho naučil. Skupinu příkazů `print` – tedy tělo podprogr
 
 ### Úkol 2
 
-Přidej do programu další příkazy – pozor, tyto příkazy nesmí mít odsazení, protože už nepatří do podprogramu:
+Přidej do programu další příkazy – pozor, tyto příkazy nesmí být odsazené (nesmí být před nimi žádná mezera, musí být hned na začátku řádku), protože už nepatří do podprogramu:
 
 ```python
 def vypis_text():
@@ -438,28 +438,29 @@ vypis_text()
 print('to je konec')
 ```
 
-V tomto programu se nejdříve definoval podprogram `vypis_text`. Za ním následují příkazy `print` a příkazy pro volání podprogramu `vypis_text`. Python zobrazil svoji
-vizitku dvakrát, protože v programu jsou dvě volání podprogramu `vypis_text`. Podprogram tedy můžeme volat i vícekrát.
+V tomto programu se nejdříve definoval podprogram `vypis_text`. Za ním následují příkazy `print` a příkazy pro volání podprogramu `vypis_text`. Python zobrazil svoji vizitku dvakrát, protože v programu jsou dvě volání podprogramu `vypis_text`. Podprogram tedy můžeme volat i vícekrát.
 
 ### Úkol 3
 
 Změň předchozí program tak, aby počítač vypsal:
 
 ```
-Hello!
+Vítej!
 *****************
 ** I am Python **
 *****************
-How are you?
+Jak se máš?
 *****************
 ** I am Python **
 *****************
-I am fine.
+Mám se dobře.
 *****************
 ** I am Python **
 *****************
-The end
+to je konec
 ```
+
+[řešení](./reseni/podprogramy/3_ukol.md)
 
 ### Úkol 4
 
@@ -481,18 +482,20 @@ def refren():
 
 Když program spustíš, Python vypíše chybové hlášení. Python tím říká, že na 1. řádku programu není možné volat podprogram `refren`, protože tento podprogram ještě nebyl definován. Uprav program tak, aby se úryvek písně vypsal správně.
 
+[řešení](./reseni/podprogramy/4_ukol.md)
+
 ### Úkol 5
 
 Ve svém programu můžeš definovat i více podprogramů. Vytvoř nový program a definuj v něm tři podprogramy. Každý z nich zobrazí jeden z následujících obrázků:
 
-- podprogram noha nakreslí takovouto nohu (dole jsou dvě podtržítka vlevo i vpravo):
+- podprogram `noha` nakreslí takovouto nohu (dole jsou dvě podtržítka vlevo i vpravo):
 
 ```
   |
 __|__
 ```
 
-- podprogram obdelnik nakreslí takovýto obdélník:
+- podprogram `obdelnik` nakreslí takovýto obdélník:
 
 ```
 #####
@@ -500,7 +503,7 @@ __|__
 #####
 ```
 
-- podprogram trojúhelník nakreslí takovýto trojúhelník:
+- podprogram `trojuhelník` nakreslí takovýto trojúhelník:
 
 ```
   *
@@ -559,6 +562,8 @@ toto je trojúhelník:
 *****
 ```
 
+[řešení](./reseni/podprogramy/5_ukol.md)
+
 ### Úkol 6
 
 Vytvoř nový program a vyzkoušej následující kód:
@@ -578,6 +583,8 @@ input()
 ### Úkol 7
 
 Vytvoř dva podprogramy. První pojmenuj _maly_ctverec_ a druhý pojmenuj _velky_ctverec_. První podprogram vykreslí na souřadnicicích $[10, 20]$ čtverec se stranou délky 20. Druhý podprogram vykreslí čtverec na souřadnicích $[40, 40]$ se stranou délky 80. Pomocí zavolání obou programů vykreslete do jednoho plátna oba čtverce.
+
+[řešení](./reseni/podprogramy/7_ukol.md)
 
 ## Náhoda
 
