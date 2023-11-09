@@ -77,7 +77,7 @@ Poté stačí uložit a můžeme začít psát první program. Program lze spust
 
 ## Vypisování
 
-### Úloha 1
+### Úkol 1
 
 Zkusme napsat první program:
 
@@ -87,7 +87,7 @@ print(1 + 2 + 3)
 
 `print` je [funkce](#podprogramy) (funkcím se budeme věnovat později). To, co napíšeme do závorek se vypíše do konzole.
 
-### Úloha 2
+### Úkol 2
 
 Python dokáže fungovat jako kalkulačka. Jaké budou výsledky následujících výrazů?
 
@@ -102,7 +102,7 @@ print(1 + 2 * 3 / (5 - 1))
 
 > 2 \* 2 \* 2 \* 2 \* 2 \* 2 \* 2 \* 2 \* 2 \* 2 neboli umocnění 2 na 10 se v Pythonu zapisuje jako `2 ** 10`
 
-### Úloha 3
+### Úkol 3
 
 Pozor, zápisy musí být správně, jinak se objeví chyba. Co se
 stane, pokud zadáš následující příkazy?
@@ -112,7 +112,7 @@ print(22 + 7 *)
 print(19 - (3 4))
 ```
 
-### Úloha 4
+### Úkol 4
 
 Někdy se však i po správném zápise může objevit chybové hlášení. Co se stane, pokud zadáš následující příkaz?
 
@@ -120,7 +120,7 @@ Někdy se však i po správném zápise může objevit chybové hlášení. Co s
 print(10 / (6 - 2 * 3))
 ```
 
-### Úloha 5
+### Úkol 5
 
 Petrovi bylo přesně před dvěma měsíci 16 let. Využij Python jako kalkulačku a spočítej:
 
@@ -130,9 +130,9 @@ Petrovi bylo přesně před dvěma měsíci 16 let. Využij Python jako kalkula�
 
 Předpokládej, že rok má 365 dní a měsíc má 30 dní.
 
-[řešení](./reseni/vypisovani/5_ukol.md){:target="_blank"}
+[řešení](./reseni/vypisovani/5_ukol.md)
 
-### Úloha 6
+### Úkol 6
 
 Zjisti, co Python vypíše v případě následujících příkazů:
 
@@ -144,7 +144,7 @@ print()
 
 Příkaz `print` slouží na vypisování textů. Text, který se má vypsat, napíšeš mezi uvozovky.
 
-### Úloha 7
+### Úkol 7
 
 Příkaz `print` umí vypsat víc věcí – vyzkoušej následující příkazy. Co způsobí čárka v jednotlivých příkazech?
 
@@ -158,7 +158,7 @@ print("Do školy jsem šel", 2 * 10, "minut")
 
 V matematice je zvykem označovat hodnoty písmeny, například délka strany čtverce $a = 100$ nebo poloměr kruhu $r=4$. To samé můžeš udělat i v Pythonu.
 
-### Úloha 1
+### Úkol 1
 
 Zkus napsat následující program:
 
@@ -172,7 +172,7 @@ Lze si to představit jako krabičku. Text na krabičce je _název_ proměnné, 
 
 ![variable as box](../images/variableasbox.jpg)
 
-### Úloha 2
+### Úkol 2
 
 Zkusme nyní vypsat proměnnou `a`:
 
@@ -183,11 +183,11 @@ print(a)
 
 Vypíše se hodnota uložená v proměnné.
 
-### Úloha 3
+### Úkol 3
 
 Proměnných můžeme vytvořit, kolik budeme chtít a později je používat v dalších výpočtech. Vyzkoušej vytvořit a nastavit dvě proměnné `vyska` a `hmostnost`, do kterých ulož svou výšku a hmostnost. Pomocí příkazu `print` zkontroluj, jaké hodnoty se do proměnných uložily.
 
-### Úloha 4
+### Úkol 4
 
 Co se stane, když bychom chtěli vypsat proměnnou `bmi`, kterou jsme zatím nedefinovali?
 
@@ -195,11 +195,11 @@ Co se stane, když bychom chtěli vypsat proměnnou `bmi`, kterou jsme zatím ne
 print(bmi)
 ```
 
-### Úloha 5
+### Úkol 5
 
 Proměnné můžeš použít i v matematických zápisech a Python namísto názvu proměnné dosadí její hodnotu. Vytvoř proměnnou `bmi` a ulož do ní tvou hodnotu BMI. Pro výpočet BMI použij proměnné `vyska` a `hmotnost` ze cvičení 3.
 
-### Úloha 6
+### Úkol 6
 
 Proměnným můžeme změnit jejich obsah – vyzkoušej:
 
@@ -209,7 +209,7 @@ hmotnost = 73
 print(hmotnost)
 ```
 
-### Úloha 7
+### Úkol 7
 
 Přiřaď do proměnné `zmrzlina` cenu jedné zmrzliny (například 25 korun). Do proměnné `pocet` přiraď počet kamarádů, kterým chceš koupit po jedné zmrzlině. Za použití proměnných sestav přiřazovací příkaz, pomocí kterého se do třetí proměnné `zaplatit` přiřadí celková cena, kterou zaplatíš. Výsledek vypiš následujícím způsobem:
 
@@ -217,7 +217,7 @@ Přiřaď do proměnné `zmrzlina` cenu jedné zmrzliny (například 25 korun). 
 Koupil jsem 4 x zmrzlinu a zaplatil jsem 100 korun.
 ```
 
-### Úloha 8
+### Úkol 8
 
 V matematice značíme obsah kruhu $S$ a počítáme jej podle vzorce $\pi  r^2$. Obvod kruhu značíme $O$ a počítáme jej podle vzorce $2 \pi  r$. Vytvoř proměnné pro `poloměr`, `obsah` i `obvod` kruhu a přiřaď do nich správné výrazy. Vytvoř si proměnnou `pi` s hodnotou $3.14$. Výsledek vypiš následujícím způsobem:
 
@@ -225,11 +225,11 @@ V matematice značíme obsah kruhu $S$ a počítáme jej podle vzorce $\pi  r^2$
 Kruh s poloměrem 4 má obvod 25.12 a obsah 50.24
 ```
 
-### Úloha 9
+### Úkol 9
 
 Představ si, že bych chtěl použít program pro kruh s poloměrem 73. Změn hodnotu v proměnné `polomer` a spusť program. Zobrazí se ve výpisu správný výsledek? Jestli ne, program oprav.
 
-### Úloha 10
+### Úkol 10
 
 Vyzkoušej, které z následujících názvu lze použít jako název proměnné:
 
