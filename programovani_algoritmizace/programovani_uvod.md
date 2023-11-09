@@ -738,9 +738,9 @@ oblohu:
 
 Návod:
 
-- Napiš podprogram hvězdička, který nakreslí na náhodnou pozici malý žlutý čtvereček. Velikost jeho strany bude náhodné číslo z rozsahu od 2 do 4.
-- Tmavomodrou oblohu nakresli jako velký obdélník s barvou _navy_.
-- Potom zavolej tisíckrát podprogram hvezdicka.
+- Napiš podprogram `hvezda`, který nakreslí na náhodnou pozici malý žlutý čtvereček. Velikost jeho strany bude náhodné číslo z rozsahu od 2 do 4
+- Tmavomodrou oblohu nakresli jako velký obdélník s barvou _navy_
+- Potom zavolej tisíckrát podprogram `hvezda`
 
 [řešení](./reseni/opakovani/7_ukol.md)
 
@@ -785,7 +785,6 @@ Obrázek se skládá z velkého počtu černých čtverečků. Každý má délk
 ### Úkol 10
 
 Vytvoř program a pomocí následujícího kódu vypiš celá čísla od 0 do 9:
-[řešení](./reseni/opakovani/9_ukol.md)
 
 ```python
 for i in range(10):
@@ -795,18 +794,6 @@ for i in range(10):
 Jak to funguje? `i` je proměnná, do které příkaz `for` postupně přiřazuje celá čísla od 0 do 9.
 
 ### Úkol 11
-
-Urči, co je potřeba v předchozím programu změnit, aby se vypsala čísla:
-
-1. 0, 1, ... 10 – tedy i číslo 10
-2. 1, 2, ... 10
-3. 2, 4, ... 20
-4. 10, 20, ... 100
-5. 10, 9, ... 1
-
-[řešení](./reseni/opakovani/11_ukol.md)
-
-### Úkol 12
 
 Vytvoř program, který pomocí `for` cyklu vypíše čísla a jejich druhé mocniny:
 
@@ -819,6 +806,18 @@ Vytvoř program, který pomocí `for` cyklu vypíše čísla a jejich druhé moc
 5 na druhou je 25
 6 na druhou je 36
 ```
+
+[řešení](./reseni/opakovani/11_ukol.md)
+
+### Úkol 12
+
+Urči, co je potřeba v předchozím programu změnit, aby se vypsala čísla:
+
+1. 0, 1, ... 10 – tedy i číslo 10
+2. 1, 2, ... 10
+3. 2, 4, ... 20
+4. 10, 20, ... 100
+5. 10, 9, ... 1
 
 [řešení](./reseni/opakovani/12_ukol.md)
 
