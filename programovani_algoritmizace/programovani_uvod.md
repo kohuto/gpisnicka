@@ -679,6 +679,8 @@ Uprav předchozí program tak, aby se čtverce kreslily nejen na náhodných poz
 
 Vytvoř program, který pomocí příkazu `print` vypíše text _Těším se na prázdniny_ pětkrát pod sebe.
 
+[řešení](./reseni/opakovani/1_ukol.md)
+
 ### Úkol 2
 
 V předchozím programu jsi měl vícekrát nakopírované příkazy `print()`. Abys je nemusel opakovaně kopírovat, můžeš to zapsat jednodušeji. Uprav kód programu z úkolu 1 následovně:
@@ -690,7 +692,6 @@ for i in range(5):
 
 Zkus místo čísla 5 dát číslo 10 a program znovu spusť. Urči, co je tímto číslem ovlivňováno.
 
-[řešení](./reseni/nahoda/12_ukol.md)
 ### Úkol 3
 
 Uprav program stejně, jako je uvedeno níže, a spusť jej:
@@ -717,7 +718,7 @@ print('=====================')
 
 Vytvoř nový program a v něm podprogram `cerveny_ctverec()`. Ten nakreslí na grafickou plochu na náhodné souřadnice červený čtverec se stranou délky 10. Použij `for` cyklus na to, abys nakreslil 2000 červených čtverců.
 
-[řešení](./reseni/opakovani/12_ukol.md)
+[řešení](./reseni/opakovani/5_ukol.md)
 
 ### Úkol 6
 
@@ -726,7 +727,7 @@ například jako na následujícím obrázku:
 
 ![thousand](../images/thousandsquares.png)
 
-[řešení](./reseni/opakovani/12_ukol.md)
+[řešení](./reseni/opakovani/6_ukol.md)
 
 ### Úkol 7
 
@@ -741,7 +742,7 @@ Návod:
 - Tmavomodrou oblohu nakresli jako velký obdélník s barvou _navy_.
 - Potom zavolej tisíckrát podprogram hvezdicka.
 
-[řešení](./reseni/opakovani/12_ukol.md)
+[řešení](./reseni/opakovani/7_ukol.md)
 
 ### Úkol 8
 
@@ -769,7 +770,7 @@ Na druhé kostce padlo číslo 4
 Součet obou čísel je 5
 ```
 
-[řešení](./reseni/opakovani/12_ukol.md)
+[řešení](./reseni/opakovani/8_ukol.md)
 
 ### Úkol 9\*
 
@@ -779,11 +780,12 @@ Vytvoř nový program, který bude představovat generátor náhodného QR kódu
 
 Obrázek se skládá z velkého počtu černých čtverečků. Každý má délku strany 10 a je nakreslený v jednom náhodně vybraném políčku mřížky, která obsahuje 21x21 políček.
 
-[řešení](./reseni/opakovani/12_ukol.md)
+[řešení](./reseni/opakovani/9_ukol.md)
 
 ### Úkol 10
 
 Vytvoř program a pomocí následujícího kódu vypiš celá čísla od 0 do 9:
+[řešení](./reseni/opakovani/9_ukol.md)
 
 ```python
 for i in range(10):
@@ -802,6 +804,8 @@ Urči, co je potřeba v předchozím programu změnit, aby se vypsala čísla:
 4. 10, 20, ... 100
 5. 10, 9, ... 1
 
+[řešení](./reseni/opakovani/11_ukol.md)
+
 ### Úkol 12
 
 Vytvoř program, který pomocí `for` cyklu vypíše čísla a jejich druhé mocniny:
@@ -816,17 +820,21 @@ Vytvoř program, který pomocí `for` cyklu vypíše čísla a jejich druhé moc
 6 na druhou je 36
 ```
 
+[řešení](./reseni/opakovani/12_ukol.md)
+
 ### Úkol 13\*
 
-Vytvoř program a v něm pomocí cyklu nakresli devět čtverců
-s délkou strany 30. Mezi čtverci bude mezera o velikosti 10. Použij proměnnou `x`, ve které bude uložena x-ová souřadnice levého horního rohu kresleného čtverce. Hodnota této
-proměnné bude v cyklu zvýšena pokaždé o 40.
+Vytvoř program a v něm pomocí cyklu nakresli devět čtverců s délkou strany 30. Mezi čtverci bude mezera o velikosti 10. Použij proměnnou `x`, ve které bude uložena x-ová souřadnice levého horního rohu kresleného čtverce. Hodnota této proměnné bude v cyklu zvýšena pokaždé o 40.
 
 ![square row](../images/squarerow.png)
+
+[řešení](./reseni/opakovani/13_ukol.md)
 
 ### Úkol 14
 
 Existuje pověst o králi, který slíbil mudrcovi za odměnu tolik zrnek rýže, kolik jich bude na všech políčkách šachovnice? Král mudrcovi dovolil, aby na první políčko dal 10 zrnek, na druhé 20, na třetí 30 atd. Kolik by mudrc dostal zrnek rýže? Políček na šachovnici je 64. Druhá varianta této pověsti hovoří o tom, že král dovolil mudrci položit na každé políčko dvakrát více rýže než na předešlé políčko, kolik zrnek by dostal v tomto případě?
+
+[řešení](./reseni/opakovani/14_ukol.md)
 
 ## Větvení
 
@@ -878,6 +886,8 @@ Uprav předchozí program tak, aby pro:
 
 Ověř, že program funguje správně pro kladné i záporné hodnoty. Co tvůj program vypíše pro 0?
 
+[řešení](./reseni/vetveni/3_ukol.md)
+
 ### Úkol 4
 
 Vytvoř program, který určí cenu dopisu. Na začátku programu přiřaď do proměnné `hmotnost` číslo s hmotností dopisu. Použij příkaz pro větvení programu, aby pro dopis s hmotností:
@@ -887,15 +897,21 @@ Vytvoř program, který určí cenu dopisu. Na začátku programu přiřaď do p
 
 Ověř, že program počítá správně cenu dopisu pro hmotnosti: 30, 50 a 100.
 
+[řešení](./reseni/vetveni/4_ukol.md)
+
 ### Úkol 5
 
 Délky stran obdélníku jsou uložené v proměnných `a`, `b`. Vytvoř program, který nakreslí obdélník tak, aby vždy ležel delší stranou na zemi:
 
 ![rectangles](../images/rectangleonlongside.png)
 
+[řešení](./reseni/vetveni/5_ukol.md)
+
 ### Úkol 6
 
 Vytvoř program, ve kterém do proměnných `a`, `b` přiřaď délky stran útvaru, u nějž nevíme, zda je to obdélník nebo čtverec. Napiš kód, který určí a vypíše, zda je daný útvar obdélníkem nebo čtvercem.
+
+[řešení](./reseni/vetveni/6_ukol.md)
 
 ### Úkol 7
 
@@ -903,6 +919,8 @@ Vytvořte program, který pomocí cyklu a příkazu větvení vypíše pro:
 
 - čísla menší než 7 _Číslo ... je menší než 7_
 - ostatní čísla (až do čísla 20) _Číslo ... je větší nebo rovno 7_
+
+[řešení](./reseni/vetveni/7_ukol.md)
 
 ### Úkol 8
 
@@ -924,6 +942,8 @@ kolikrát padla šestka a kolikrát jiné číslo. Tyto počty poté vypíše. S
 Padlo 1 šestek a 9 jiných čísel
 ```
 
+[řešení](./reseni/vetveni/8_ukol.md)
+
 ### Úkol 9\*
 
 Hrajeme hru, ve které házíme desetkrát kostkou a získáváme prémii vždy, když za sebou
@@ -942,6 +962,8 @@ padnou dvě stejná čísla. Vytvoř program, který simuluje deset hodů kostko
 5
 Počet prémií: 4
 ```
+
+[řešení](./reseni/vetveni/9_ukol.md)
 
 ### Úkol 10
 
@@ -982,9 +1004,13 @@ else:
 
 Rozšiř program, aby pro lidi od 15 do 26 let vypsal _Studentská sleva_
 
+[řešení](./reseni/vetveni/11_ukol.md)
+
 ### Úkol 12
 
 Chceš porovnat svůj věk s věkem kamarádky. Vytvoř program, ve kterém do proměnných `ja` a `ona` přiřadíš svůj věk a věk tvé kamarádky. Program tyto údaje porovná a podle toho vypíše: _Jsme stejně staří_, _Jsem mladší_ nebo _Ona je mladší_.
+
+[řešení](./reseni/vetveni/12_ukol.md)
 
 ### Úkol 13
 
@@ -1000,11 +1026,15 @@ Výsledek by měl vypadat podobně jako na obrázku níže:
 
 ![german](../images/german.png)
 
+[řešení](./reseni/vetveni/13_ukol.md)
+
 ### Úkol 14\*
 
 Vytvoř program, který podobnou technikou, jako byla použita v předchozí úloze, nakreslí obrázek podobný české vlajce. Výsledek může vypadat například takto:
 
 ![czech](../images/czech.png)
+
+[řešení](./reseni/vetveni/14_ukol.md)
 
 ## Podprogramy s parametrem
 
@@ -1026,6 +1056,8 @@ def malyCtverec():
 
 input()
 ```
+
+[řešení](./reseni/podprogramy-s-parametrem/1_ukol.md)
 
 ### Úkol 2
 
@@ -1062,6 +1094,8 @@ vypis(2)
 vypis(3)
 ```
 
+[řešení](./reseni/podprogramy-s-parametrem/3_ukol.md)
+
 ### Úkol 4
 
 Doplň do předchozího podprogramu příkaz, kterým se vypíše i převrácená hodnota `x`. Připomeňme, že převrácená hodnota čísla $x$ je rovna $\frac{1}{x}$. Program by měl po spuštění vypsat:
@@ -1078,6 +1112,8 @@ Umocněné na druhou se rovná 9
 Převrácená hodnota se rovná 0.3333333333333333
 ```
 
+[řešení](./reseni/podprogramy-s-parametrem/4_ukol.md)
+
 ### Úkol 5
 
 Vytvoř program a v něm definuj podprogram `obliba`
@@ -1085,6 +1121,8 @@ s parametrem `cislo`. Podprogram podle následujících pravidel vypíše, zda m
 
 - když je číslo menší než 7, vypíše: _Mám rád číslo ..._
 - jinak vypíše: _Číslo ... se mi nelíbí_
+
+[řešení](./reseni/podprogramy-s-parametrem/5_ukol.md)
 
 ### Úkol 6
 
@@ -1100,17 +1138,25 @@ Mám rád číslo 6
 Číslo 10 se mi nelíbí
 ```
 
+[řešení](./reseni/podprogramy-s-parametrem/6_ukol.md)
+
 ### Úkol 7
 
 Vytvoř program a v něm definuj podprogram `nahodny_ctverec` s parametrem `a`, který nakreslí na náhodných souřadnicích červený čtverec se stranami délky `a`. Zavolej tento podprogram pro různé hodnoty parametru.
+
+[řešení](./reseni/podprogramy-s-parametrem/7_ukol.md)
 
 ### Úkol 8
 
 Vykresli pomocí podprogramu `nahodny_ctverec` z předchozího úkolu 10 čtverců. První bude mít délku strany 1, druhý stranu délky 2, třetí délku strany 3 atd.
 
+[řešení](./reseni/podprogramy-s-parametrem/8_ukol.md)
+
 ### Úkol 9
 
 Co se stane, když v podprogramu `nahodny_ctverec` z úkolu 7 nastavím hodnotu parametru na záporné číslo? Uprav program tak, aby vyreslil čtverec pouze pro kladné hodnoty parametru `a`. Pro záporné hodnoty vypíše do konzole zprávu _Nedá se_.
+
+[řešení](./reseni/podprogramy-s-parametrem/9_ukol.md)
 
 ## Listy
 
@@ -1123,6 +1169,8 @@ Vygeneruj náhodné číslo od 0 do 3. Na základě vygenerovaného čísla vykr
 - pro číslo 2 bude čtverec modrý
 - pro číslo 3 bude čtverec žlutý
 
+[řešení](./reseni/listy/1_ukol.md)
+
 ### Úkol 2
 
 Kdybychom podobným způsobem chtěli vykreslovat čtverce 20 různých barev, tak by se stal kód nečitelným. Lepší variantou, jak uchovávat nějaký výčet hodnot je seznam. K úloze 1 se ještě později vrátíme. Vyzkoušej, co vypíše následující program:
@@ -1133,6 +1181,7 @@ print(znamky)
 ```
 
 Lze si to představit jako řadu skříněk. Do každé skříňky můžeme umístit libovolný prvek.
+
 
 ### Úkol 3
 
@@ -1150,6 +1199,7 @@ Vyzkoušej, který z následujících seznamů můžeme v pythonu vytvořit a n�
   "\U0001F603",
   "\U0001F604",
   ]
+
 
 ### Úkol 4
 
@@ -1171,13 +1221,19 @@ již víme, že příkaz `for` postupně přiřazuje do proměnné `i` hodnoty 0
 
 Napište podprogram, který dostane dva parametry - pole a prvek. Program vypíše "ano", pokud se daný prvek nachází v poli.
 
+[řešení](./reseni/listy/5_ukol.md)
+
 ### Úkol 6
 
 Napište podprogram, který dostane jako parametr pole, a který vypíše, kolik je v poli prvků.
 
+[řešení](./reseni/listy/6_ukol.md)
+
 ### Úkol 7
 
 Napište podprogram, který dostane jako parametr pole čísel a vypíše součet všech čísel v poli.
+
+[řešení](./reseni/listy/7_ukol.md)
 
 ### Úkol 8
 
@@ -1201,27 +1257,39 @@ zapisem `cisla[1] = 40` říkáme, že chceme změnit v seznamu `cisla` prvek na
 
 Vytvořte seznam o šesti prvcích s hodnotou nula. Následně simulujte hod šestistěnnou kostkou tím, že vygenerujete náhodné číslo v rozmezí od 1 do 6. Podle výsledku hodu nastavte příslušný prvek v seznamu na hodnotu 1. Přitom si uvědomte, že indexy v seznamu začínají od 0, tedy číslo 1 z kostky odpovídá indexu 0 v seznamu, číslo 2 indexu 1 atd. Celý seznam následně vypište.
 
+[řešení](./reseni/listy/9_ukol.md)
+
 ### Úkol 10
 
 Upravte předchozí kód tak, abychom hodnotu na daném indexu nenastavovali, ale pouze zvyšili o jedna.
+
+[řešení](./reseni/listy/10_ukol.md)
 
 ### Úkol 11
 
 Upravte předchozí kód tak, abyste nesimulovali pouze jeden hod kostkou, ale 1000 hodů kostkou. Hodnoty postupně navyšujte. Budou výsledná čísla v seznamu přibližně stejná?
 
+[řešení](./reseni/listy/11_ukol.md)
+
 ### Úkol 12
 
 Upravte předchozí kód tak, abyste simulovali hod dvěma kostkami. Do seznam ukládejte součet na obou kostkách. Kolik prvků musí mít seznam? Prověďte 10000 hodů. Proč tentokrát nebudou všechny hodnoty v seznamu podobné?
 
+[řešení](./reseni/listy/12_ukol.md)
+
 ### Úkol 13
 
 Upravte kód z úlohy 1. Vytvořte pole, do kterého uložte čtyři názvy barev. Po vygenerování náhodného čísla uložte barvu z dané pozice v poli do proměnné.
+
+[řešení](./reseni/listy/13_ukol.md)
 
 ### Úkol 14\*
 
 Vytvořte podprogram `galtonova_deska`, který bude simulovat Galtonovu desku. Jak deska funguje znázorňuje toto [video](https://www.youtube.com/shorts/jstkPuhLDEw).
 
 Dole je 13 přihrádek. Kuličky padají postupně přes 12 pater. V každém patře se můžou posunout buď o půl pozice doleva nebo o půl pozice doprava. Všechny kuličky začínají nad prostřední přihrádkou. Nakonec každá kulička spadne do jedné ze 13 přihrádek. Kuliček je 1000. Kolik bude nakonec v jednotlivých přihrádkách kuliček.
+
+[řešení](./reseni/listy/14_ukol.md)
 
 ### Úkol 15\*
 
@@ -1264,6 +1332,7 @@ home . . . . . . . . . * pub
 home . . . . . . . . . . pub
 Ended in the pub again!
 ```
+[řešení](./reseni/listy/15_ukol.md)
 
 ### Úkol 16\*
 
