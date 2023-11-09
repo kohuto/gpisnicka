@@ -187,6 +187,7 @@ Vypíše se hodnota uložená v proměnné.
 
 Proměnných můžeme vytvořit, kolik budeme chtít a později je používat v dalších výpočtech. Vyzkoušej vytvořit a nastavit dvě proměnné `vyska` a `hmostnost`, do kterých ulož svou výšku a hmostnost. Pomocí příkazu `print` zkontroluj, jaké hodnoty se do proměnných uložily.
 
+[řešení](./reseni/promenne/3_ukol.md)
 ### Úkol 4
 
 Co se stane, když bychom chtěli vypsat proměnnou `bmi`, kterou jsme zatím nedefinovali?
