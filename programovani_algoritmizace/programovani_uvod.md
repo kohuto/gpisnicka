@@ -130,6 +130,8 @@ Petrovi bylo přesně před dvěma měsíci 16 let. Využij Python jako kalkula�
 
 Předpokládej, že rok má 365 dní a měsíc má 30 dní.
 
+[řešení](programovani_algoritmizace/reseni/vypisovani/5_ukol.md)
+
 ### Úloha 6
 
 Zjisti, co Python vypíše v případě následujících příkazů:
@@ -1057,7 +1059,7 @@ Vykresli pomocí podprogramu `nahodny_ctverec` z předchozího úkolu 10 čtverc
 
 Co se stane, když v podprogramu `nahodny_ctverec` z úkolu 7 nastavím hodnotu parametru na záporné číslo? Uprav program tak, aby vyreslil čtverec pouze pro kladné hodnoty parametru `a`. Pro záporné hodnoty vypíše do konzole zprávu _Nedá se_.
 
-## Pole
+## Listy
 
 ### Úkol 1
 
