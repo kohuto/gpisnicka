@@ -1,7 +1,7 @@
 ```python
 import random
 
-kolik_padlo_setek = 0
+kolik_padlo_sestek = 0
 kolik_padlo_jinych_cisel = 0
 for i in range(10):
     hod = random.randint(1, 6)

@@ -8,7 +8,7 @@ b = 100
 if a < b:
     canvas.create_rectangle(10, 10, 10 + b, 10 + a, fill="red")
 else:
-    canvas.create_rectangle(10, 10, 10 + b, 10 + a, fill="red")
+    canvas.create_rectangle(10, 10, 10 + a, 10 + b, fill="red")
     
 input()
 ```
