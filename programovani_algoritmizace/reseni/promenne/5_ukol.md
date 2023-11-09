@@ -1,5 +1,5 @@
 ```python
-vyska = 167
+vyska = 1.67
 hmotnost = 60
 bmi = hmotnost / vyska**2 
 print(bmi)

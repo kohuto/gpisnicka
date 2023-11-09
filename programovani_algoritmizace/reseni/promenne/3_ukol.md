@@ -1,5 +1,5 @@
 ```python
-vyska = 167
+vyska = 1.67
 hmotnost = 60
 print(vyska)
 print(hmotnost)

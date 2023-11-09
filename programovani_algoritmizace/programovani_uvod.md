@@ -320,13 +320,19 @@ Tyto souřadnice vrcholů bychom mohli znázornit na souřadnicových osách ná
 Nakresli obdélník, který má souřadnice
 protilehlých vrcholů $[50, 30]$ a $[300, 200]$.
 
+[řešení](./reseni/kresleni/3_ukol.md)
+
 ### Úkol 4
 
-Nakresli obdélník, který má jeden vrchol na souřadnicích $[200, 100]$, jeho šířka je 60 a výška 140.
+Nakresli obdélník, který má levý horní vrchol na souřadnicích $[200, 100]$, jeho šířka je 60 a výška 140.
+
+[řešení](./reseni/kresleni/4_ukol.md)
 
 ### Úkol 5
 
-Nakresli dva různé čtverce se stranami délky 80 (pozici čtverců zvol podle uvážení).
+Nakresli dva čtverce se stranami délky 80. První čtverec bude mít levý horní roh na souřadnicích $[10, 20]$ a druhý na souřadnicích $[150, 120]$
+
+[řešení](./reseni/kresleni/5_ukol.md)
 
 ### Úkol 6
 
@@ -342,7 +348,9 @@ input()
 
 ### Úkol 7
 
-Vytvoř program, který nakreslí 4 čtverce se stranou délky 50. Každý čtverec bude mít jinou barvu.
+Vytvoř program, který nakreslí 4 čtverce se stranou délky 50. Každý čtverec bude mít jinou barvu. Umístění čtverců zvol podle sebe.
+
+[řešení](./reseni/kresleni/7_ukol.md)
 
 ### Úkol 8
 
@@ -355,13 +363,17 @@ canvas = tkinter.Canvas()
 canvas.pack()
 x = 100
 y = 70
-canvas.create_rectangle(x, y, x + , , fill='yellow')
+canvas.create_rectangle(x, y, ... , ... , fill='yellow')
 input()
 ```
+
+[řešení](./reseni/kresleni/8_ukol.md)
 
 ### Úkol 9
 
 Vytvoř program, který použije čtyři proměnné `x`, `y`, `sirka`, `vyska` a na jejich základě nakreslí obdélník s levým horním rohem na souřadnicích `x`, `y`, danou šířkou a výškou. Barvu si zvol podle svého.
+
+[řešení](./reseni/kresleni/9_ukol.md)
 
 ### Úkol 10
 
@@ -370,6 +382,8 @@ Vytvoř program, který nakreslí následující čtverce:
 ![three squares](../images/threesquares.png)
 
 Tyto čtverce mají společný levý horní roh, jehož souřadnice jsou v proměnných `x`, `y`. Čtverce se postupně zmenšují tak, že červený má délku strany 100, modrý 70 a tmavomodrý 40.
+
+[řešení](./reseni/kresleni/10_ukol.md)
 
 ## Podprogramy
 
