@@ -13,7 +13,7 @@
 9. [Opakování](#opakování)
 10. [Větvení](#větvení)
 11. [Podprogramy s parametrem](#podprogramy-s-parametrem)
-12. [Pole](#pole)
+12. [Listy](#listy)
 
 ## Co je Python?
 
@@ -690,6 +690,7 @@ for i in range(5):
 
 Zkus místo čísla 5 dát číslo 10 a program znovu spusť. Urči, co je tímto číslem ovlivňováno.
 
+[řešení](./reseni/nahoda/12_ukol.md)
 ### Úkol 3
 
 Uprav program stejně, jako je uvedeno níže, a spusť jej:
@@ -716,12 +717,16 @@ print('=====================')
 
 Vytvoř nový program a v něm podprogram `cerveny_ctverec()`. Ten nakreslí na grafickou plochu na náhodné souřadnice červený čtverec se stranou délky 10. Použij `for` cyklus na to, abys nakreslil 2000 červených čtverců.
 
+[řešení](./reseni/opakovani/12_ukol.md)
+
 ### Úkol 6
 
 Doplň do předchozího programu podprogram `modry_ctverec()`. Tento podprogram bude kreslit na náhodné souřadnice modrý čtverec se stranou délky 10. Zajisti, aby tělo cyklu obsahovalo volání podprogramu `cerveny_ctverec()` i podprogramu `modry_ctverec()`. Výsledek může vypadat
 například jako na následujícím obrázku:
 
 ![thousand](../images/thousandsquares.png)
+
+[řešení](./reseni/opakovani/12_ukol.md)
 
 ### Úkol 7
 
@@ -735,6 +740,8 @@ Návod:
 - Napiš podprogram hvězdička, který nakreslí na náhodnou pozici malý žlutý čtvereček. Velikost jeho strany bude náhodné číslo z rozsahu od 2 do 4.
 - Tmavomodrou oblohu nakresli jako velký obdélník s barvou _navy_.
 - Potom zavolej tisíckrát podprogram hvezdicka.
+
+[řešení](./reseni/opakovani/12_ukol.md)
 
 ### Úkol 8
 
@@ -762,6 +769,8 @@ Na druhé kostce padlo číslo 4
 Součet obou čísel je 5
 ```
 
+[řešení](./reseni/opakovani/12_ukol.md)
+
 ### Úkol 9\*
 
 Vytvoř nový program, který bude představovat generátor náhodného QR kódu a který bude schopen generovat podobný QR kód jako na obrázku níže:
@@ -769,6 +778,8 @@ Vytvoř nový program, který bude představovat generátor náhodného QR kódu
 ![qr code](../images/qrcode.png)
 
 Obrázek se skládá z velkého počtu černých čtverečků. Každý má délku strany 10 a je nakreslený v jednom náhodně vybraném políčku mřížky, která obsahuje 21x21 políček.
+
+[řešení](./reseni/opakovani/12_ukol.md)
 
 ### Úkol 10
 
