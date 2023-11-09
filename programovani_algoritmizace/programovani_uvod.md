@@ -613,21 +613,31 @@ print('Na kostce padla', n)
 
 Uprav program z úkolu 2 – vytvoř podprogram `hod_kostkou`. Pomocí volání tohoto podprogramu nasimuluj pět hodů za sebou.
 
+[řešení](./reseni/nahoda/3_ukol.md)
+
 ### Úkol 4
 
-Uprav program z úkolu 3, aby počítač simuloval jeden hod na dvacetistěnné kostce.
+Uprav program z úkolu 3, aby počítač simuloval dva hody na dvacetistěnné kostce.
+
+[řešení](./reseni/nahoda/4_ukol.md)
 
 ### Úkol 5\*
 
 Máme _sudou_ hrací kostku, která má na stěnách čísla 2, 4, 6, 8, 10, 12. Uprav program z úkolu 3, aby simuloval hod takovou kostkou.
 
+[řešení](./reseni/nahoda/5_ukol.md)
+
 ### Úkol 6\*
 
 Máme _lichou_ hrací kostku, která má na stěnách čísla 1, 3, 5, 7, 9, 11. Uprav předchozí program, aby simuloval hod takovou kostkou.
 
+[řešení](./reseni/nahoda/6_ukol.md)
+
 ### Úkol 7\*
 
 Máme _exotickou_ hrací kostku, která má na stěnách čísla 1, 4, 9, 16, 25, 36. Uprav předchozí program, aby simuloval hod takovou kostkou.
+
+[řešení](./reseni/nahoda/7_ukol.md)
 
 ### Úkol 8
 
@@ -637,6 +647,7 @@ Vytvoř program, který vygeneruje náhodný PIN pro tvůj mobil. Do čtyř prom
 ```
 Tvůj nový PIN je 1 3 7 3
 ```
+[řešení](./reseni/nahoda/8_ukol.md)
 
 ### Úkol 9
 
@@ -646,18 +657,22 @@ Vytvoř nový program – generátor náhodných dat (pro jednoduchost nechť m�
 Pokoj si uklidím 30 . 2 . 2025
 ```
 
+[řešení](./reseni/nahoda/9_ukol.md)
 ### Úkol 10
 
 Vytvoř podprogram _nahodny_ctverec_, který vykreslí čtverec na náhodné pozici (souřadnice jednoho rohu budou náhodně vygenerované čísla). Čtverec bude mít stranu délky 50.
 
+[řešení](./reseni/nahoda/10_ukol.md)
 ### Úkol 11
 
 Doplň do předchozího programu příkazy tak, aby program nakreslil pět náhodných čtverců.
 
+[řešení](./reseni/nahoda/11_ukol.md)
 ### Úkol 12
 
 Uprav předchozí program tak, aby se čtverce kreslily nejen na náhodných pozicích, ale také aby měl každý čtverec náhodnou velikost z intervalu od 10 do 100.
 
+[řešení](./reseni/nahoda/12_ukol.md)
 ## Opakování
 
 ### Úkol 1
