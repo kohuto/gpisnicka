@@ -130,7 +130,7 @@ Petrovi bylo přesně před dvěma měsíci 16 let. Využij Python jako kalkula�
 
 Předpokládej, že rok má 365 dní a měsíc má 30 dní.
 
-[řešení](programovani_algoritmizace/reseni/vypisovani/5_ukol.md)
+[řešení](./reseni/vypisovani/5_ukol.md){:target="_blank"}
 
 ### Úloha 6
 
