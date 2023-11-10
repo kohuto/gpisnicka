@@ -1055,7 +1055,7 @@ def malyCtverec():
 input()
 ```
 
-[řešení](./reseni/podprogramy-s-parametrem/1_ukol.md)
+[řešení](./reseni/podprogramy_s_parametrem/1_ukol.md)
 
 ### Úkol 2
 
@@ -1092,7 +1092,7 @@ vypis(2)
 vypis(3)
 ```
 
-[řešení](./reseni/podprogramy-s-parametrem/3_ukol.md)
+[řešení](./reseni/podprogramy_s_parametrem/3_ukol.md)
 
 ### Úkol 4
 
@@ -1110,7 +1110,7 @@ Umocněné na druhou se rovná 9
 Převrácená hodnota se rovná 0.3333333333333333
 ```
 
-[řešení](./reseni/podprogramy-s-parametrem/4_ukol.md)
+[řešení](./reseni/podprogramy_s_parametrem/4_ukol.md)
 
 ### Úkol 5
 
@@ -1120,7 +1120,7 @@ s parametrem `cislo`. Podprogram podle následujících pravidel vypíše, zda m
 - když je číslo menší než 7, vypíše: _Mám rád číslo ..._
 - jinak vypíše: _Číslo ... se mi nelíbí_
 
-[řešení](./reseni/podprogramy-s-parametrem/5_ukol.md)
+[řešení](./reseni/podprogramy_s_parametrem/5_ukol.md)
 
 ### Úkol 6
 
@@ -1136,25 +1136,25 @@ Mám rád číslo 6
 Číslo 10 se mi nelíbí
 ```
 
-[řešení](./reseni/podprogramy-s-parametrem/6_ukol.md)
+[řešení](./reseni/podprogramy_s_parametrem/6_ukol.md)
 
 ### Úkol 7
 
 Vytvoř program a v něm definuj podprogram `nahodny_ctverec` s parametrem `a`, který nakreslí na náhodných souřadnicích červený čtverec se stranami délky `a`. Zavolej tento podprogram pro různé hodnoty parametru.
 
-[řešení](./reseni/podprogramy-s-parametrem/7_ukol.md)
+[řešení](./reseni/podprogramy_s_parametrem/7_ukol.md)
 
 ### Úkol 8
 
 Vykresli pomocí podprogramu `nahodny_ctverec` z předchozího úkolu 10 čtverců. První bude mít délku strany 1, druhý stranu délky 2, třetí délku strany 3 atd.
 
-[řešení](./reseni/podprogramy-s-parametrem/8_ukol.md)
+[řešení](./reseni/podprogramy_s_parametrem/8_ukol.md)
 
 ### Úkol 9
 
 Co se stane, když v podprogramu `nahodny_ctverec` z úkolu 7 nastavím hodnotu parametru na záporné číslo? Uprav program tak, aby vyreslil čtverec pouze pro kladné hodnoty parametru `a`. Pro záporné hodnoty vypíše do konzole zprávu _Nedá se_.
 
-[řešení](./reseni/podprogramy-s-parametrem/9_ukol.md)
+[řešení](./reseni/podprogramy_s_parametrem/9_ukol.md)
 
 ## Listy
 
