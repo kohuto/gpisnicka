@@ -13,7 +13,7 @@
 9. [Opakování](#opakování)
 10. [Větvení](#větvení)
 11. [Podprogramy s parametrem](#podprogramy-s-parametrem)
-12. [Listy](#listy)
+12. [Listy (seznamy)](#listy-seznamy)
 
 ## Co je Python?
 
@@ -1156,7 +1156,7 @@ Co se stane, když v podprogramu `nahodny_ctverec` z úkolu 7 nastavím hodnotu 
 
 [řešení](./reseni/podprogramy_s_parametrem/9_ukol.md)
 
-## Listy
+## Listy (seznamy)
 
 ### Úkol 1
 
@@ -1171,7 +1171,7 @@ Vygeneruj náhodné číslo od 0 do 3. Na základě vygenerovaného čísla vykr
 
 ### Úkol 2
 
-Kdybychom podobným způsobem chtěli vykreslovat čtverce 20 různých barev, tak by se stal kód nečitelným. Lepší variantou, jak uchovávat nějaký výčet hodnot je seznam. K úloze 1 se ještě později vrátíme. Vyzkoušej, co vypíše následující program:
+Kdybychom podobným způsobem chtěli vykreslovat čtverce 20 různých barev, tak by se stal kód nečitelným. Lepší variantou, jak uchovávat nějaký výčet hodnot je list (seznam). K úloze 1 se ještě později vrátíme. Vyzkoušej, co vypíše následující program:
 
 ```python
 znamky = [5, 1, 4, 3, 1, 1, 2]
@@ -1183,7 +1183,7 @@ Lze si to představit jako řadu skříněk. Do každé skříňky můžeme umí
 
 ### Úkol 3
 
-Vyzkoušej, který z následujících seznamů můžeme v pythonu vytvořit a následně vypsat:
+Vyzkoušej, který z následujících listů (seznamů) můžeme v pythonu vytvořit a následně vypsat:
 
 - [1, 2, 3, 4]
 - ["jedna", "dva", "tri", "ctyri"]
@@ -1213,29 +1213,29 @@ for i in [0, 1, 2, 3, 4]:
     print('číslo', i)
 ```
 
-již víme, že příkaz `for` postupně přiřazuje do proměnné `i` hodnoty 0 až 5. Podobně lze dosazovat všechny hodnoty z pole.
+již víme, že příkaz `for` postupně přiřazuje do proměnné `i` hodnoty 0 až 5. Podobně lze dosazovat všechny hodnoty z seznamu.
 
 ### Úkol 5
 
-Napište podprogram, který dostane dva parametry - pole a prvek. Program vypíše "ano", pokud se daný prvek nachází v poli.
+Napište podprogram, který dostane dva parametry - seznam a prvek. Program vypíše "ano", pokud se daný prvek nachází v seznamu.
 
 [řešení](./reseni/listy/5_ukol.md)
 
 ### Úkol 6
 
-Napište podprogram, který dostane jako parametr pole, a který vypíše, kolik je v poli prvků.
+Napište podprogram, který dostane jako parametr seznam, a který vypíše, kolik je v seznamu prvků.
 
 [řešení](./reseni/listy/6_ukol.md)
 
 ### Úkol 7
 
-Napište podprogram, který dostane jako parametr pole čísel a vypíše součet všech čísel v poli.
+Napište podprogram, který dostane jako parametr seznam čísel a vypíše součet všech čísel v seznamu.
 
 [řešení](./reseni/listy/7_ukol.md)
 
 ### Úkol 8
 
-Jednotlivé prvky v poli lze měnit. Vyzkoušej, co vypíše následující program:
+Jednotlivé prvky v seznamu lze měnit. Vyzkoušej, co vypíše následující program:
 
 ```python
 cisla = [2, 6, 3, 4, 5]
@@ -1253,7 +1253,7 @@ zapisem `cisla[1] = 40` říkáme, že chceme změnit v seznamu `cisla` prvek na
 
 ### Úkol 9
 
-Vytvořte seznam o šesti prvcích s hodnotou nula. Následně simulujte hod šestistěnnou kostkou tím, že vygenerujete náhodné číslo v rozmezí od 1 do 6. Podle výsledku hodu nastavte příslušný prvek v seznamu na hodnotu 1. Přitom si uvědomte, že indexy v seznamu začínají od 0, tedy číslo 1 z kostky odpovídá indexu 0 v seznamu, číslo 2 indexu 1 atd. Celý seznam následně vypište.
+Vytvořte seznam o šesti prvcích, každý prvek bude číslo 0. Následně simulujte hod šestistěnnou kostkou tím, že vygenerujete náhodné číslo v rozmezí od 1 do 6. Podle výsledku hodu nastavte příslušný prvek v seznamu na hodnotu 1. Přitom si uvědomte, že indexy v seznamu začínají od 0, tedy číslo 1 z kostky odpovídá indexu 0 v seznamu, číslo 2 indexu 1 atd. Celý seznam následně vypište.
 
 [řešení](./reseni/listy/9_ukol.md)
 

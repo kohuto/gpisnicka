@@ -4,11 +4,15 @@ canvas = tkinter.Canvas()
 canvas.pack()
 
 def velkyCtverec():
-    canvas.create_rectangle( 50, 60, 50 + 100, 60 + 100)
+    canvas.create_rectangle(50, 60, 50 + 100, 60 + 100)
 def stredniCtverec():
-    canvas.create_rectangle( 50, 60, 50 + 70, 60 + 70)
+    canvas.create_rectangle(50, 60, 50 + 70, 60 + 70)
 def malyCtverec():
-    canvas.create_rectangle( 50, 60, 50 + 40, 60 + 40)
+    canvas.create_rectangle(50, 60, 50 + 40, 60 + 40)
+
+velky_ctverec()
+stredni_ctverec()
+maly_ctverec()
 
 input()
 ```
