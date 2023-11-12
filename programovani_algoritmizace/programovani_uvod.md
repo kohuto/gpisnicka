@@ -1140,21 +1140,21 @@ Mám rád číslo 6
 
 ### Úkol 7
 
-Vytvoř program a v něm definuj podprogram `nahodny_ctverec` s parametrem `a`, který nakreslí na náhodných souřadnicích červený čtverec se stranami délky `a`. Zavolej tento podprogram pro různé hodnoty parametru.
+Vytvoř podprogram `nahodny_ctverec` s parametrem `a`, který nakreslí na náhodných souřadnicích červený čtverec se stranami délky `a`. Zavolej tento podprogram pro různé hodnoty parametru.
 
-[řešení](./reseni/podprogramy_s_parametrem/7_ukol.md)
+<!-- [řešení](./reseni/podprogramy_s_parametrem/7_ukol.md) -->
 
 ### Úkol 8
 
 Vykresli pomocí podprogramu `nahodny_ctverec` z předchozího úkolu 10 čtverců. První bude mít délku strany 1, druhý stranu délky 2, třetí délku strany 3 atd.
 
-[řešení](./reseni/podprogramy_s_parametrem/8_ukol.md)
+<!-- [řešení](./reseni/podprogramy_s_parametrem/8_ukol.md) -->
 
 ### Úkol 9
 
 Co se stane, když v podprogramu `nahodny_ctverec` z úkolu 7 nastavím hodnotu parametru na záporné číslo? Uprav program tak, aby vyreslil čtverec pouze pro kladné hodnoty parametru `a`. Pro záporné hodnoty vypíše do konzole zprávu _Nedá se_.
 
-[řešení](./reseni/podprogramy_s_parametrem/9_ukol.md)
+<!-- [řešení](./reseni/podprogramy_s_parametrem/9_ukol.md) -->
 
 ## Listy (seznamy)
 
@@ -1184,7 +1184,7 @@ nejlepsi_cisla = [42, 73, 420, 666]
 
 Zkus proměnnou `nejlepsi_cisla` vypsat pomocí funkce `print()`
 
-### Úkol 3
+### Úkol 2
 
 Zkus spustit postupně spustit oba programy níže. Jaký je rozdíl ve výpisu?
 
@@ -1201,55 +1201,73 @@ for i in [0, 1, 2, 3, 4]:
 již víme, že příkaz `for` postupně přiřazuje do proměnné `i` hodnoty 0 až 5. Podobně lze dosazovat do proměnné `i` postupně všechny hodnoty ze seznamu. 
 
 
+### Úkol 3
+
+Doplň tělo podprogramu `vypis`. V rámci těla podprogramu se vypíšou šechny prvky v seznamu. 
+
+```python
+zvirata = ["pes", "kočka", "kůň", "opice", "krokodýl"]
+
+def vypis(seznam):
+    # vytvoř tělo podprogramu
+
+vypis(zvirata)
+    
+```
+
+### Úkol 4
+
+Napište podprogram `zdvojnasob`, který dostane jako parametr seznam čísel. V rámci těla podprogramu se vypíše dvojnásobek každého čísla v seznamu.
+
+
 ### Úkol 5
 
-Napište podprogram, který dostane jako parametr seznam. V rámci těla podprogramu se všechny prvky v seznamu vypíšou. 
+Napište podprogram `eliminace`, který dostane jako parametr seznam čísel. V rámci těla podprogramu se vypíšou pouze ta čísla ze seznamu, která jsou větší než 7.
 
 ### Úkol 6
 
-Napište podprogram, který dostane jako parametr seznam čísel. V rámci těla podprogramu se vypíše dvojnásobek každého čísla v seznamu.
+Napište podprogram, který dostane dva parametry - seznam a prvek. Program vypíše "ano", pokud se daný prvek nachází v seznamu.
+
+<!--  [řešení](./reseni/listy/5_ukol.md) -->
 
 ### Úkol 7
 
-Napište podprogram, který dostane dva parametry - seznam a prvek. Program vypíše "ano", pokud se daný prvek nachází v seznamu.
+Napište podprogram, který dostane jako parametr seznam, a který vypíše, kolik je v seznamu prvků.
 
-[řešení](./reseni/listy/5_ukol.md)
+<!-- [řešení](./reseni/listy/6_ukol.md) -->
 
 ### Úkol 8
 
-Napište podprogram, který dostane jako parametr seznam, a který vypíše, kolik je v seznamu prvků.
+Napište podprogram, který dostane jako parametr seznam čísel a vypíše součet všech čísel v seznamu.
 
-[řešení](./reseni/listy/6_ukol.md)
+<!-- [řešení](./reseni/listy/7_ukol.md) -->
 
 ### Úkol 9
 
-Napište podprogram, který dostane jako parametr seznam čísel a vypíše součet všech čísel v seznamu.
+Zatím umíme projít celý seznam pomocí příkazu `for`. Co kdybych chtěl ale vypsat pouze jeden konkrétní prvek ze seznamu? Lze to udělat následovně:
 
-[řešení](./reseni/listy/7_ukol.md)
+```python
+cisla = [44, 53, 92, 18]
+print(cisla[2])
+```
+
+Každý prvek v seznamu má svůj index (pozici), který udává, kde se prvek v seznamu nachází. Zapisem `cisla[2]` říkáme, že chceme vybrat ze seznamu `cisla` prvek na indexu `2`. Pomocí funkce `print()` tento konkrétní prvek ze seznamu vypíšeme.
+
+> Pozice v seznamu se číslují zleva od 0. První prvek je na pozici 0, druhý prvek na pozici 1, třetí prvek na pozici 2 atd.
+
+Kdybych chtěl tedy vypsat první tři prvky, můžu to udělat takto:
+
+```python
+cisla = [44, 53, 92, 18]
+print(cisla[0]) 
+print(cisla[1])
+print(cisla[2])
+```
+
+
+Co se stane, kdybych chtěl vypsat pátý prvek ze seznamu?
 
 ### Úkol 10
-
-Zatím umíme vypsat všechny prvky v seznamu. Co kdybych chtěl ale vypsat pouze jeden konkrétní? Lze to udělat následovně:
-
-```python
-seznam = [44, 53, 92, 18]
-print(seznam[2])
-```
-
-Každý prvek v seznamu má svůj index (pořadí), který udává, kde se prvek v seznamu nachází. První prvek je na indexu 0, druhý prvek má index 1, třetí prvek má index 2 atd. Kdybych chtěl tedy vypsat první tři prvky, můžu to udělat takto:
-
-```python
-seznam = [44, 53, 92, 18]
-print(seznam[0]) 
-print(seznam[1])
-print(seznam[2])
-```
-
-> Pozice v seznamu se číslují od 0. První prvek je na pozici 0, druhý prvek na pozici 1 atd.
-
-Co se stane, kdybych chtěl vypsat pátý prvek seznamu?
-
-### Úkol 11
 
 Podobně lze změnit prvek v seznamu na konkrétním indexu. Vyzkoušej, co vypíše následující program:
 
@@ -1263,47 +1281,41 @@ cisla[3] = 42
 print(cisla)
 ```
 
-zapisem `cisla[1] = 40` říkáme, že chceme změnit v seznamu `cisla` prvek na pozici `1` a nová hodnota tohoto prvku je `40`.
+zapisem `cisla[1] = 40` říkáme, že chceme změnit v seznamu `cisla` prvek na indexu `1` a nová hodnota tohoto prvku je `40`.
 
-### Úkol 12
+### Úkol 11
 
 Vytvořte seznam o šesti prvcích, každý prvek bude číslo 0. Následně simulujte hod šestistěnnou kostkou tím, že vygenerujete náhodné číslo v rozmezí od 1 do 6. Podle výsledku hodu nastavte příslušný prvek v seznamu na hodnotu 1. Přitom si uvědomte, že indexy v seznamu začínají od 0, tedy číslo 1 z kostky odpovídá indexu 0 v seznamu, číslo 2 indexu 1 atd. Celý seznam následně vypište.
 
-[řešení](./reseni/listy/9_ukol.md)
+<!--  [řešení](./reseni/listy/9_ukol.md) -->
 
 ### Úkol 12
 
 Upravte předchozí kód tak, abychom hodnotu na daném indexu nenastavovali, ale pouze zvyšili o jedna.
 
-[řešení](./reseni/listy/10_ukol.md)
+<!-- [řešení](./reseni/listy/10_ukol.md) -->
 
 ### Úkol 13
 
 Upravte předchozí kód tak, abyste nesimulovali pouze jeden hod kostkou, ale 1000 hodů kostkou. Hodnoty postupně navyšujte. Budou výsledná čísla v seznamu přibližně stejná?
 
-[řešení](./reseni/listy/11_ukol.md)
+<!-- [řešení](./reseni/listy/11_ukol.md) -->
 
 ### Úkol 14
 
 Upravte předchozí kód tak, abyste simulovali hod dvěma kostkami. Do seznam ukládejte součet na obou kostkách. Kolik prvků musí mít seznam? Prověďte 10000 hodů. Proč tentokrát nebudou všechny hodnoty v seznamu podobné?
 
-[řešení](./reseni/listy/12_ukol.md)
+<!-- [řešení](./reseni/listy/12_ukol.md) -->
 
-### Úkol 15
-
-Upravte kód z úlohy 1. Vytvořte pole, do kterého uložte čtyři názvy barev. Po vygenerování náhodného čísla uložte barvu z dané pozice v poli do proměnné.
-
-[řešení](./reseni/listy/13_ukol.md)
-
-### Úkol 16\*
+### Úkol 15\*
 
 Vytvořte podprogram `galtonova_deska`, který bude simulovat Galtonovu desku. Jak deska funguje znázorňuje toto [video](https://www.youtube.com/shorts/jstkPuhLDEw).
 
 Dole je 13 přihrádek. Kuličky padají postupně přes 12 pater. V každém patře se můžou posunout buď o půl pozice doleva nebo o půl pozice doprava. Všechny kuličky začínají nad prostřední přihrádkou. Nakonec každá kulička spadne do jedné ze 13 přihrádek. Kuliček je 1000. Kolik bude nakonec v jednotlivých přihrádkách kuliček.
 
-[řešení](./reseni/listy/14_ukol.md)
+<!-- [řešení](./reseni/listy/14_ukol.md) -->
 
-### Úkol 17\*
+### Úkol 16\*
 
 Opilec je na půli cesty mezi domovem a hospodou, každý krok udělá náhodně jedním směrem. Napište funkci, která bude simulovat opilcův pohyb. Jejími parametry budou vzdálenost mezi domovem a hospodou a počet kroků do opilcova usnutí (tj. maximální délka simulace). Simulace skončí buď tehdy, když opilec dojede domů nebo do hospody, případně po vyčerpání počtu kroků.
 
@@ -1344,7 +1356,7 @@ home . . . . . . . . . * pub
 home . . . . . . . . . . pub
 Ended in the pub again!
 ```
-[řešení](./reseni/listy/15_ukol.md)
+<!-- [řešení](./reseni/listy/15_ukol.md) -->
 
 ### Úkol 16\*
 
