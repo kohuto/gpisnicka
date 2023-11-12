@@ -1160,44 +1160,31 @@ Co se stane, když v podprogramu `nahodny_ctverec` z úkolu 7 nastavím hodnotu 
 
 ### Úkol 1
 
-Vygeneruj náhodné číslo od 0 do 3. Na základě vygenerovaného čísla vykresli čtverec s levým horním rohem na souřadnicích $[50, 50]$ o délce strany 30 podle následujících pravidel:
-
-- pro číslo 0 bude čtverec červený
-- pro číslo 1 bude čtverec zelený
-- pro číslo 2 bude čtverec modrý
-- pro číslo 3 bude čtverec žlutý
-
-[řešení](./reseni/listy/1_ukol.md)
-
-### Úkol 2
-
-Kdybychom podobným způsobem chtěli vykreslovat čtverce 20 různých barev, tak by se stal kód nečitelným. Lepší variantou, jak uchovávat nějaký výčet hodnot je list (seznam). K úloze 1 se ještě později vrátíme. Vyzkoušej, co vypíše následující program:
+Doposud jsme ukládali do proměnné pouze jednu hodnotu (číslo, text):
 
 ```python
-znamky = [5, 1, 4, 3, 1, 1, 2]
-print(znamky)
+cislo = 42
+texticek = "muj ukazkovy texticek"
 ```
 
-Doposud jsme ukládali do proměnné pouze jedno číslo, nebo jedno slovo. Pomocí seznamu lze uložit do jedné proměnné klidně více čísel najednou (seznam čísel), nebo několik slov (seznam slov).
+Co kdybychom ale chtěli například uložit všechna nejlepší čísla? Buď bychom museli vytvořit několik proměnných a uložit čísla postupně jedno po druhém:
+
+```python
+nejlepsi_cislo_1 = 42
+nejlepsi_cislo_2 = 73
+nejlepsi_cislo_3 = 420
+nejlepsi_cislo_4 = 666
+```
+
+Nebo je můžeme uložit všechny najednou pomocí seznamu:
+
+```python
+nejlepsi_cisla = [42, 73, 420, 666]
+```
+
+Zkus proměnnou `nejlepsi_cisla` vypsat pomocí funkce `print()`
 
 ### Úkol 3
-
-Vyzkoušej, který z následujících listů (seznamů) můžeme v pythonu vytvořit a následně vypsat:
-
-- [1, 2, 3, 4]
-- ["jedna", "dva", "tri", "ctyri"]
-- [1, "dva", 3, "ctyri"]
-- [1, "dva", 1 + 2, "ctyri"]
-- [1, "dva", ctyri"]
-- [
-  "\U0001F600",
-  "\U0001F601",
-  "\U0001F602",
-  "\U0001F603",
-  "\U0001F604",
-  ]
-
-### Úkol 4
 
 Zkus spustit postupně spustit oba programy níže. Jaký je rozdíl ve výpisu?
 
@@ -1211,16 +1198,16 @@ for i in [0, 1, 2, 3, 4]:
     print('číslo', i)
 ```
 
-již víme, že příkaz `for` postupně přiřazuje do proměnné `i` hodnoty 0 až 5. Podobně lze dosazovat všechny hodnoty z seznamu.
+již víme, že příkaz `for` postupně přiřazuje do proměnné `i` hodnoty 0 až 5. Podobně lze dosazovat do proměnné `i` postupně všechny hodnoty ze seznamu. 
 
 
 ### Úkol 5
 
-Napište podprogram, který dostane jako parametr seznam. V rámci těla podprograu se všechny prvky v seznamu vypíšou. 
+Napište podprogram, který dostane jako parametr seznam. V rámci těla podprogramu se všechny prvky v seznamu vypíšou. 
 
 ### Úkol 6
 
-Napište podprogram, který dostane jako parametr seznam čísel. V rámci těla podprograu se vypíše dvojnásobek každého čísla v seznamu.
+Napište podprogram, který dostane jako parametr seznam čísel. V rámci těla podprogramu se vypíše dvojnásobek každého čísla v seznamu.
 
 ### Úkol 7
 
@@ -1242,7 +1229,29 @@ Napište podprogram, který dostane jako parametr seznam čísel a vypíše sou�
 
 ### Úkol 10
 
-Jednotlivé prvky v seznamu lze měnit. Vyzkoušej, co vypíše následující program:
+Zatím umíme vypsat všechny prvky v seznamu. Co kdybych chtěl ale vypsat pouze jeden konkrétní? Lze to udělat následovně:
+
+```python
+seznam = [44, 53, 92, 18]
+print(seznam[2])
+```
+
+Každý prvek v seznamu má svůj index (pořadí), který udává, kde se prvek v seznamu nachází. První prvek je na indexu 0, druhý prvek má index 1, třetí prvek má index 2 atd. Kdybych chtěl tedy vypsat první tři prvky, můžu to udělat takto:
+
+```python
+seznam = [44, 53, 92, 18]
+print(seznam[0]) 
+print(seznam[1])
+print(seznam[2])
+```
+
+> Pozice v seznamu se číslují od 0. První prvek je na pozici 0, druhý prvek na pozici 1 atd.
+
+Co se stane, kdybych chtěl vypsat pátý prvek seznamu?
+
+### Úkol 11
+
+Podobně lze změnit prvek v seznamu na konkrétním indexu. Vyzkoušej, co vypíše následující program:
 
 ```python
 cisla = [2, 6, 3, 4, 5]
@@ -1256,9 +1265,7 @@ print(cisla)
 
 zapisem `cisla[1] = 40` říkáme, že chceme změnit v seznamu `cisla` prvek na pozici `1` a nová hodnota tohoto prvku je `40`.
 
-> Pozice v seznamu se číslují od 0. První prvek je na pozici 0, druhý prvek na pozici 1 atd.
-
-### Úkol 11
+### Úkol 12
 
 Vytvořte seznam o šesti prvcích, každý prvek bude číslo 0. Následně simulujte hod šestistěnnou kostkou tím, že vygenerujete náhodné číslo v rozmezí od 1 do 6. Podle výsledku hodu nastavte příslušný prvek v seznamu na hodnotu 1. Přitom si uvědomte, že indexy v seznamu začínají od 0, tedy číslo 1 z kostky odpovídá indexu 0 v seznamu, číslo 2 indexu 1 atd. Celý seznam následně vypište.
 
