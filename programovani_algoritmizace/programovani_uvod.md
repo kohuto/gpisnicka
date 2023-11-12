@@ -1238,7 +1238,7 @@ Napište podprogram `kolik_je_v`, který dostane jako parametr seznam, a který 
 
 ### Úkol 8
 
-Napište podprogram, který dostane jako parametr seznam čísel a vypíše součet všech čísel v seznamu.
+Napište podprogram `soucet`, který dostane jako parametr seznam čísel a vypíše součet všech čísel v seznamu.
 
 <!-- [řešení](./reseni/listy/7_ukol.md) -->
 
