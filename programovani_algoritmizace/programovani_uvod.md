@@ -1178,8 +1178,7 @@ znamky = [5, 1, 4, 3, 1, 1, 2]
 print(znamky)
 ```
 
-Lze si to představit jako řadu skříněk. Do každé skříňky můžeme umístit libovolný prvek.
-
+Doposud jsme ukládali do proměnné pouze jedno číslo, nebo jedno slovo. Pomocí seznamu lze uložit do jedné proměnné klidně více čísel najednou (seznam čísel), nebo několik slov (seznam slov).
 
 ### Úkol 3
 
@@ -1198,7 +1197,6 @@ Vyzkoušej, který z následujících listů (seznamů) můžeme v pythonu vytvo
   "\U0001F604",
   ]
 
-
 ### Úkol 4
 
 Zkus spustit postupně spustit oba programy níže. Jaký je rozdíl ve výpisu?
@@ -1215,25 +1213,34 @@ for i in [0, 1, 2, 3, 4]:
 
 již víme, že příkaz `for` postupně přiřazuje do proměnné `i` hodnoty 0 až 5. Podobně lze dosazovat všechny hodnoty z seznamu.
 
+
 ### Úkol 5
+
+Napište podprogram, který dostane jako parametr seznam. V rámci těla podprograu se všechny prvky v seznamu vypíšou. 
+
+### Úkol 6
+
+Napište podprogram, který dostane jako parametr seznam čísel. V rámci těla podprograu se vypíše dvojnásobek každého čísla v seznamu.
+
+### Úkol 7
 
 Napište podprogram, který dostane dva parametry - seznam a prvek. Program vypíše "ano", pokud se daný prvek nachází v seznamu.
 
 [řešení](./reseni/listy/5_ukol.md)
 
-### Úkol 6
+### Úkol 8
 
 Napište podprogram, který dostane jako parametr seznam, a který vypíše, kolik je v seznamu prvků.
 
 [řešení](./reseni/listy/6_ukol.md)
 
-### Úkol 7
+### Úkol 9
 
 Napište podprogram, který dostane jako parametr seznam čísel a vypíše součet všech čísel v seznamu.
 
 [řešení](./reseni/listy/7_ukol.md)
 
-### Úkol 8
+### Úkol 10
 
 Jednotlivé prvky v seznamu lze měnit. Vyzkoušej, co vypíše následující program:
 
@@ -1251,37 +1258,37 @@ zapisem `cisla[1] = 40` říkáme, že chceme změnit v seznamu `cisla` prvek na
 
 > Pozice v seznamu se číslují od 0. První prvek je na pozici 0, druhý prvek na pozici 1 atd.
 
-### Úkol 9
+### Úkol 11
 
 Vytvořte seznam o šesti prvcích, každý prvek bude číslo 0. Následně simulujte hod šestistěnnou kostkou tím, že vygenerujete náhodné číslo v rozmezí od 1 do 6. Podle výsledku hodu nastavte příslušný prvek v seznamu na hodnotu 1. Přitom si uvědomte, že indexy v seznamu začínají od 0, tedy číslo 1 z kostky odpovídá indexu 0 v seznamu, číslo 2 indexu 1 atd. Celý seznam následně vypište.
 
 [řešení](./reseni/listy/9_ukol.md)
 
-### Úkol 10
+### Úkol 12
 
 Upravte předchozí kód tak, abychom hodnotu na daném indexu nenastavovali, ale pouze zvyšili o jedna.
 
 [řešení](./reseni/listy/10_ukol.md)
 
-### Úkol 11
+### Úkol 13
 
 Upravte předchozí kód tak, abyste nesimulovali pouze jeden hod kostkou, ale 1000 hodů kostkou. Hodnoty postupně navyšujte. Budou výsledná čísla v seznamu přibližně stejná?
 
 [řešení](./reseni/listy/11_ukol.md)
 
-### Úkol 12
+### Úkol 14
 
 Upravte předchozí kód tak, abyste simulovali hod dvěma kostkami. Do seznam ukládejte součet na obou kostkách. Kolik prvků musí mít seznam? Prověďte 10000 hodů. Proč tentokrát nebudou všechny hodnoty v seznamu podobné?
 
 [řešení](./reseni/listy/12_ukol.md)
 
-### Úkol 13
+### Úkol 15
 
 Upravte kód z úlohy 1. Vytvořte pole, do kterého uložte čtyři názvy barev. Po vygenerování náhodného čísla uložte barvu z dané pozice v poli do proměnné.
 
 [řešení](./reseni/listy/13_ukol.md)
 
-### Úkol 14\*
+### Úkol 16\*
 
 Vytvořte podprogram `galtonova_deska`, který bude simulovat Galtonovu desku. Jak deska funguje znázorňuje toto [video](https://www.youtube.com/shorts/jstkPuhLDEw).
 
@@ -1289,7 +1296,7 @@ Dole je 13 přihrádek. Kuličky padají postupně přes 12 pater. V každém pa
 
 [řešení](./reseni/listy/14_ukol.md)
 
-### Úkol 15\*
+### Úkol 17\*
 
 Opilec je na půli cesty mezi domovem a hospodou, každý krok udělá náhodně jedním směrem. Napište funkci, která bude simulovat opilcův pohyb. Jejími parametry budou vzdálenost mezi domovem a hospodou a počet kroků do opilcova usnutí (tj. maximální délka simulace). Simulace skončí buď tehdy, když opilec dojede domů nebo do hospody, případně po vyčerpání počtu kroků.
 
