@@ -1226,13 +1226,13 @@ Napište podprogram `eliminace`, který dostane jako parametr seznam čísel. V 
 
 ### Úkol 6
 
-Napište podprogram, který dostane dva parametry - seznam a prvek. Program vypíše "ano", pokud se daný prvek nachází v seznamu.
+Napište podprogram `je_v`, který dostane dva parametry - seznam a prvek. Program vypíše "ano", pokud se daný prvek nachází v seznamu.
 
 <!--  [řešení](./reseni/listy/5_ukol.md) -->
 
 ### Úkol 7
 
-Napište podprogram, který dostane jako parametr seznam, a který vypíše, kolik je v seznamu prvků.
+Napište podprogram `kolik_je_v`, který dostane jako parametr seznam, a který vypíše, kolik je v seznamu prvků.
 
 <!-- [řešení](./reseni/listy/6_ukol.md) -->
 
