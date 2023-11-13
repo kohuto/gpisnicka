@@ -1214,33 +1214,37 @@ def vypis(seznam):
 vypis(zvirata)
     
 ```
+<!--  [řešení](./reseni/listy/3_ukol.md) -->
 
 ### Úkol 4
 
 Napište podprogram `zdvojnasob`, který dostane jako parametr seznam čísel. V rámci těla podprogramu se vypíše dvojnásobek každého čísla v seznamu.
 
+<!--  [řešení](./reseni/listy/4_ukol.md) -->
 
 ### Úkol 5
 
 Napište podprogram `eliminace`, který dostane jako parametr seznam čísel. V rámci těla podprogramu se vypíšou pouze ta čísla ze seznamu, která jsou větší než 7.
 
+<!--  [řešení](./reseni/listy/5_ukol.md) -->
+
 ### Úkol 6
 
 Napište podprogram `je_v`, který dostane dva parametry - seznam a prvek. Program vypíše "ano", pokud se daný prvek nachází v seznamu.
 
-<!--  [řešení](./reseni/listy/5_ukol.md) -->
+<!--  [řešení](./reseni/listy/6_ukol.md) -->
 
 ### Úkol 7
 
 Napište podprogram `kolik_je_v`, který dostane jako parametr seznam, a který vypíše, kolik je v seznamu prvků.
 
-<!-- [řešení](./reseni/listy/6_ukol.md) -->
+<!-- [řešení](./reseni/listy/7_ukol.md) -->
 
 ### Úkol 8
 
 Napište podprogram `soucet`, který dostane jako parametr seznam čísel a vypíše součet všech čísel v seznamu.
 
-<!-- [řešení](./reseni/listy/7_ukol.md) -->
+<!-- [řešení](./reseni/listy/8_ukol.md) -->
 
 ### Úkol 9
 
@@ -1287,25 +1291,25 @@ zapisem `cisla[1] = 40` říkáme, že chceme změnit v seznamu `cisla` prvek na
 
 Vytvořte seznam o šesti prvcích, každý prvek bude číslo 0. Následně simulujte hod šestistěnnou kostkou tím, že vygenerujete náhodné číslo v rozmezí od 1 do 6. Podle výsledku hodu nastavte příslušný prvek v seznamu na hodnotu 1. Přitom si uvědomte, že indexy v seznamu začínají od 0, tedy číslo 1 z kostky odpovídá indexu 0 v seznamu, číslo 2 indexu 1 atd. Celý seznam následně vypište.
 
-<!--  [řešení](./reseni/listy/9_ukol.md) -->
+<!--  [řešení](./reseni/listy/11_ukol.md) -->
 
 ### Úkol 12
 
 Upravte předchozí kód tak, abychom hodnotu na daném indexu nenastavovali, ale pouze zvyšili o jedna.
 
-<!-- [řešení](./reseni/listy/10_ukol.md) -->
+<!-- [řešení](./reseni/listy/12_ukol.md) -->
 
 ### Úkol 13
 
 Upravte předchozí kód tak, abyste nesimulovali pouze jeden hod kostkou, ale 1000 hodů kostkou. Hodnoty postupně navyšujte. Budou výsledná čísla v seznamu přibližně stejná?
 
-<!-- [řešení](./reseni/listy/11_ukol.md) -->
+<!-- [řešení](./reseni/listy/13_ukol.md) -->
 
 ### Úkol 14
 
 Upravte předchozí kód tak, abyste simulovali hod dvěma kostkami. Do seznam ukládejte součet na obou kostkách. Kolik prvků musí mít seznam? Prověďte 10000 hodů. Proč tentokrát nebudou všechny hodnoty v seznamu podobné?
 
-<!-- [řešení](./reseni/listy/12_ukol.md) -->
+<!-- [řešení](./reseni/listy/14_ukol.md) -->
 
 ### Úkol 15\*
 
@@ -1313,7 +1317,7 @@ Vytvořte podprogram `galtonova_deska`, který bude simulovat Galtonovu desku. J
 
 Dole je 13 přihrádek. Kuličky padají postupně přes 12 pater. V každém patře se můžou posunout buď o půl pozice doleva nebo o půl pozice doprava. Všechny kuličky začínají nad prostřední přihrádkou. Nakonec každá kulička spadne do jedné ze 13 přihrádek. Kuliček je 1000. Kolik bude nakonec v jednotlivých přihrádkách kuliček.
 
-<!-- [řešení](./reseni/listy/14_ukol.md) -->
+<!-- [řešení](./reseni/listy/15_ukol.md) -->
 
 ### Úkol 16\*
 
@@ -1356,8 +1360,8 @@ home . . . . . . . . . * pub
 home . . . . . . . . . . pub
 Ended in the pub again!
 ```
-<!-- [řešení](./reseni/listy/15_ukol.md) -->
+<!-- [řešení](./reseni/listy/16_ukol.md) -->
 
-### Úkol 16\*
+### Úkol 17\*
 
 Další simulace vhodné k programování naleznete [zde](https://www.fi.muni.cz/IB111/sbirka/04-nahodna_cisla.html#simulace-a-analyzy).

@@ -1,13 +1,12 @@
 ```python
 import random
-import tkinter
-canvas = tkinter.Canvas()
-canvas.pack()
 
-cislo = random.randint(0,3)
-barvy = ["red", "green", "blue", "yellow"]
-barva = barvy[cislo]
-canvas.create_rectangle(50, 50, 50 + 30, 50 + 30, fill=barva)
+seznam = [0, 0, 0, 0, 0, 0]
+
+for i in range(1000):
+    cislo = random.randint(1, 6)
+    seznam[cislo - 1] = seznam[cislo - 1] + 1
+print(seznam)
 ```
 
 [zpět](../../programovani_uvod.md#úkol-13-2)
