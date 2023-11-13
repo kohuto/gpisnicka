@@ -11,4 +11,4 @@ for i in range(1000):
 print(seznam)
 ```
 
-[zpět](../../programovani_uvod.md#úkol-12-3)
+[zpět](../../programovani_uvod.md#úkol-14-3)

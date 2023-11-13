@@ -2,4 +2,4 @@
 
 ```
 
-[zpět](../../programovani_uvod.md#úkol-12)
+[zpět](../../programovani_uvod.md#úkol-16)
