@@ -27,7 +27,7 @@ U algoritmů budeme tyto vlastnosti vždy kontrolovat.
 
 ### Úkol 3
 
-![map](images/map.png)
+![map](../images/map.png)
 
 Na obrázku je znázorněno město. Zelená šipka je místo, kde aktuálně stojíte vy a turista.
 
@@ -87,34 +87,22 @@ Vytvoř podprogram, který určí největší společný dělitel dvou čísel
 
 Vytvoř podprogram, který dostane dva parametry `x` a `y`, který pomocí eukleidova algoritmu najde největší společný dělitel čísel `x` a `y`.
 
-### Úkol 10
+### Úkol 11
 
 Vytvoř podprogram, který dostane jako parametr číslo a určí, jestli je dané číslo prvočíslo, nebo ne. Pomocí tohoto programu urči pro prvních `n` přirozených čísel, jestli se jedná o prvočísla.
 
-### Úkol 11
+### Úkol 12
 
 Vytvoř podprogram `eratosthenovo_sito`, který dostane jako parametr číslo `n` a určí pro prvních `n` čísel, jestli se jedná o prvočísla.
 
-### Úkol 12
+### Úkol 13
 
 Vytvoř podprogram, který dostane jako parametr seznam setřízených čísel a číslo `x`. Podprogram určí, jestli se číslo v seznamu nachází.
 
-### Úkol 13
+### Úkol 14
 
 Na řešení přechozí úlohy použijte binární vyhledávání.
 
-### Úkol 14
-
-Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
-
-```python
-def ... (number):
-   try:
-      int_number = int(number)
-      return int_number ** 2
-   except ValueError:
-      print(f'{number} is not number')
-```
 
 ### Časová složitost algoritmu
 
@@ -144,7 +132,7 @@ Nyní vysvětlíme, co jsou _operace_. Operace je něco, u čeho je potřeba ně
 
 Dobu výpočtu v nejhorším případě zapíšeme pro náš případ takto: `n`. Jedná se o počet vykonaných instrukcí pro vstupní data velikosti `n` (př. pole délky `n`) v nejhorším případě. Později ještě zavedeme tzv. asymptotickou složitost.
 
-### Úkol 16
+### Úkol 15
 
 Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
 
@@ -156,7 +144,7 @@ def ... (arr): # arr is array of integers
    return x
 ```
 
-### Úkol 17
+### Úkol 16
 
 Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
 
@@ -168,7 +156,7 @@ def ... ():
       print()
 ```
 
-### Úkol 18
+### Úkol 17
 
 Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
 
@@ -178,6 +166,19 @@ def ... (n):
       for y in range(1, n + 1):
          print(x*y, end=" ")
       print()
+```
+
+### Úkol 18
+
+Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
+
+```python
+def ... (number):
+   try:
+      int_number = int(number)
+      return int_number ** 2
+   except ValueError:
+      print(f'{number} is not number')
 ```
 
 ### Úkol 19
@@ -190,7 +191,19 @@ Určete časovou složitost následujících algoritmů:
 
 ### Úkol 20
 
-Bubble sort
+Bubble sort 
+
+```
+seznam = [....]
+
+opakuj, dokud bylo prohozeno:
+   pro cisla od 0 do delka_seznamu udělej:
+      jestliže je prvek menší než následující:
+         prohoď prvky
+         nastav prohozeno na True
+
+
+```
 
 ### Úkol 21
 
