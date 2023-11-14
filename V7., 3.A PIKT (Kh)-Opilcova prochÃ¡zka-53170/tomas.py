@@ -24,4 +24,3 @@ def drunkard(distance, step_count):
 result = drunkard(10, 25)
 print(result)
 
-#bohužel nevím jak udělat, aby opilec opravdu skončil doma/v hospodě -> home ...........pub, ale pouze takhle -> home ..........* pub
