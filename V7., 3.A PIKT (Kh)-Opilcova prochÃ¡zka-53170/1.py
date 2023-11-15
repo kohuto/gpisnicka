@@ -1,3 +1,4 @@
+#adam
 import random
 kroky = int(input("Kroky:"))
 vzdalenost = int(input("Vzdálenost:"))

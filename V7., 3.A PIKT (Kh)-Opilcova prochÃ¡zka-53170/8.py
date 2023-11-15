@@ -1,3 +1,4 @@
+#tomas
 import random
 
 def drunkard(distance, step_count):

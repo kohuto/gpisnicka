@@ -1,3 +1,4 @@
+#darina
 import random
 
 distance = 10

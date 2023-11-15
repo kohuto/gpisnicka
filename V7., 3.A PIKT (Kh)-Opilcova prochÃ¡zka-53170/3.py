@@ -1,3 +1,4 @@
+#fin
 import random
 delka = int(input("Délka cesty: "))
 kroky = int(input("Maximální počet kroků: "))

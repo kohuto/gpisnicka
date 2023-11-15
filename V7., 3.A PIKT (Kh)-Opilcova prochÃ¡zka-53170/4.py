@@ -1,3 +1,4 @@
+#kaja
 import random, time
 
 PATH_LENGHT = 11

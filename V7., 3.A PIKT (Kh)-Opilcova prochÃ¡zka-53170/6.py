@@ -1,3 +1,4 @@
+#matyas
 import random
 def o_prochazka(vzdalenost,max_pocet_kroku):
     zacatek = vzdalenost//2
