@@ -28,10 +28,10 @@ input()
 ## Podprogramy
 
 ```python
-def nazev():
-    print("ahoj")
+def muj_podprogramek(i):
+    print("hodnota parametru:", i)
 
-nazev()
+muj_podprogramek(42)
 ```
 
 ## Náhoda
@@ -56,6 +56,17 @@ i = 3
 
 if i > 3:
     print("vetsi")
+elif i == 3:
+    print("rovno")
 else:
-    print("mensi nebo rovno")
+    print("mensi")
+```
+
+## Seznamy 
+
+```python
+seznam = [1, 4, -7, 2, 5]
+
+for i in seznam:
+    print(i)
 ```
