@@ -257,8 +257,6 @@ opakuj, dokud bylo prohozeno:
       jestliže je prvek menší než následující:
          prohoď prvky
          nastav prohozeno na True
-
-
 ```
 
 ### Úkol 21
