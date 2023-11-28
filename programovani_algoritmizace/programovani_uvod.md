@@ -1365,3 +1365,31 @@ Ended in the pub again!
 ### Úkol 17\*
 
 Další simulace vhodné k programování naleznete [zde](https://www.fi.muni.cz/IB111/sbirka/04-nahodna_cisla.html#simulace-a-analyzy).
+
+## Další úlohy
+
+## Úkol 1
+
+Dva hrací automaty spolu o dni volna hrály hru, v níž střídavě odebíraly mince z hromádky. 
+Automat A vždy odebral jednu minci, automat B vždy odebral co nejvíce, maximálně však polovinu všech mincí, které právě byly na hromádce. 
+Kdo odebral z hromádky poslední minci, vyhrál.
+
+Automaty hrály tuto hru mnohokrát a při zahájení se pravidelně střídaly. Na začátku každé hry byl na hromádce náhodný počet mincí, nejméně 10, nejvíce 30 mincí.
+
+Kdo z automatů vyhrával?
+
+- častěji vyhrál B
+- častěji vyhrál A
+- oba vyhrávaly stejně často
+- vždy vyhrál A
+
+úloha byla převzata ze soutěže Bobřík informatiky
+
+řešení:
+Představme si konec hry. Na hromádce zbyla jedna mince. Je-li na tahu automat A, vezme ji a vyhraje. Automat B však smí vzít pouze polovinu všech mincí na hromádce, celou minci tedy vzít nesmí. Nevezme tedy nic a v následujícím tahu minci vezme automat A.
+
+Automat A vždy vyhraje.
+
+## Úkol 2
+
+vězni v řadě, každý druhý umírá, kdo přežije

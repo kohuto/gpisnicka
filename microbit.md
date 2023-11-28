@@ -68,3 +68,43 @@ více hráču jsou zloději, policajt se náhodně hýbe, vyhrává poslední p�
 Vytvořte displej z několika microbitů ovládaný dálkově jiným microbitem
 
 ### Snake
+
+### Blikající diody
+
+Máš programovatelnou elektronickou desku a můžeš si s ní hrát. Na této desce jsou tři programovatelné LED diody (červená, zelená a modrá), které můžeš ovládat pomocí programu jejich zapnutím nebo vypnutím (všechny diody jsou před spuštěním programu vypnuté).
+
+Zde je příklad takového programu: 
+
+Opakuj stále:                                                                          
+      zapni (červená)
+      čekej (1s)
+      vypni (červená)
+      čekej (2s)
+
+Akce prováděné tímto programem jsou následující:
+
+   1. Zapne se červená LED dioda
+   2. Program čeká a nedělá nic 1 sekundu
+   3. Vypne se červená LED dioda
+   4. Program čeká a nedělá nic 2 sekundy
+   5. Program opakuje znovu od bodu č.1
+
+Podle tohoto programu bude červená LED dioda stále blikat, střídavě bude svítit 1 sekundu a pak bude na 2 sekundy vypnutá.
+
+Máme následující program:
+
+Opakuj stále:
+     zapni (modrá)
+     čekej (2s)
+     zapni (červená)
+     zapni (zelená)
+     čekej (2s)
+     vypni (zelená)
+     vypni (modrá)
+     čekej (2s)
+     zapni (zelená)
+     čekej (2s)
+     vypni (červená)
+     vypni (zelená)     
+
+Kolik LED diod je zapnuto 13 sekund po spuštění tohoto programu?

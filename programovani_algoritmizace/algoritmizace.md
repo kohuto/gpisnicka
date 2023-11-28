@@ -207,20 +207,81 @@ opakuj, dokud bylo prohozeno:
 
 ### Úkol 21
 
-Selection sort
+V košíku jsou jablka, každé má jinou velikost. Anežka je třídí tímto způsobem:
 
+Krok 1: Na stůl položí jedno jablko z košíku.
+
+Krok 2: Sáhne pro další jablko do košíku a provede následující srovnání:
+
+1. Jestliže jablko v její ruce je menší než jablko na stole, zahodí jej.
+
+2. Jestliže jablko v její ruce je větší než jablko na stole, položí jej na stůl a jablko ze stolu zahodí.
+
+Anežka opakuje krok 2, dokud není košík prázdný.
+
+Které jablko nakonec zůstane na stole?
+
+- první jablko vyzvednuté z košíku
+- poslední jablko vyzvednuté z košíku
+- nejmenší jablko z košíku
+- největší jablko z košíku
+
+
+úloha byla převzata ze soutěže Bobřík informatiky
 ### Úkol 22
 
-Heap sort
+Selection sort
 
 ### Úkol 23
 
-Quick sort
+Heap sort
 
 ### Úkol 24
 
-Napište program, který změří, jak rychle jednotlivé třídicí algoritmy setřídí pole náhodně vygenerovaných čísel. Otestujte pro pole délky (10, 100, 1000, 10000, 100000, 1000000, ...). Který algoritmus třídí nejrychleji? Jaká je časová složitost jednotlivých třídicích algoritmů?
+Quick sort
 
 ### Úkol 25
 
+Napište program, který změří, jak rychle jednotlivé třídicí algoritmy setřídí pole náhodně vygenerovaných čísel. Otestujte pro pole délky (10, 100, 1000, 10000, 100000, 1000000, ...). Který algoritmus třídí nejrychleji? Jaká je časová složitost jednotlivých třídicích algoritmů?
+
+### Úkol 26
+
 Rozšifrujte tento [soubor](https://drive.google.com/file/d/13ysONFxR1HhOEoC3kUxUamGUrxAN5JPb/view?usp=sharing) pomocí frekvenční analýzy. Pro analýzu jazyka použijte libovolný soubor obsahující anglický text (zašifrovaný text je v angličtině) např. tento [soubor](https://drive.google.com/file/d/1uFDzXUQa4GJtZ7eGNg95QLSdZY-2EK4Y/view?usp=drive_link).
+
+### Úkol 26
+
+Každý tvor má v chromozómech sekvenci DNA, která určuje jeho geny. Sekvence je tvořena ze čtyř typů základních složek, Adeninu (A), Guaninu (G), Cytosinu (C) a Thyminu (T). DNA může mutovat a vytvořit novou sekvenci, která se od původní sekvence bude lišit. 
+
+
+
+Vormi je živočich, jehož DNA může mutovat třemi způsoby:
+
+1. Nahrazení: Výměna jedné základní složky za jinou základní složku.
+
+   Příklad: AGGTC -> AGGTA (změna C na A)
+
+2. Vymazání: Odstranění jedné ze základních složek. 
+
+   Příklad: AGGTC -> AGTC (odstranění jednoho G)
+
+3. Zdvojení: přidání - zopakování základní složky.
+
+   Příklad: AGGTC -> AGGTTC (zdvojení T)
+
+Máme původní sekvenci DNA  živočicha Vormiho "GTATCG". Která z těchto sekvencí NEmůže z původní sekvence vzniknout ani po třech genových mutacích?
+
+
+Tvoje odpověď 
+"GCAATG" "ATTATCCG"
+"GGTAAAC" "GAATGC"
+Nechci odpovídat
+
+### Úkol 27
+
+Obyvatelé vesnice žijí na celkem šesti ostrovech na řece Amazonce. Tyto ostrovy chtějí propojit visutými lávkami. Na obrázku níže vidíš plánek možného propojení ostrovů. Lávky se navzájem nijak nekříží a nepřekážejí si. Čísla symbolizují náklady pro zhotovení lávky.
+
+Obyvatelé chtějí lávky postavit tak, aby bylo možné se dostat z jednoho ostrova na jakýkoliv jiný, a to buď přímo, nebo nepřímo přes jeden či více ostrovů. Zároveň chtějí postavit lávky co nejlevněji.
+
+Označ lávky, které se mají postavit pro propojení všech ostrovů, aby to bylo co nejlevnější.
+
+![msp](../images/minimal-spanning-tree.png)
