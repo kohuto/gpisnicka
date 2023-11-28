@@ -181,13 +181,69 @@ def ... (number):
       print(f'{number} is not number')
 ```
 
-### Úkol 19
+### Úkol 
 
-Určete časovou složitost následujících algoritmů:
+Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
 
-1. Eukleidův algoritmus
-2. Eratosthenovo síto
-3. Binární vyhledávání
+```python
+def ... (arr):  # arr is an array of integers
+    result = arr[0]
+    for i in arr:
+        if i > result:
+            result = i
+    return result
+```
+
+### Úkol 
+
+Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
+
+```python
+def ... ():
+    return 42
+```
+### Úkol 
+
+Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
+
+```python
+def ... (arr):  # arr is an array of integers
+    count = 0
+    for num in arr:
+        if num % 2 != 0:
+            count += 1
+    return count
+```
+
+### Úkol 
+
+Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
+
+```python
+def ... (arr):  # arr is an array of integers
+    result = []
+    for i in range(len(arr)):
+        for j in range(i + 1, len(arr)):
+            if arr[i] == arr[j] and arr[i] not in result:
+                result.append(arr[i])
+    return result
+```
+
+### Úkol 
+
+Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
+
+```python
+def ... (arr):  # arr is an array of integers
+    count = 0
+    for i in arr:
+      if count < 10:
+         print(i)
+         count += 1
+      else:
+         return
+```
+
 
 ### Úkol 20
 
