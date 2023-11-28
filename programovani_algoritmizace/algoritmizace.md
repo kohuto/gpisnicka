@@ -181,7 +181,7 @@ def ... (number):
       print(f'{number} is not number')
 ```
 
-### Úkol 
+### Úkol 19
 
 Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
 
@@ -194,7 +194,7 @@ def ... (arr):  # arr is an array of integers
     return result
 ```
 
-### Úkol 
+### Úkol 20
 
 Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
 
@@ -202,7 +202,7 @@ Vymyslete vhodný název pro následující podprogram. Jaká je časová složi
 def ... ():
     return 42
 ```
-### Úkol 
+### Úkol 21
 
 Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
 
@@ -215,7 +215,7 @@ def ... (arr):  # arr is an array of integers
     return count
 ```
 
-### Úkol 
+### Úkol 22
 
 Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
 
@@ -229,7 +229,7 @@ def ... (arr):  # arr is an array of integers
     return result
 ```
 
-### Úkol 
+### Úkol 23
 
 Vymyslete vhodný název pro následující podprogram. Jaká je časová složitost tohoto algoritmu?
 
@@ -244,7 +244,7 @@ def ... (arr):  # arr is an array of integers
          return
 ```
 
-### Úkol 20
+### Úkol 24
 
 Bubble sort 
 
@@ -258,7 +258,7 @@ opakuj, dokud bylo prohozeno:
          nastav prohozeno na True
 ```
 
-### Úkol 21
+### Úkol 25
 
 V košíku jsou jablka, každé má jinou velikost. Anežka je třídí tímto způsobem:
 
