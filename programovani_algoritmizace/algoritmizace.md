@@ -248,6 +248,8 @@ def ... (arr):  # arr is an array of integers
 
 Bubble sort 
 
+https://visualgo.net/en/sorting?
+
 ```
 seznam = [....]
 
@@ -279,11 +281,47 @@ Které jablko nakonec zůstane na stole?
 - nejmenší jablko z košíku
 - největší jablko z košíku
 
-
 úloha byla převzata ze soutěže Bobřík informatiky
 ### Úkol 22
 
 Selection sort
+
+```
+pro všechny indexy:
+   nastav index jako index aktuálně nejmenšího prvku
+   pro každý prvek v nesetřízené části:
+      jestliže je prvek menší, než nejmenší:
+         nastav nový nejmenší
+   Vyměnit nalezený minimální prvek s prvkem na indexu atuálně nejmenšího prvku
+```
+
+
+### Úkol 23
+
+Spustíte-li tento program, spadne na chybu (index out of range). Pomocí debuggeru chybu/chyby najděte a opravte.
+
+```python
+def bubble_sort_with_error(arr):
+    n = len(arr)
+    for i in range(n):
+        swapped = False
+        for j in range(0, n-i+1):
+            if arr[j] > arr[j-1]:
+                arr[j], arr[j-1] = arr[j-1], arr[j]
+                swapped = True
+
+        # Pokud nebyly žádné dva prvky vyměněny vnitřní smyčkou, přeruš cyklus
+        if not swapped:
+            break
+
+    return arr
+
+# Testovací pole s funkcí
+test_array = [64, 25, 12, 22, 11]
+sorted_array = bubble_sort_with_error(test_array)
+```
+
+V opraveném programu zjistěte, jaké hodnoty jsou uložené v `arr[j]` a `arr[j+1]` v momentě, kdy `i = 3` a `j = 0`? Dojde v této iteraci k prohození těchto dvou hodnot?
 
 ### Úkol 23
 
@@ -291,7 +329,21 @@ Heap sort
 
 ### Úkol 24
 
-Quick sort
+```python
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[len(arr) // 2]
+        left = [x for x in arr if x < pivot]
+        middle = [x for x in arr if x == pivot]
+        right = [x for x in arr if x > pivot]
+        return quick_sort(left) + middle + quick_sort(right)
+
+# Testování funkce
+test_array = [3, 6, 8, 10, 1, 2, 1]
+sorted_array = quick_sort(test_array)
+```
 
 ### Úkol 25
 
