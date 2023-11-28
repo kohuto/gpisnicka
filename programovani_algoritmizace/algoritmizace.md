@@ -244,7 +244,6 @@ def ... (arr):  # arr is an array of integers
          return
 ```
 
-
 ### Úkol 20
 
 Bubble sort 
