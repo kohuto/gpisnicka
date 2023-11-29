@@ -282,7 +282,8 @@ Které jablko nakonec zůstane na stole?
 - největší jablko z košíku
 
 úloha byla převzata ze soutěže Bobřík informatiky
-### Úkol 22
+
+### Úkol 26
 
 Selection sort
 
@@ -296,7 +297,7 @@ pro všechny indexy:
 ```
 
 
-### Úkol 23
+### Úkol 27
 
 Spustíte-li tento program, spadne na chybu (index out of range). Pomocí debuggeru chybu/chyby najděte a opravte.
 
@@ -323,11 +324,11 @@ sorted_array = bubble_sort_with_error(test_array)
 
 V opraveném programu zjistěte, jaké hodnoty jsou uložené v `arr[j]` a `arr[j+1]` v momentě, kdy `i = 3` a `j = 0`? Dojde v této iteraci k prohození těchto dvou hodnot?
 
-### Úkol 23
+### Úkol 28
 
 Heap sort
 
-### Úkol 24
+### Úkol 29
 
 ```python
 def quick_sort(arr):
@@ -345,15 +346,15 @@ test_array = [3, 6, 8, 10, 1, 2, 1]
 sorted_array = quick_sort(test_array)
 ```
 
-### Úkol 25
+### Úkol 30
 
 Napište program, který změří, jak rychle jednotlivé třídicí algoritmy setřídí pole náhodně vygenerovaných čísel. Otestujte pro pole délky (10, 100, 1000, 10000, 100000, 1000000, ...). Který algoritmus třídí nejrychleji? Jaká je časová složitost jednotlivých třídicích algoritmů?
 
-### Úkol 26
+### Úkol 31
 
 Rozšifrujte tento [soubor](https://drive.google.com/file/d/13ysONFxR1HhOEoC3kUxUamGUrxAN5JPb/view?usp=sharing) pomocí frekvenční analýzy. Pro analýzu jazyka použijte libovolný soubor obsahující anglický text (zašifrovaný text je v angličtině) např. tento [soubor](https://drive.google.com/file/d/1uFDzXUQa4GJtZ7eGNg95QLSdZY-2EK4Y/view?usp=drive_link).
 
-### Úkol 26
+### Úkol 32
 
 Každý tvor má v chromozómech sekvenci DNA, která určuje jeho geny. Sekvence je tvořena ze čtyř typů základních složek, Adeninu (A), Guaninu (G), Cytosinu (C) a Thyminu (T). DNA může mutovat a vytvořit novou sekvenci, která se od původní sekvence bude lišit. 
 
