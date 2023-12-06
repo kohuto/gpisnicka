@@ -1271,6 +1271,8 @@ print(cisla[2])
 
 Co se stane, kdybych chtěl vypsat pátý prvek ze seznamu?
 
+![first table](../images/first_table.jpg)
+
 ### Úkol 10
 
 Podobně lze změnit prvek v seznamu na konkrétním indexu. Vyzkoušej, co vypíše následující program:
