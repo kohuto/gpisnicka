@@ -1290,14 +1290,16 @@ print(cisla)
 zapisem `cisla[1] = 40` říkáme, že chceme změnit v seznamu `cisla` prvek na indexu `1` a nová hodnota tohoto prvku je `40`.
 
 ### Úkol 11
+Vytvořte seznam o šesti prvcích, každý prvek bude číslo 0. Následně vytvořte proměnnou `hod`, do které uložte libovolné číslo od 1 do 6. Změňte prvek v seznamu na 1 podle toho, jaké číslo je uložené v proměnné `hod`. Pokud je v proměnné `hod` číslo 1, tak se první prvek (tzn. prvek na pozici 0) v seznamu přepíše na 1. Pokud je v proměnné `hod` číslo 2, tak se druhý prvek (tzn. prvek na pozici 1) v seznamu přepíše na 1 atd. Celý seznam následně vypište (mělo by v něm být pět 0 a jedna 1).
+### Úkol 11
 
-Vytvořte seznam o šesti prvcích, každý prvek bude číslo 0. Následně simulujte hod šestistěnnou kostkou tím, že vygenerujete náhodné číslo v rozmezí od 1 do 6. Podle výsledku hodu nastavte příslušný prvek v seznamu na hodnotu 1. Přitom si uvědomte, že indexy v seznamu začínají od 0, tedy číslo 1 z kostky odpovídá indexu 0 v seznamu, číslo 2 indexu 1 atd. Celý seznam následně vypište.
+Upravte předchozí program tak, aby se do proměnné hod uložilo náhodné číslo od 1 do 6 (tzn. nenastavujte ho ručně, ale vygenerujte náhodné číslo).
 
 <!--  [řešení](./reseni/listy/11_ukol.md) -->
 
 ### Úkol 12
 
-Upravte předchozí kód tak, abychom hodnotu na daném indexu nenastavovali, ale pouze zvyšili o jedna.
+Upravte předchozí kód tak, abychom hodnotu na daném indexu nenastavovali na 1, ale pouze zvýšili o jedna.
 
 <!-- [řešení](./reseni/listy/12_ukol.md) -->
 
