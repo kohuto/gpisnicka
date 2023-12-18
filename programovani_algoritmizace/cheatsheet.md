@@ -62,11 +62,14 @@ else:
     print("mensi")
 ```
 
-## Seznamy 
+## Seznamy
 
 ```python
 seznam = [1, 4, -7, 2, 5]
 
 for i in seznam:
     print(i)
+
+seznam[0] = 42
+print(seznam[0])
 ```

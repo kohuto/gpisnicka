@@ -38,20 +38,44 @@ Proč právě Python?
 
 Abychom mohli psát programy v pythonu, je potřeba nainstalovat interpreter pro python. Instalační balíček stáhněte [zde](https://www.python.org/downloads/) kliknutím na žluté tlačítko _Download python_. Pokud používáte jiný operační systém než windows, tak vyberte z dalších nabízených možností.
 
-![download python](../images/download_python.png).
+![download python](../images/download_python.png)
 
-Následně stažený instalátor dvojklikem spusť (bude ve stažených souborech).
+Stažený instalátor dvojklikem spusť (bude ve stažených souborech).
 
-![python interpreter](../images/python_interpreter.png).
+![python interpreter](../images/python_interpreter.png)
 
-Na začátku instalace zaškrtni:
+Na začátku instalace zaškrtni `Add python.exe to PATH`. Možnost `Use admin privileges when installing py.exe` nechte nezaškrtnutou.
 
-- Add python.exe to PATH
-- Use admin privilegies when installing py.exe (pokud máte admin práva na počítači, pokud ne, není potřeba to řešit)
-
-![installation](../images/instalation.png).
+![installation](../images/instalation.png)
 
 Poté klikněte na _Install Now_. Poté, co instalace doběhne, okno zavřete.
+
+## Změna interpreteru ve VS code
+
+Pokud jste nainstalovali novou verzi pythonu (viz předchozí kapitola _Instalace Pythonu_) a potřebujete ve VS Code nastavit nový interpreter postupujte následovně:
+
+ 1. Pokud máte otevřené VS code, tak ho zavřete
+ 2. Otevřete VS code
+ 3. Zmáčkněte kombinaci kláves `ctrl`+`shift`+`P`
+ 4. Do textového pole napište `Python: Select Interpreter` a zmáčkněte `enter`
+5. Vyberte verzi pythonu (`Python 3.12.1 64-bit`)
+ 
+![installation](../images/select-interpreter.png)
+
+![installation](../images/select-version.png)
+
+## Instalace knihoven pomocí pip
+
+Pokud potřebujete doinstalovat novou knihovnu pomocí pip, postupujte následovně:
+
+1. Nainstalujte `pip`. Pokud máte nainstalovanou nejnovější verzi Pythonu podle předchozího kroku, tak nemusíte `pip` instalovat, protože se vám nainstaloval automaticky.
+2. Otevřete ve VS code nový terminál (v horním menu klikněte _Terminal_ a vyberte _New Terminal_).
+3. Do terminálu napište `pip install ` a název knihovny, kterou chcete nainstalovat např. `pip install pygame` a zmáčkněte `enter`.
+
+![installation](../images/new-terminal.png)
+
+![installation](../images/pip-install.png)
+
 
 ## VS code
 
