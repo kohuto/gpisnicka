@@ -40,7 +40,7 @@ Abychom mohli psát programy v pythonu, je potřeba nainstalovat interpreter pro
 
 ![download python](../images/download_python.png)
 
-Následně stažený instalátor dvojklikem spusť (bude ve stažených souborech).
+Stažený instalátor dvojklikem spusť (bude ve stažených souborech).
 
 ![python interpreter](../images/python_interpreter.png)
 
@@ -52,7 +52,7 @@ Poté klikněte na _Install Now_. Poté, co instalace doběhne, okno zavřete.
 
 ## Změna interpreteru ve VS code
 
-Pokud jste stáhli novou verzi pythonu (viz předchozí kapitola _Instalace Pythonu_) a potřebujete ve VS Code nastavit nový interpreter postupujte následovně:
+Pokud jste nainstalovali novou verzi pythonu (viz předchozí kapitola _Instalace Pythonu_) a potřebujete ve VS Code nastavit nový interpreter postupujte následovně:
 
  1. Pokud máte otevřené VS code, tak ho zavřete
  2. Otevřete VS code
