@@ -4,16 +4,18 @@
 
 1. [Co je Python?](#co-je-python)
 2. [Instalace Pythonu](#instalace-pythonu)
-3. [VS code](#vs-code)
-4. [Vypisování](#vypisování)
-5. [Proměnná](#proměnná)
-6. [Kreslení](#kreslení)
-7. [Podprogramy](#podprogramy)
-8. [Náhoda](#náhoda)
-9. [Opakování](#opakování)
-10. [Větvení](#větvení)
-11. [Podprogramy s parametrem](#podprogramy-s-parametrem)
-12. [Listy (seznamy)](#listy-seznamy)
+3. [Změna interpreteru ve VS code](#změna-interpreteru-ve-vs-code)
+4. [Instalace knihoven pomocí pip](#instalace-knihoven-pomocí-pip)
+5. [VS code](#vs-code)
+6. [Vypisování](#vypisování)
+7. [Proměnná](#proměnná)
+8. [Kreslení](#kreslení)
+9. [Podprogramy](#podprogramy)
+10. [Náhoda](#náhoda)
+11. [Opakování](#opakování)
+12. [Větvení](#větvení)
+13. [Podprogramy s parametrem](#podprogramy-s-parametrem)
+14. [Listy (seznamy)](#listy-seznamy)
 
 ## Co je Python?
 
