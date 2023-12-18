@@ -52,16 +52,31 @@ Poté klikněte na _Install Now_. Poté, co instalace doběhne, okno zavřete.
 
 ## Změna interpreteru ve VS code
 
-Pokud jste stáhli novou verzi pythonu a potřebujete ve VS Code nastavit nový interpreter postupujte následovně:
+Pokud jste stáhli novou verzi pythonu (viz předchozí kapitola _Instalace Pythonu_) a potřebujete ve VS Code nastavit nový interpreter postupujte následovně:
+
  1. Pokud máte otevřené VS code, tak ho zavřete
  2. Otevřete VS code
  3. Zmáčkněte kombinaci kláves `ctrl`+`shift`+`P`
  4. Do textového pole napište `Python: Select Interpreter` a zmáčkněte `enter`
-5. Vyberte verzi verzi pythonu (`Python 3.12.1 64-bit`)
+5. Vyberte verzi pythonu (`Python 3.12.1 64-bit`)
  
 ![installation](../images/select-interpreter.png)
 
 ![installation](../images/select-version.png)
+
+## Instalace knihoven pomocí pip
+
+Pokud potřebujete doinstalovat novou knihovnu pomocí pip, postupujte následovně:
+
+1. Nainstalujte `pip`. Pokud máte nainstalovanou nejnovější verzi Pythonu podle předchozího kroku, tak nemusíte `pip` instalovat, protože se vám nainstaloval automaticky.
+2. Otevřete ve VS code nový terminál (v horním menu klikněte _Terminal_ a vyberte _New Terminal_).
+3. Do terminálu napište `pip install ` a název knihovny, kterou chcete nainstalovat např. `pip install pygame` a zmáčkněte `enter`.
+
+![installation](../images/new-terminal.png)
+
+![installation](../images/pip-install.png)
+
+
 ## VS code
 
 Pro psaní programu budeme používat Visual Studio Code (VS code), které nainstalujte do počítače z [oficiálních stránek](https://code.visualstudio.com/).
