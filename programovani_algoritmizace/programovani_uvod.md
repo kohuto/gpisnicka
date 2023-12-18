@@ -87,21 +87,17 @@ V momentě kdy máte nainstalované VS code, je vhodné nainstalovat ještě roz
 
 ![vs code extension](../images/vscodeextension.png)
 
-Rozšíření není nutnou podmínkou, aby programy fungovaly, ale usnadní nám psaní kódu (vs code nám díky rozšíření bude napovídat) a zároveň usnadní spouštění programů.
+Rozšíření není nutnou podmínkou, aby programy fungovaly, ale usnadní vám psaní kódu (vs code vám díky rozšíření bude napovídat) a zároveň usnadní spouštění programů.
 
-Všechny programy, které budeme vytvářet budeme ukládat do souborů. Soubory, které obsahují programy napsané v pythonu, mají koncovku `.py`. Univerzální cesta jak vytvořit nový soubor ve VS code je v horním menu vybrat _file_ a z nabídky vybrat _new file_.
+Všechny programy, které budeme vytvářet, budou obyčejné soubory s koncovkou `.py` (př. `mujprogram.py`). Pro přehlednost Budeme všechny soubory (programy) ukládat do jedné složky. Vytvořte si v počítači složku a libovolně ji pojmenujte. Následně otevřete VS code. V horním menu klikněte na _File_ a vyberte možnost _Open folder_. V průzkumníku najděte svou složku, jednou na ni klikněte a klikněte na tlačítko _Vybrat složku_. V levém menu nyní vidíte vaši prázdnou složku (na obrázku níže vidíte otevřenou složku _programy_).
 
-![new file](../images/ope-folder-vs-code.png)
+![new file](../images/open-folder.png)
 
-Následně se objeví vstupní pole, do kterého napište jméno vašeho souboru (třeba `muj_soubor`) a vyberte možnost _Create New File (jmeno_souboru)_.
+Nový soubor vytvoříme tak, že najedeme myší vedle názvu složky, objeví se nám ikonky a klikneme možnost _New File_. V tu chvíli se nám objeví textové do které napíšeme název souboru a za tečku koncovku (př. `prvni.py`).
 
-![new file](../images/new-file-name.png)
+![new file](../images/new-file.png)
 
-Otevře se klasické okno pro ukládání souboru. Do kolonky _Název souboru_ je potřeba za název souboru dopsat `.py`, což je koncovka pro soubory, které obsahují programy v pythonu.
-
-![new file](../images/file_extension.png)
-
-Poté stačí uložit a můžeme začít psát první program. Program lze spustit bud pomocí `ctrl+F5` nebo tlačítkem `run python file` v pravém horním rohu.
+Otevře se klasické okno pro ukládání souboru. Do kolonky _Název souboru_ je potřeba za název souboru dopsat `.py`, což je koncovka pro soubory, které obsahují programy v pythonu. Do souboru můžeme začít psát program. Program lze spustit tlačítkem `run python file` v pravém horním rohu.
 
 ## Vypisování
 
