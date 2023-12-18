@@ -93,11 +93,11 @@ Všechny programy, které budeme vytvářet, budou obyčejné soubory s koncovko
 
 ![new file](../images/open-folder.png)
 
-Nový soubor vytvoříme tak, že najedeme myší vedle názvu složky, objeví se nám ikonky a klikneme možnost _New File_. V tu chvíli se nám objeví textové do které napíšeme název souboru a za tečku koncovku (př. `prvni.py`).
+Nový soubor vytvoříte tak, že najedete myší vedle názvu složky, objeví se ikonky a kliknete na možnost _New File_. V tu chvíli se nám objeví textové pole, do kterého napíšete název souboru, tečku a koncovku (př. `prvni.py`).
 
 ![new file](../images/new-file.png)
 
-Otevře se klasické okno pro ukládání souboru. Do kolonky _Název souboru_ je potřeba za název souboru dopsat `.py`, což je koncovka pro soubory, které obsahují programy v pythonu. Do souboru můžeme začít psát program. Program lze spustit tlačítkem `run python file` v pravém horním rohu.
+Do souboru můžeme začít psát program. Program lze spustit tlačítkem `run python file` v pravém horním rohu.
 
 ## Vypisování
 
