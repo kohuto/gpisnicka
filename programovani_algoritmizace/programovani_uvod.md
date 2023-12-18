@@ -56,11 +56,10 @@ Pokud jste stáhli novou verzi pythonu a potřebujete ve VS Code nastavit nový 
  1. Pokud máte otevřené VS code, tak ho zavřete
  2. Otevřete VS code
  3. Zmáčkněte kombinaci kláves `ctrl`+`shift`+`P`
- 4. Do textového pole napište `Python: Select Interpreter` a vyberte tuto možnost
+ 4. Do textového pole napište `Python: Select Interpreter` a zmáčkněte `enter`
+5. Vyberte verzi verzi pythonu (`Python 3.12.1 64-bit`)
  
 ![installation](../images/select-interpreter.png).
-
-5. Vyberte verzi verzi pythonu (`Python 3.12.1 64-bit`)
 
 ![installation](../images/select-version.png).
 ## VS code
