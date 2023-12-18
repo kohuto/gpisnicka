@@ -44,15 +44,25 @@ Následně stažený instalátor dvojklikem spusť (bude ve stažených souborec
 
 ![python interpreter](../images/python_interpreter.png).
 
-Na začátku instalace zaškrtni:
-
-- Add python.exe to PATH
-- Use admin privilegies when installing py.exe (pokud máte admin práva na počítači, pokud ne, není potřeba to řešit)
+Na začátku instalace zaškrtni `Add python.exe to PATH`. Možnost `Use admin privileges when installing py.exe` nechte nezaškrtnutou.
 
 ![installation](../images/instalation.png).
 
 Poté klikněte na _Install Now_. Poté, co instalace doběhne, okno zavřete.
 
+## Změna interpreteru ve VS code
+
+Pokud jste stáhli novou verzi pythonu a potřebujete ve VS Code nastavit nový interpreter postupujte následovně:
+ 1. Pokud máte otevřené VS code, tak ho zavřete
+ 2. Otevřete VS code
+ 3. Zmáčkněte kombinaci kláves `ctrl`+`shift`+`P`
+ 4. Do textového pole napište `Python: Select Interpreter` a vyberte tuto možnost
+ 
+![installation](../images/select-interpreter.png).
+
+5. Vyberte verzi verzi pythonu (`Python 3.12.1 64-bit`)
+
+![installation](../images/select-version.png).
 ## VS code
 
 Pro psaní programu budeme používat Visual Studio Code (VS code), které nainstalujte do počítače z [oficiálních stránek](https://code.visualstudio.com/).
