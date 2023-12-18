@@ -57,13 +57,15 @@ Poté klikněte na _Install Now_. Poté, co instalace doběhne, okno zavřete.
 
 Pro psaní programu budeme používat Visual Studio Code (VS code), které nainstalujte do počítače z [oficiálních stránek](https://code.visualstudio.com/).
 
-V momentě kdy máte nainstalované VS code, je potřeba nainstalovat ještě rozšíření ve VS code. V sekci `extension` vyhledejte `python` a vyberte první možnost (viz obrázek):
+V momentě kdy máte nainstalované VS code, je vhodné nainstalovat ještě rozšíření ve VS code. V sekci `extension` vyhledejte `python` a vyberte první možnost (viz obrázek):
 
 ![vs code extension](../images/vscodeextension.png)
 
-Nyní již můžeme vytvořit první soubor. Soubory, které obsahují programy napsané v pythonu, mají koncovku `.py`. Univerzální cesta jak vytvořit nový soubor ve VS code je v horním menu vybrat _file_ a z nabídky vybrat _new file_.
+Rozšíření není nutnou podmínkou, aby programy fungovaly, ale usnadní nám psaní kódu (vs code nám díky rozšíření bude napovídat) a zároveň usnadní spouštění programů.
 
-![new file](../images/new_file.png)
+Všechny programy, které budeme vytvářet budeme ukládat do souborů. Soubory, které obsahují programy napsané v pythonu, mají koncovku `.py`. Univerzální cesta jak vytvořit nový soubor ve VS code je v horním menu vybrat _file_ a z nabídky vybrat _new file_.
+
+![new file](../images/ope-folder-vs-code.png)
 
 Následně se objeví vstupní pole, do kterého napište jméno vašeho souboru (třeba `muj_soubor`) a vyberte možnost _Create New File (jmeno_souboru)_.
 
