@@ -70,7 +70,7 @@ Pokud jste nainstalovali novou verzi pythonu (viz předchozí kapitola _Instalac
 
 Pokud potřebujete doinstalovat novou knihovnu pomocí pip, postupujte následovně:
 
-1. Nainstalujte `pip`. Pokud máte nainstalovanou nejnovější verzi Pythonu, tak nemusíte `pip` instalovat, protože se vám nainstaloval automaticky.
+1. Nainstalujte `pip`. Pokud máte nainstalovanou nejnovější verzi Pythonu, tak nemusíte `pip` instalovat.
 2. Otevřete ve VS code nový terminál (v horním menu klikněte _Terminal_ a vyberte _New Terminal_).
 3. Do terminálu napište `pip install ` a název knihovny, kterou chcete nainstalovat např. `pip install pygame` a zmáčkněte `enter`.
 
