@@ -93,7 +93,7 @@ Všechny programy, které budeme vytvářet, budou obyčejné soubory s koncovko
 
 ![new file](../images/open-folder.png)
 
-Nový soubor vytvoříte tak, že najedete myší vedle názvu složky, objeví se ikonky a kliknete na možnost _New File_. V tu chvíli se nám objeví textové pole, do kterého napíšete název souboru, tečku a koncovku (př. `prvni.py`).
+Nový soubor vytvoříte tak, že najedete myší vedle názvu složky, objeví se ikonky a kliknete na možnost _New File_. V tu chvíli se objeví textové pole, do kterého napíšete název souboru, tečku a koncovku (př. `prvni.py`).
 
 ![new file](../images/new-file.png)
 
