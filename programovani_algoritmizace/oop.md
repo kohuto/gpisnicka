@@ -3,15 +3,16 @@
 ## Přehled
 
 1. [Úvod](#úvod)
-3. [Objekt, atribut, metoda](#objekt-atribut-metoda)
-2. [Třída](#třída)
-5. [Instance](#instance)
-6. [Konstruktor](#konstruktor)
-4. [Zapouzdření](#zapouzdření)
-4. [Dědičnost](#dědičnost)
-4. [Polymorfismus](#polymorfismus)
-7. [Projekt](#projekt)
-8. [Kostka](#kostka)
+2. [Objekt, atribut, metoda](#objekt-atribut-metoda)
+3. [Třída](#třída)
+4. [Instance](#instance)
+5. [Konstruktor](#konstruktor)
+6. [Zapouzdření](#zapouzdření)
+7. [Dědičnost](#dědičnost)
+8. [Polymorfismus](#polymorfismus)
+9. [Projekt](#projekt)
+10. [Kostka](#kostka)
+11. [Bojovník](#bojovník)
 
 ## Úvod
 Poskládání programu z komponent je výhodné především kvůli snadné rozšiřitelnosti. O komponentách se ví, že fungují, jsou otestovány a udržovány. Pokud je někde chyba, stačí ji opravit na jednom místě. V rámci OOP se snažíme simulovat realitu tak, jak jsme zvyklí ji vnímat.
