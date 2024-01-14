@@ -3,12 +3,15 @@
 ## Přehled
 
 1. [Úvod](#úvod)
+3. [Objekt, atribut, metoda](#objekt-atribut-metoda)
 2. [Třída](#třída)
-3. [Metody](#metody)
-4. [Atributy](#atributy)
 5. [Instance](#instance)
 6. [Konstruktor](#konstruktor)
-7. [Simulace]()
+4. [Zapouzdření](#zapouzdření)
+4. [Dědičnost](#dědičnost)
+4. [Polymorfismus](#polymorfismus)
+7. [Projekt](#projekt)
+8. [Kostka](#kostka)
 
 ## Úvod
 Poskládání programu z komponent je výhodné především kvůli snadné rozšiřitelnosti. O komponentách se ví, že fungují, jsou otestovány a udržovány. Pokud je někde chyba, stačí ji opravit na jednom místě. V rámci OOP se snažíme simulovat realitu tak, jak jsme zvyklí ji vnímat.
@@ -16,7 +19,7 @@ Poskládání programu z komponent je výhodné především kvůli snadné roz�
 OOP stojí na základních třech pilířích:
 Zapouzdření, Dědičnost a Polymorfismus.
 
-## Objekt, atributy, metody
+## Objekt, atribut, metoda
 Základní jednotkou je objekt, který odpovídá nějakému objektu (předmětu) z reálného světa. Každý objekt má své atributy a metody. Atributy objektu jsou vlastnosti neboli data, která uchovává. Metody jsou schopnosti, které umí objekt vykonávat.
 
 ## Třída
@@ -29,7 +32,16 @@ instance. Instance se navzájem liší svými daty (atributy).
 ## Konstruktor
 Speciální metoda, která se volá při vytváření instance. Pomocí ní můžeme například vytvořit v objektu požadované atributy a uložit do nich hodnoty. V momentě, kdy nedeklarujeme konstruktor, volá se implicitní konstruktor.
 
+## Zapouzdření 
+Koncept, který omezuje přímý přístup ke komponentám (atributům a metodám) objektu a zároveň umožňuje pracovat s těmito komponentami prostřednictvím definovaných rozhraní (metod). Jinak řečeno, udržujeme atributy třídy soukromé a manipulujeme s nimi pouze pomocí veřejných metod. 
+## Dědičnost 
+todo
+## Polymorfismus 
+todo
 ## Projekt
+
+### Kostka
+
 Zdroj: https://www.itnetwork.cz/python/oop/
 
 Třídy se vytvářejí klíčovým slovem `class`. Třídu pojmenujeme `Kostka`:
@@ -56,6 +68,9 @@ class Kostka:
 
 kostka = Kostka()
 ```
+
+> Když vytváříme objekt (instanci třídy), představíme si ho jako
+speciální box. Každý box má své vlastní atributy a metody. Když chceme, aby box něco udělal, potřebujeme způsob, jak na tento konkrétní box odkazovat. A právě `self` je způsob, kterým toho dosáhneme.
 
 Při vytvoření instance se zavolá tzv. _konstruktor_. Závorky při vytváření instance píšeme, protože _konstruktor_ je speciální metoda, voláme tedy tuto "vytvářecí" metodu.
 
@@ -126,6 +141,8 @@ class Kostka:
 kostka = Kostka()
 print(kostka.pocet_sten)
 ```
+> Pokud v metodě jen tak vytvoříme nějakou proměnnou, tak ta po
+ukončení metody zaniká. My ale potřebujeme vytvořit atribut `pocet_sten`, který chceme dále používat. Proto použijeme `self`.
 
 Konstruktor (jako každá metoda) může mít parametry. Díky tomu můžeme například nastavit, kolik stěn bude mít kostka:
 
@@ -154,6 +171,17 @@ class Kostka:
 kostka = Kostka(10)
 print(kostka.pocet_sten)
 ```
+
+Není dobré atribut pocet_sten nastavit jako veřejný, protože nechceme, aby nám někdo mohl již u vytvořené kostky počet stěn měnit. Proto atribut nastavíme na nevřejný pomocí podtržítka. Tomuto principu se říká zapouzdření.
+
+```python
+def __init__(self, pocet_sten):
+        self._pocet_sten = pocet_sten
+```
+
+> Aby byl atribut skutečně read-only a zvenčí nepřístupný, je potřeba použít dvě podtržítka.
+
+
 
 Všimněte si, že nyní nemůžeme vytvořit kostku bez parametru. Lze to však obejít pomocí uvedení výchozí hodnoty argumentu pocet_sten v definici konstruktoru.
 
