@@ -1,5 +1,6 @@
 [Zpět](oop.md)
 
+```python
 import random
 
 class Kostka:
@@ -104,3 +105,4 @@ gandalf = Mag("Gandalf", 60, 18, 15, kostka, 50, 50)
 arena = Arena(zalgoren, gandalf, kostka)
 # zápas
 arena.zapas()
+```
