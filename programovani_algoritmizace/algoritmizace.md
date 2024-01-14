@@ -3,6 +3,15 @@
 
 1. [Úvod](#úvod)
 
+## cíle výuky
+
+- vysvětlím rozdíl mezi algoritmem a programem
+- zhodnotím, jestli algoritmus splňuje základní vlastnosti algoritmu
+- zhodnotím, zda-li je algoritmus pro řešení dané úlohy efektivní
+- analyzuji chování algoritmu a na základě toho určím, k čemu se daný algoritmus používá
+- najdu chybu v algoritmu a chybu opravím
+- zapíšu jednoduchý algorimtus pomocí pythonu
+
 ## Úvod
 
 1. Algoritmus:
@@ -80,6 +89,9 @@ Který algoritmus je nejlepší? Co znamená v tomto případě nejlepší?
 - pokud mám Více kritérií, musím si určit jejich prioritu
 
 ### Úkol 9
+najdi v sezamu největší číslo. Jak na to přijít? kouknu a vidím. Ok nyní si pusť video - jaké bylo největší číslo? jak jsi na to přišel?
+
+### Úkol 10
 
 Vytvoř podprogram, který určí největší společný dělitel dvou čísel
 
