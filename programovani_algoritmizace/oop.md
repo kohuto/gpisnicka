@@ -11,44 +11,20 @@
 7. [Simulace]()
 
 ## Úvod
-
-znovupoužitel­nost
-vynálezu základních
-komponent
-Poskládání programu z komponent je výhodnější a levnější. Můžeme
-mu věřit, je otestovaný (o komponentách se ví, že fungují, jsou
-otestovány a udržovány)
-Pokud je někde chyba, stačí ji opravit na
-jednom místě.
-snažíme se nasimulovat realitu tak, jak ji jsme
-zvyklí vnímat.
-
-Základní jednotkou je objekt, který odpovídá nějakému
-Každý objekt má své atributy a metody.
-
-Atributy objektu jsou vlastnosti neboli
-data, která uchovává
-
-Metody jsou schopnostmi, které umí objekt
-vykonávat.
-
-Třída je
-vzor, podle kterého se objekty vytváří. Definuje jejich vlastnosti a schopnosti.
-
-Objekt, který se vytvoří podle třídy, se nazývá
-instance.
-instance se navzájem liší svými daty (atributy)
+Poskládání programu z komponent výhodné především kvůli snadné rozšiřitelnosti. O komponentách se ví, že fungují, jsou otestovány a udržovány. Pokud je někde chyba, stačí ji opravit na jednom místě. V rámci OOP se snažíme simulovat realitu tak, jak jsme zvyklí ji vnímat.
 
 OOP stojí na základních třech pilířích:
 Zapouzdření, Dědičnost a Polymorfismus.
 
+## Objekt, atributy, metody
+Základní jednotkou je objekt, který odpovídá nějakému objektu (předmětu) z reálného světa. Každý objekt má své atributy a metody. Atributy objektu jsou vlastnosti neboli data, která uchovává. Metody jsou schopnosti, které umí objekt vykonávat.
+
 ## Třída
-
-## Metody
-
-## Atributy
+Třída je vzor, podle kterého se objekty vytváří. Definuje jejich vlastnosti a schopnosti.
 
 ## Instance
+Objekt, který se vytvoří podle třídy, se nazývá
+instance. Instance se navzájem liší svými daty (atributy).
 
 ## Konstruktor
 
