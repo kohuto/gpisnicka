@@ -172,23 +172,31 @@ kostka = Kostka(10)
 print(kostka.pocet_sten)
 ```
 
-Není dobré atribut pocet_sten nastavit jako veřejný, protože nechceme, aby nám někdo mohl již u vytvořené kostky počet stěn měnit. Proto atribut nastavíme na nevřejný pomocí podtržítka. Tomuto principu se říká zapouzdření.
+Není dobré atribut pocet_sten nastavit jako veřejný, protože nechceme, aby nám někdo mohl již u vytvořené kostky počet stěn měnit. Proto atribut nastavíme na neveřejný pomocí podtržítka. Pro vypsání hodnoty atributu `pocet_sten` budeme používat veřejnou metodu `vrat_pocet_sten`. Tomuto principu se říká zapouzdření.
 
 ```python
-def __init__(self, pocet_sten):
+class Kostka:
+    def __init__(self, pocet_sten = 6):
         self._pocet_sten = pocet_sten
+
+    def vrat_pocet_sten(self):
+        return self._pocet_sten
+
+    def hod(self):
+        return random.randint(1, 6)
 ```
 
 > Aby byl atribut skutečně read-only a zvenčí nepřístupný, je potřeba použít dvě podtržítka.
-
-
 
 Všimněte si, že nyní nemůžeme vytvořit kostku bez parametru. Lze to však obejít pomocí uvedení výchozí hodnoty argumentu pocet_sten v definici konstruktoru.
 
 ```python
 class Kostka:
     def __init__(self, pocet_sten = 6):
-        self.pocet_sten = pocet_sten
+        self._pocet_sten = pocet_sten
+
+    def vrat_pocet_sten(self):
+        return self._pocet_sten
 
     def hod(self):
         return random.randint(1, 6)
@@ -204,30 +212,34 @@ Poslední věc, která zbývá upravit, je metoda `hod`, a to tak, aby nejvyšš
 ```python
 class Kostka:
     def __init__(self, pocet_sten = 6):
-        self.pocet_sten = pocet_sten
+        self._pocet_sten = pocet_sten
+    
+    def vrat_pocet_sten(self):
+        return self._pocet_sten
 
     def hod(self):
-        return random.randint(1, self.pocet_sten)
+        return random.randint(1, self._pocet_sten)
 
 kostka = Kostka(10)
-print(kostka.pocet_sten)
+print(kostka.vrat_pocet_sten())
+print(kostka.hod())
 ```
+
+## Bojovník
 
 Kostka je hotová, nyní potřebujeme vytvořit bojovníka do arény a samotnou arénu.
 
 Bojovník bude mít nějaké atributy:
 
+- jmeno
 - maximální počet životů
 - aktuální počet životů
 - útok
-- obranu (když bojovník útočí s útokem 20hp na druhého bojovníka s obranou 10hp, ubere mu 10hp
-  života.)
+- obranu (když bojovník útočí s útokem 20hp na druhého bojovníka s obranou 10hp, ubere mu 10hp života.)
 
-Bojovník má referenci na instanci objektu
-Kostka. Při útoku či obraně si vždy hodí kostkou a k útoku/obraně přičte padlé číslo. (Všichni bojovníci sdílejí jednu instanci kostky).
+Bojovník má referenci na instanci objektu `Kostka`. Při útoku či obraně si vždy hodí kostkou a k útoku/obraně přičte padlé číslo (Všichni bojovníci sdílejí jednu instanci kostky).
 
-Bojovníci podávají zprávy o tom, co se děje - např.
-"Zalgoren útočí s úderem za 25hp."
+Bojovníci podávají zprávy o tom, co se děje - např. "Zalgoren útočí s úderem za 25hp."
 
 Vytvořme kostruktor:
 
@@ -252,7 +264,7 @@ def je_nazivu(self):
        return False
 ```
 
-_Úkol: lze předchozí metodu zjednodušit?_
+Případně jednodušeji:
 
 ```python
 def je_nazivu(self):
