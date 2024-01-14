@@ -4,16 +4,18 @@
 
 1. [Co je Python?](#co-je-python)
 2. [Instalace Pythonu](#instalace-pythonu)
-3. [VS code](#vs-code)
-4. [Vypisování](#vypisování)
-5. [Proměnná](#proměnná)
-6. [Kreslení](#kreslení)
-7. [Podprogramy](#podprogramy)
-8. [Náhoda](#náhoda)
-9. [Opakování](#opakování)
-10. [Větvení](#větvení)
-11. [Podprogramy s parametrem](#podprogramy-s-parametrem)
-12. [Listy (seznamy)](#listy-seznamy)
+3. [Změna interpreteru ve VS code](#změna-interpreteru-ve-vs-code)
+4. [Instalace knihoven pomocí pip](#instalace-knihoven-pomocí-pip)
+5. [VS code](#vs-code)
+6. [Vypisování](#vypisování)
+7. [Proměnná](#proměnná)
+8. [Kreslení](#kreslení)
+9. [Podprogramy](#podprogramy)
+10. [Náhoda](#náhoda)
+11. [Opakování](#opakování)
+12. [Větvení](#větvení)
+13. [Podprogramy s parametrem](#podprogramy-s-parametrem)
+14. [Listy (seznamy)](#listy-seznamy)
 
 ## Co je Python?
 
@@ -68,7 +70,7 @@ Pokud jste nainstalovali novou verzi pythonu (viz předchozí kapitola _Instalac
 
 Pokud potřebujete doinstalovat novou knihovnu pomocí pip, postupujte následovně:
 
-1. Nainstalujte `pip`. Pokud máte nainstalovanou nejnovější verzi Pythonu podle předchozího kroku, tak nemusíte `pip` instalovat, protože se vám nainstaloval automaticky.
+1. Nainstalujte `pip`. Pokud máte nainstalovanou nejnovější verzi Pythonu, tak nemusíte `pip` instalovat.
 2. Otevřete ve VS code nový terminál (v horním menu klikněte _Terminal_ a vyberte _New Terminal_).
 3. Do terminálu napište `pip install ` a název knihovny, kterou chcete nainstalovat např. `pip install pygame` a zmáčkněte `enter`.
 
@@ -85,21 +87,17 @@ V momentě kdy máte nainstalované VS code, je vhodné nainstalovat ještě roz
 
 ![vs code extension](../images/vscodeextension.png)
 
-Rozšíření není nutnou podmínkou, aby programy fungovaly, ale usnadní nám psaní kódu (vs code nám díky rozšíření bude napovídat) a zároveň usnadní spouštění programů.
+Rozšíření není nutnou podmínkou, aby programy fungovaly, ale usnadní vám psaní kódu (vs code vám díky rozšíření bude napovídat) a zároveň usnadní spouštění programů.
 
-Všechny programy, které budeme vytvářet budeme ukládat do souborů. Soubory, které obsahují programy napsané v pythonu, mají koncovku `.py`. Univerzální cesta jak vytvořit nový soubor ve VS code je v horním menu vybrat _file_ a z nabídky vybrat _new file_.
+Všechny programy, které budeme vytvářet, budou obyčejné soubory s koncovkou `.py` (př. `mujprogram.py`). Pro přehlednost Budeme všechny soubory (programy) ukládat do jedné složky. Vytvořte si v počítači složku a libovolně ji pojmenujte. Následně otevřete VS code. V horním menu klikněte na _File_ a vyberte možnost _Open folder_. V průzkumníku najděte svou složku, jednou na ni klikněte a klikněte na tlačítko _Vybrat složku_. V levém menu nyní vidíte vaši prázdnou složku (na obrázku níže vidíte otevřenou složku _programy_).
 
-![new file](../images/ope-folder-vs-code.png)
+![new file](../images/open-folder.png)
 
-Následně se objeví vstupní pole, do kterého napište jméno vašeho souboru (třeba `muj_soubor`) a vyberte možnost _Create New File (jmeno_souboru)_.
+Nový soubor vytvoříte tak, že najedete myší vedle názvu složky, objeví se ikonky a kliknete na možnost _New File_. V tu chvíli se objeví textové pole, do kterého napíšete název souboru, tečku a koncovku (př. `prvni.py`).
 
-![new file](../images/new-file-name.png)
+![new file](../images/new-file.png)
 
-Otevře se klasické okno pro ukládání souboru. Do kolonky _Název souboru_ je potřeba za název souboru dopsat `.py`, což je koncovka pro soubory, které obsahují programy v pythonu.
-
-![new file](../images/file_extension.png)
-
-Poté stačí uložit a můžeme začít psát první program. Program lze spustit bud pomocí `ctrl+F5` nebo tlačítkem `run python file` v pravém horním rohu.
+Do souboru můžeme začít psát program. Program lze spustit tlačítkem `run python file` v pravém horním rohu.
 
 ## Vypisování
 
