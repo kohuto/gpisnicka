@@ -37,10 +37,13 @@ Speciální metoda, která se volá při vytváření instance. Pomocí ní mů�
 
 ## Zapouzdření 
 Koncept, který omezuje přímý přístup ke komponentám (atributům a metodám) objektu a zároveň umožňuje pracovat s těmito komponentami prostřednictvím definovaných rozhraní (metod). Jinak řečeno, udržujeme atributy třídy soukromé a manipulujeme s nimi pouze pomocí veřejných metod. 
+
 ## Dědičnost 
-todo
+Princip, který umožňuje vytvářet nové třídy na základě již existujících tříd. Nově vytvořená třída dědí atributy (vlastnosti) a metody (funkce) své rodičovské třídy, což umožňuje znovupoužití kódu.
+
 ## Polymorfismus 
-todo
+Koncept, podle kterého mohou objekty různých tříd být ošetřeny jako objekty jedné společné nadřazené třídy. Základním principem je, že tyto objekty mohou sdílet stejný rozhraní (metody), ale způsob, jakým tyto metody implementují funkcionalitu, se může lišit v každé třídě.
+
 ## Projekt
 
 ### Kostka
@@ -403,7 +406,7 @@ Existující nedostatky:
 
 ## Mág
 
-Nyní do naší arény přidáme postavu mága. Mág bude fungovat stejně, jako bojovník. Kromě života bude mít však i manu. Zpočátku bude mana plná. V případě plné many vykoná mág magický útok, který manu vybije na 0. Každé kolo se bude mana zvyšovat o 10 a mág bude podnikat jen běžný útok. Jakmile se mana zcela doplní, opět bude moci magický útok použít.
+Nyní do naší arény přidáme postavu mága. Mág bude fungovat stejně, jako bojovník (použijeme dědičnost). Kromě života bude mít mág i manu. Zpočátku bude mana plná. V případě plné many vykoná mág magický útok, který manu vybije na 0. Každé kolo se bude mana zvyšovat o 10 a mág bude podnikat jen běžný útok. Jakmile se mana zcela doplní, opět bude moci magický útok použít.
 
 Vytvoříme tedy třídu Mag, zdědíme ji z Bojovnik.
 
@@ -412,6 +415,8 @@ class Mag(Bojovnik)
 ```
 
 Nemůžeme použít původní konstruktor potomka, neboť máme u mága 2 parametry navíc (mana a magický útok). Definujeme si tedy konstruktor v potomkovi, který bere parametry potřebné pro vytvoření bojovníka a několik parametrů navíc pro mága.
+
+> U potomků není nutné vždy volat konstruktor předka. Náš potomek má ale některé parametry navíc, proto ho volat budeme. Některé parametry předáme předkovi a některé si zpracujeme sami. Konstruktor předka se vykoná před naším konstruktorem. Předání parametrů předkovi (volání konstruktoru předka) zajistí metoda `super()`.
 
 ```python
 def __init__(self, jmeno, zivot, utok, obrana, kostka, mana, magicky_utok):
@@ -460,3 +465,5 @@ def utoc(self, souper):
         self._mana = 0
         souper.bran_se(uder)
 ```
+
+Celý kód je k dispozici [zde](arena.md)
