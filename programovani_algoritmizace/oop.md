@@ -13,6 +13,7 @@
 9. [Projekt](#projekt)
 10. [Kostka](#kostka)
 11. [Bojovník](#bojovník)
+12. [Aréna](#aréna)
 
 ## Úvod
 Poskládání programu z komponent je výhodné především kvůli snadné rozšiřitelnosti. O komponentách se ví, že fungují, jsou otestovány a udržovány. Pokud je někde chyba, stačí ji opravit na jednom místě. V rámci OOP se snažíme simulovat realitu tak, jak jsme zvyklí ji vnímat.
@@ -269,20 +270,20 @@ Případně jednodušeji:
 
 ```python
 def je_nazivu(self):
-    return self.zivot > 0
+    return self._zivot > 0
 ```
 
 Vytvořme ještě metodu, která vypíše aktuální počet životů:
 
 ```python
 def zbyvajici_zivot(self):
-    return "{0} má {1}hp ".format(self._jmeno, zivot)
+    return "{0} má {1}hp ".format(self._jmeno, self._zivot)
 ```
 
 Nyní implemetnujeme metodu `bran_se`:
 
 1. spočítáme skutečné zranění (od útoku odečteme naši obranu zvýšenou o číslo, které padlo na hrací kostce)
-2. Pokud jsme zranění celé neodrazili (`zraneni` > 0), snížíme život (úkol: je tato podmínka důležitá? Co kdyby obrana byla větší než útok?)
+2. Pokud jsme zranění celé neodrazili (`zraneni` > 0), snížíme život (Je podmínka důležitá? Co kdyby obrana byla větší než útok?)
 3. když je snížený život <0, dorovnáme ho na nulu
 
 ```python
@@ -312,10 +313,10 @@ Vytvoříme také dvě nové metody `_nastav_zpravu()` a `vrat_zpravu()`. První
 
 ```python
 def _nastav_zpravu(self, zprava):
-    self.zprava = zprava
+    self._zprava = zprava
 
 def vrat_zpravu(self):
-    return self.zprava
+    return self._zprava
 ```
 
 O práci se zprávami obohatíme naše metody `utoc()` a `bran_se()`, nyní budou vypadat takto:
@@ -350,6 +351,8 @@ souper.utoc(bojovnik)
 print(souper.vrat_zpravu())
 print(bojovnik.vrat_zpravu())
 ```
+
+## Aréna
 
 Nyní bychom chtěli simulovat souboj dvou bojovníků. Pro tyto potřeby vytvoříme novou třídu `Arena`.
 
