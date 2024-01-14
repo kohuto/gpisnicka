@@ -447,23 +447,4 @@ def utoc(self, souper):
     souper.bran_se(uder)
 ```
 
-Útok výše v podstatě vykonává původní metoda `utoc()`. Proto použijeme opět `super()`.
-
-```python
-def utoc(self, souper):
-    # mana není naplněna
-    if self._mana < self._max_mana:
-        self._mana = self._mana + 10
-        if self._mana > self._max_mana:
-            self._mana = self._max_mana
-        super().utoc(souper)
-    #magický útok
-    else:
-        uder = self._magicky_utok + self._kostka.hod()
-        zprava = "{0} použil magii za {1} hp.".format(self._jmeno, uder)
-        self._nastav_zpravu(zprava)
-        self._mana = 0
-        souper.bran_se(uder)
-```
-
 Celý kód je k dispozici [zde](arena.md)
