@@ -328,8 +328,7 @@ def bran_se(self, uder):
         if zraneni > 0:
             zprava = f"{self._jmeno} utrpěl poškození {zraneni} hp."
             self._zivot = self._zivot - zraneni
-            if self._zivot < 0:
-                self._zivot = 0
+            if not je_nazivu():
                 zprava += ".. a zemřel."
         else:
             zprava = f"{self._jmeno} odrazil útok."
@@ -434,7 +433,7 @@ def utoc(self, souper):
         uder = self._utok + self._kostka.hod()
         zprava = f"{self._jmeno} útočí s úderem za {uder} hp."
         self._nastav_zpravu(zprava)
-    #magický útok
+    # magický útok
     else:
         uder = self._magicky_utok + self._kostka.hod()
         zprava = f"{self._jmeno} použil magii za {uder} hp."
