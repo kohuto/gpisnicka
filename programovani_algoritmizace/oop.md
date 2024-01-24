@@ -287,19 +287,16 @@ def zbyvajici_zivot(self):
 Nyní implemetnujeme metodu `bran_se`:
 
 1. spočítáme skutečné zranění (od útoku odečteme naši obranu zvýšenou o číslo, které padlo na hrací kostce)
-2. Pokud jsme zranění celé neodrazili (`zraneni` > 0), snížíme život (Je podmínka důležitá? Co kdyby obrana byla větší než útok?)
-3. když je snížený život <0, dorovnáme ho na nulu
+2. pokud jsme zranění celé neodrazili (`zraneni` > 0), snížíme život (Je podmínka důležitá? Co kdyby obrana byla větší než útok?)
 
 ```python
 def bran_se(self, uder):
     zraneni = uder - (self._obrana + self._kostka.hod())
     if zraneni > 0:
         self._zivot = self._zivot - zraneni
-        if self._zivot < 0:
-            self._zivot = 0
 ```
 
-Nyní implementujeme metodu `utoc`. Metoda `utoc()` bere jako parametr instanci bojovníka, na kterého se útočí, abychom na něm mohli zavolat metodu `bran_se()`, která na útok zareaguje a zmenší protivníkův život.
+Nyní implementujeme metodu `utoc()`. Metoda `utoc()` bere jako parametr instanci bojovníka, na kterého se útočí, abychom na něm mohli zavolat metodu `bran_se()`, která na útok zareaguje a zmenší protivníkův život.
 
 ```python
 def utoc(self, souper):
@@ -363,10 +360,9 @@ Nyní bychom chtěli simulovat souboj dvou bojovníků. Pro tyto potřeby vytvo�
 ```python
 class Arena:
 
-    def __init__(self, bojovnik_1, bojovnik_2, kostka):
+    def __init__(self, bojovnik_1, bojovnik_2):
         self._bojovnik_1 = bojovnik_1
         self._bojovnik_2 = bojovnik_2
-        self._kostka = kostka
 ```
 
 Uvnitř arény vytvoříme jednu metodu `zapas()`. Metoda `zapas()` nebude mít žádné parametry a nebude ani nic vracet. Uvnitř bude cyklus, který bude na střídačku volat útoky bojovníků navzájem a vypisovat zprávy. Metoda by mohla vypadat takto:
@@ -394,7 +390,7 @@ Nyní můžeme odstartovat zápas:
 kostka = Kostka(10)
 zalgoren = Bojovnik("Zalgoren", 100, 20, 10, kostka)
 shadow = Bojovnik("Shadow", 60, 18, 15, kostka)
-arena = Arena(zalgoren, shadow, kostka)
+arena = Arena(zalgoren, shadow)
 # zápas
 arena.zapas()
 ```

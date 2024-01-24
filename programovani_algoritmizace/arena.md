@@ -55,10 +55,9 @@ class Bojovnik:
 
 class Arena:
 
-    def __init__(self, bojovnik_1, bojovnik_2, kostka):
+    def __init__(self, bojovnik_1, bojovnik_2):
         self._bojovnik_1 = bojovnik_1
         self._bojovnik_2 = bojovnik_2
-        self._kostka = kostka
 
     def zapas(self):
         print("Vítejte v aréně!")
@@ -102,7 +101,7 @@ class Mag(Bojovnik):
 kostka = Kostka(10)
 zalgoren = Bojovnik("Zalgoren", 100, 20, 10, kostka)
 gandalf = Mag("Gandalf", 60, 18, 15, kostka, 50, 50)
-arena = Arena(zalgoren, gandalf, kostka)
+arena = Arena(zalgoren, gandalf)
 # zápas
 arena.zapas()
 ```
