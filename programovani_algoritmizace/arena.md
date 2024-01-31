@@ -34,8 +34,7 @@ class Bojovnik:
         if zraneni > 0:
             zprava = f"{self._jmeno} utrpěl poškození {zraneni} hp."
             self._zivot -= zraneni
-            if self._zivot < 0:
-                self._zivot = 0
+            if not self.je_nazivu():
                 zprava += ".. a zemřel."
         else:
             zprava = f"{self._jmeno} odrazil útok."
@@ -84,8 +83,6 @@ class Mag(Bojovnik):
         # mana není naplněna
         if self._mana < self._max_mana:
             self._mana = self._mana + 10
-            if self._mana > self._max_mana:
-                self._mana = self._max_mana
             uder = self._utok + self._kostka.hod()
             zprava = f"{self._jmeno} útočí s úderem za {uder} hp."
             self._nastav_zpravu(zprava)

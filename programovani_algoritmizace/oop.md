@@ -428,8 +428,6 @@ def utoc(self, souper):
     # mana není naplněna
     if self._mana < self._max_mana:
         self._mana = self._mana + 10
-        if self._mana > self._max_mana:
-            self._mana = self._max_mana
         uder = self._utok + self._kostka.hod()
         zprava = f"{self._jmeno} útočí s úderem za {uder} hp."
         self._nastav_zpravu(zprava)
