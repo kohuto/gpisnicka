@@ -42,7 +42,7 @@ Koncept, který omezuje přímý přístup ke komponentám (atributům a metodá
 Princip, který umožňuje vytvářet nové třídy na základě již existujících tříd. Nově vytvořená třída dědí atributy (vlastnosti) a metody (funkce) své rodičovské třídy, což umožňuje znovupoužití kódu.
 
 ## Polymorfismus 
-Koncept, podle kterého mohou objekty různých tříd být ošetřeny jako objekty jedné společné nadřazené třídy. Základním principem je, že tyto objekty mohou sdílet stejný rozhraní (metody), ale způsob, jakým tyto metody implementují funkcionalitu, se může lišit v každé třídě.
+Polymorfismus je vlastnost, která umožňuje objektům volání jedné metody se stejným jménem, ale s jinou implementací.
 
 ## Projekt
 
