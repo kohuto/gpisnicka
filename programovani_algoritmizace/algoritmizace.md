@@ -63,22 +63,4 @@ Který algoritmus je nejlepší? Co znamená nejlepší?
 - žádné kritérium není apriori špatné, záleží na situaci
 - pokud mám Více kritérií, musím si určit jejich prioritu
 
-### Úkol 6
 
-Najdi v sezamu největší číslo. Jak na to přijít? kouknu a vidím. Ok nyní si pusť video - jaké bylo největší číslo? jak jsi na to přišel?
-
-### Úkol 10
-
-Vytvoř podprogram, který určí největší společný dělitel dvou čísel
-
-### Úkol 10
-
-Vytvoř podprogram, který dostane dva parametry `x` a `y`, který pomocí eukleidova algoritmu najde největší společný dělitel čísel `x` a `y`.
-
-### Úkol 11
-
-Vytvoř podprogram, který dostane jako parametr číslo a určí, jestli je dané číslo prvočíslo, nebo ne. Pomocí tohoto programu urči pro prvních `n` přirozených čísel, jestli se jedná o prvočísla.
-
-### Úkol 12
-
-Vytvoř podprogram `eratosthenovo_sito`, který dostane jako parametr číslo `n` a určí pro prvních `n` čísel, jestli se jedná o prvočísla.
