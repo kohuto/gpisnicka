@@ -3,12 +3,8 @@
 ## Přehled
 
 1. [Co je Python?](#co-je-python)
-2. [Instalace Pythonu](#instalace-pythonu)
-3. [Změna interpreteru ve VS code](#změna-interpreteru-ve-vs-code)
-4. [Instalace knihoven pomocí pip](#instalace-knihoven-pomocí-pip)
-5. [VS code](#vs-code)
-6. [Vypisování](#vypisování)
-7. [Proměnná](#proměnná)
+2. [Vypisování](#vypisování)
+3. [Proměnná](#proměnná)
 8. [Kreslení](#kreslení)
 9. [Podprogramy](#podprogramy)
 10. [Náhoda](#náhoda)
@@ -19,101 +15,39 @@
 
 ## Co je Python?
 
-Python je populární programovací jazyk, který vytvořil Guido van Rossum v roce 1991.
-
-Kde se Používá?
-
+Python je populární programovací jazyk, který se používá napříklald pro
 - vývoj webových stránek (server-side)
 - vývoj softwaru
 - datovou analýzu a vizualizaci
 - matematické výpočty
 - systémové skriptování
-
 Proč právě Python?
-
-- multiplatformní (Windows, Mac, Linux, Raspberry Pi atd.)
 - jednoduchá syntaxe
 - kratší programy oproti ostatním jazykům
-- lze pracovat procedurálním způsobem, objektově orientovaným způsobem nebo funkcionálním způsobem.
 
-## Instalace Pythonu
+TODO: rozmyslet si kombinaci videí --> u vysvětlujících částí by to mohlo fungovat 
 
-Abychom mohli psát programy v pythonu, je potřeba nainstalovat interpreter pro python. Instalační balíček stáhněte [zde](https://www.python.org/downloads/) kliknutím na žluté tlačítko _Download python_. Pokud používáte jiný operační systém než windows, tak vyberte z dalších nabízených možností.
+## Jupyter Notebook 
+https://colab.research.google.com
+https://kam.fit.cvut.cz/deploy/bi-zma/mirror/textbook/chap_slozitost.html#subsec_quic_sort
 
-![download python](../images/download_python.png)
-
-Stažený instalátor dvojklikem spusť (bude ve stažených souborech).
-
-![python interpreter](../images/python_interpreter.png)
-
-Na začátku instalace zaškrtni `Add python.exe to PATH`. Možnost `Use admin privileges when installing py.exe` nechte nezaškrtnutou.
-
-![installation](../images/instalation.png)
-
-Poté klikněte na _Install Now_. Poté, co instalace doběhne, okno zavřete.
-
-## Změna interpreteru ve VS code
-
-Pokud jste nainstalovali novou verzi pythonu (viz předchozí kapitola _Instalace Pythonu_) a potřebujete ve VS Code nastavit nový interpreter postupujte následovně:
-
- 1. Pokud máte otevřené VS code, tak ho zavřete
- 2. Otevřete VS code
- 3. Zmáčkněte kombinaci kláves `ctrl`+`shift`+`P`
- 4. Do textového pole napište `Python: Select Interpreter` a zmáčkněte `enter`
-5. Vyberte verzi pythonu (`Python 3.12.1 64-bit`)
- 
-![installation](../images/select-interpreter.png)
-
-![installation](../images/select-version.png)
-
-## Instalace knihoven pomocí pip
-
-Pokud potřebujete doinstalovat novou knihovnu pomocí pip, postupujte následovně:
-
-1. Nainstalujte `pip`. Pokud máte nainstalovanou nejnovější verzi Pythonu, tak nemusíte `pip` instalovat.
-2. Otevřete ve VS code nový terminál (v horním menu klikněte _Terminal_ a vyberte _New Terminal_).
-3. Do terminálu napište `pip install ` a název knihovny, kterou chcete nainstalovat např. `pip install pygame` a zmáčkněte `enter`.
-
-![installation](../images/new-terminal.png)
-
-![installation](../images/pip-install.png)
-
-
-## VS code
-
-Pro psaní programu budeme používat Visual Studio Code (VS code), které nainstalujte do počítače z [oficiálních stránek](https://code.visualstudio.com/).
-
-V momentě kdy máte nainstalované VS code, je vhodné nainstalovat ještě rozšíření ve VS code. V sekci `extension` vyhledejte `python` a vyberte první možnost (viz obrázek):
-
-![vs code extension](../images/vscodeextension.png)
-
-Rozšíření není nutnou podmínkou, aby programy fungovaly, ale usnadní vám psaní kódu (vs code vám díky rozšíření bude napovídat) a zároveň usnadní spouštění programů.
-
-Všechny programy, které budeme vytvářet, budou obyčejné soubory s koncovkou `.py` (př. `mujprogram.py`). Pro přehlednost Budeme všechny soubory (programy) ukládat do jedné složky. Vytvořte si v počítači složku a libovolně ji pojmenujte. Následně otevřete VS code. V horním menu klikněte na _File_ a vyberte možnost _Open folder_. V průzkumníku najděte svou složku, jednou na ni klikněte a klikněte na tlačítko _Vybrat složku_. V levém menu nyní vidíte vaši prázdnou složku (na obrázku níže vidíte otevřenou složku _programy_).
-
-![new file](../images/open-folder.png)
-
-Nový soubor vytvoříte tak, že najedete myší vedle názvu složky, objeví se ikonky a kliknete na možnost _New File_. V tu chvíli se objeví textové pole, do kterého napíšete název souboru, tečku a koncovku (př. `prvni.py`).
-
-![new file](../images/new-file.png)
-
-Do souboru můžeme začít psát program. Program lze spustit tlačítkem `run python file` v pravém horním rohu.
+zde bude video (max minuta), které vysvětlí jak s notebooky pracovat.
 
 ## Vypisování
 
-### Úkol 1
+NAUČ SE:
 
-Zkusme napsat první program:
+Zkusme spustit první program:
 
 ```python
 print(1 + 2 + 3)
 ```
 
-`print` je [funkce](#podprogramy) (funkcím se budeme věnovat později). To, co napíšeme do závorek se vypíše do konzole.
+`print()` je [funkce](#podprogramy), která se používá pro vypisování hodnot. To, co napíšeme do závorek se vypíše do konzole.
 
-### Úkol 2
+NAUČ SE:
 
-Python dokáže fungovat jako kalkulačka. Jaké budou výsledky následujících výrazů?
+Python lze používat jako kalkulačku (na steroidech), zvládá všechny matematické operace.
 
 ```python
 print(123)
@@ -122,319 +56,231 @@ print(3 + 4 * 5)
 print((3 + 4) * 5)
 print(132 / 11)
 print(1 + 2 * 3 / (5 - 1))
+print(2 ** 10)
 ```
 
 > 2 \* 2 \* 2 \* 2 \* 2 \* 2 \* 2 \* 2 \* 2 \* 2 neboli umocnění 2 na 10 se v Pythonu zapisuje jako `2 ** 10`
 
-### Úkol 3
 
-Pozor, zápisy musí být správně, jinak se objeví chyba. Co se
-stane, pokud zadáš následující příkazy?
+### Úkol 1
+VYMYSLI / NAPROGRAMUJ
+Ondra měl přesně před čtyřmi měsíci 20 let. Spočítej pomocí pythonu:
 
-```python
-print(22 + 7 *)
-print(19 - (3 4))
+1. Kolik je mu nyní přibližně dní (předpokládej, že rok má 365 dní)?
+2. Kolik je to hodin?
+3. Kolik je to sekund?
+
+### Úkol 2
+VYMYSLI / NAPROGRAMUJ 
+Napiš program, který vypíše text: 1 + 2 * 3
+
+NAUČ SE
+
+Pomocí funkce `print()` lze vypsat více věcí najednou, jednotlivé části oddělíme čárkou, př.:
+```
+print("Dva plus dva je ", 2 + 2)
+print("Do školy jsem šel", 2 * 10, "minut")
 ```
 
-### Úkol 4
 
-Někdy se však i po správném zápise může objevit chybové hlášení. Co se stane, pokud zadáš následující příkaz?
+### Úkol 3
+NAUČ SE / VYMYSLI (NAPROGRAMUJ)
+Spustíš-li tento kód, vypíše se chybová hláška. Z té lze vyčíst:
+- na kterém řádku programu je chyba
+- o jaký typ se jedná
 
 ```python
 print(10 / (6 - 2 * 3))
 ```
+Zkus přepsat kód výše tak, aby se po jeho spuštění neobjevila chybová hláška.
 
-### Úkol 5
-
-Petrovi bylo přesně před dvěma měsíci 16 let. Využij Python jako kalkulačku a spočítej:
-
-1. Kolik je mu nyní přibližně dní?
-2. Kolik je to hodin?
-3. Kolik je to sekund?
-
-Předpokládej, že rok má 365 dní a měsíc má 30 dní.
-
-[řešení](./reseni/vypisovani/5_ukol.md)
-
-### Úkol 6
-
-Zjisti, co Python vypíše v případě následujících příkazů:
-
-```python
-print(1 + 2 * 3)
-print("1 + 2 * 3")
-print()
-```
-
-Příkaz `print` slouží na vypisování textů. Text, který se má vypsat, napíšeš mezi uvozovky.
-
-### Úkol 7
-
-Příkaz `print` umí vypsat víc věcí – vyzkoušej následující příkazy. Co způsobí čárka v jednotlivých příkazech?
-
-```python
-print("Mám rád", "kapustu")
-print("Moje oblíbené číslo je", 42)
-print("Do školy jsem šel", 2 * 10, "minut")
-```
+ROZŠIŘUJÍCÍ KONCEPTY:
+- formátovaný string: print(f"dva plus dva je {2+2}")
 
 ## Proměnná
-
-V matematice je zvykem označovat hodnoty písmeny, například délka strany čtverce $a = 100$ nebo poloměr kruhu $r=4$. To samé můžeš udělat i v Pythonu.
-
-### Úkol 1
-
-Zkus napsat následující program:
+NAUČ SE 
+V matematice je zvykem označovat hodnoty písmeny, například délka strany čtverce $a = 100$ nebo poloměr kruhu $r=4$. To samé můžeš udělat i v Pythonu:
 
 ```python
-a = 100
+moje_promenna = 100
 ```
 
-Nic se nestalo (to je správně!). Python si vytvořil _proměnnou_ s _názvem_ `a` a přitom si zapamatoval, že má _hodnotu_ 100.
-
-Lze si to představit jako krabičku. Text na krabičce je _název_ proměnné, zatímco to, co dáme dovnitř krabičky je _hodnota_ proměnné:
-
-![variable as box](../images/variableasbox.jpg)
-
-### Úkol 2
-
-Zkusme nyní vypsat proměnnou `a`:
+Když program spustíš, nic se nestane (to je správně!). Python si vytvořil _proměnnou_ s _názvem_ `a` a přitom si zapamatoval, že tato proměnná má _hodnotu_ 100. Vypsat hodnotu, která je uložená v proměnné můžeme opět pomocí funkce `print()`, stačí do závorky napsat název proměnné, jejíž hodnotu chceme vypsat:
 
 ```python
-a = 100
-print(a)
+moje_promenna = 100
+print(moje_promenna)
 ```
 
 Vypíše se hodnota uložená v proměnné.
 
+### Úkol 1
+VYMYSLI (NAPROGRAMUJ)
+Můžeme vytvořit i více proměnných. Zkus vytvořit dvě proměnné, které pojmenuj `vyska` a `hmostnost`. Do proměnných ulož svou výšku a hmostnost. Pomocí příkazu `print()` vypiš hodnoty, které jsou v proměnných uložené.
+
+### Úkol 2
+VYMYSLI (NAPROGRAMUJ)
+Proměnné můžeš použít i v matematických zápisech a Python namísto názvu proměnné dosadí její hodnotu. Vytvoř proměnné `vyska`, `hmotnost` a `bmi`. Do proměnné `bmi` ulož hodnotu BMI, kterou vypočítáš pomocí proměnných `vyska` a `hmotnost`.
+
 ### Úkol 3
+VYMYSLI (NAPROGRAMUJ)
 
-Proměnných můžeme vytvořit, kolik budeme chtít a později je používat v dalších výpočtech. Vyzkoušej vytvořit a nastavit dvě proměnné `vyska` a `hmostnost`, do kterých ulož svou výšku a hmostnost. Pomocí příkazu `print` zkontroluj, jaké hodnoty se do proměnných uložily.
+Ulož do proměnné `cena_houska` cenu za jednu housku (př. 7). Do proměnné `pocet` ulož počet housek, které chceš koupit. Pomocí těchto dvou proměnných ulož do třetí proměnné `cena_celkem` celkovou cenu za nákup. Výsledek vypiš následujícím způsobem:
 
-[řešení](./reseni/promenne/3_ukol.md)
+```
+Koupil jsem 3 x housku a zaplatil jsem 21 korun.
+```
 ### Úkol 4
+VYMYSLI (NAPROGRAMUJ)
 
-Co se stane, když bychom chtěli vypsat proměnnou `bmi`, kterou jsme zatím nedefinovali?
-
-```python
-print(bmi)
-```
-
-### Úkol 5
-
-Proměnné můžeš použít i v matematických zápisech a Python namísto názvu proměnné dosadí její hodnotu. Vytvoř proměnnou `bmi` a ulož do ní tvou hodnotu BMI. Pro výpočet BMI použij proměnné `vyska` a `hmotnost` ze cvičení 3.
-
-[řešení](./reseni/promenne/5_ukol.md)
-### Úkol 6
-
-Proměnným můžeme změnit jejich obsah – vyzkoušej:
-
-```python
-hmotnost = 70
-hmotnost = 73
-print(hmotnost)
-```
-
-### Úkol 7
-
-Přiřaď do proměnné `zmrzlina` cenu jedné zmrzliny (například 25 korun). Do proměnné `pocet` přiraď počet kamarádů, kterým chceš koupit po jedné zmrzlině. Za použití proměnných sestav přiřazovací příkaz, pomocí kterého se do třetí proměnné `zaplatit` přiřadí celková cena, kterou zaplatíš. Výsledek vypiš následujícím způsobem:
-
-```
-Koupil jsem 4 x zmrzlinu a zaplatil jsem 100 korun.
-```
-[řešení](./reseni/promenne/7_ukol.md)
-
-### Úkol 8
-
-V matematice značíme obsah kruhu $S$ a počítáme jej podle vzorce $\pi  r^2$. Obvod kruhu značíme $O$ a počítáme jej podle vzorce $2 \pi  r$. Vytvoř proměnné pro `poloměr`, `obsah` i `obvod` kruhu a přiřaď do nich správné výrazy. Vytvoř si proměnnou `pi` s hodnotou $3.14$. Výsledek vypiš následujícím způsobem:
-
+V matematice značíme obsah kruhu $S$ a počítáme jej podle vzorce $\pi ⋅ r^2$. Obvod kruhu značíme $O$ a počítáme jej podle vzorce $2 ⋅ \pi ⋅ r$. Vytvoř proměnné pro `poloměr`, `obsah` i `obvod` kruhu a přiřaď do nich správné výrazy. Vytvoř si proměnnou `pi` s hodnotou $3.14$. Výsledek vypiš následujícím způsobem:
 ```
 Kruh s poloměrem 4 má obvod 25.12 a obsah 50.24
 ```
 
-[řešení](./reseni/promenne/8_ukol.md)
-
-
-### Úkol 9
-
-Představ si, že bych chtěl použít program pro kruh s poloměrem 73. Změn hodnotu v proměnné `polomer` a spusť program. Zobrazí se ve výpisu správný výsledek? Jestli ne, program oprav.
-
-### Úkol 10
-
-Vyzkoušej, které z následujících názvu lze použít jako název proměnné:
-
-- kuk
-- Ahoj!
-- 1.A
-- prvni_trida
-- cerno-bile
-- OK
-- o0o0o0o
-- asdf
-- věk
-- počet osob
-- trida(3)
-
-## Kreslení
-
-Doposud programy počítaly a vypisovaly textové zprávy. Nyní zkusíme kreslit obrázky. Postupuj takto:
-
-1. Vytvoř následující program:
-
-```python
-import tkinter
-canvas = tkinter.Canvas()
-canvas.pack()
-input()
+### ÚKOL 5
+DOPLŇ
+Do kódu níže doplňte pomocí proměnných `a` a `b` obsah proměnných `c`, `d`, `e` a `f` tak, aby výstup vypadal takto:
 ```
-
-2. Program spusť – na obrazovce uvidíš nové okno.
-3. Zjisti, zda se dá okno posouvat, měnit jeho velikost. Nakonec toto nové okno zavři. program vyrobil grafickou plochu `canvas`.
-
-> `input()` na konci nemá s oknem nic společného. Jedná se o příkaz, který čeká, až mu uživatel do konzole napíše nějaký vstup. Kdyby tam příkaz nebyl, tak by program ihned skončil a okno by se ihned po otevření zavřelo. V následujících příkladech proto vždy nakonec programu napište `input()`, aby okno zůstalo otevřené.
-
-### Úkol 1
-
-Přidej do programu nový příkaz:
-
-```python
-import tkinter
-canvas = tkinter.Canvas()
-canvas.pack()
-
-canvas.create_rectangle(50, 70, 220, 150)
-
-input()
+16
+8
+48
+3
 ```
-
-příkaz vykreslí obdelník.
-
-> Příkaz `input()` musí být pořád na konci programu
-
-### Úkol 2
-
-V závorkách příkazu `canvas.create_rectangle( , , , )` jsou 4 čísla. Zkus je postupně měnit. Program pokaždé spusť, abys viděl, co nakreslí:
-
 ```python
-canvas.create_rectangle(0, 0, 220, 150)
-canvas.create_rectangle(0, 0, 50, 50)
-canvas.create_rectangle(0, 0, 250, 50)
-canvas.create_rectangle(20, 10, 250, 50)
-canvas.create_rectangle(20, 10, 50, 250)
+a = 4
+b = 12
+################
+# TODO: Do každé proměnné níže uložte pomocí proměnných a a b nějakou hodnotu
+c = None
+d = None
+e = None
+f = None
+################
+# V kódu níže nic neměňte
+print(c)
+print(d)
+print(e)
+print(f)
 ```
-
-### Jak fungují souřadnice v tkinteru
-
-Souřadnice fungují v tkinter trochu netradičně:
-
-![coordinates](../images/souradnice-konkretne.png)
-
-V matematice jsme zvyklí, že střed je "uprostřed". Zde ale leží bod se souřadnicemi $[0, 0]$ v levém horním rohu. Čísla na ose $x$ se zleva doprava. zvětšují. Čísla na ose $y$ se zvětšují shora dolů (čím větší číslo, tím níže).
-
-V příkazu `canvas.create_rectangle(x1, y1, x2, y2)` píšeme do závorek souřadnice protilehlých vrcholů obdélníku:
-
-![rectangle](../images/souradnice-obecne.png)
-
-### Úkol 3
-
-Nakresli obdélník, který má souřadnice
-protilehlých vrcholů $[50, 30]$ a $[300, 200]$.
-
-[řešení](./reseni/kresleni/3_ukol.md)
-
-### Úkol 4
-
-Nakresli obdélník, který má levý horní vrchol na souřadnicích $[200, 100]$, jeho šířka je 60 a výška 140.
-
-[řešení](./reseni/kresleni/4_ukol.md)
 
 ### Úkol 5
+DOPLŇ
 
-Nakresli dva čtverce se stranami délky 80. První čtverec bude mít levý horní roh na souřadnicích $[10, 20]$ a druhý na souřadnicích $[150, 120]$
+Níže vidíte kód, který vykreslí červený čtverec. Před spuštěním ulož do šesti proměnných nějaké hodnoty.
 
-[řešení](./reseni/kresleni/5_ukol.md)
+```python
+# Import knihovny matplotlib
+import matplotlib.pyplot as plt
+
+###########################################################
+# TODO: Do každé proměnné níže uložte nějakou hodnotu
+teplota_6_rano = None
+teplota_9_rano = None
+teplota_12_odpoledne = None
+teplota_15_odpoledne = None
+teplota_18_vecer = None
+teplota_21_vecer = None
+###########################################################
+
+# V kódu níže nic neměňte
+cas = ['6:00', '9:00', '12:00', '15:00', '18:00', '21:00']  # Časy měření
+teploty = [teplota_6_rano, teplota_9_rano, teplota_12_odpoledne, teplota_15_odpoledne, teplota_18_vecer, teplota_21_vecer]  # Seznam teplot
+
+plt.plot(cas, teploty)  # Vytvoření grafu s bodovými značkami
+plt.show()  # Zobrazení grafu
+```
+>Graf je vykreslen pomocí knihovny matplotlib, což je populární knihovna pro vizualizaci dat v pythonu.
+
+ÚKOL 6
+
+Níže vidíte kód, který vykreslí křivku ve tvaru kružnice. Zkuste do proměnných `a`, `b`, `c` dosadit jiné hodnoty a odhalit, co změna každé proměnné udělá s kružnicí.
+ - DÁME JIM TŘEBA LINEÁRNÍ LOMENOU FUNKCI -> NEBO IDEÁLNĚ NĚJAKÝ 3D GRAF -> ÚKOL ZNÍ, PŘIJĎTE NA TO, CO DĚLÁ S GRAFEM KTERÝ PARAMETR --> BUDOU SI HRÁT S GRAFEM A BUDOU MUSET MĚNIT HODNOTU PROMĚNNÉ A DÍVAT SE, CO TO DĚLÁ S GRAFEM -_> IDEÁLNÍ MUSÍ SAMI PŘIJÍT PODLE KOMENTÁŘŮ KTEORU PROMĚNNOU MAJÍ MĚNIT.
+
+
+```python
+# Import knihovny matplotlib
+import matplotlib.pyplot as plt
+
+###########################################################
+# TODO: Do každé proměnné níže uložte nějakou hodnotu
+teplota_6_rano = None
+teplota_9_rano = None
+teplota_12_odpoledne = None
+teplota_15_odpoledne = None
+teplota_18_vecer = None
+teplota_21_vecer = None
+###########################################################
+
+# V kódu níže nic neměňte
+cas = ['6:00', '9:00', '12:00', '15:00', '18:00', '21:00']  # Časy měření
+teploty = [teplota_6_rano, teplota_9_rano, teplota_12_odpoledne, teplota_15_odpoledne, teplota_18_vecer, teplota_21_vecer]  # Seznam teplot
+
+plt.plot(cas, teploty)  # Vytvoření grafu s bodovými značkami
+plt.show()  # Zobrazení grafu
+```
+
 
 ### Úkol 6
+DOPLŇ
 
-Obdélník lze i vybarvit:
+Níže vidíte kód, který vykreslí graf, který znázorňuje, jak velkou vzdálenost ujedem při konstantí rychlosti za daný čas. Před spuštěním uložte do proměnné rychlost nějakou hodnotu. Následně pomocí proměnných cas_1 až cas_6 a proměnné rychlost ulož do všech proměnných draha_1 až draha_6, jak velká vzdálenost byla ujeta.
 
-```python
-import tkinter
-canvas = tkinter.Canvas()
-canvas.pack()
-canvas.create_rectangle(30, 30, 130, 130, fill='red')
-input()
+```PYTHON
+# Import knihovny matplotlib
+import matplotlib.pyplot as plt
+
+# Časy v hodinách 
+cas_1 = 1/6
+cas_2 = 2/6
+cas_3 = 3/6
+cas_4 = 4/6
+cas_5 = 5/6
+cas_6 = 6/6
+
+###############################################################
+# TODO 1 - doplň rychlost vozidla v km/h
+rychlost = None
+
+# TODO 2 - Výpočítej vzdálenosti pomocí proměnné rychlost a proměnných čas. 
+# Dráha = rychlost * čas
+draha_1 = None
+draha_2 = None
+draha_3 = None
+draha_4 = None
+draha_5 = None
+draha_6 = None
+################################################################
+
+# V kódu níže nic neměňte
+# Vzdálenosti v kilometrech pro každý časový okamžik
+vzdalenosti = [draha_1, draha_2, draha_3, draha_4, draha_5, draha_6]
+casy = [cas_1, cas_2, cas_3, cas_4, cas_5, cas_6]
+
+plt.plot(casy, vzdalenosti)  # Vytvoření grafu s bodovými značkami
+plt.show()  # Zobrazení grafu
 ```
 
-### Úkol 7
+ROŽIŘUJÍCÍ KONCEPTY:
+- přířazení do více proměnných najednou: a, b = 1, 2
+- zvýšení hodnoty: a += 1
+- datové typy: a: int = 1
 
-Vytvoř program, který nakreslí 4 čtverce se stranou délky 50. Každý čtverec bude mít jinou barvu. Umístění čtverců zvol podle sebe.
-
-[řešení](./reseni/kresleni/7_ukol.md)
-
-### Úkol 8
-
-V proměnných `x`, `y` jsou uložené souřadnice levého horního rohu čtverce. Dokonči kód programu tak, abys pomocí uvedených proměnných nakreslil čtverec se stranou délky
-100:
-
-```python
-import tkinter
-canvas = tkinter.Canvas()
-canvas.pack()
-x = 100
-y = 70
-canvas.create_rectangle(x, y, ... , ... , fill='yellow')
-input()
-```
-
-[řešení](./reseni/kresleni/8_ukol.md)
-
-### Úkol 9
-
-Vytvoř program, který použije čtyři proměnné `x`, `y`, `sirka`, `vyska` a na jejich základě nakreslí obdélník s levým horním rohem na souřadnicích `x`, `y`, danou šířkou a výškou. Barvu si zvol podle svého.
-
-[řešení](./reseni/kresleni/9_ukol.md)
-
-### Úkol 10
-
-Vytvoř program, který nakreslí následující čtverce:
-
-![three squares](../images/threesquares.png)
-
-Tyto čtverce mají společný levý horní roh, jehož souřadnice jsou v proměnných `x`, `y`. Čtverce se postupně zmenšují tak, že červený má délku strany 100, modrý 70 a tmavomodrý 40.
-
-[řešení](./reseni/kresleni/10_ukol.md)
 
 ## Podprogramy
+NAUČ SE
+Doposud jsme používali jen takové příkazy, které počítač znal (`print()`). Nyní budeme vytvářet své vlastní příkazy – tzv. podprogramy.
+> Podprogramům se často říká funkce či metody. Mezi funkcí a metodou jsou ale rozdíly, abychom je nemuseli řešit budeme používat obecný termín podprogram. 
 
-Doposud jsme používali jen takové příkazy, které počítač znal (`print`, `create_rectangle`, `Canvas`). Nyní budeme vytvářet své vlastní příkazy – tzv. podprogramy (též funkce).
-
-### Úkol 1
-
-Jak vytvořit vlastní podprogram?
-
-1. Opiš následující kód:
+Jak vytvořit podporgram
 
 ```python
 def vypis_text():
     print('************')
     print('** Python **')
     print('************')
-```
-
-2. Program spusť – pokud se do konzole nic nevypsalo, je to v pořádku.
-3. Vlož ještě příkaz `vypis_text()`:
-
-```python
-def vypis_text():
-    print('************')
-    print('** Python **')
-    print('************')
-
 vypis_text()
 ```
-
-4. Pokud nyní program spustíš, vypíše se text.
 
 Slovem `def` začíná definice tvého nového příkazu – podprogramu. `vypiš_text` je název podprogramu (podobně jako `print` je název pro podprogram, který vypisuje text). Tři příkazy `print` se nazývají tělo podprogramu.
 
@@ -460,6 +306,21 @@ print('to je konec')
 
 V tomto programu se nejdříve definoval podprogram `vypis_text`. Za ním následují příkazy `print` a příkazy pro volání podprogramu `vypis_text`. Python zobrazil svoji vizitku dvakrát, protože v programu jsou dvě volání podprogramu `vypis_text`. Podprogram tedy můžeme volat i vícekrát.
 
+
+
+Vymyslete, jak tento program zkrátit
+```python
+print('já mám koně vraný koně')
+print('to jsou koně mí')
+print('já mám koně vraný koně')
+print('to jsou koně mí')
+print('když já jím dám ovsa')
+print('oni skáčou hopsa')
+print('já mám koně vraný koně')
+print('to jsou koně mí')
+print('já mám koně vraný koně')
+print('to jsou koně mí')
+```
 ### Úkol 3
 
 Změň předchozí program tak, aby počítač vypsal:
@@ -584,27 +445,8 @@ toto je trojúhelník:
 
 [řešení](./reseni/podprogramy/5_ukol.md)
 
-### Úkol 6
-
-Vytvoř nový program a vyzkoušej následující kód:
-
-```python
-import tkinter
-canvas = tkinter.Canvas()
-canvas.pack()
-
-def kresli():
-    canvas.create_rectangle(10, 20, 30, 40, fill='red')
-kresli()
-
-input()
-```
-
-### Úkol 7
-
-Vytvoř dva podprogramy. První pojmenuj _maly_ctverec_ a druhý pojmenuj _velky_ctverec_. První podprogram vykreslí na souřadnicicích $[10, 20]$ čtverec se stranou délky 20. Druhý podprogram vykreslí čtverec na souřadnicích $[40, 40]$ se stranou délky 80. Pomocí zavolání obou programů vykreslete do jednoho plátna oba čtverce.
-
-[řešení](./reseni/podprogramy/7_ukol.md)
+ROZŠIŘUJÍCÍ KONCEPTY:
+- návratová hodnota
 
 ## Náhoda
 
