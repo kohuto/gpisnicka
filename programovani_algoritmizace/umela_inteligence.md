@@ -1,6 +1,6 @@
 # Vytvoření Modelu pro Rozpoznávání Obrázků Zvířat (Kráva vs. Ovce)
 
-V tomto tutoriálu se naučíš, jak vytvořit model, který dokáže rozpoznávat zvířata (kráva nebo ovce) z obrázků pomocí knihovny TensorFlow a Keras. Provedeme tě celým procesem od přípravy dat až po trénink a testování modelu.
+V tomto tutoriálu se naučíš, jak vytvořit model, který dokáže rozpoznávat zvířata (kráva nebo ovce) z obrázků pomocí knihovny TensorFlow a Keras. Tutoriál tě provede celým procesem od přípravy dat až po trénink a testování modelu.
 
 ## Požadavky
 Než začneme, ujisti se, že máš nainstalované potřebné knihovny:
@@ -18,9 +18,9 @@ pip install tensorflow opencv-python numpy
 ---
 
 ## 1. Příprava obrázků
-
+Vytvoř si složku, do které budeme celý projekt ukládat.
 ### a) Organizace složek
-Nejprve potřebujeme připravit dataset (sadu obrázků), který bude obsahovat obrázky krav a ovcí. Ujisti se, že máš složku s názvem `dataset`, která obsahuje dvě podložky:
+Nejprve potřebujeme připravit dataset (sadu obrázků), který bude obsahovat obrázky krav a ovcí. Vytvoř složku s názvem `dataset`. V této složce vytvoř další dvě složky:
 - `cow/` pro obrázky krav
 - `sheep/` pro obrázky ovcí
 
