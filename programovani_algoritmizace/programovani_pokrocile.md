@@ -2,14 +2,160 @@
 
 ## Přehled
 
-1. porovnani programovacich jazyků
-2. interpretovane a kompilované jazyky
-3. [Datové typy](#datové-typy)
-4. [Čtení ze souborů](#čtení-ze-souborů)
-5. [Výjimky](#výjimky)
-6. [Moduly](#moduly)
-7. [Testy](#testy)
-8. [Co dál?](#co-dál)
+1. [Porovnani programovacich jazyků](#porovnani-programovacich-jazyků)
+2. [Interpretovane a kompilované jazyky](#interpretovane-a-kompilované-jazyky)
+3. [Virtuální prostředí](#virtuální-prostředí)
+4. [Datové typy](#datové-typy)
+5. [Čtení ze souborů](#čtení-ze-souborů)
+6. [Výjimky](#výjimky)
+7. [Moduly](#moduly)
+8. [Testy](#testy)
+9. [Co dál?](#co-dál)
+
+## Porovnani programovacich jazyků
+Doposud jsme se naučily základní programovací konstrukce v Pythonu. Víme, co je proměnná, umíme pracovat s podmínkami a cykly, víme, jak něco vypsat do konzole, víme dokonce, co jsou podprogramy (funkce / metody). Když se člověk naučí tyto základní konstrukce v jednom programovacím jazyce, tak mu to usnadní naučení se jiných programovacích jazyků. Většina těchto konstrukcí se totiž bude používat i v jných programovacích jazycích, bude se akorát lišit to, jak daný konstrukt zapíšeme. Nyní si proto ukážeme, co je společné všem jazykům a zároveň si ukážeme, v čem se naopak Python od ostatních jazyků liší.
+
+### Co je stejné
+Jak již zaznělo, všechny základní konstrukce, které jsme doposud probrali, najdeme i v ostatních programovacích jazycích.
+#### Proměnná
+Python:
+```python
+x = 5
+```
+JavaScript:
+```javascript
+let x = 5;
+```
+C#:
+```c#
+int x = 5;
+```
+
+#### Cyklus
+Python:
+```python
+for i in range(5):
+    print(i)
+```
+JavaScript:
+```javascript
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+```
+C#:
+```c#
+for (int i = 0; i < 5; i++) {
+    Console.WriteLine(i);
+}
+```
+
+#### Větvení
+Python:
+```python
+if x > 0:
+    print("X je kladné")
+else:
+    print("X je záporné nebo nulové")
+```
+JavaScript:
+```javascript
+if (x > 0) {
+    console.log("X je kladné");
+} else {
+    console.log("X je záporné nebo nulové");
+}
+```
+C#:
+```c#
+if (x > 0) {
+    Console.WriteLine("X je kladné");
+} else {
+    Console.WriteLine("X je záporné nebo nulové");
+}
+```
+
+#### Funkce
+Python:
+```python
+def pozdrav(jmeno):
+    print(f"Ahoj, {jmeno}!")
+```
+JavaScript:
+```javascript
+function pozdrav(jmeno) {
+    console.log(`Ahoj, ${jmeno}!`);
+}
+```
+C#:
+```c#
+void Pozdrav(string jmeno) {
+    Console.WriteLine($"Ahoj, {jmeno}!");
+}
+```
+### Co je jiné
+Již v předchozích ukázkách jste si mohli všimnout drobných odlišností ostatních jednotlivých jazyků
+
+#### Indetnace vs. složené závorky
+
+Python používá indentaci (odsazení řádků) pro strukturování kódu:
+```python
+if x > 0:
+    print("Kladné")
+```
+JavaScript, C#, Java používají složené závorky:
+```javascript
+if (x > 0) {
+    console.log("Kladné");
+}
+```
+
+#### Deklarace typů proměnných
+Python automaticky rozpoznává typy:
+```python
+x = 5  # Python rozpozná, že jde o celé číslo
+```
+JavaScript je dynamicky typovaný (typy se kontrolují za běhu):
+```javascript
+let x = 5;
+```
+C# a Java jsou staticky typované (nutná deklarace typu):
+```c#
+int x = 5;
+```
+
+#### Konec příkazů
+Python nepoužívá středníky na konci příkazů:
+```python
+x = 5
+print(x)
+```
+JavaScript, C# a Java vyžadují středník:
+```javascript
+let x = 5;
+console.log(x);
+```
+#### Jiné
+Rozdílů mezi jazyky je samozřejmě obrovské množství. Cílem této kapitoly bylo však ukázat, že naprosté základy zůstanou vždy stejné, tudíž není potřeba se je učit pořád dokola.
+
+## Interpretovane a kompilované jazyky
+
+Jazyky rozdělujeme na interpretované a kompilované, jaký je mezi nimi rozdíl se dočtete v tomto článku: https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/
+
+### Interpreter jazyka Brainfuck
+Jazyk Brainfuck je minimalistický ezoterický programovací jazyk. Byl vytvořen pro pobavení a jako výzva programátorům, pro praktické účely není vhodný. Jak tento jazyk funguje se dočtete v tomto článku: https://cs.wikipedia.org/wiki/Brainfuck.
+Napište interpretr tohoto jazyka. Tzn. Vytvořte kód v pythonu, který dostane na vstupu kód (text) napsaný v jazyce brainfuck. Váš program tento kód (text) projde znak po znaku a vykoná jednotlivé instrukce. Práci si zjednodušte tím, že nebudete interpretovat znaky `[` a `]`. Tato verze brainfucku tedy nebude podporovat cykly.
+
+Kód, který vypíše text `HI!`:
+```
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.>+++++++++++++++++++++++++++++++++.
+```
+
+Kód, který dostane na vstupu znak a vypíše tento znak a následující znak v ASCII tabulce:
+```
+,.+.
+```
+
 
 ## Virtuální prostředí
 
