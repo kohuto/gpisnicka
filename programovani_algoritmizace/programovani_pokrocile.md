@@ -2,13 +2,14 @@
 
 ## Přehled
 
-1. [Virtuální prostředí](#virtuální-prostředí)
-2. [Datové typy](#datové-typy)
-3. [Čtení ze souborů](#čtení-ze-souborů)
-4. [Výjimky](#výjimky)
-5. [Moduly](#moduly)
-6. [Testy](#testy)
-7. [Co dál?](#co-dál)
+1. porovnani programovacich jazyků
+2. interpretovane a kompilované jazyky
+3. [Datové typy](#datové-typy)
+4. [Čtení ze souborů](#čtení-ze-souborů)
+5. [Výjimky](#výjimky)
+6. [Moduly](#moduly)
+7. [Testy](#testy)
+8. [Co dál?](#co-dál)
 
 ## Virtuální prostředí
 
