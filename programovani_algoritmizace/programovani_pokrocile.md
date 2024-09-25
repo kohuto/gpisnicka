@@ -360,7 +360,7 @@ my_project/
 ```
 
 Do souboru `calculator.py` vložte následující kód
-
+aa
 ```python
 def add(a, b):
     return a + b
