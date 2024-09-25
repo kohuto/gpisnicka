@@ -552,3 +552,23 @@ Vytvořte testy pro funkci `is_in_array()`
 ### Úkol 5
 
 Vytvořte testy pro funkci `is_prime_number()`
+
+## Proces vývoje softwaru
+
+1. Analýza požadavků:
+- Cílem této fáze je zjistit, co přesně software má dělat, jaké funkce a vlastnosti od něj očekává uživatel nebo zadavatel.
+- Výstupem je dokumentace s jasně definovanými požadavky (tzv. "specifikace").
+2. Návrh (Design):
+- V této fázi se na základě požadavků vytváří návrh architektury softwaru. Návrh zahrnuje strukturu programu, modulární rozdělení (jak budou jednotlivé části systému spolupracovat), výběr technologií a databázový návrh.
+3. Implementace (Programování):
+- Po dokončení návrhu přichází fáze programování, kdy vývojáři píší kód podle návrhu a specifikace.
+- Implementují jednotlivé moduly, funkce a propojují je do funkčního celku.
+4. Testování:
+- Testování je kritická fáze, kde je software kontrolován z hlediska funkčnosti, správnosti a spolehlivosti. Cílem je odhalit a opravit chyby, které se mohly objevit během implementace.
+5. Nasazení (Deployment):
+- Po úspěšném testování je software připraven k nasazení do produkčního prostředí, kde bude používán koncovými uživateli.
+- Nasazení může být jednorázové nebo postupné (např. při zavádění nových verzí).
+- Zahrnuje také přípravu dokumentace a školení uživatelů.
+6. Údržba (Maintenance):
+- Po nasazení software pokračuje fáze údržby, která zahrnuje opravy chyb, aktualizace a přidávání nových funkcí.
+- Údržba je dlouhodobý proces, protože software je často v provozu několik let a je potřeba ho přizpůsobovat změnám požadavků a technologií.
