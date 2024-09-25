@@ -10,7 +10,7 @@
 6. [Výjimky](#výjimky)
 7. [Moduly](#moduly)
 8. [Testy](#testy)
-9. [Co dál?](#co-dál)
+9. [Proces vývoje softwaru](#proces-vývoje-softwaru)
 
 ## Porovnani programovacich jazyků
 Doposud jsme se naučily základní programovací konstrukce v Pythonu. Víme, co je proměnná, umíme pracovat s podmínkami a cykly, víme, jak něco vypsat do konzole, víme dokonce, co jsou podprogramy (funkce / metody). Když se člověk naučí tyto základní konstrukce v jednom programovacím jazyce, tak mu to usnadní naučení se jiných programovacích jazyků. Většina těchto konstrukcí se totiž bude používat i v jných programovacích jazycích, bude se akorát lišit to, jak daný konstrukt zapíšeme. Nyní si proto ukážeme, co je společné všem jazykům a zároveň si ukážeme, v čem se naopak Python od ostatních jazyků liší.
