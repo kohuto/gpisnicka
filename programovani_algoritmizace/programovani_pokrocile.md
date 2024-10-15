@@ -1,6 +1,7 @@
 # Přehled
 
 1. [Porovnani programovacich jazyků](#porovnani-programovacich-jazyků)
+2. [Debugging]()
 2. [Virtuální prostředí](#virtuální-prostředí)
 3. [Načítání vstupu](#načítání-vstupu)
 4. [Cyklus While](#cyklus-while)
@@ -140,6 +141,18 @@ console.log(x);
 ```
 ##  Jiné
 Rozdílů mezi jazyky je samozřejmě obrovské množství. Cílem této kapitoly bylo však ukázat, že naprosté základy zůstanou vždy stejné, tudíž není potřeba se je učit pořád dokola.
+
+# Debugging
+Bug = chyba
+Debugging = "hledání a odstraňování chyby"
+
+Vy pythonu nemusíme spustit celý kód najednou. Můžeme ho spouštět "krok po kroku". Takto snadněji odhalíme případné chyby v kódu. Jak na to ukazuje následující shorts: [Debugging python code in VS Code](https://www.youtube.com/shorts/wPkXrf5rGCY).
+
+Pokud potřebujete detailnější vysvětlení, tak ho najdete v tomto tutoriálu:
+[Debugging in VS code](https://www.youtube.com/watch?v=oCcTiRGPogQ)
+
+## Úkol: Debugging
+Vyzkoušejte se odkrokovat (provést debugging) na libovolném programu, který již máte vytvořený (například `Opilcova procházka`).
 
 # Virtuální prostředí
 
