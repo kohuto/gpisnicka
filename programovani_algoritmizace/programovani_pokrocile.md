@@ -219,7 +219,42 @@ Na datový typ je potřeba myslet napřiklad při načítání vstupu, jak jsme 
 cislo = int(input("Zadejte celé číslo: "))
 print(cislo * 2)
 ```
+## Slovníky
 
+Slovník v Pythonu umožňuje ukládat párová data ve formátu `klíč:hodnota`. To znamená, že místo toho, abyste přistupovali k hodnotám pomocí jejich indexu (jako v seznamu), používáte k tomu unikátní klíč.
+
+Příklad slovníku:
+
+```python
+osoba = {
+    "jmeno": "Anna",
+    "věk": 30,
+    "město": "Praha"
+}
+```
+
+V tomto slovníku jsou klíče: `"jmeno"`, `"věk"`, `"město"`. Jejich odpovídající hodnoty jsou: `"Anna"`, `30`, `"Praha"`.
+
+K hodnotám můžete přistupovat pomocí klíče:
+
+```python
+print(osoba["jmeno"])  # vypíše "Anna"
+```
+
+Případně hodnoty měnit, podobně jako v seznamu:
+
+```python
+osoba["jmeno"] = "Pepa"
+print(osoba["jmeno"])  # vypíše "Pepa"
+```
+
+Pokud dvojice `klíč:hodnota` ve slovníku není, tak se dvojice přidá:
+
+```python
+osoba["pohlaví"] = "žena"
+print(osoba)
+# vypíše {'jmeno': 'Anna', 'věk': 30, 'město': 'Praha', 'pohlaví': 'žena'}
+```
 ---
 
 ### **Úloha: Překladač slov**
@@ -399,43 +434,6 @@ Vytvořte podprogram:
 ### Úkol 6
 
 Napište podprogram, který ze souboru básnička vypíše prvních 10 slov. Doporučuji použít funkci `split()`.
-
-### Úkol 7
-
-Slovník v Pythonu umožňuje ukládat párová data ve formátu `klíč:hodnota`. To znamená, že místo toho, abyste přistupovali k hodnotám pomocí jejich indexu (jako v seznamu), používáte k tomu unikátní klíč.
-
-Příklad slovníku:
-
-```python
-osoba = {
-    "jmeno": "Anna",
-    "věk": 30,
-    "město": "Praha"
-}
-```
-
-V tomto slovníku jsou klíče: `"jmeno"`, `"věk"`, `"město"`. Jejich odpovídající hodnoty jsou: `"Anna"`, `30`, `"Praha"`.
-
-K hodnotám můžete přistupovat pomocí klíče:
-
-```python
-print(osoba["jmeno"])  # vypíše "Anna"
-```
-
-Případně hodnoty měnit, podobně jako v seznamu:
-
-```python
-osoba["jmeno"] = "Pepa"
-print(osoba["jmeno"])  # vypíše "Pepa"
-```
-
-Pokud dvojice `klíč:hodnota` ve slovníku není, tak se dvojice přidá:
-
-```python
-osoba["pohlaví"] = "žena"
-print(osoba)
-# vypíše {'jmeno': 'Anna', 'věk': 30, 'město': 'Praha', 'pohlaví': 'žena'}
-```
 
 ### Úkol 8
 
