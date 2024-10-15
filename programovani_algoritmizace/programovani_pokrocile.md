@@ -224,8 +224,6 @@ print(cislo * 2)
 
 ### **Úloha: Překladač slov**
 
-**Popis úlohy:**
-
 Vytvořte program, který bude fungovat jako jednoduchý překladač slov z angličtiny do češtiny. Program by měl:
 
 1. **Vytvořit slovník**, který obsahuje alespoň 5 anglických slov jako klíče a jejich české překlady jako hodnoty. 
@@ -266,19 +264,11 @@ Program ukončen.
 
 **Tipy pro řešení:**
 
-- **Vytvoření slovníku:**
-  - Definujte slovník s několika anglickými slovy a jejich českými překlady.
-
-- **Načítání vstupu od uživatele:**
-  - Použijte funkci `input()` k načtení anglického slova od uživatele.
-  - Ujistěte se, že program rozpozná příkaz k ukončení (např. pokud uživatel zadá `'konec'`).
-
 - **Vyhledávání ve slovníku:**
-  - Použijte konstrukci `if slovo in slovnik:` pro kontrolu, zda slovo existuje ve slovníku.
-  - Pokud slovo není nalezeno, nabídněte uživateli možnost jej přidat.
+  - Jestli je slovo ve slovníku zjistíte takto: `if slovo in slovnik:`.
 
 - **Přidávání nových položek do slovníku:**
-  - Pokud uživatel souhlasí, načtěte český překlad a přidejte jej do slovníku pomocí `slovnik[anglicke_slovo] = cesky_preklad`.
+  - Slovo přidáte od lsovníku tímto způsobem `slovnik[anglicke_slovo] = cesky_preklad`.
 
 - **Opakování procesu:**
   - Použijte cyklus `while` pro opakování dotazování, dokud uživatel nezvolí ukončení programu.
@@ -287,9 +277,7 @@ Program ukončen.
 
 ### **Úloha: Analýza nákupního košíku**
 
-**Popis úlohy:**
-
-Napište program, který bude simulovat jednoduchý (a trochu nepraktický) nákupní košík v e-shopu. Program by měl:
+Napište program, který bude simulovat jednoduchý nákupní košík v e-shopu. Program by měl:
 
 1. **Načíst počet položek**, které chce uživatel přidat do košíku (celé číslo).
 2. **Pro každou položku**:
