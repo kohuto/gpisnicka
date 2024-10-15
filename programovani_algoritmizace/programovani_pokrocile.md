@@ -145,6 +145,14 @@ Jazyky rozdělujeme na interpretované a kompilované, jaký je mezi nimi rozdí
 ### Interpreter jazyka Brainfuck
 Jazyk Brainfuck je minimalistický ezoterický programovací jazyk. Byl vytvořen pro pobavení a jako výzva programátorům, pro praktické účely není vhodný. Jak tento jazyk funguje se dočtete v tomto článku: https://cs.wikipedia.org/wiki/Brainfuck.
 Napište interpretr tohoto jazyka. Tzn. Vytvořte kód v pythonu, který dostane na vstupu kód (text) napsaný v jazyce brainfuck. Váš program tento kód (text) projde znak po znaku a vykoná jednotlivé instrukce. Práci si zjednodušte tím, že nebudete interpretovat znaky `[` a `]`. Tato verze brainfucku tedy nebude podporovat cykly.
+1) vytvořte seznam určité délky, který bude reprezentovat paměťovou pásku Brainfucku
+2) inicializujte všechny hodnoty seznamu na nulu
+3) vytvořte si proměnnou, která bude ukazatel na aktuální pozici na pásce
+4) iterujte přes každý znak vstupního kódu. Každý znak ve vstupním textu lze porjít nejjednodušeji tak, že napiíšte `for znak in vstup`. `for` cyklus takto proiteruje přes každý znak řetězce (řetezec je totiž v podstatě seznam znaků, a víme, že cyklus umí iterovat přes všechny prvky seznamu).
+5) pro každý znak pomocí série if/elif/else příkazu rozhodněte, zda se jedná o validní znak / instrukci
+6) pokud se jedna o validní instrukci, vykonejte ji v příslušné if větvi. Pokud se nejedná o validní instrukci, pokračuj na dalši znak
+7) u znaku `.` použijte funkci `chr()` pro převod čísla na znak a `print()` pro výpis
+8) u znaku `,` použijte funkci `input()` pro načtení vstupu a `ord()` pro převod znaku na číslo.
 
 Kód, který vypíše text `HI!`:
 ```
@@ -156,7 +164,6 @@ Kód, který dostane na vstupu znak a vypíše tento znak a následující znak 
 ,.+.
 ```
 
-
 ## Virtuální prostředí
 
 projekty tvoříme ve [virtuálním prostředí](https://code.visualstudio.com/docs/python/environments).
@@ -167,7 +174,7 @@ Jak vytvořit virtuální prostředí (virtual enviroment - venv)?
 
 1. otevřete paletu příkazů (Ctrl+Shift+P)
 2. vyhledejte položku `Python: Create Environment` a vyberte ji
-3. objeví se dvě možnosti `Venv` or `Conda`.
+3. objeví se dvě možnosti `Venv` nebo `Conda`.
 4. vybereme možnost `Venv`
 5. vybereme požadovaný interpretr
 
