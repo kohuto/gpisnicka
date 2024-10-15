@@ -138,32 +138,6 @@ console.log(x);
 #### Jiné
 Rozdílů mezi jazyky je samozřejmě obrovské množství. Cílem této kapitoly bylo však ukázat, že naprosté základy zůstanou vždy stejné, tudíž není potřeba se je učit pořád dokola.
 
-## Interpretovane a kompilované jazyky
-
-Jazyky rozdělujeme na interpretované a kompilované, jaký je mezi nimi rozdíl se dočtete v tomto článku: https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/
-
-### Interpreter jazyka Brainfuck
-Jazyk Brainfuck je minimalistický ezoterický programovací jazyk. Byl vytvořen pro pobavení a jako výzva programátorům, pro praktické účely není vhodný. Jak tento jazyk funguje se dočtete v tomto článku: https://cs.wikipedia.org/wiki/Brainfuck.
-Napište interpretr tohoto jazyka. Tzn. Vytvořte kód v pythonu, který dostane na vstupu kód (text) napsaný v jazyce brainfuck. Váš program tento kód (text) projde znak po znaku a vykoná jednotlivé instrukce. Práci si zjednodušte tím, že nebudete interpretovat znaky `[` a `]`. Tato verze brainfucku tedy nebude podporovat cykly.
-1) vytvořte seznam určité délky, který bude reprezentovat paměťovou pásku Brainfucku
-2) inicializujte všechny hodnoty seznamu na nulu
-3) vytvořte si proměnnou, která bude ukazatel na aktuální pozici na pásce
-4) iterujte přes každý znak vstupního kódu. Každý znak ve vstupním textu lze porjít nejjednodušeji tak, že napiíšte `for znak in vstup`. `for` cyklus takto proiteruje přes každý znak řetězce (řetezec je totiž v podstatě seznam znaků, a víme, že cyklus umí iterovat přes všechny prvky seznamu).
-5) pro každý znak pomocí série if/elif/else příkazu rozhodněte, zda se jedná o validní znak / instrukci
-6) pokud se jedna o validní instrukci, vykonejte ji v příslušné if větvi. Pokud se nejedná o validní instrukci, pokračuj na dalši znak
-7) u znaku `.` použijte funkci `chr()` pro převod čísla na znak a `print()` pro výpis
-8) u znaku `,` použijte funkci `input()` pro načtení vstupu a `ord()` pro převod znaku na číslo.
-
-Kód, který vypíše text `HI!`:
-```
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.>+++++++++++++++++++++++++++++++++.
-```
-
-Kód, který dostane na vstupu znak a vypíše tento znak a následující znak v ASCII tabulce:
-```
-,.+.
-```
-
 ## Virtuální prostředí
 
 projekty tvoříme ve [virtuálním prostředí](https://code.visualstudio.com/docs/python/environments).
@@ -246,6 +220,72 @@ cislo = int(input("Zadejte celé číslo: "))
 print(cislo * 2)
 ```
 ---
+Samozřejmě! Zde je jednodušší úloha zaměřená na práci se slovníky v Pythonu:
+
+---
+
+### **Překladač slov**
+
+**Popis úlohy:**
+
+Vytvořte program, který bude fungovat jako jednoduchý překladač slov z angličtiny do češtiny. Program by měl:
+
+1. **Vytvořit slovník**, který obsahuje alespoň 5 anglických slov jako klíče a jejich české překlady jako hodnoty. 
+2. **Požádat uživatele**, aby zadal anglické slovo, které chce přeložit do češtiny.
+3. **Vyhledat** zadané slovo ve slovníku:
+
+   - Pokud je slovo ve slovníku, program vypíše jeho český překlad.
+   - Pokud slovo není ve slovníku, program vypíše zprávu, že překlad nebyl nalezen.
+
+4. **Umožnit uživateli** přidat nové slovo do slovníku:
+
+   - Zeptat se, zda chce uživatel přidat překlad neznámého slova.
+   - Pokud ano, umožnit mu zadat český překlad a uložit jej do slovníku.
+
+5. **Opakovat** kroky 2–4, dokud uživatel nezvolí ukončení programu.
+
+**Příklad běhu programu:**
+
+```
+Zadejte anglické slovo k překladu (nebo 'konec' pro ukončení): cat
+Český překlad slova 'cat' je 'kočka'.
+
+Zadejte anglické slovo k překladu (nebo 'konec' pro ukončení): dog
+Český překlad slova 'dog' je 'pes'.
+
+Zadejte anglické slovo k překladu (nebo 'konec' pro ukončení): lion
+Slovo 'lion' nebylo nalezeno ve slovníku.
+Chcete přidat překlad slova 'lion'? (ano/ne): ano
+Zadejte český překlad slova 'lion': lev
+Slovo 'lion' bylo přidáno do slovníku.
+
+Zadejte anglické slovo k překladu (nebo 'konec' pro ukončení): lion
+Český překlad slova 'lion' je 'lev'.
+
+Zadejte anglické slovo k překladu (nebo 'konec' pro ukončení): konec
+Program ukončen.
+```
+
+**Tipy pro řešení:**
+
+- **Vytvoření slovníku:**
+  - Definujte slovník s několika anglickými slovy a jejich českými překlady.
+
+- **Načítání vstupu od uživatele:**
+  - Použijte funkci `input()` k načtení anglického slova od uživatele.
+  - Ujistěte se, že program rozpozná příkaz k ukončení (např. pokud uživatel zadá `'konec'`).
+
+- **Vyhledávání ve slovníku:**
+  - Použijte konstrukci `if slovo in slovnik:` pro kontrolu, zda slovo existuje ve slovníku.
+  - Pokud slovo není nalezeno, nabídněte uživateli možnost jej přidat.
+
+- **Přidávání nových položek do slovníku:**
+  - Pokud uživatel souhlasí, načtěte český překlad a přidejte jej do slovníku pomocí `slovnik[anglicke_slovo] = cesky_preklad`.
+
+- **Opakování procesu:**
+  - Použijte cyklus `while` pro opakování dotazování, dokud uživatel nezvolí ukončení programu.
+
+---
 
 ### **Úloha: Analýza nákupního košíku**
 
@@ -299,7 +339,31 @@ Položky v košíku:
 Celková cena nákupu: 2001.0 Kč
 Nejdražší položka: Sluchátka (1500.0 Kč)
 ```
+## Interpretovane a kompilované jazyky
 
+Jazyky rozdělujeme na interpretované a kompilované, jaký je mezi nimi rozdíl se dočtete v tomto článku: https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/
+
+### Interpreter jazyka Brainfuck
+Jazyk Brainfuck je minimalistický ezoterický programovací jazyk. Byl vytvořen pro pobavení a jako výzva programátorům, pro praktické účely není vhodný. Jak tento jazyk funguje se dočtete v tomto článku: https://cs.wikipedia.org/wiki/Brainfuck.
+Napište interpretr tohoto jazyka. Tzn. Vytvořte kód v pythonu, který dostane na vstupu kód (text) napsaný v jazyce brainfuck. Váš program tento kód (text) projde znak po znaku a vykoná jednotlivé instrukce. Práci si zjednodušte tím, že nebudete interpretovat znaky `[` a `]`. Tato verze brainfucku tedy nebude podporovat cykly.
+1) vytvořte seznam určité délky, který bude reprezentovat paměťovou pásku Brainfucku
+2) inicializujte všechny hodnoty seznamu na nulu
+3) vytvořte si proměnnou, která bude ukazatel na aktuální pozici na pásce
+4) iterujte přes každý znak vstupního kódu. Každý znak ve vstupním textu lze porjít nejjednodušeji tak, že napiíšte `for znak in vstup`. `for` cyklus takto proiteruje přes každý znak řetězce (řetezec je totiž v podstatě seznam znaků, a víme, že cyklus umí iterovat přes všechny prvky seznamu).
+5) pro každý znak pomocí série if/elif/else příkazu rozhodněte, zda se jedná o validní znak / instrukci
+6) pokud se jedna o validní instrukci, vykonejte ji v příslušné if větvi. Pokud se nejedná o validní instrukci, pokračuj na dalši znak
+7) u znaku `.` použijte funkci `chr()` pro převod čísla na znak a `print()` pro výpis
+8) u znaku `,` použijte funkci `input()` pro načtení vstupu a `ord()` pro převod znaku na číslo.
+
+Kód, který vypíše text `HI!`:
+```
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.>+++++++++++++++++++++++++++++++++.
+```
+
+Kód, který dostane na vstupu znak a vypíše tento znak a následující znak v ASCII tabulce:
+```
+,.+.
+```
 ## Čtení ze souborů
 
 ### Úkol 1
