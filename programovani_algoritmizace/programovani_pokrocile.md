@@ -3,14 +3,19 @@
 ## Přehled
 
 1. [Porovnani programovacich jazyků](#porovnani-programovacich-jazyků)
-2. [Interpretovane a kompilované jazyky](#interpretovane-a-kompilované-jazyky)
-3. [Virtuální prostředí](#virtuální-prostředí)
-4. [Datové typy](#datové-typy)
-5. [Čtení ze souborů](#čtení-ze-souborů)
-6. [Výjimky](#výjimky)
-7. [Moduly](#moduly)
-8. [Testy](#testy)
-9. [Proces vývoje softwaru](#proces-vývoje-softwaru)
+2. [Virtuální prostředí](#virtuální-prostředí)
+3. [Načítání vstupu](#načítání-vstupu)
+4. [Cyklus While]()
+5. [Příkaz Return]()
+6. [Datové typy](#datové-typy)
+7. [Slovníky](#co-jsou-slovníky)
+8. [Interpretovane a kompilované jazyky](#interpretovane-a-kompilované-jazyky)
+9. [Čtení ze souborů](#čtení-ze-souborů)
+10. [List comprehension]()
+11. [Výjimky](#výjimky)
+12. [Moduly](#moduly)
+13. [Testy](#testy)
+14. [Proces vývoje softwaru](#proces-vývoje-softwaru)
 
 ## Porovnani programovacich jazyků
 Doposud jsme se naučily základní programovací konstrukce v Pythonu. Víme, co je proměnná, umíme pracovat s podmínkami a cykly, víme, jak něco vypsat do konzole, víme dokonce, co jsou podprogramy (funkce / metody). Když se člověk naučí tyto základní konstrukce v jednom programovacím jazyce, tak mu to usnadní naučení se jiných programovacích jazyků. Většina těchto konstrukcí se totiž bude používat i v jných programovacích jazycích, bude se akorát lišit to, jak daný konstrukt zapíšeme. Nyní si proto ukážeme, co je společné všem jazykům a zároveň si ukážeme, v čem se naopak Python od ostatních jazyků liší.
@@ -161,6 +166,12 @@ Pro načtení vstupu z konzole používáme funkci `input()`. Napište program, 
 ### BMI
 
 Napište program, který dostane na vstupu výšku v metrech a váhu v kg a na výstup vypíše BMI uživatele.
+
+## Cyklus While
+a
+
+## Příkaz Return
+
 
 ## Datové typy
 
@@ -506,6 +517,8 @@ V programu BMI ošetřete pomocí odchytávání výjimek dělení nulou a jestl
 V programu analýza nákupního košíku ošetřete pomocí odchytávání výjimek, že uživatel zadal na vstupu čísla.
 
 ### Úkol 7
+
+Je některé číslo, které nebude nikdy vypsáno? Připadně proč?
 
 ```python
 try:
