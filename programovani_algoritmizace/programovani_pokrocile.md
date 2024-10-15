@@ -1,6 +1,4 @@
-# Programování pokročilé
-
-## Přehled
+# Přehled
 
 1. [Porovnani programovacich jazyků](#porovnani-programovacich-jazyků)
 2. [Virtuální prostředí](#virtuální-prostředí)
@@ -17,12 +15,12 @@
 13. [Testy](#testy)
 14. [Proces vývoje softwaru](#proces-vývoje-softwaru)
 
-## Porovnani programovacich jazyků
+# Porovnani programovacich jazyků
 Doposud jsme se naučily základní programovací konstrukce v Pythonu. Víme, co je proměnná, umíme pracovat s podmínkami a cykly, víme, jak něco vypsat do konzole, víme dokonce, co jsou podprogramy (funkce / metody). Když se člověk naučí tyto základní konstrukce v jednom programovacím jazyce, tak mu to usnadní naučení se jiných programovacích jazyků. Většina těchto konstrukcí se totiž bude používat i v jných programovacích jazycích, bude se akorát lišit to, jak daný konstrukt zapíšeme. Nyní si proto ukážeme, co je společné všem jazykům a zároveň si ukážeme, v čem se naopak Python od ostatních jazyků liší.
 
-### Co je stejné
+## Co je stejné
 Jak již zaznělo, všechny základní konstrukce, které jsme doposud probrali, najdeme i v ostatních programovacích jazycích.
-#### Proměnná
+##  Proměnná
 Python:
 ```python
 x = 5
@@ -36,7 +34,7 @@ C#:
 int x = 5;
 ```
 
-#### Cyklus
+##  Cyklus
 Python:
 ```python
 for i in range(5):
@@ -55,7 +53,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-#### Větvení
+##  Větvení
 Python:
 ```python
 if x > 0:
@@ -80,7 +78,7 @@ if (x > 0) {
 }
 ```
 
-#### Funkce
+##  Funkce
 Python:
 ```python
 def pozdrav(jmeno):
@@ -98,10 +96,10 @@ void Pozdrav(string jmeno) {
     Console.WriteLine($"Ahoj, {jmeno}!");
 }
 ```
-### Co je jiné
+## Co je jiné
 Již v předchozích ukázkách jste si mohli všimnout drobných odlišností ostatních jednotlivých jazyků
 
-#### Indetnace vs. složené závorky
+##  Indetnace vs. složené závorky
 
 Python používá indentaci (odsazení řádků) pro strukturování kódu:
 ```python
@@ -115,7 +113,7 @@ if (x > 0) {
 }
 ```
 
-#### Deklarace typů proměnných
+##  Deklarace typů proměnných
 Python automaticky rozpoznává typy:
 ```python
 x = 5  # Python rozpozná, že jde o celé číslo
@@ -129,7 +127,7 @@ C# a Java jsou staticky typované (nutná deklarace typu):
 int x = 5;
 ```
 
-#### Konec příkazů
+##  Konec příkazů
 Python nepoužívá středníky na konci příkazů:
 ```python
 x = 5
@@ -140,10 +138,10 @@ JavaScript, C# a Java vyžadují středník:
 let x = 5;
 console.log(x);
 ```
-#### Jiné
+##  Jiné
 Rozdílů mezi jazyky je samozřejmě obrovské množství. Cílem této kapitoly bylo však ukázat, že naprosté základy zůstanou vždy stejné, tudíž není potřeba se je učit pořád dokola.
 
-## Virtuální prostředí
+# Virtuální prostředí
 
 projekty tvoříme ve [virtuálním prostředí](https://code.visualstudio.com/docs/python/environments).
 
@@ -157,17 +155,17 @@ Jak vytvořit virtuální prostředí (virtual enviroment - venv)?
 4. vybereme možnost `Venv`
 5. vybereme požadovaný interpretr
 
-## Načítání vstupu
+# Načítání vstupu
 
-### Kalkulačka
+## Kalkulačka
 
 Pro načtení vstupu z konzole používáme funkci `input()`. Napište program, který načte dvě čísla `a` a `b`. Program vypíše jejich součet, rozdíl, podíl a součin.
 
-### BMI
+## BMI
 
 Napište program, který dostane na vstupu výšku v metrech a váhu v kg a na výstup vypíše BMI uživatele.
 
-## Cyklus While
+# Cyklus While
 Co vypíše následující blok kódu?
 ```python
 x = 0
@@ -177,16 +175,16 @@ while(x < 10)
 ```
 Rozdíl mezi `for` a `while` cyklem je ten, že cyklus `for` má pevný počet opakování (tzn. dopředu víme, kolikrát se cyklus vykoná), zatímco `while` cyklus nemá pevný počet opakování (dopředu nevíme, kolikrát se cyklus zopakuje). Cyklus `while` opakuje blok kódu, dokud je daná podmínka pravdivá. Před každou iterací se podmínka vyhodnotí – pokud je pravdivá, kód se provede, pokud ne, cyklus se ukončí.
 
-### Úkol: Sčítadlo
+## Úkol: Sčítadlo
 Vytvoř program, který pomocí cyklu `while` sečte čísla od 1 do 10 a součet na konci vypíše.
 
-### Úkol: Hádání náhodného čísla
+## Úkol: Hádání náhodného čísla
 Napiš program, který vygeneruje náhodné číslo mezi 1 a 10. Program bude opakovaně vyzývat uživatele, aby hádal toto číslo. Po každém pokusu program sdělí, zda je tipované číslo příliš nízké, příliš vysoké nebo správné. Cyklus `while` se použije k opakování hádání, dokud uživatel neuhodne správné číslo.
 
-### Úkol: Faktoriál
+## Úkol: Faktoriál
 Vytvoř program, který požádá uživatele o zadání kladného celého čísla. Poté pomocí cyklu `while` vypočítá a zobrazí faktoriál tohoto čísla.
 
-## Příkaz Return
+# Příkaz Return
 Co vypíše následující blok kódu?
 ```python
 def soucet(a):
@@ -199,7 +197,7 @@ print(výsledek)
 
 V Pythonu se příkaz `return` používá uvnitř funkcí k ukončení jejich provádění a vrácení hodnoty volajícímu kódu. Když funkce dosáhne příkazu `return`, okamžitě se ukončí a vrátí zadanou hodnotu.
 
-## Úkol: Kalkulačka
+# Úkol: Kalkulačka
 Vytvoř tři funkce s názvy `soucet`, `rozdil` a `soucin`, které přijímají dvě čísla jako argumenty. Každá funkce by měla pomocí příkazu `return` vrátit:
 
 - `soucet`: součet dvou čísel,
@@ -208,47 +206,47 @@ Vytvoř tři funkce s názvy `soucet`, `rozdil` a `soucin`, které přijímají 
 
 Poté tyto funkce zavolej s libovolnými dvěma čísly a vypiš jejich výsledky.
 
-### Úkol: Sudé nebo liché
+## Úkol: Sudé nebo liché
 Napiš funkci `je_sudé`, která přijímá jako parametr jedno číslo a vrací `True`, pokud je číslo sudé, nebo `False`, pokud je liché. Použij příkaz `return` k vrácení hodnoty. Poté funkci použij k ověření, zda je dané číslo sudé, a výsledek vypiš.
 
-## Datové typy
+# Datové typy
 
-### Celá čísla
+## Celá čísla
 
 ```python
 x = 5
 y = -10
 ```
 
-### Desetinná čísla
+## Desetinná čísla
 
 ```python
 a = 3.14
 b = -0.5
 ```
 
-### Řetězce
+## Řetězce
 
 ```python
 text1 = 'Ahoj, světe!'
 text2 = "Python je skvělý."
 ```
 
-### Logická hodnota
+## Logická hodnota
 
 ```python
 pravda = True
 nepravda = False
 ```
 
-### Seznamy
+## Seznamy
 
 ```python
 cisla = [1, 2, 3, 4, 5]
 jmena = ['Anna', 'Petr', 'Eva']
 ```
 
-### Slovníky
+## Slovníky
 
 ```python
 osoba = {
@@ -265,7 +263,7 @@ cislo = int(input("Zadejte celé číslo: "))
 print(cislo * 2)
 ```
 
-## Co jsou `Slovníky`
+# Co jsou `Slovníky`
 
 Slovník v Pythonu umožňuje ukládat párová data ve formátu `klíč:hodnota`. To znamená, že místo toho, abyste přistupovali k hodnotám pomocí jejich indexu (jako v seznamu), používáte k tomu unikátní klíč.
 
@@ -303,7 +301,7 @@ print(osoba)
 ```
 ---
 
-### **Úloha: Překladač slov**
+## **Úloha: Překladač slov**
 
 Vytvořte program, který bude fungovat jako jednoduchý překladač slov z angličtiny do češtiny. Program by měl:
 
@@ -356,7 +354,7 @@ Program ukončen.
 
 ---
 
-### **Úloha: Analýza nákupního košíku**
+## **Úloha: Analýza nákupního košíku**
 
 Napište program, který bude simulovat jednoduchý nákupní košík v e-shopu. Program by měl:
 
@@ -406,11 +404,11 @@ Položky v košíku:
 Celková cena nákupu: 2001.0 Kč
 Nejdražší položka: Sluchátka (1500.0 Kč)
 ```
-## Interpretovane a kompilované jazyky
+# Interpretovane a kompilované jazyky
 
 Jazyky rozdělujeme na interpretované a kompilované, jaký je mezi nimi rozdíl se dočtete v tomto článku: https://www.freecodecamp.org/news/compiled-versus-interpreted-languages/
 
-### Interpreter jazyka Brainfuck
+## Interpreter jazyka Brainfuck
 Jazyk Brainfuck je minimalistický ezoterický programovací jazyk. Byl vytvořen pro pobavení a jako výzva programátorům, pro praktické účely není vhodný. Jak tento jazyk funguje se dočtete v tomto článku: https://cs.wikipedia.org/wiki/Brainfuck.
 Napište interpretr tohoto jazyka. Tzn. Vytvořte kód v pythonu, který dostane na vstupu kód (text) napsaný v jazyce brainfuck. Váš program tento kód (text) projde znak po znaku a vykoná jednotlivé instrukce. Práci si zjednodušte tím, že nebudete interpretovat znaky `[` a `]`. Tato verze brainfucku tedy nebude podporovat cykly.
 1) vytvořte seznam určité délky, který bude reprezentovat paměťovou pásku Brainfucku
@@ -431,9 +429,9 @@ Kód, který dostane na vstupu znak a vypíše tento znak a následující znak 
 ```
 ,.+.
 ```
-## Čtení ze souborů
+# Čtení ze souborů
 
-### **Úkol: Vypsání obsahu souboru**
+## **Úkol: Vypsání obsahu souboru**
 
 Vytvoř textový soubor `basnicka.txt` a napiš do něj libovolný text. Poté vytvoř následující program:
 
@@ -445,7 +443,7 @@ print(content)
 
 Program ulož do stejného adresáře, kde je uložen soubor `basnicka.txt`. Co vypíše program po spuštění?
 
-### Práce se soubory - vypisování
+## Práce se soubory - vypisování
 
 funkce `open()` vrací hodnotu, která představuje otevřený soubor. Tahle hodnota má vlastní metody. Tady používáme metodu `read()`, která najednou přečte celý obsah souboru a vrátí ho jako řetězec.
 
@@ -457,11 +455,11 @@ Analogicky je potřeba zavřít soubor poté, co s ním přestaneš pracovat. Ex
 
 Příkaz `with` vezme otevřený soubor (který vrací funkce open) a přiřadí ho do proměnné `soubor`. Pak následuje práce se souborem – v tomhle případě pomocí metody `read` čteme jeho obsah jako řetězec. Na konci od odsazeného bloku se soubor automaticky zavře.
 
-### Úkol: Počet znaků
+## Úkol: Počet znaků
 
 Vytvoř podprogram, který spočítá, kolik je v souboru `basnicka.txt` znaků.
 
-### Úkol: Počet řádků
+## Úkol: Počet řádků
 
 Vytvoř podprogram, který spočítá, kolik má soubor `basnicka.txt` řádků. Doporučuji použít funkci `readlines()`.
 
@@ -470,25 +468,25 @@ content = input_file.read()  # nacteni celeho obsahu souboru do jednoho retezce
 lines = input_file.readlines()  # nacteni souboru souboru jako seznam radku
 ```
 
-### Úkol: Head and Tail
+## Úkol: Head and Tail
 
 Vytvořte podprogram:
 
 1. `head`, který dostane parametr `n` a vypíš prvních `n` řádků ze souboru `basnicka.txt`
 2. `tail`, který dostane parametr `n` a posledních `n` řádků souboru `basnicka.txt`
 
-### Úkol: Frekvenční analýza písmen
+## Úkol: Frekvenční analýza písmen
 
 Proveďte frekvenční analýzu písmen v souboru básnička. Vypište, kolikrát se v souboru vyskytují jednotlivá písmena.
 
 Tip: pro ověření, že je daný znak písmeno, můžete použít funkci `isalpha`.
 
-### Úkol: Triviální ChatGPT (doborovolný úkol)
+## Úkol: Triviální ChatGPT (doborovolný úkol)
 
 Napište podprogram, který analyzuje text v [souboru](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing). Podprogram pak vygeneruje pseudo-náhodný text o `length` slovech. Text se generuje po slovech. Další generované slovo se náhodně vybírá z těch, které v původním textu po naposledy vygenerovaném slově následovaly.
 
-## Svatá trojice
-### List comprehension
+# Svatá trojice
+## List comprehension
 
 List comprehension je elegantní a stručný způsob, jak vytvořit nový seznam na základě existujícího. Umožňuje aplikovat výraz na každý prvek v iterovatelné sekvenci a volitelně zahrnout podmínku pro filtrování.
 
@@ -515,7 +513,7 @@ sudá_čísla = [x for x in range(1, 11) if x % 2 == 0]
 print(sudá_čísla)  # Vypíše: [2, 4, 6, 8, 10]
 ```
 
-### Anotace typu proměnné
+## Anotace typu proměnné
 
 I když Python je dynamicky typovaný jazyk a typy proměnných se určují při běhu programu, můžete použít anotace typu pro proměnné. To zlepšuje srozumitelnost kódu a pomáhá nástrojům pro statickou analýzu.
 
@@ -540,7 +538,7 @@ print(f"Jméno: {jméno}, Věk: {věk}, Výška: {výška}, Student: {student}")
 
 Anotace typu jsou zvláště užitečné v rozsáhlejších projektech, kde přispívají k lepší udržovatelnosti a čitelnosti kódu.
 
-### Návratový typ funkce
+## Návratový typ funkce
 
 V Pythonu můžete pomocí anotací typu specifikovat návratový typ funkce. To zlepšuje čitelnost kódu a usnadňuje detekci chyb při statické analýze kódu. Anotace se však při běhu programu nevyhodnocují.
 
@@ -564,9 +562,9 @@ print(výsledek)  # Vypíše: 20
 
 V tomto příkladu funkce `součin` přijímá dva argumenty typu `int` a vrací hodnotu typu `int`.
 
-## Výjimky
+# Výjimky
 
-### Úkol: Kdy selže?
+## Úkol: Kdy selže?
 
 Podívej se na kód níže a vymysli příklad, kdy program selže:
 
@@ -576,11 +574,11 @@ def prevracena_hodnota():
     return cislo
 ```
 
-### Úkol: Najdi funkci
+## Úkol: Najdi funkci
 
 Řešením problémů v předchozím úkolu by mohla být nějaká hypotetická funkce `obsahuje_jen_cislice()`. Zkuste takovou funkci najít a upravte předchozí program pomocí příkazu `if` a této funkce tak, aby se text převáděl na číslo pouze, pokud obsahuje jen číslice.
 
-### Úkol: Jaký je výstup?
+## Úkol: Jaký je výstup?
 
 Jaké budou výstupy následujícího kódu:
 
@@ -599,7 +597,7 @@ print(' 42'.isnumeric())
 print(int(' 42'))
 ```
 
-### Výjimky vysvětlení
+## Výjimky vysvětlení
 
 Chceme-li tedy zjistit, zda funkce `int` umí převést řetězec na číslo, je nejlepší na to skutečně použít funkci `int`.
 
@@ -619,19 +617,19 @@ Jak to funguje? Příkazy v bloku `try` se provedou, ale když nastane uvedená 
 
 Za slovíčkem `except` je uvedeno ještě `ValueError`. To je název chyby. Všechny názvy jsou uvedeny [zde](https://docs.python.org/3/library/exceptions.html#exception-hierarchy).
 
-### Úkol: Úprava kalkulačky
+## Úkol: Úprava kalkulačky
 
 V programu Kalkulačka v kapitole Načítání vstupu ošetřete pomocí odchytávání výjimek dělení nulou a jestli jsou na vstupu zadaná čísla.
 
-### Úkol: Úprava BMI
+## Úkol: Úprava BMI
 
 V programu BMI ošetřete pomocí odchytávání výjimek dělení nulou a jestli jsou na vstupu zadaná čísla.
 
-### Úkol: Úprava košíku
+## Úkol: Úprava košíku
 
 V programu analýza nákupního košíku ošetřete pomocí odchytávání výjimek, že uživatel zadal na vstupu čísla.
 
-### Úkol: Co nelze vypsat?
+## Úkol: Co nelze vypsat?
 
 Je některé číslo, které nebude nikdy vypsáno? Připadně proč?
 
@@ -652,11 +650,11 @@ finally:
     print('6')
 ```
 
-### Úkol: Obsah čtverce
+## Úkol: Obsah čtverce
 
 Napište podprogram, který dostane jako parametr délku strany čtverce a následně vypočítá jeho obsah.
 
-### Úkol: Ukončení programu s chybou
+## Úkol: Ukončení programu s chybou
 
 Co nám vrátí předchozí podprogram, když ho zavoláme následujícím způsobem?
 
@@ -676,7 +674,7 @@ def obsah_ctverce(strana):
 
 Podobně jako `return` i příkaz `raise` ukončí funkci. A nejen tu – pokud na tuhle konkrétní chybu není program předem připravený, ukončí se celý program.
 
-## Moduly
+# Moduly
 Vytvořte (klidně za využití konverzačního chatbota) tři programy:
 - `gsd.py` - funkce `gsd` dostane jako argument dvě čísla a vrátí jejich největšího společného dělitele.
 - `is_in_array.py` - funkce `is_in_array` dostane jako argument číslo a seznam čísel. Funkce vrátí `True`, jestliže se číslo nachází v seznamu. V opačném případě vrátí `False`.
@@ -714,13 +712,13 @@ from is_in_array import is_in_array
 is_in_array()
 ```
 
-## Testy
+# Testy
 
 Nyní si ukážeme, jak psát testy v jazyce Python pomocí knihovny `pytest`. Pytest je populární nástroj pro psaní a spouštění testů, který usnadňuje vytváření a organizaci testovacího kódu.
 
 Zatím jsme programy testovali tak, že jsme je zkusili spustit, něco jsme zadali a podívali se, jestli jsou výsledky v pořádku. U větších programů už by to bylo náročné kontrolovat. Proto se v praxi napíše jiný program, které náš program testuje za nás. Jedná se o funkce s parametrem a použití modulů, které program spouští a ověří, že se při změně nerozbilo nic, co dříve fungovalo.
 
-### Instalace pytest
+## Instalace pytest
 
 Knihovnu `pytest` je potřeba nainstalovat následujícím příkazem:
 
@@ -728,7 +726,7 @@ Knihovnu `pytest` je potřeba nainstalovat následujícím příkazem:
 pip install pytest
 ```
 
-### Adresářová struktura
+## Adresářová struktura
 
 Vytvořte následující adresářovou strukturu:
 
@@ -755,7 +753,7 @@ def test_addition():
     assert result == 5
 ```
 
-### Spuštění
+## Spuštění
 
 Vytvořili jsme funkci `test_addition`, která testuje funkci `add` z naší kalkulačky. Příkaz `assert` vyhodnotí výraz za ním a pokud výsledek není pravdivý, vyvolá výjimku, která způsobí, že test selže.
 
@@ -765,27 +763,27 @@ Testy můžeme nyní spustit pomocí následujícího příkazu:
 pytest
 ```
 
-### Úkol 1
+## Úkol 1
 
 Vytvořte sadu testů pro funkci `add()`.
 
-### Úkol 2
+## Úkol 2
 
 Rozšiřte program `calculator.py` o další funkce, aby se jednalo o dobře vychovanou kalkulačku. Pro každou funkci vytvořte sadu testů.
 
-### Úkol 3
+## Úkol 3
 
 Vytvořte testy pro funkci `gsd()`
 
-### Úkol 4
+## Úkol 4
 
 Vytvořte testy pro funkci `is_in_array()`
 
-### Úkol 5
+## Úkol 5
 
 Vytvořte testy pro funkci `is_prime_number()`
 
-## Proces vývoje softwaru
+# Proces vývoje softwaru
 
 1. Analýza požadavků:
 - Cílem této fáze je zjistit, co přesně software má dělat, jaké funkce a vlastnosti od něj očekává uživatel nebo zadavatel.
