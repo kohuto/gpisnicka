@@ -219,12 +219,10 @@ Na datový typ je potřeba myslet napřiklad při načítání vstupu, jak jsme 
 cislo = int(input("Zadejte celé číslo: "))
 print(cislo * 2)
 ```
----
-Samozřejmě! Zde je jednodušší úloha zaměřená na práci se slovníky v Pythonu:
 
 ---
 
-### **Překladač slov**
+### **Úloha: Překladač slov**
 
 **Popis úlohy:**
 
