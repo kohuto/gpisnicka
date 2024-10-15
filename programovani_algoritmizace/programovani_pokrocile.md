@@ -487,6 +487,83 @@ Tip: pro ověření, že je daný znak písmeno, můžete použít funkci `isalp
 
 Napište podprogram, který analyzuje text v [souboru](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing). Podprogram pak vygeneruje pseudo-náhodný text o `length` slovech. Text se generuje po slovech. Další generované slovo se náhodně vybírá z těch, které v původním textu po naposledy vygenerovaném slově následovaly.
 
+## Svatá trojice
+### List comprehension
+
+List comprehension je elegantní a stručný způsob, jak vytvořit nový seznam na základě existujícího. Umožňuje aplikovat výraz na každý prvek v iterovatelné sekvenci a volitelně zahrnout podmínku pro filtrování.
+
+**Syntaxe:**
+
+```python
+nový_seznam = [výraz for položka in sekvence if podmínka]
+```
+
+**Příklad bez podmínky:**
+
+```python
+# Vytvoření seznamu čtverců čísel od 1 do 5
+čtverce = [x**2 for x in range(1, 6)]
+print(čtverce)  # Vypíše: [1, 4, 9, 16, 25]
+```
+> `range(1,6)` je to stejné, jako kdybychom napsali `[1, 2, 3, 4, 5]` 
+
+**Příklad s podmínkou:**
+
+```python
+# Vytvoření seznamu sudých čísel od 1 do 10
+sudá_čísla = [x for x in range(1, 11) if x % 2 == 0]
+print(sudá_čísla)  # Vypíše: [2, 4, 6, 8, 10]
+```
+
+### Anotace typu proměnné
+
+I když Python je dynamicky typovaný jazyk a typy proměnných se určují při běhu programu, můžete použít anotace typu pro proměnné. To zlepšuje srozumitelnost kódu a pomáhá nástrojům pro statickou analýzu.
+
+**Syntaxe:**
+
+```python
+název_proměnné: typ = hodnota
+```
+
+**Příklad:**
+
+```python
+# Anotace typu pro proměnné
+jméno: str = "Anna"
+věk: int = 25
+výška: float = 1.68
+student: bool = True
+
+print(f"Jméno: {jméno}, Věk: {věk}, Výška: {výška}, Student: {student}")
+# Vypíše: Jméno: Anna, Věk: 25, Výška: 1.68, Student: True
+```
+
+Anotace typu jsou zvláště užitečné v rozsáhlejších projektech, kde přispívají k lepší udržovatelnosti a čitelnosti kódu.
+
+### Návratový typ funkce
+
+V Pythonu můžete pomocí anotací typu specifikovat návratový typ funkce. To zlepšuje čitelnost kódu a usnadňuje detekci chyb při statické analýze kódu. Anotace se však při běhu programu nevyhodnocují.
+
+**Syntaxe:**
+
+```python
+def název_funkce(parametry) -> návratový_typ:
+    ...
+    return hodnota
+```
+
+**Příklad:**
+
+```python
+def součin(a: int, b: int) -> int:
+    return a * b
+
+výsledek = součin(4, 5)
+print(výsledek)  # Vypíše: 20
+```
+
+V tomto příkladu funkce `součin` přijímá dva argumenty typu `int` a vrací hodnotu typu `int`.
+
 ## Výjimky
 
 ### Úkol: Kdy selže?
