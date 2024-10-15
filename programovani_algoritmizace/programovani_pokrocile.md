@@ -245,6 +245,60 @@ Na datový typ je potřeba myslet napřiklad při načítání vstupu, jak jsme 
 cislo = int(input("Zadejte celé číslo: "))
 print(cislo * 2)
 ```
+---
+
+### **Úloha: Analýza nákupního košíku**
+
+**Popis úlohy:**
+
+Napište program, který bude simulovat jednoduchý (a trochu nepraktický) nákupní košík v e-shopu. Program by měl:
+
+1. **Načíst počet položek**, které chce uživatel přidat do košíku (celé číslo).
+2. **Pro každou položku**:
+   - Načíst **název produktu** (řetězec).
+   - Načíst **cenu za jeden kus** produktu (desetinné číslo).
+   - Načíst **počet kusů**, které chce uživatel koupit (celé číslo).
+3. **Uložit všechny informace** o produktech do **seznamu slovníků**, kde každý slovník reprezentuje jednu položku s klíči `'nazev'`, `'cena'` a `'pocet'`.
+4. Po zadání všech položek program:
+   - **Vypíše seznam všech produktů** v košíku s jejich celkovou cenou za položku (jednotková cena \* počet kusů).
+   - **Spočítá a vypíše celkovou cenu** za celý nákup.
+   - **Najde a vypíše nejdražší položku** v košíku (podle celkové ceny za položku).
+
+**Tipy pro řešení:**
+
+- Použijte funkce `input()`, `int()`, `float()` pro načítání a konverzi vstupů.
+- Seznam slovníků můžete vytvořit takto:
+
+  ```python
+  kosik = []
+  produkt = {'nazev': ..., 'cena': ..., 'pocet': ...}
+  kosik.append(produkt)
+  ```
+
+- Pro výpočet celkové ceny položky vynásobte jednotkovou cenu počtem kusů.
+- Pro iteraci přes seznam položek použijte cyklus `for`.
+- Pro nalezení nejdražší položky můžete porovnávat celkové ceny položek během iterace.
+
+**Příklad vstupu a výstupu:**
+
+```
+Zadejte počet položek v košíku: 2
+
+Zadejte název produktu: Kniha
+Zadejte jednotkovou cenu produktu: 250.50
+Zadejte počet kusů: 2
+
+Zadejte název produktu: Sluchátka
+Zadejte jednotkovou cenu produktu: 1500
+Zadejte počet kusů: 1
+
+Položky v košíku:
+- Kniha: 2 ks x 250.5 Kč = 501.0 Kč
+- Sluchátka: 1 ks x 1500.0 Kč = 1500.0 Kč
+
+Celková cena nákupu: 2001.0 Kč
+Nejdražší položka: Sluchátka (1500.0 Kč)
+```
 
 ## Čtení ze souborů
 
