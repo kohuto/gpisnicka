@@ -152,58 +152,54 @@ Jak vytvořit virtuální prostředí (virtual enviroment - venv)?
 4. vybereme možnost `Venv`
 5. vybereme požadovaný interpretr
 
-## Datové typy
+## Načítání vstupu
 
-### Připomenutí načítání vstupu
-
-#### Kalkulačka
+### Kalkulačka
 
 Pro načtení vstupu z konzole používáme funkci `input()`. Napište program, který načte dvě čísla `a` a `b`. Program vypíše jejich součet, rozdíl, podíl a součin.
 
-#### BMI
+### BMI
 
 Napište program, který dostane na vstupu výšku v metrech a váhu v kg a na výstup vypíše BMI uživatele.
 
-### Shrnutí datových typů
+## Datové typy
 
-Už jsme viděli následující datové typy:
-
-#### Celá čísla
+### Celá čísla
 
 ```python
 x = 5
 y = -10
 ```
 
-#### Desetinná čísla
+### Desetinná čísla
 
 ```python
 a = 3.14
 b = -0.5
 ```
 
-#### Řetězce
+### Řetězce
 
 ```python
 text1 = 'Ahoj, světe!'
 text2 = "Python je skvělý."
 ```
 
-#### Logická hodnota
+### Logická hodnota
 
 ```python
 pravda = True
 nepravda = False
 ```
 
-#### Seznamy
+### Seznamy
 
 ```python
 cisla = [1, 2, 3, 4, 5]
 jmena = ['Anna', 'Petr', 'Eva']
 ```
 
-#### Slovníky
+### Slovníky
 
 ```python
 osoba = {
@@ -219,7 +215,8 @@ Na datový typ je potřeba myslet napřiklad při načítání vstupu, jak jsme 
 cislo = int(input("Zadejte celé číslo: "))
 print(cislo * 2)
 ```
-## Slovníky
+
+## Co jsou `Slovníky`
 
 Slovník v Pythonu umožňuje ukládat párová data ve formátu `klíč:hodnota`. To znamená, že místo toho, abyste přistupovali k hodnotám pomocí jejich indexu (jako v seznamu), používáte k tomu unikátní klíč.
 
