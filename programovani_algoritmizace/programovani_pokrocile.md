@@ -384,7 +384,7 @@ Kód, který dostane na vstupu znak a vypíše tento znak a následující znak 
 ```
 ## Čtení ze souborů
 
-### Úkol 1
+### **Úkol: Vypsání obsahu souboru**
 
 Vytvoř textový soubor `basnicka.txt` a napiš do něj libovolný text. Poté vytvoř následující program:
 
@@ -396,7 +396,7 @@ print(content)
 
 Program ulož do stejného adresáře, kde je uložen soubor `basnicka.txt`. Co vypíše program po spuštění?
 
-### Úkol 2
+### Práce se soubory - vypisování
 
 funkce `open()` vrací hodnotu, která představuje otevřený soubor. Tahle hodnota má vlastní metody. Tady používáme metodu `read()`, která najednou přečte celý obsah souboru a vrátí ho jako řetězec.
 
@@ -408,11 +408,11 @@ Analogicky je potřeba zavřít soubor poté, co s ním přestaneš pracovat. Ex
 
 Příkaz `with` vezme otevřený soubor (který vrací funkce open) a přiřadí ho do proměnné `soubor`. Pak následuje práce se souborem – v tomhle případě pomocí metody `read` čteme jeho obsah jako řetězec. Na konci od odsazeného bloku se soubor automaticky zavře.
 
-### Úkol 3
+### Úkol: Počet znaků
 
 Vytvoř podprogram, který spočítá, kolik je v souboru `basnicka.txt` znaků.
 
-### Úkol 4
+### Úkol: Počet řádků
 
 Vytvoř podprogram, který spočítá, kolik má soubor `basnicka.txt` řádků. Doporučuji použít funkci `readlines()`.
 
@@ -421,36 +421,20 @@ content = input_file.read()  # nacteni celeho obsahu souboru do jednoho retezce
 lines = input_file.readlines()  # nacteni souboru souboru jako seznam radku
 ```
 
-### Úkol 5
+### Úkol: Head and Tail
 
 Vytvořte podprogram:
 
 1. `head`, který dostane parametr `n` a vypíš prvních `n` řádků ze souboru `basnicka.txt`
 2. `tail`, který dostane parametr `n` a posledních `n` řádků souboru `basnicka.txt`
 
-### Úkol 6
-
-Napište podprogram, který ze souboru básnička vypíše prvních 10 slov. Doporučuji použít funkci `split()`.
-
-### Úkol 8
+### Úkol: Frekvenční analýza písmen
 
 Proveďte frekvenční analýzu písmen v souboru básnička. Vypište, kolikrát se v souboru vyskytují jednotlivá písmena.
 
 Tip: pro ověření, že je daný znak písmeno, můžete použít funkci `isalpha`.
 
-### Úkol 9
-
-Upravte program ze cvičení 8, aby písmena ve slovníku seřadil podle toho, jak často se v textu vyskytovala. Poté vypište 5 nejčastěji se vyskytujících písmen v textu.
-
-### Úkol 10
-
-Vytvořte program, který spočítá průměrný počet slov ve větě v souboru `basnicka.txt`.
-
-### Úkol 11 \*
-
-Pro každé písmeno v textu vypište 5 písmen, které za ním následují nejčastěji.
-
-### Úkol 12 \*
+### Úkol: Triviální ChatGPT (doborovolný úkol)
 
 Napište podprogram, který analyzuje text v [souboru](https://drive.google.com/file/d/1JQcyoNW9EKbc9jssgXmwLTSvdP6N2ubV/view?usp=sharing). Podprogram pak vygeneruje pseudo-náhodný text o `length` slovech. Text se generuje po slovech. Další generované slovo se náhodně vybírá z těch, které v původním textu po naposledy vygenerovaném slově následovaly.
 
@@ -509,9 +493,17 @@ Jak to funguje? Příkazy v bloku `try` se provedou, ale když nastane uvedená 
 
 Za slovíčkem `except` je uvedeno ještě `ValueError`. To je název chyby. Všechny názvy jsou uvedeny [zde](https://docs.python.org/3/library/exceptions.html#exception-hierarchy).
 
-### Úkol 6
+### Úkol
 
-V programu největší společný dělitel ošetřete pomocí odchytávání výjimek dělení nulou.
+V programu Kalkulačka v kapitole Načítání vstupu ošetřete pomocí odchytávání výjimek dělení nulou a jestli jsou na vstupu zadaná čísla.
+
+### Úkol
+
+V programu BMI ošetřete pomocí odchytávání výjimek dělení nulou a jestli jsou na vstupu zadaná čísla.
+
+### Úkol
+
+V programu analýza nákupního košíku ošetřete pomocí odchytávání výjimek, že uživatel zadal na vstupu čísla.
 
 ### Úkol 7
 
