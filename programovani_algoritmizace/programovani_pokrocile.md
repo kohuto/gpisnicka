@@ -5,13 +5,13 @@
 1. [Porovnani programovacich jazyků](#porovnani-programovacich-jazyků)
 2. [Virtuální prostředí](#virtuální-prostředí)
 3. [Načítání vstupu](#načítání-vstupu)
-4. [Cyklus While]()
-5. [Příkaz Return]()
+4. [Cyklus While](#cyklus-while)
+5. [Příkaz Return](#příkaz-return)
 6. [Datové typy](#datové-typy)
 7. [Slovníky](#co-jsou-slovníky)
 8. [Interpretovane a kompilované jazyky](#interpretovane-a-kompilované-jazyky)
 9. [Čtení ze souborů](#čtení-ze-souborů)
-10. [List comprehension]()
+10. [Synktatický cukr]()
 11. [Výjimky](#výjimky)
 12. [Moduly](#moduly)
 13. [Testy](#testy)
@@ -167,11 +167,49 @@ Pro načtení vstupu z konzole používáme funkci `input()`. Napište program, 
 
 Napište program, který dostane na vstupu výšku v metrech a váhu v kg a na výstup vypíše BMI uživatele.
 
-## Cyklus While
-a
+## Cyklus While
+Co vypíše následující blok kódu?
+```python
+x = 0
+while(x < 10)
+    print(x)
+    x += 1
+```
+Rozdíl mezi `for` a `while` cyklem je ten, že cyklus `for` má pevný počet opakování (tzn. dopředu víme, kolikrát se cyklus vykoná), zatímco `while` cyklus nemá pevný počet opakování (dopředu nevíme, kolikrát se cyklus zopakuje). Cyklus `while` opakuje blok kódu, dokud je daná podmínka pravdivá. Před každou iterací se podmínka vyhodnotí – pokud je pravdivá, kód se provede, pokud ne, cyklus se ukončí.
 
-## Příkaz Return
+### Úkol: Sčítadlo
+Vytvoř program, který pomocí cyklu `while` sečte čísla od 1 do 10 a součet na konci vypíše.
 
+### Úkol: Hádání náhodného čísla
+Napiš program, který vygeneruje náhodné číslo mezi 1 a 10. Program bude opakovaně vyzývat uživatele, aby hádal toto číslo. Po každém pokusu program sdělí, zda je tipované číslo příliš nízké, příliš vysoké nebo správné. Cyklus `while` se použije k opakování hádání, dokud uživatel neuhodne správné číslo.
+
+### Úkol: Faktoriál
+Vytvoř program, který požádá uživatele o zadání kladného celého čísla. Poté pomocí cyklu `while` vypočítá a zobrazí faktoriál tohoto čísla.
+
+## Příkaz Return
+Co vypíše následující blok kódu?
+```python
+def soucet(a):
+    plusjedna = a + 1
+    return plusjedna
+
+výsledek = soucet(3)
+print(výsledek)
+```
+
+V Pythonu se příkaz `return` používá uvnitř funkcí k ukončení jejich provádění a vrácení hodnoty volajícímu kódu. Když funkce dosáhne příkazu `return`, okamžitě se ukončí a vrátí zadanou hodnotu.
+
+## Úkol: Kalkulačka
+Vytvoř tři funkce s názvy `soucet`, `rozdil` a `soucin`, které přijímají dvě čísla jako argumenty. Každá funkce by měla pomocí příkazu `return` vrátit:
+
+- `soucet`: součet dvou čísel,
+- `rozdil`: rozdíl dvou čísel (první minus druhé),
+- `soucin`: součin dvou čísel.
+
+Poté tyto funkce zavolej s libovolnými dvěma čísly a vypiš jejich výsledky.
+
+### Úkol: Sudé nebo liché
+Napiš funkci `je_sudé`, která přijímá jako parametr jedno číslo a vrací `True`, pokud je číslo sudé, nebo `False`, pokud je liché. Použij příkaz `return` k vrácení hodnoty. Poté funkci použij k ověření, zda je dané číslo sudé, a výsledek vypiš.
 
 ## Datové typy
 
@@ -451,7 +489,7 @@ Napište podprogram, který analyzuje text v [souboru](https://drive.google.com/
 
 ## Výjimky
 
-### Úkol 1
+### Úkol: Kdy selže?
 
 Podívej se na kód níže a vymysli příklad, kdy program selže:
 
@@ -461,11 +499,11 @@ def prevracena_hodnota():
     return cislo
 ```
 
-### Úkol 2
+### Úkol: Najdi funkci
 
 Řešením problémů v předchozím úkolu by mohla být nějaká hypotetická funkce `obsahuje_jen_cislice()`. Zkuste takovou funkci najít a upravte předchozí program pomocí příkazu `if` a této funkce tak, aby se text převáděl na číslo pouze, pokud obsahuje jen číslice.
 
-### Úkol 3
+### Úkol: Jaký je výstup?
 
 Jaké budou výstupy následujícího kódu:
 
@@ -484,7 +522,7 @@ print(' 42'.isnumeric())
 print(int(' 42'))
 ```
 
-### Úkol 4
+### Výjimky vysvětlení
 
 Chceme-li tedy zjistit, zda funkce `int` umí převést řetězec na číslo, je nejlepší na to skutečně použít funkci `int`.
 
@@ -504,19 +542,19 @@ Jak to funguje? Příkazy v bloku `try` se provedou, ale když nastane uvedená 
 
 Za slovíčkem `except` je uvedeno ještě `ValueError`. To je název chyby. Všechny názvy jsou uvedeny [zde](https://docs.python.org/3/library/exceptions.html#exception-hierarchy).
 
-### Úkol
+### Úkol: Úprava kalkulačky
 
 V programu Kalkulačka v kapitole Načítání vstupu ošetřete pomocí odchytávání výjimek dělení nulou a jestli jsou na vstupu zadaná čísla.
 
-### Úkol
+### Úkol: Úprava BMI
 
 V programu BMI ošetřete pomocí odchytávání výjimek dělení nulou a jestli jsou na vstupu zadaná čísla.
 
-### Úkol
+### Úkol: Úprava košíku
 
 V programu analýza nákupního košíku ošetřete pomocí odchytávání výjimek, že uživatel zadal na vstupu čísla.
 
-### Úkol 7
+### Úkol: Co nelze vypsat?
 
 Je některé číslo, které nebude nikdy vypsáno? Připadně proč?
 
@@ -537,11 +575,11 @@ finally:
     print('6')
 ```
 
-### Úkol 8
+### Úkol: Obsah čtverce
 
 Napište podprogram, který dostane jako parametr délku strany čtverce a následně vypočítá jeho obsah.
 
-### Úkol 9
+### Úkol: Ukončení programu s chybou
 
 Co nám vrátí předchozí podprogram, když ho zavoláme následujícím způsobem?
 
@@ -562,6 +600,12 @@ def obsah_ctverce(strana):
 Podobně jako `return` i příkaz `raise` ukončí funkci. A nejen tu – pokud na tuhle konkrétní chybu není program předem připravený, ukončí se celý program.
 
 ## Moduly
+Vytvořte (klidně za využití konverzačního chatbota) tři programy:
+- `gsd.py` - funkce `gsd` dostane jako argument dvě čísla a vrátí jejich největšího společného dělitele.
+- `is_in_array.py` - funkce `is_in_array` dostane jako argument číslo a seznam čísel. Funkce vrátí `True`, jestliže se číslo nachází v seznamu. V opačném případě vrátí `False`.
+- `is_prime_number.py` – funkce `is_prime_number` dostane jako argument číslo. Vrátí `True`, jestliže je číslo prvočíslo. V opačném případě vrát funkce `False`.
+
+---
 
 Vytvořte ve složce, kde jsou uložené programy `gsd.py`, `is_in_array.py` a `is_prime_number.py` čtvrtý soubor `main.py`.
 
