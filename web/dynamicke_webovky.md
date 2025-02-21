@@ -39,7 +39,6 @@ Představ si webovou aplikaci jako dvě hlavní části, které spolu komunikuj�
 Tento přístup odděluje to, co vidíš a s čím interaguješ, od těžké logiky a práce s daty, která běží „na pozadí“.
 
 ## DOM tree
-### Co je to **DOM Tree**?
 
 **DOM (Document Object Model) Tree** je **stromová struktura**, kterou prohlížeč vytváří z HTML kódu stránky. Každý HTML element (značka jako `<div>`, `<p>`, `<h1>`, `<ul>` apod.) se v této struktuře stává uzlem (node). DOM strom umožňuje JavaScriptu dynamicky měnit obsah stránky.
 
