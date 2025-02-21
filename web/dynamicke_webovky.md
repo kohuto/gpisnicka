@@ -73,7 +73,7 @@ document.querySelector("h1").textContent = "Nový nadpis";
 ```
 Tento kód vyhledá v DOM stromu element `<h1>` a změní jeho text.
 
-## Javascript
+## JavaScript
 
 Příklad níže je základní **dynamická webová aplikace**, která ukazuje, jak JavaScript může měnit obsah webu! Aplikace umožňuje:
 
