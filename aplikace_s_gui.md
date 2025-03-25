@@ -12,6 +12,8 @@ Oproti **konzolovým aplikacím**, které komunikují se uživatelem přes texto
 
 ## Knihovna `tkinter`
 
+Zdrojový kód popsaný níže naleznete v souboru [aplikace s gui](gui.py).
+
 V Pythonu je nejpoužívanější knihovnou pro tvorbu GUI **`tkinter`**, která je součástí standardní instalace.
 
 Importujeme ji jednoduše:
